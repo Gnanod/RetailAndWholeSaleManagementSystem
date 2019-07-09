@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 
+
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -35,8 +36,9 @@ export class MainComponent implements OnInit {
             this.headerText = "AddVehicle";
         } else if(this.router.url== '/main/supplier'){
             this.headerText="Supplier";
+        }else if(this.router.url== '/main/customer') {
+          this.headerText = "Customers";
         }
-
     }
 
     changeRoute(button) {
@@ -51,6 +53,9 @@ export class MainComponent implements OnInit {
             this.router.navigate(['/main/customerVehicle'])
         }else  if(button == "Supplier"){
             this.router.navigate(['/main/supplier'])
+        }else  if(button == "Customer") {
+          this.router.navigate(['/main/customer'])
         }
-    }
+        }
+
 }

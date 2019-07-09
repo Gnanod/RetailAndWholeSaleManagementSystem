@@ -1,0 +1,338 @@
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header card-header-icon card-header-rose">
+          <div class="card-icon">
+            <i class="material-icons">perm_identity</i>
+          </div>
+          <h4 class="card-title"><b><b>Customer Details</b></b>
+
+          </h4>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label class="bmd-label-floating">First Name</label>
+                  <input type="text" class="form-control" name="firstName" [(ngModel)]="cust.firstName">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Last Name</label>
+                  <input type="text" class="form-control" name="lastName" [(ngModel)]="cust.lastName">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="bmd-label-floating">User Name</label>
+                  <input type="email" class="form-control" name="userName" [(ngModel)]="cust.userName">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Address</label>
+                  <input type="text" class="form-control" name="address" [(ngModel)]="cust.address">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">NIC</label>
+                  <input type="text" class="form-control" name="nic" [(ngModel)]="cust.nic">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Phone</label>
+                  <input type="text" class="form-control" name="phone" [(ngModel)]="cust.phone">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Email</label>
+                  <input type="email" class="form-control" name="email" [(ngModel)]="cust.email">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Birthday</label><br>
+                  <input type="date" class="form-control" name="birthday" [(ngModel)]="cust.birthday">
+                </div>
+              </div>
+
+              <div class="col-sm-10 checkbox-radios">
+                <label class="bmd-label-floating">Customer Type</label><br>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" value="option2" [(ngModel)]="cust.type" checked> A Retail Customer
+                    <span class="circle">
+                                                     <span class="check"></span>
+                                                    </span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" value="option1" [(ngModel)]="cust.type"> A wholesale Customer
+                    <span class="circle">
+                                                        <span class="check"></span>
+                                                     </span>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>About Customer</label>
+                  <div class="form-group">
+
+                    <textarea class="form-control" rows="5" name="aboutCus" [(ngModel)]="cust.aboutCus"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-rose pull-right" (click)="addCustomer()">Save Details</button>
+            <div class="clearfix"></div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<br><br><br><br>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header card-header-rose card-header-icon">
+          <div class="card-icon">
+            <i class="material-icons">assignment</i>
+          </div>
+          <h4 class="card-title"><b><b>Customers Table</b></b></h4>
+
+
+        </div>
+        <div class="card-body">
+
+          <div class="row" >
+
+            <div class="col-md-4" style="margin-left: 450px">
+              <div class="form-group">
+                <label class="bmd-label-floating">Search By Name</label>
+                <input type="text" class="form-control" style="width: 600px">
+              </div>
+            </div>
+            <div class="col-md-4" style="margin-left: -100px ;margin-top: -5px">
+              <button type="submit" class="btn btn-rose pull-right" >   <i class="material-icons">search</i></button>
+            </div>
+
+          </div><br><br>
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+              <tr>
+                <th class="text-center">CusID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>User Name</th>
+                <th>Address</th>
+                <th>NIC</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Birthday</th>
+                <th>Age</th>
+                <th>Type</th>
+                <th>AboutCus</th>
+
+                <th class="text-right">Actions</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td>Andrew Mike</td>
+                <td>Develop</td>
+                <td>ssss</td>
+                <td>Malabe</td>
+                <td>5665555v</td>
+                <td>0778594752</td>
+                <td>ss@gmail.com</td>
+                <td>05/08/1998</td>
+                <td>20</td>
+                <td>A Retail Customer</td>
+                <td>hhhhhhhhh</td>
+
+                <td class="td-actions text-right">
+
+                  <button type="button" rel="tooltip" class="btn btn-danger">
+                    <i class="material-icons">close</i>
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-center">2</td>
+                <td>hghghghg</td>
+                <td>wewrr</td>
+                <td>ssss</td>
+                <td>Malabe</td>
+                <td>5665874v</td>
+                <td>0778594752</td>
+                <td>qqq@gmail.com</td>
+                <td>02/04/1998</td>
+                <td>42</td>
+                <td>A Wholesale Customer</td>
+                <td>kkkkkkkk</td>
+
+                <td class="td-actions text-right">
+
+                  <button type="button" rel="tooltip" class="btn btn-danger">
+                    <i class="material-icons">close</i>
+                  </button>
+                </td>
+              </tr>
+
+
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<br><br><br><br>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header card-header-icon card-header-rose">
+          <div class="card-icon">
+            <i class="material-icons">perm_identity</i>
+          </div>
+          <h4 class="card-title"><b><b>Update Customer Details</b></b>
+
+          </h4>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label class="bmd-label-floating">CusID</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label class="bmd-label-floating">First Name</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Last Name</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="bmd-label-floating">User Name</label>
+                  <input type="email" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Address</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">NIC</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Phone</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Email</label>
+                  <input type="email" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Birthday</label><br>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+
+              <div class="col-sm-10 checkbox-radios">
+                <label class="bmd-label-floating">Customer Type</label><br>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" value="option2" checked> A Retail Customer
+                    <span class="circle">
+                                                     <span class="check"></span>
+                                                    </span>
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="exampleRadios" value="option1"> A wholesale Customer
+                    <span class="circle">
+                                                        <span class="check"></span>
+                                                     </span>
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>About Customer</label>
+                  <div class="form-group">
+
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-rose pull-right">Update Details</button>
+            <div class="clearfix"></div>
+
+          </form>
+        </div>
