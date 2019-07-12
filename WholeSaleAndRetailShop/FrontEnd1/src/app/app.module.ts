@@ -9,6 +9,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { CustomerComponent } from './view/customer/customer.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { StockHandlingComponent } from './view/stock-handling/stock-handling.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {FormsModule} from "@angular/forms";
     MainComponent,
     EmployeeComponent,
     DashboardComponent,
-    CustomerComponent  
+    CustomerComponent,
+    StockHandlingComponent  
   ],
   imports: [
     BrowserModule,

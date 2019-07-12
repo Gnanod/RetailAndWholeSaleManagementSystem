@@ -1,0 +1,10 @@
+diff a/WholeSaleAndRetailShop/.idea/workspace.xml b/WholeSaleAndRetailShop/.idea/workspace.xml	(rejected hunks)
+@@ -102,7 +102,7 @@
+           <entry key="aj" value="1" />
+           <entry key="css" value="2" />
+           <entry key="html" value="8" />
+-          <entry key="java" value="10" />
++          <entry key="java" value="11" />
+           <entry key="properties" value="1" />
+           <entry key="ts" value="9" />
+           <entry key="xml" value="2" />
