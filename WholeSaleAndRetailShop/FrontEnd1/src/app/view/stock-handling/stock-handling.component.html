@@ -111,13 +111,14 @@
 
                         <div class="col-sm-2">
                             <div class="form-group">
-                                <label>Item Name</label>
-                                <input type="text" class="form-control">
+                                <label>Barcode</label>
+                                <input type="text" class="form-control" (keypress)="searchItemDetails()">
+                               
                             </div>
                         </div>
                         <div class="col-sm-2">
                             <div class="form-group">
-                                <label>Barcode</label>
+                                <label>Item Name</label>
                                 <input type="text" class="form-control">
                             </div>
                         </div>
@@ -324,6 +325,96 @@
                     <!--<div class="clearfix"></div>-->
                 <!--</form>-->
             <!--</div>-->
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header card-header-rose card-header-icon">
+                <div class="card-icon">
+                    <i class="material-icons">search</i>
+                </div>
+                <h4 class="card-title">Search  Vehicle</h4>
+            </div>
+            <div class="card-body">
+                <div class="row" >
+
+                    <div class="col-md-4" style="margin-left: 250px">
+                        <div class="form-group">
+                            <label class="bmd-label-floating">Search By Item Name</label>
+                            <input type="text" class="form-control" style="width: 300px" (keyup)="searchItemByName($event)" [(ngModel)]="searchitembyname">
+                        </div>
+                    </div>
+                    <div class="col-md-4" style="margin-left: -200px ;margin-top: 25px">
+                        <button type="submit" class="btn btn-rose pull-right" (click)="searchVehicleDetailsByNumber()" >   <i class="material-icons">search</i></button>
+                    </div>
+                    <!--(click)="searchVehicleDetailsByNumber()"-->
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table" id="vehicleTable">
+                        <thead class=" text-primary">
+                        <th>
+                            BarCode
+                        </th>
+                        <th>
+                            WholeSalePrice
+                        </th>
+                        <th>
+                            RetailPrice
+                        </th>
+                        <th>
+                            BuyingPrice
+                        </th>
+                        <th>
+                            QuantityOnHand
+                        </th>
+                        </thead>
+                        <tbody>
+                        <tr *ngIf="searchItemValuesIf;else elseBlock">
+                            <td colspan="8" class="alert alert-danger" style="text-align: center">
+                                Item Not Found
+                            </td>
+                        </tr>
+
+                        <ng-template #elseBlock>
+
+                            <tr *ngFor="let item of searchItemDetails">
+                                <td class="text-center">
+                                    {{item.barCode}}
+                                </td>
+                                <td class="text-center">
+                                    {{item.wholeSalePrice}}
+                                </td>
+                                <td class="text-center">
+                                    {{item.retailPrice}}
+                                </td >
+
+                                <td class="text-center">
+                                hgjg
+                                </td>
+                                <td>
+                                    {{item.itemQty}}
+                                </td>
+                               
+
+                                <td class="td-actions ">
+                                    <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteVehicle()">
+                                        <i class="material-icons">close</i>
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </ng-template>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 
