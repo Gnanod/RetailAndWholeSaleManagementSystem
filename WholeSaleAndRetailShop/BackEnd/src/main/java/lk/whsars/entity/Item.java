@@ -1,25 +1,48 @@
 package lk.whsars.entity;
 
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Item {
 
     @Id
-    private String itemId;
+    private String barCode;
     private String itemName;
     private double itemQty;
     private double wholeSalePrice;
     private double retailPrice;
 
-    public String getItemId() {
-        return itemId;
+    @ManyToOne
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    private Brand brand;
+
+    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "item")
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private Set<CustomerOrderDetail> customerOrderDetails;
+
+    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "item")
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private Set<SupplierOrderDetail> supplierOrderDetails;
+
+    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "item")
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private Set<StockItemDetails> stockItemDetails;
+
+    public String getBarCode() {
+        return barCode;
     }
 
-    public void setItemId(String itemId) {
-        this.itemId = itemId;
+    public void setBarCode(String barCode) {
+        this.barCode = barCode;
     }
 
     public String getItemName() {
@@ -52,5 +75,37 @@ public class Item {
 
     public void setRetailPrice(double retailPrice) {
         this.retailPrice = retailPrice;
+    }
+
+    public Brand getBrand() {
+        return brand;
+    }
+
+    public void setBrand(Brand brand) {
+        this.brand = brand;
+    }
+
+    public Set<CustomerOrderDetail> getCustomerOrderDetails() {
+        return customerOrderDetails;
+    }
+
+    public void setCustomerOrderDetails(Set<CustomerOrderDetail> customerOrderDetails) {
+        this.customerOrderDetails = customerOrderDetails;
+    }
+
+    public Set<SupplierOrderDetail> getSupplierOrderDetails() {
+        return supplierOrderDetails;
+    }
+
+    public void setSupplierOrderDetails(Set<SupplierOrderDetail> supplierOrderDetails) {
+        this.supplierOrderDetails = supplierOrderDetails;
+    }
+
+    public Set<StockItemDetails> getStockItemDetails() {
+        return stockItemDetails;
+    }
+
+    public void setStockItemDetails(Set<StockItemDetails> stockItemDetails) {
+        this.stockItemDetails = stockItemDetails;
     }
 }
