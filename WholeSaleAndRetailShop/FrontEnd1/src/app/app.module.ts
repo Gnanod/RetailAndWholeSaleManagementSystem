@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './view/main/main.component';
 import { EmployeeComponent } from './view/employee/employee.component';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
+import { SalaryComponent } from './view/salary/salary.component';
+
+import { AttendanceComponent } from './view/attendance/attendance.component';
+import { SalarysheetComponent } from './view/salarysheet/salarysheet.component';
 
 
 @NgModule({
@@ -12,7 +16,12 @@ import { DashboardComponent } from './view/dashboard/dashboard.component';
     AppComponent,
     MainComponent,
     EmployeeComponent,
-    DashboardComponent  
+    DashboardComponent,
+    SalaryComponent,
+
+    AttendanceComponent,
+
+    SalarysheetComponent  
   ],
   imports: [
     BrowserModule,
