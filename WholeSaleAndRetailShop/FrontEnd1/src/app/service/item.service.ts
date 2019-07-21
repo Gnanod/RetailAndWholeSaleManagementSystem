@@ -20,4 +20,16 @@ export class ItemService {
         return this.http.post<Item>(environment.backend_url + URL + '/AddItem',additem);
 
     }
+    //
+    // searchItemDetailsByName() {
+    //
+    //     return this.http.post<Item>(environment.backend_url + URL + '/AddItem',additem);
+    //
+    //
+    // }
+    searchItemDetailsByName(searchitembyname: string) {
+
+        return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByName/'+searchitembyname);
+    
+    }
 }
