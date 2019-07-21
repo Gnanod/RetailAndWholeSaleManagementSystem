@@ -10,6 +10,7 @@ import { CustomerComponent } from './view/customer/customer.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import { StockHandlingComponent } from './view/stock-handling/stock-handling.component';
+import { CustomerorderComponent } from './view/customerorder/customerorder.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { StockHandlingComponent } from './view/stock-handling/stock-handling.com
     EmployeeComponent,
     DashboardComponent,
     CustomerComponent,
-    StockHandlingComponent  
+    StockHandlingComponent,
+    CustomerorderComponent  
   ],
   imports: [
     BrowserModule,

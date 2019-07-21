@@ -7,6 +7,7 @@ import {EmployeeComponent} from "./view/employee/employee.component";
 import {DashboardComponent} from "./view/dashboard/dashboard.component";
 import {CustomerComponent} from "./view/customer/customer.component";
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
+import {CustomerorderComponent} from "./view/customerorder/customerorder.component";
 
 
 
@@ -33,6 +34,10 @@ const routes: Routes = [
             }
         ]
     },
+  {
+    path:'customerorder',
+    component: CustomerorderComponent,
+  },
     
     {path: '', pathMatch: "full", redirectTo: '/main/dashboard'}
 ];
