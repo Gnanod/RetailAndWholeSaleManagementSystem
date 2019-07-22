@@ -10,17 +10,28 @@ import java.util.Set;
 public class CustomerOrder {
     
     @Id
-    int customerOrderId;
-    String date;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int customerOrderId;
+    private String date;
+    private double totalAmount;
+    private double discount;
     @ManyToOne
     @JoinColumn(nullable = false)
     private Customer customer;
    @OneToMany(cascade = CascadeType.ALL,mappedBy = "customerOrder")
     private Set<CustomerOrderDetail> customerOrderDetailSet;
 
-
     public int getCustomerOrderId() {
         return customerOrderId;
+    }
+
+
+    public Set<CustomerOrderDetail> getCustomerOrderDetailSet() {
+        return customerOrderDetailSet;
+    }
+
+    public void setCustomerOrderDetailSet(Set<CustomerOrderDetail> customerOrderDetailSet) {
+        this.customerOrderDetailSet = customerOrderDetailSet;
     }
 
     public void setCustomerOrderId(int customerOrderId) {
@@ -41,5 +52,21 @@ public class CustomerOrder {
 
     public void setCustomer(Customer customer) {
         this.customer = customer;
+    }
+
+    public double getTotalAmount() {
+        return totalAmount;
+    }
+
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
+    public double getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(double discount) {
+        this.discount = discount;
     }
 }

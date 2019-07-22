@@ -5,11 +5,10 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './view/main/main.component';
 import { EmployeeComponent } from './view/employee/employee.component';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { CustomerComponent } from './view/customer/customer.component';
-import {HttpClientModule} from "@angular/common/http";
-import {FormsModule} from "@angular/forms";
-import { StockHandlingComponent } from './view/stock-handling/stock-handling.component';
+import { SalaryComponent } from './view/salary/salary.component';
+
+import { AttendanceComponent } from './view/attendance/attendance.component';
+import { SalarysheetComponent } from './view/salarysheet/salarysheet.component';
 
 
 @NgModule({
@@ -18,15 +17,15 @@ import { StockHandlingComponent } from './view/stock-handling/stock-handling.com
     MainComponent,
     EmployeeComponent,
     DashboardComponent,
-    CustomerComponent,
-    StockHandlingComponent  
+    SalaryComponent,
+
+    AttendanceComponent,
+
+    SalarysheetComponent  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,BrowserAnimationsModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

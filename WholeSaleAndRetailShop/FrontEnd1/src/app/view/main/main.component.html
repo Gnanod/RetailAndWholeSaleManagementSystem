@@ -17,25 +17,26 @@
                         <p #dashboard>Dashboard</p>
                     </a>
                 </li>
+
                 <li class="nav-item" [ngClass]="{'active': headerText=='Employees'}" (click)="changeRoute(employee.innerHTML)">
                     <a class="nav-link">
                         <i class="material-icons">perm_identity</i>
                         <p #employee>Employees</p>
                     </a>
                 </li>
-              <li class="nav-item" [ngClass]="{'active': headerText=='Customers'}" (click)="changeRoute(customer.innerHTML)">
+              <li class="nav-item" [ngClass]="{'active': headerText=='Attendance'}" (click)="changeRoute(attendance.innerHTML)">
                 <a class="nav-link">
                   <i class="material-icons">perm_identity</i>
-                  <p #customer>Customer</p>
+                  <p #attendance>Attendance</p>
                 </a>
               </li>
 
-                <li class="nav-item" [ngClass]="{'active': headerText=='StockManage'}" (click)="changeRoute(StockManage.innerHTML)">
-                    <a class="nav-link">
-                        <i class="material-icons">item</i>
-                        <p #StockManage>StockManage</p>
-                    </a>
-                </li>
+              <li class="nav-item" [ngClass]="{'active': headerText=='Salary'}" (click)="changeRoute(salary.innerHTML)">
+                <a class="nav-link">
+                  <i class="material-icons">perm_identity</i>
+                  <p #salary>Salary</p>
+                </a>
+              </li>
                 
                 <li class="nav-item ">
                     <a class="nav-link" href="job">

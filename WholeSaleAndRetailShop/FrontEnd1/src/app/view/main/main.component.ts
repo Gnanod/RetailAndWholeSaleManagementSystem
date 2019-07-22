@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
 
-
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
@@ -34,13 +33,15 @@ export class MainComponent implements OnInit {
             this.headerText = "SearchVehicle";
         } else if(this.router.url == '/main/customerVehicle'){
             this.headerText = "AddVehicle";
-        } else if(this.router.url== '/main/supplier'){
-            this.headerText="Supplier";
-        }else if(this.router.url== '/main/customer') {
-          this.headerText = "Customers";
-        }else if(this.router.url=='/main/StockManage'){
-            this.headerText="StockManage"
+        } else if(this.router.url== '/main/supplier') {
+          this.headerText = "Supplier";
+        }else if(this.router.url== '/main/salary'){
+          this.headerText="Salary";
+        }else if(this.router.url== '/main/attendance'){
+          this.headerText="Attendance";
         }
+
+
     }
 
     changeRoute(button) {
@@ -55,11 +56,10 @@ export class MainComponent implements OnInit {
             this.router.navigate(['/main/customerVehicle'])
         }else  if(button == "Supplier"){
             this.router.navigate(['/main/supplier'])
-        }else  if(button == "Customer") {
-          this.router.navigate(['/main/customer'])
-        }else if(button == "StockManage"){
-            this.router.navigate(['/main/StockManage'])
+        }else if(button == "Salary"){
+          this.router.navigate(['/main/salary'])
+        }else if(button == "Attendance"){
+          this.router.navigate(['/main/attendance'])
         }
-        }
-
+    }
 }
