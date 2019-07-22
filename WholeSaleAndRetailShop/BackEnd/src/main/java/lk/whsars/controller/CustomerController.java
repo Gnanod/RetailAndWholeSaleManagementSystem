@@ -1,7 +1,7 @@
 package lk.whsars.controller;
 
-import lk.whsars.entity.Customer;
 
+import lk.whsars.entity.Customer;
 import lk.whsars.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

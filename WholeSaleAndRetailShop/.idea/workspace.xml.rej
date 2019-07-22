@@ -1,10 +1,10 @@
 diff a/WholeSaleAndRetailShop/.idea/workspace.xml b/WholeSaleAndRetailShop/.idea/workspace.xml	(rejected hunks)
-@@ -102,7 +102,7 @@
-           <entry key="aj" value="1" />
-           <entry key="css" value="2" />
-           <entry key="html" value="8" />
--          <entry key="java" value="10" />
-+          <entry key="java" value="11" />
-           <entry key="properties" value="1" />
-           <entry key="ts" value="9" />
-           <entry key="xml" value="2" />
+@@ -412,7 +412,7 @@
+   <component name="PropertiesComponent">
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563124198544" />
++    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563809317347" />
+     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />

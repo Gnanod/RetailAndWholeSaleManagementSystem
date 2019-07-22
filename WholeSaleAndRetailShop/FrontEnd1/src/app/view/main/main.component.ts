@@ -29,17 +29,15 @@ export class MainComponent implements OnInit {
             this.headerText = "Customer Vehicle Details";
         } else if (this.router.url == '/main/employee') {
             this.headerText = "Employees";
-        } else if(this.router.url == '/main/searchVehicle'){
-            this.headerText = "SearchVehicle";
-        } else if(this.router.url == '/main/customerVehicle'){
-            this.headerText = "AddVehicle";
         } else if(this.router.url== '/main/supplier') {
           this.headerText = "Supplier";
         }else if(this.router.url== '/main/salary'){
           this.headerText="Salary";
         }else if(this.router.url== '/main/attendance'){
           this.headerText="Attendance";
-        }
+        }else if (this.router.url=='/main/StockHandling'){
+            this.headerText="StockHandling";
+        } 
 
 
     }
@@ -60,6 +58,8 @@ export class MainComponent implements OnInit {
           this.router.navigate(['/main/salary'])
         }else if(button == "Attendance"){
           this.router.navigate(['/main/attendance'])
+        }else if(button == "StockHandling"){
+            this.router.navigate(['/main/StockHandling'])
         }
     }
 }

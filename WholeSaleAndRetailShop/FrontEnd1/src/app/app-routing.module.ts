@@ -7,6 +7,7 @@ import {SalaryComponent} from "./view/salary/salary.component";
 
 import {AttendanceComponent} from "./view/attendance/attendance.component";
 import {SalarysheetComponent} from "./view/salarysheet/salarysheet.component";
+import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
 
 
 const routes: Routes = [
@@ -22,18 +23,22 @@ const routes: Routes = [
                 path: 'dashboard',
                 component: DashboardComponent
             },
-          {
-            path: 'salary',
-            component: SalaryComponent
-          },
-          {
-            path: 'attendance',
-            component: AttendanceComponent
-          },
-          {
-            path: 'salary/salarysheet',
-            component: SalarysheetComponent
-          }
+            {
+                path: 'StockHandling',
+                component: StockHandlingComponent
+            },
+              {
+                path: 'salary',
+                component: SalaryComponent
+              },
+              {
+                path: 'attendance',
+                component: AttendanceComponent
+              },
+              {
+                path: 'salary/salarysheet',
+                component: SalarysheetComponent
+              }
         ]
     },
     
