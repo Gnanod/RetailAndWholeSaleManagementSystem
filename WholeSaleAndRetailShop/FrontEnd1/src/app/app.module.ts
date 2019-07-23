@@ -13,7 +13,7 @@ import {StockItemDetails} from "./model/StockItemDetails";
 import {CustomerComponent} from "./view/customer/customer.component";
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 
 
@@ -35,7 +35,7 @@ import {HttpClientModule} from "@angular/common/http";
       BrowserAnimationsModule,
       AppRoutingModule,
       FormsModule,
-      HttpClientModule
+      HttpClientModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

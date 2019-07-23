@@ -15,7 +15,14 @@
                         <p #dashboard>Dashboard</p>
                     </a>
                 </li>
-
+                
+                <li class="nav-item" [ngClass]="{'active': headerText=='Customers'}" (click)="changeRoute(customer.innerHTML)">
+                    <a class="nav-link">
+                        <i class="material-icons">perm_identity</i>
+                        <p #customer>Customer</p>
+                    </a>
+                </li>
+                
                 <li class="nav-item" [ngClass]="{'active': headerText=='Employees'}" (click)="changeRoute(employee.innerHTML)">
                     <a class="nav-link">
                         <i class="material-icons">perm_identity</i>

@@ -8,6 +8,7 @@ import {SalaryComponent} from "./view/salary/salary.component";
 import {AttendanceComponent} from "./view/attendance/attendance.component";
 import {SalarysheetComponent} from "./view/salarysheet/salarysheet.component";
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
+import {CustomerComponent} from "./view/customer/customer.component";
 
 
 const routes: Routes = [
@@ -18,6 +19,10 @@ const routes: Routes = [
             {
                 path: 'employee',
                 component: EmployeeComponent
+            },
+            {
+              path:'customer',
+              component:CustomerComponent  
             },
             {
                 path: 'dashboard',

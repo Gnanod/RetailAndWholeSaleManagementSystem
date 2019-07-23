@@ -37,13 +37,15 @@ export class MainComponent implements OnInit {
           this.headerText="Attendance";
         }else if (this.router.url=='/main/StockHandling'){
             this.headerText="StockHandling";
-        } 
+        }else if (this.router.url=='/main/customer'){
+            this.headerText="Customers";
+        }
 
 
     }
 
     changeRoute(button) {
-        console.log(button)
+        
         if (button == "Dashboard") {
             this.router.navigate(['/main/dashboard'])
         } else if (button == "Employees") {
@@ -60,6 +62,9 @@ export class MainComponent implements OnInit {
           this.router.navigate(['/main/attendance'])
         }else if(button == "StockHandling"){
             this.router.navigate(['/main/StockHandling'])
+        }else if(button=="Customer"){
+            this.router.navigate(['/main/customer'])
+
         }
     }
 }
