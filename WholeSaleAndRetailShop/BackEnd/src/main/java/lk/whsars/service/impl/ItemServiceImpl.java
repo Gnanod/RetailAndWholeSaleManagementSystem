@@ -6,6 +6,8 @@ import lk.whsars.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ItemServiceImpl implements ItemService {
     
@@ -17,5 +19,20 @@ public class ItemServiceImpl implements ItemService {
         
         return itemRepository.save(item);
         
+    }
+
+    @Override
+    public List<Item> getAllItems(String name) {
+
+        List<Item> item= itemRepository.findAllItemsByName(name);
+       
+       if(item.size()!=0){
+           return item;
+           
+       }else{
+           
+           return null;
+           
+       }
     }
 }

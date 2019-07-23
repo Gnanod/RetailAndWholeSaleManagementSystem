@@ -6,6 +6,9 @@
     <groupId>org.springframework</groupId>
     <artifactId>gs-mysql-data</artifactId>
     <version>0.1.0</version>
+    <groupId>sas</groupId>
+    <artifactId>sdsfd</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
