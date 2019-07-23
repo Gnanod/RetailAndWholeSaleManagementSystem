@@ -1,17 +1,19 @@
 package lk.whsars.entity;
 
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
+import javax.persistence.*;
+import java.util.Set;
 
 
 @Entity
 public class Customer {
 
     @Id
-            @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int cusID;
     String firstName;
     String lastName;
@@ -23,6 +25,11 @@ public class Customer {
     String birthday;
     String type;
     String aboutCus;
+    @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "customer")
+    @OnDelete(action = OnDeleteAction.CASCADE)
+    @JsonIgnore
+    private Set<CustomerOrder> ordersList;
+
 
     public int getCusID() {
         return cusID;
@@ -110,5 +117,13 @@ public class Customer {
 
     public void setAboutCus(String aboutCus) {
         this.aboutCus = aboutCus;
+    }
+
+    public Set<CustomerOrder> getOrdersList() {
+        return ordersList;
+    }
+
+    public void setOrdersList(Set<CustomerOrder> ordersList) {
+        this.ordersList = ordersList;
     }
 }
