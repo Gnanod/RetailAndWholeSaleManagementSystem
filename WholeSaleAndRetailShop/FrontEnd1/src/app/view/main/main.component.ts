@@ -35,22 +35,25 @@ export class MainComponent implements OnInit {
             this.headerText = "AddVehicle";
         } else if(this.router.url== '/main/supplier'){
             this.headerText="Supplier";
+        }  else if(this.router.url== "/main/supplierorder"){
+          this.headerText="SupplierOrder";
         }
 
     }
 
     changeRoute(button) {
-        console.log(button)
-        if (button == "Dashboard") {
-            this.router.navigate(['/main/dashboard'])
-        } else if (button == "Employees") {
-            this.router.navigate(['/main/employee'])
-        } else if(button == "SearchVehicle"){
-            this.router.navigate(['/main/searchVehicle'])
-        } else if(button == "AddVehicle"){
-            this.router.navigate(['/main/customerVehicle'])
-        }else  if(button == "Supplier"){
-            this.router.navigate(['/main/supplier'])
-        }
-    }
-}
+      console.log(button)
+      if (button == "Dashboard") {
+        this.router.navigate(['/main/dashboard'])
+      } else if (button == "Employees") {
+        this.router.navigate(['/main/employee'])
+      } else if (button == "SearchVehicle") {
+        this.router.navigate(['/main/searchVehicle'])
+      } else if (button == "AddVehicle") {
+        this.router.navigate(['/main/customerVehicle'])
+      } else if (button == "Supplier") {
+        this.router.navigate(['/main/supplier'])
+      } else if (button == "SupplierOrder") {
+        this.router.navigate(['/main/supplierorder'])
+      }
+    }}

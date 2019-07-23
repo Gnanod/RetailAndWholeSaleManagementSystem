@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './view/main/main.component';
 import { EmployeeComponent } from './view/employee/employee.component';
 import { DashboardComponent } from './view/dashboard/dashboard.component';
+import { SupplierOrderComponent } from './view/supplier-order/supplier-order.component';
+import { SupplierOrderAgentItemComponent } from './view/supplier-order-agent-item/supplier-order-agent-item.component';
+
 
 
 @NgModule({
@@ -12,7 +15,9 @@ import { DashboardComponent } from './view/dashboard/dashboard.component';
     AppComponent,
     MainComponent,
     EmployeeComponent,
-    DashboardComponent  
+    DashboardComponent,
+    SupplierOrderComponent,
+    SupplierOrderAgentItemComponent,
   ],
   imports: [
     BrowserModule,
