@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {MainComponent} from "./view/main/main.component";
 import {EmployeeComponent} from "./view/employee/employee.component";
 import {DashboardComponent} from "./view/dashboard/dashboard.component";
+import {SupplierOrderComponent} from "./view/supplier-order/supplier-order.component";
 import {SalaryComponent} from "./view/salary/salary.component";
 
 import {AttendanceComponent} from "./view/attendance/attendance.component";
@@ -28,6 +29,10 @@ const routes: Routes = [
                 path: 'dashboard',
                 component: DashboardComponent
             },
+          {
+            path:'supplierorder',
+            component : SupplierOrderComponent
+          },
             {
                 path: 'StockHandling',
                 component: StockHandlingComponent

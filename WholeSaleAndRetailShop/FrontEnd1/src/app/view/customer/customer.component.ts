@@ -27,6 +27,7 @@ export class CustomerComponent implements OnInit {
 
       if(result!=null){
         alert('Customer Added Successfully');
+
       }
 
 

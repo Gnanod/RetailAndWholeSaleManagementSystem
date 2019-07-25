@@ -29,6 +29,14 @@ export class MainComponent implements OnInit {
             this.headerText = "Customer Vehicle Details";
         } else if (this.router.url == '/main/employee') {
             this.headerText = "Employees";
+        } else if(this.router.url == '/main/searchVehicle'){
+            this.headerText = "SearchVehicle";
+        } else if(this.router.url == '/main/customerVehicle'){
+            this.headerText = "AddVehicle";
+        } else if(this.router.url== '/main/supplier'){
+            this.headerText="Supplier";
+        }  else if(this.router.url== "/main/supplierorder"){
+          this.headerText="SupplierOrder";
         } else if(this.router.url== '/main/supplier') {
           this.headerText = "Supplier";
         }else if(this.router.url== '/main/salary'){
@@ -45,26 +53,31 @@ export class MainComponent implements OnInit {
     }
 
     changeRoute(button) {
-        
-        if (button == "Dashboard") {
-            this.router.navigate(['/main/dashboard'])
-        } else if (button == "Employees") {
-            this.router.navigate(['/main/employee'])
-        } else if(button == "SearchVehicle"){
-            this.router.navigate(['/main/searchVehicle'])
-        } else if(button == "AddVehicle"){
-            this.router.navigate(['/main/customerVehicle'])
-        }else  if(button == "Supplier"){
-            this.router.navigate(['/main/supplier'])
-        }else if(button == "Salary"){
-          this.router.navigate(['/main/salary'])
-        }else if(button == "Attendance"){
-          this.router.navigate(['/main/attendance'])
-        }else if(button == "StockHandling"){
-            this.router.navigate(['/main/StockHandling'])
-        }else if(button=="Customer"){
-            this.router.navigate(['/main/customer'])
+      console.log(button)
+      if (button == "Dashboard") {
+        this.router.navigate(['/main/dashboard'])
+      } else if (button == "Employees") {
+        this.router.navigate(['/main/employee'])
+      } else if (button == "SearchVehicle") {
+        this.router.navigate(['/main/searchVehicle'])
+      } else if (button == "AddVehicle") {
+        this.router.navigate(['/main/customerVehicle'])
+      } else if (button == "Supplier") {
+        this.router.navigate(['/main/supplier'])
+      } else if (button == "SupplierOrder") {
+        this.router.navigate(['/main/supplierorder'])
+      }else if(button == "Salary"){
+  this.router.navigate(['/main/salary'])
+}else if(button == "Attendance"){
+  this.router.navigate(['/main/attendance'])
+}else if(button == "StockHandling"){
+  this.router.navigate(['/main/StockHandling'])
+}else if(button=="Customer"){
+  this.router.navigate(['/main/customer'])
 
-        }
-    }
 }
+    }
+        
+
+    }
+
