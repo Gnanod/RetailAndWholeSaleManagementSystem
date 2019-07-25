@@ -32,7 +32,7 @@
                                 <div class="form-group">
                                     <label >Select Brand Name</label>
 <br>
-                                    <select class="form-control " data-style="select-with-transition"  [(ngModel)]="selectedBrand">
+                                    <select class="form-control " data-style="select-with-transition" [ngModelOptions]="{standalone: true}"  [(ngModel)]="selectedBrand">
                                         <option *ngFor="let brand of brands" [ngValue]="brand">{{brand.brandName}}</option>
                                     </select>
                                 </div>
@@ -112,27 +112,27 @@
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>Barcode</label>
-                                <input type="text" class="form-control" (keypress)="searchItemDetails()">
+                                <input type="text" class="form-control" (keyup)="searchItemDetailsByBarcode($event)" [(ngModel)]="seachItemBarcode">
                                
                             </div>
                         </div>
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>Item Name</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="itemName"[ngModelOptions]="{standalone: true}" [(ngModel)]="itemDetailsObject.itemName">
                             </div>
                         </div>
                         
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>Buying Price</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="buyingPrice" [ngModelOptions]="{standalone: true}" [(ngModel)]="buyingPrices">
                             </div>
                         </div>
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>WholeSalePrice</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="wholeSalePrice" [ngModelOptions]="{standalone: true}"[(ngModel)]="itemDetailsObject.wholeSalePrice">
                             </div>
                         </div>
                         
@@ -145,26 +145,26 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label>Retail Price</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="retailPrice"[ngModelOptions]="{standalone: true}" [(ngModel)]="itemDetailsObject.retailPrice">
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label>Quantity</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="itemQuantity">
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label>Quantity On Hand</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="itemQty" [ngModelOptions]="{standalone: true}"[(ngModel)]="itemDetailsObject.itemQtyOnHand">
                             </div>
                         </div>
                         <!--<div class="col-sm-2">-->
                             <!---->
                         <!--</div>-->
                         <div class="col-sm-2">
-                            <button type="submit" class="btn btn-rose pull-right">Add To Table</button>
+                            <button type="submit" class="btn btn-rose pull-right" (click)="addToTable()">Add To Table</button>
 
                         </div>
                     </div>
@@ -196,24 +196,24 @@
                             </thead>
                             <tbody>
                             
-                            <tr>
+                            <tr *ngFor="let items of itemsTables ">
                                 <td>
-                                    6
+                                    {{stockItemDetails.items.barCode}}
                                 </td>
                                 <td>
-                                    Mason Porter
+                                    {{stockItemDetails.items.wholeSalePrice}}
                                 </td>
                                 <td>
-                                    Chile
+                                    {{stockItemDetails.items.retailPrice}}
                                 </td>
                                 <td>
-                                    Gloucester
+                                    {{stockItemDetails.quantity}}
                                 </td>
                                 <td>
-                                    $78,615
+                                    {{stockItemDetails.buyingPrice}}
                                 </td>
                                 <td>
-                                    $78,615
+                                    {{stockItemDetails.items.itemQty}}
                                 </td>
                                 <td class="td-actions ">
                                     <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteCustomer()">

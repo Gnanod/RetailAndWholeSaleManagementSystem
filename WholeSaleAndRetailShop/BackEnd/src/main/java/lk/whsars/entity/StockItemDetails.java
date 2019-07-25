@@ -11,8 +11,7 @@ public class StockItemDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int stockDetailId;
-    private double retailPrice;
-    private double wholeSalePrice;
+    private double quantity;
     private double buyingPrice;
 
     @ManyToOne
@@ -28,20 +27,12 @@ public class StockItemDetails {
         this.stockDetailId = stockDetailId;
     }
 
-    public double getRetailPrice() {
-        return retailPrice;
+    public double getQuantity() {
+        return quantity;
     }
 
-    public void setRetailPrice(double retailPrice) {
-        this.retailPrice = retailPrice;
-    }
-
-    public double getWholeSalePrice() {
-        return wholeSalePrice;
-    }
-
-    public void setWholeSalePrice(double wholeSalePrice) {
-        this.wholeSalePrice = wholeSalePrice;
+    public void setQuantity(double quantity) {
+        this.quantity = quantity;
     }
 
     public double getBuyingPrice() {

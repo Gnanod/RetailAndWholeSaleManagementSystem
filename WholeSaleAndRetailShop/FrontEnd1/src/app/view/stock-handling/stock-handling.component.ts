@@ -3,6 +3,7 @@ import {Brand} from "../../model/Brand";
 import {BrandService} from "../../service/brand.service";
 import {Item} from "../../model/Item";
 import {ItemService} from "../../service/item.service";
+import {StockItemDetails} from "../../model/StockItemDetails";
 
 @Component({
   selector: 'app-stock-handling',
@@ -23,7 +24,23 @@ export class StockHandlingComponent implements OnInit {
   additem :Item = new Item();
   searchItemValuesIf = true;
   searchItemDetails:Array<Item> = new Array<Item>();
-    searchitembyname:string;
+  searchitembyname:string;
+  seachItemBarcode :string;
+ 
+  
+  //Store Item Details To The System
+  itemName :string;
+  itemBuyingPrice :string;
+  itemDetailsQtyOnHand :string;
+  itemDetailsObject :Item = new Item();
+  buyingPrices :Number;
+    itemQuantity :Number;
+  
+  
+  //addTo Table Array
+    itemsTables :Array<StockItemDetails>=  new Array<StockItemDetails>();
+    
+    
     addBrand(){
       // console.log('Brand'+this.addbrand.brandName);
 
@@ -62,19 +79,17 @@ export class StockHandlingComponent implements OnInit {
 
     }
 
-    searchItemByName(event: any){
+    searchItemDetailsByBarcode(event :any){
+        this.itemService.searchItemDetailsByBarcode(this.seachItemBarcode).subscribe((result)=>{
+            if(result!=null){
+               
+                // this.itemDetailsObject=result;
+                
+            }
+        })
+    }
 
-        // console.log('GGGGG'+this.searchitembyname);
-        // if(this.searchitembyname.length==0){
-        //    
-        //     console.log('JJJJ');
-        //    
-        // }else{
-        //    
-        //     console.log('JJJJLLLLLLL');
-        //    
-        // }
-        
+    searchItemByName(event: any){
         if(this.searchitembyname.length!=0){
             this.itemService.searchItemDetailsByName(this.searchitembyname).subscribe((result)=>{
 
@@ -91,6 +106,22 @@ export class StockHandlingComponent implements OnInit {
             this.searchItemValuesIf=true;
             // this.searchItemDetails=new Array<Item>();
         }
+        
+        
+    }
+
+    addToTable(){
+        
+      let stockItemDetails :StockItemDetails = new StockItemDetails();
+      
+      stockItemDetails.item=this.itemDetailsObject;
+      stockItemDetails.buyingPrice = this.buyingPrices;
+      stockItemDetails.quantity=this.itemQuantity;
+      
+      this.itemsTables.push(stockItemDetails);
+        
+     
+       
         
         
     }
