@@ -17,4 +17,18 @@ public class CustomerServiceImpl implements CustomerService {
     public Customer addCustomer(Customer customer) {
         return customerRepository.save(customer);
     }
+
+    @Override
+    public Customer updateCustomer(Customer customer) {
+        return customerRepository.save(customer) ;
+    }
+
+    @Override
+    public Customer searchByCustomerNIC(String nic) {
+        return customerRepository.searchByCustomerDetailsByNIC(nic);
+    }
+
+
+
+
 }

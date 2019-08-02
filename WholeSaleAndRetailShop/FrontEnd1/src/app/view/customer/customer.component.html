@@ -134,7 +134,7 @@
             <div class="col-md-4" style="margin-left: 450px">
               <div class="form-group">
                 <label class="bmd-label-floating">Search By Name</label>
-                <input type="text" class="form-control" style="width: 600px">
+                <input type="text" class="form-control" style="width: 600px" (keyup)="searchCustomerDetailsByNIC($event)" [(ngModel)]="searchCustomerNIC">
               </div>
             </div>
             <div class="col-md-4" style="margin-left: -100px ;margin-top: -5px">
@@ -164,51 +164,57 @@
               </tr>
               </thead>
               <tbody>
+              <tr *ngIf="searchCustomerValueIf;else elseBlock">
+                  <td colspan="8" class="alert alert-danger" style="text-align: center">
+                    Customer Not Found
+                  </td>
+              </tr>
+              <ng-template #elseBlock>
               <tr>
-                <td class="text-center">1</td>
-                <td>Andrew Mike</td>
-                <td>Develop</td>
-                <td>ssss</td>
-                <td>Malabe</td>
-                <td>5665555v</td>
-                <td>0778594752</td>
-                <td>ss@gmail.com</td>
-                <td>05/08/1998</td>
-                <td>20</td>
-                <td>A Retail Customer</td>
-                <td>hhhhhhhhh</td>
+                <td class="text-center">
+                  {{searchCustomerDetails.cusID}}
+                </td>
+                <td class="text-center">
+                    {{searchCustomerDetails.firstName}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.lastName}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.userName}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.address}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.nic}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.phone}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.email}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.birthday}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.type}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.aboutCus}}
+                </td>
+
 
                 <td class="td-actions text-right">
 
-                  <button type="button" rel="tooltip" class="btn btn-danger">
+                  <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteCustomer()" >
                     <i class="material-icons">close</i>
                   </button>
                 </td>
               </tr>
 
-              <tr>
-                <td class="text-center">2</td>
-                <td>hghghghg</td>
-                <td>wewrr</td>
-                <td>ssss</td>
-                <td>Malabe</td>
-                <td>5665874v</td>
-                <td>0778594752</td>
-                <td>qqq@gmail.com</td>
-                <td>02/04/1998</td>
-                <td>42</td>
-                <td>A Wholesale Customer</td>
-                <td>kkkkkkkk</td>
-
-                <td class="td-actions text-right">
-
-                  <button type="button" rel="tooltip" class="btn btn-danger">
-                    <i class="material-icons">close</i>
-                  </button>
-                </td>
-              </tr>
-
-
+              </ng-template>
 
               </tbody>
             </table>

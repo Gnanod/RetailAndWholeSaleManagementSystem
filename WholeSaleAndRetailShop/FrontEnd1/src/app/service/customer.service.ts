@@ -16,6 +16,20 @@ export class CustomerService {
     return this.http.post<Customer>(environment.backend_url + URL + '/addCustomer',cust);
 
   }
+
+  searchCustomerDtails(searchCustomerNIC: String) {
+
+    return this.http.get<Customer>(environment.backend_url +  URL + '/searchByCustomerNIC/' + searchCustomerNIC);
+  }
+
+
+  updateCustomerDetails(searchCustomerDtails: Customer) {
+    return this.http.post<Customer>(environment.backend_url + URL + '/updateCustomer',UpdateCustomerDetails);
+  }
+
+  deleteCustomer(cusID: number) {
+    return this.http.delete<number>(environment.backend_url + URL + '/deleteCustomer/' + cusID);
+  }
 }
 
 
