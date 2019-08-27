@@ -32,6 +32,6 @@ public class CustomerController {
 
     @DeleteMapping("/deleteCustomer/{cusID}")
     void deleteCustomer(@PathVariable String cusID){
-        CustomerService.deleteCustomer(cusID);
+        customerService.deleteCustomer(cusID);
     }
 }

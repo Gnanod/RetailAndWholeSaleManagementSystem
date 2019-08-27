@@ -23,7 +23,7 @@ export class CustomerService {
   }
 
 
-  updateCustomerDetails(searchCustomerDtails: Customer) {
+  updateCustomerDetails(UpdateCustomerDetails: Customer) {
     return this.http.post<Customer>(environment.backend_url + URL + '/updateCustomer',UpdateCustomerDetails);
   }
 

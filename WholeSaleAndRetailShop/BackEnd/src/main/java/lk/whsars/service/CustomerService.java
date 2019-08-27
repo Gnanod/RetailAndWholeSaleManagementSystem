@@ -3,8 +3,8 @@ package lk.whsars.service;
 import lk.whsars.entity.Customer;
 
 public interface CustomerService {
-    static void deleteCustomer(String cusID) {
-    }
+     void deleteCustomer(String cusID);
+
 
     Customer addCustomer(Customer customer);
 
