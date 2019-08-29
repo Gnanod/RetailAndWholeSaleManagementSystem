@@ -19,6 +19,7 @@ import {StockHandlingComponent} from "./view/stock-handling/stock-handling.compo
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {DatePipe} from "@angular/common";
 
 
 @NgModule({
@@ -43,7 +44,9 @@ import {HttpClientModule} from "@angular/common/http";
       FormsModule,
       HttpClientModule,ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    DatePipe
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

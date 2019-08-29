@@ -1,5 +1,6 @@
 package lk.whsars.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
@@ -13,10 +14,11 @@ public class StockItemDetails {
     private int stockDetailId;
     private double quantity;
     private double buyingPrice;
-
     @ManyToOne
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Item item;
     @ManyToOne
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Stock stock;
 
     public int getStockDetailId() {
@@ -48,6 +50,7 @@ public class StockItemDetails {
     }
 
     public void setItem(Item item) {
+        System.out.println("Item is Set");
         this.item = item;
     }
 

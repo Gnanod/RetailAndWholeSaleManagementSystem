@@ -2,6 +2,7 @@ package lk.whsars.controller;
 
 import lk.whsars.entity.IdEntity;
 import lk.whsars.entity.Item;
+import lk.whsars.entity.Stock;
 import lk.whsars.service.IdService;
 import lk.whsars.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,12 +24,7 @@ public class ItemController {
    
    @PostMapping(value = "/AddItem")
    public Item addItem(@RequestBody Item item){
-      
-//      IdEntity idEntity = new IdEntity();
-//      idEntity.setColName("barCode");
-//      idEntity.setEntityName("Item");
-      
-      
+
       String lastId = idController.getLastID();
       Item pItem = item;
       pItem.setBarCode(lastId);
@@ -46,5 +42,17 @@ public class ItemController {
       }
       
    }
+
+   @GetMapping(value = "/searchItemDetailsByBarcode/{searchBarcode}")
+   public Item getItemDetailsByBarcode(@PathVariable String searchBarcode){
+      if(searchBarcode!=null){
+         return itemService.getAllItemsByBarcode(searchBarcode);
+      }else{
+         return  null;
+      }
+
+   }
+
+
     
 }

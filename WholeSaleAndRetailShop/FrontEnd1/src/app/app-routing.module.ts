@@ -29,10 +29,10 @@ const routes: Routes = [
                 path: 'dashboard',
                 component: DashboardComponent
             },
-          {
-            path:'supplierorder',
-            component : SupplierOrderComponent
-          },
+            {
+              path:'supplierorder',
+              component : SupplierOrderComponent
+            },
             {
                 path: 'StockHandling',
                 component: StockHandlingComponent

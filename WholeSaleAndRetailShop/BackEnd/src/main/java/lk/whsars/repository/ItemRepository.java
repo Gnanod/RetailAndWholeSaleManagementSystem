@@ -12,4 +12,9 @@ public interface ItemRepository extends JpaRepository<Item,String> {
 
     @Query(value = "from Item  where itemName like %?1")
     List<Item> findAllItemsByName(String name);
+
+    @Query(value = "from Item  where barCode like %?1")
+    Item findAllItemsByBarcode(String searchBarcode);
+
+
 }

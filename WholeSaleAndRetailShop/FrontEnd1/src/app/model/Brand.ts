@@ -2,7 +2,7 @@ import {Item} from "./Item";
 
 export class Brand {
     
-    brandId :Number;
+    brandId :number;
     brandName :string;
     itemSet :Array<Item>;
     

@@ -3,6 +3,7 @@ import {Item} from "../model/Item";
 import {Brand} from "../model/Brand";
 import {environment} from "../../environments/environment";
 import {HttpClient} from "@angular/common/http";
+import {Stock} from "../model/Stock";
 
 
 
@@ -20,13 +21,7 @@ export class ItemService {
         return this.http.post<Item>(environment.backend_url + URL + '/AddItem',additem);
 
     }
-    //
-    // searchItemDetailsByName() {
-    //
-    //     return this.http.post<Item>(environment.backend_url + URL + '/AddItem',additem);
-    //
-    //
-    // }
+
     searchItemDetailsByName(searchitembyname: string) {
 
         return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByName/'+searchitembyname);
@@ -35,6 +30,9 @@ export class ItemService {
 
     searchItemDetailsByBarcode(seachItemBarcode: string) {
         
-      return this.http.get<Array<Item>>(environment.backend_url+URL+'/searchItemDetailsByBarcode/'+seachItemBarcode);
+      return this.http.get<Item>(environment.backend_url+URL+'/searchItemDetailsByBarcode/'+seachItemBarcode);
+
     }
+
+
 }

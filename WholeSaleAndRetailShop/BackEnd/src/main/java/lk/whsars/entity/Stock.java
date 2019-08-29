@@ -1,10 +1,15 @@
 package lk.whsars.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
 public class Stock {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int stockId;
@@ -12,16 +17,17 @@ public class Stock {
     private double payment;
     @ManyToOne
     private Supplier supplier;
-    @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "stock")
+    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "stock")
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Set<StockItemDetails> stockItemDetails;
-    
-    
 
     public int getStockId() {
         return stockId;
     }
 
     public void setStockId(int stockId) {
+
+        System.out.println("YYYYYYYYYYYYYYYYYYYYYY");
         this.stockId = stockId;
     }
 
@@ -46,6 +52,8 @@ public class Stock {
     }
 
     public void setSupplier(Supplier supplier) {
+
+        System.out.println("UUUUUUUUUUU");
         this.supplier = supplier;
     }
 
@@ -54,6 +62,7 @@ public class Stock {
     }
 
     public void setStockItemDetails(Set<StockItemDetails> stockItemDetails) {
+        System.out.println("KKKKKKKKKKKKKKKKKKKK");
         this.stockItemDetails = stockItemDetails;
     }
 }

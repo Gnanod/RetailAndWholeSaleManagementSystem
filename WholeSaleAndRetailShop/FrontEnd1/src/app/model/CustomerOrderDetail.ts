@@ -3,9 +3,9 @@ import {CustomerOrder} from "./CustomerOrder";
 
 export class CustomerOrderDetail {
     
-    customerOrderDetail :Number;
-    amount :Number;
-    discount :Number;
+    customerOrderDetail :number;
+    amount :number;
+    discount :number;
     customerOrder :CustomerOrder;
     item : Item;
     

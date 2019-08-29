@@ -15,7 +15,7 @@ public class CustomerOrder {
     @ManyToOne
     @JoinColumn(nullable = false)
     private Customer customer;
-   @OneToMany(cascade = CascadeType.ALL,mappedBy = "customerOrder")
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "customerOrder")
     private Set<CustomerOrderDetail> customerOrderDetailSet;
 
 

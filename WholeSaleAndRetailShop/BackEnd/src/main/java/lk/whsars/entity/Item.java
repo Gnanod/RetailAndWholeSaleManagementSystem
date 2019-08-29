@@ -22,12 +22,12 @@ public class Item {
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Brand brand;
 
-    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "item")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "item")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<CustomerOrderDetail> customerOrderDetails;
 
-    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "item")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "item")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<SupplierOrderDetail> supplierOrderDetails;
@@ -106,6 +106,7 @@ public class Item {
     }
 
     public void setStockItemDetails(Set<StockItemDetails> stockItemDetails) {
+
         this.stockItemDetails = stockItemDetails;
     }
 }
