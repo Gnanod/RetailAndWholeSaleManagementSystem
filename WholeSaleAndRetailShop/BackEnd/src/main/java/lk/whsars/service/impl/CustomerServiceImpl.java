@@ -14,7 +14,27 @@ public class CustomerServiceImpl implements CustomerService {
 
 
     @Override
+    public void deleteCustomer(String cusID) {
+
+        customerRepository.deleteById(Integer.parseInt(cusID));
+    }
+
+    @Override
     public Customer addCustomer(Customer customer) {
         return customerRepository.save(customer);
     }
+
+    @Override
+    public Customer updateCustomer(Customer customer) {
+        return customerRepository.save(customer) ;
+    }
+
+    @Override
+    public Customer searchByCustomerNIC(String nic) {
+        return customerRepository.searchByCustomerDetailsByNIC(nic);
+    }
+
+
+
+
 }

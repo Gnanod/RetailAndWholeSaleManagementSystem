@@ -134,7 +134,7 @@
             <div class="col-md-4" style="margin-left: 450px">
               <div class="form-group">
                 <label class="bmd-label-floating">Search By Name</label>
-                <input type="text" class="form-control" style="width: 600px">
+                <input type="text" class="form-control" style="width: 600px" (keyup)="searchCustomerDetailsByNIC($event)" [(ngModel)]="searchCustomerNIC">
               </div>
             </div>
             <div class="col-md-4" style="margin-left: -100px ;margin-top: -5px">
@@ -156,7 +156,6 @@
                 <th>Phone</th>
                 <th>Email</th>
                 <th>Birthday</th>
-                <th>Age</th>
                 <th>Type</th>
                 <th>AboutCus</th>
 
@@ -164,51 +163,57 @@
               </tr>
               </thead>
               <tbody>
+              <tr *ngIf="searchCustomerValueIf;else elseBlock">
+                  <td colspan="8" class="alert alert-danger" style="text-align: center">
+                    Customer Not Found
+                  </td>
+              </tr>
+              <ng-template #elseBlock>
               <tr>
-                <td class="text-center">1</td>
-                <td>Andrew Mike</td>
-                <td>Develop</td>
-                <td>ssss</td>
-                <td>Malabe</td>
-                <td>5665555v</td>
-                <td>0778594752</td>
-                <td>ss@gmail.com</td>
-                <td>05/08/1998</td>
-                <td>20</td>
-                <td>A Retail Customer</td>
-                <td>hhhhhhhhh</td>
+                <td class="text-center">
+                  {{searchCustomerDetails.cusID}}
+                </td>
+                <td class="text-center">
+                    {{searchCustomerDetails.firstName}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.lastName}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.userName}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.address}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.nic}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.phone}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.email}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.birthday}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.type}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.aboutCus}}
+                </td>
+
 
                 <td class="td-actions text-right">
 
-                  <button type="button" rel="tooltip" class="btn btn-danger">
+                  <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteCustomer()" >
                     <i class="material-icons">close</i>
                   </button>
                 </td>
               </tr>
 
-              <tr>
-                <td class="text-center">2</td>
-                <td>hghghghg</td>
-                <td>wewrr</td>
-                <td>ssss</td>
-                <td>Malabe</td>
-                <td>5665874v</td>
-                <td>0778594752</td>
-                <td>qqq@gmail.com</td>
-                <td>02/04/1998</td>
-                <td>42</td>
-                <td>A Wholesale Customer</td>
-                <td>kkkkkkkk</td>
-
-                <td class="td-actions text-right">
-
-                  <button type="button" rel="tooltip" class="btn btn-danger">
-                    <i class="material-icons">close</i>
-                  </button>
-                </td>
-              </tr>
-
-
+              </ng-template>
 
               </tbody>
             </table>
@@ -240,25 +245,25 @@
               <div class="col-md-3">
                 <div class="form-group">
                   <label class="bmd-label-floating">CusID</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="cusID" >
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label class="bmd-label-floating">First Name</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="firstName1">
                 </div>
               </div>
               <div class="col-md-3">
                 <div class="form-group">
                   <label class="bmd-label-floating">Last Name</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="lastName1">
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
                   <label class="bmd-label-floating">User Name</label>
-                  <input type="email" class="form-control">
+                  <input type="email" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="userName1">
                 </div>
               </div>
             </div>
@@ -266,19 +271,19 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Address</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="address1">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">NIC</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="nic1">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Phone</label>
-                  <input type="text" class="form-control">
+                  <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="phone1">
                 </div>
               </div>
             </div>
@@ -286,7 +291,7 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label class="bmd-label-floating">Email</label>
-                  <input type="email" class="form-control">
+                  <input type="email" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="email1">
                 </div>
               </div>
             </div>
@@ -294,7 +299,7 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label class="bmd-label-floating">Birthday</label><br>
-                  <input type="date" class="form-control">
+                  <input type="date" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="birthday1">
                 </div>
               </div>
 
@@ -302,7 +307,7 @@
                 <label class="bmd-label-floating">Customer Type</label><br>
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" value="option2" checked> A Retail Customer
+                    <input class="form-check-input" type="radio" name="exampleRadios" value="option2" [ngModelOptions]="{standalone: true}" [(ngModel)]="type1" checked> A Retail Customer
                     <span class="circle">
                                                      <span class="check"></span>
                                                     </span>
@@ -310,7 +315,7 @@
                 </div>
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" value="option1"> A wholesale Customer
+                    <input class="form-check-input" type="radio" name="exampleRadios" value="option1" [ngModelOptions]="{standalone: true}" [(ngModel)]="type1"> A wholesale Customer
                     <span class="circle">
                                                         <span class="check"></span>
                                                      </span>
@@ -325,13 +330,13 @@
                   <label>About Customer</label>
                   <div class="form-group">
 
-                    <textarea class="form-control" rows="5"></textarea>
+                    <textarea class="form-control" rows="5" [ngModelOptions]="{standalone: true}" [(ngModel)]="aboutCus1"></textarea>
                   </div>
                 </div>
               </div>
             </div>
 
-            <button type="submit" class="btn btn-rose pull-right">Update Details</button>
+            <button type="submit" class="btn btn-rose pull-right" (click)="updateCutomer()">Update Details</button>
             <div class="clearfix"></div>
 
           </form>
