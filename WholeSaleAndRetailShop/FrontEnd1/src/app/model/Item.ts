@@ -7,11 +7,13 @@ export class Item {
 
     barCode: string;
     itemName: string;
-    itemQty: Number;
-    wholeSalePrice: Number;
-    retailPrice: Number;
+    itemQtyOnHand: number;
+    wholeSalePrice: number;
+    retailPrice: number;
     brand: Brand;
     customerOrderDetails: Array<CustomerOrderDetail>;
     supplierOrderDetails: Array<SupplierOrderDetail>;
     stockItemDetails: Array<StockItemDetails>;
+
+
 }

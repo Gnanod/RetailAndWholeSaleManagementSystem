@@ -19,5 +19,19 @@ public class CustomerController {
         return customerService.addCustomer(customer);
     }
     
-    
+    @PostMapping(value = "/updateCustomer")
+    public Customer updateCutomer(@RequestBody Customer customer){
+        return customerService.updateCustomer(customer);
+    }
+
+    @GetMapping(value = "/searchByCustomerNIC/{NIC}")
+    public Customer searchByCustomerNIC(@PathVariable String NIC ){
+        System.out.println("Nic"+NIC);
+        return customerService.searchByCustomerNIC(NIC);
+    }
+
+    @DeleteMapping("/deleteCustomer/{cusID}")
+    void deleteCustomer(@PathVariable String cusID){
+        customerService.deleteCustomer(cusID);
+    }
 }

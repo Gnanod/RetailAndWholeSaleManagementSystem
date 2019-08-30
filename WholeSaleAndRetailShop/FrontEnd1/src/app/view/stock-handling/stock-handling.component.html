@@ -32,7 +32,7 @@
                                 <div class="form-group">
                                     <label >Select Brand Name</label>
 <br>
-                                    <select class="form-control " data-style="select-with-transition"  [(ngModel)]="selectedBrand">
+                                    <select class="form-control " data-style="select-with-transition" [ngModelOptions]="{standalone: true}"  [(ngModel)]="selectedBrand">
                                         <option *ngFor="let brand of brands" [ngValue]="brand">{{brand.brandName}}</option>
                                     </select>
                                 </div>
@@ -66,7 +66,8 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label class="bmd-label-floating"   >Brand Name</label>
-                                    <input type="text" class="form-control" name="brandName" [(ngModel)]="addbrand.brandName">
+                                  <input type="text" class="form-control" name="brandName" [(ngModel)]="addbrand.brandName">
+
                                 </div>
                             </div>
 
@@ -106,33 +107,33 @@
             <br>
             <br>
             <div class="card-body">
-                <form>
+
                     <div class="row">
 
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>Barcode</label>
-                                <input type="text" class="form-control" (keypress)="searchItemDetails()">
+                                <input type="text" class="form-control" (keyup)="searchItemDetailsByBarcode($event)" [(ngModel)]="seachItemBarcode">
                                
                             </div>
                         </div>
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>Item Name</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="itemName"[ngModelOptions]="{standalone: true}" [(ngModel)]="searchItemName">
                             </div>
                         </div>
                         
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>Buying Price</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="buyingPrice" [ngModelOptions]="{standalone: true}" [(ngModel)]="searchBuyingPrice">
                             </div>
                         </div>
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>WholeSalePrice</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="wholeSalePrice" [ngModelOptions]="{standalone: true}"[(ngModel)]="searchWholeSalePrice">
                             </div>
                         </div>
                         
@@ -145,26 +146,26 @@
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label>Retail Price</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="retailPrice"[ngModelOptions]="{standalone: true}" [(ngModel)]="searchRetailPrice">
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label>Quantity</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="itemQuantity">
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group">
                                 <label>Quantity On Hand</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="itemQty" [ngModelOptions]="{standalone: true}"[(ngModel)]="itemDetailsQtyOnHand">
                             </div>
                         </div>
                         <!--<div class="col-sm-2">-->
                             <!---->
                         <!--</div>-->
                         <div class="col-sm-2">
-                            <button type="submit" class="btn btn-rose pull-right">Add To Table</button>
+                            <button type="submit" class="btn btn-rose pull-right" (click)="addToTable()">Add To Table</button>
 
                         </div>
                     </div>
@@ -196,27 +197,27 @@
                             </thead>
                             <tbody>
                             
-                            <tr>
+                            <tr *ngFor="let items of itemsTables async" [attr.id]="items.item.barCode">
                                 <td>
-                                    6
+                                    {{items.item.barCode}}
                                 </td>
                                 <td>
-                                    Mason Porter
+                                    {{items.item.wholeSalePrice}}
                                 </td>
                                 <td>
-                                    Chile
+                                    {{items.item.retailPrice}}
                                 </td>
                                 <td>
-                                    Gloucester
+                                    {{items.quantity}}
                                 </td>
                                 <td>
-                                    $78,615
+                                   {{items.buyingPrice}}
                                 </td>
                                 <td>
-                                    $78,615
+                                  {{items.item.itemQtyOnHand}}
                                 </td>
                                 <td class="td-actions ">
-                                    <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteCustomer()">
+                                    <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteRow(items.item.barCode)">
                                         <i class="material-icons">close</i>
                                     </button>
                                 </td>
@@ -235,7 +236,9 @@
                         <div class="col-sm-2">
                             <div class="form-group">
                                 <label>Amount</label>
-                                <input type="text" class="form-control">
+                              <input type="text" class="form-control"  [ngModelOptions]="{standalone: true}"[(ngModel)]="totAmount">
+
+
                             </div>
                         </div>
                     </div>
@@ -246,10 +249,10 @@
 
 
                         <div class="col-sm-2">
-                            <button type="submit" class="btn btn-rose pull-right">Save Details</button>
+                            <button type="submit" class="btn btn-rose pull-right" (click)="addStock()">Save Details</button>
                         </div>
                     </div>
-                </form>
+
             </div>
             
             
@@ -395,7 +398,7 @@
                                 </td >
 
                                 <td class="text-center">
-                                hgjg
+
                                 </td>
                                 <td>
                                     {{item.itemQty}}

@@ -14,20 +14,20 @@ public class Item {
     @Id
     private String barCode;
     private String itemName;
-    private double itemQty;
+    private double itemQtyOnHand;
     private double wholeSalePrice;
     private double retailPrice;
-
+    
     @ManyToOne
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Brand brand;
 
-    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "item")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "item")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<CustomerOrderDetail> customerOrderDetails;
 
-    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "item")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "item")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<SupplierOrderDetail> supplierOrderDetails;
@@ -53,12 +53,12 @@ public class Item {
         this.itemName = itemName;
     }
 
-    public double getItemQty() {
-        return itemQty;
+    public double getItemQtyOnHand() {
+        return itemQtyOnHand;
     }
 
-    public void setItemQty(double itemQty) {
-        this.itemQty = itemQty;
+    public void setItemQtyOnHand(double itemQtyOnHand) {
+        this.itemQtyOnHand = itemQtyOnHand;
     }
 
     public double getWholeSalePrice() {
@@ -106,6 +106,7 @@ public class Item {
     }
 
     public void setStockItemDetails(Set<StockItemDetails> stockItemDetails) {
+
         this.stockItemDetails = stockItemDetails;
     }
 }

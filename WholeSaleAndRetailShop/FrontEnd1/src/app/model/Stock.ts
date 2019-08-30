@@ -3,10 +3,12 @@ import {StockItemDetails} from "./StockItemDetails";
 
 export class Stock {
 
-    stockId :Number;
-    date :string;
-    payment :Number;
-    supplier : Supplier ;
-    stockItemDetails : StockItemDetails;
-    
+   stockId :number ;
+   date :string;
+   payment :number;
+   supplier :Supplier;
+   stockItemDetails :Array<StockItemDetails>;
+
+
+
 }

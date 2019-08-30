@@ -3,10 +3,9 @@ import {Stock} from "./Stock";
 
 export class StockItemDetails{
 
-    stockDetailId :Number;
-    retailPrice :Number;
-    wholeSalePrice :Number;
-    buyingPrice :Number;
+    stockDetailId :number;
+    buyingPrice :number;
+    quantity :number;
     item :Item;
     stock :Stock;
     

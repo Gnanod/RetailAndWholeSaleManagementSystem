@@ -1,5 +1,6 @@
 package lk.whsars.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 
@@ -11,13 +12,13 @@ public class StockItemDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int stockDetailId;
-    private double retailPrice;
-    private double wholeSalePrice;
+    private double quantity;
     private double buyingPrice;
-
     @ManyToOne
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Item item;
     @ManyToOne
+    @OnDelete(action = OnDeleteAction.CASCADE)
     private Stock stock;
 
     public int getStockDetailId() {
@@ -28,20 +29,12 @@ public class StockItemDetails {
         this.stockDetailId = stockDetailId;
     }
 
-    public double getRetailPrice() {
-        return retailPrice;
+    public double getQuantity() {
+        return quantity;
     }
 
-    public void setRetailPrice(double retailPrice) {
-        this.retailPrice = retailPrice;
-    }
-
-    public double getWholeSalePrice() {
-        return wholeSalePrice;
-    }
-
-    public void setWholeSalePrice(double wholeSalePrice) {
-        this.wholeSalePrice = wholeSalePrice;
+    public void setQuantity(double quantity) {
+        this.quantity = quantity;
     }
 
     public double getBuyingPrice() {
@@ -57,6 +50,7 @@ public class StockItemDetails {
     }
 
     public void setItem(Item item) {
+        System.out.println("Item is Set");
         this.item = item;
     }
 

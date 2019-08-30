@@ -22,8 +22,7 @@ public class Supplier {
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<SupplierOrder> supplierOrders;
-//
-    @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "supplier")
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "supplier")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<Stock> stock;
@@ -70,5 +69,8 @@ public class Supplier {
 
     public void setCompany(String company) {
         this.company = company;
+
+    public void setStock(Set<Stock> stock) {
+        this.stock = stock;
     }
 }
