@@ -9,6 +9,4 @@ export class Supplier {
   stock :Stock;
 
 
-
-   supplierNic:string;
 }

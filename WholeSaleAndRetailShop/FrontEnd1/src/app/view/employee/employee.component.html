@@ -1,251 +1,483 @@
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div class="card">
-                            <div class="card-header card-header-icon card-header-rose">
-                                <div class="card-icon">
-                                    <i class="material-icons">perm_identity</i>
-                                </div>
-                                <h4 class="card-title">Add Employee Details
-
-                                </h4>
-                            </div>
-                            <div class="card-body">
-                                <form>
-                                    <div class="row">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header card-header-icon card-header-rose">
+          <div class="card-icon">
+            <i class="material-icons">perm_identity</i>
+          </div>
 
 
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Fist Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Last Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Email address</label>
-                                                <input type="email" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating" >Nic</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
 
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Adress</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Birthday</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <div class="form-group">
-                                                <label class="bmd-label-floating">Phone Number</label>
-                                                <input type="text" class="form-control">
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <button type="submit" class="btn btn-rose pull-right">Save Details</button>
-                                    <div class="clearfix"></div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
+          <h4 class="card-title">Add Employee Details</h4>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Employee ID</label>
+                  <input type="text" class="form-control" name="employee_id" [(ngModel)]="emp.employee_id">
                 </div>
+              </div>
 
             </div>
             <div class="row">
-
-                <div class="col-md-12">
-                    <div class="card">
-                        <div class="card-header card-header-rose card-header-icon">
-                            <div class="card-icon">
-                                <i class="material-icons">search</i>
-                            </div>
-                            <h4 class="card-title">Search Employee</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="row" >
-
-                                <div class="col-md-4" style="margin-left: 450px">
-                                    <div class="form-group">
-                                        <label class="bmd-label-floating">Search By Name</label>
-                                        <input type="text" class="form-control" style="width: 600px">
-                                    </div>
-                                </div>
-                                <div class="col-md-4" style="margin-left: -300px ;margin-top: 25px">
-                                    <button type="submit" class="btn btn-rose pull-right" >   <i class="material-icons">search</i></button>
-                                </div>
-
-                            </div>
-
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                    <tr>
-                                        <th class="text-center">#</th>
-
-                                        <th>Frist Name</th>
-                                        <th>Last Name</th>
-                                        <th >Email Address</th>
-                                        <th >Nic</th>
-                                        <th >Address</th>
-                                        <th >Birthday</th>
-                                        <th >Phone Number</th>
-                                        <th ></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td class="text-center">1</td>
-                                        <td>Andrew Mike</td>
-                                        <td>Develop</td>
-                                        <td>2013</td>
-                                        <td >&euro; 99,225</td>
-                                        <td>Galle</td>
-                                        <td>1995-07-14</td>
-                                        <td>0772218111</td>
-                                        <td class="td-actions ">
-                                            <button type="button" rel="tooltip" class="btn btn-danger">
-                                                <i class="material-icons">close</i>
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">1</td>
-                                        <td>Andrew Mike</td>
-                                        <td>Develop</td>
-                                        <td>2013</td>
-                                        <td >&euro; 99,225</td>
-                                        <td>Mathara</td>
-                                        <td>1995-06-14</td>
-                                        <td>0772228111</td>
-                                        <td class="td-actions ">
-                                            <button type="button" rel="tooltip" class="btn btn-danger">
-                                                <i class="material-icons">close</i>
-                                            </button>
-                                        </td>
-                                    </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">First Name</label>
+                  <input type="text" class="form-control" name="fname" [(ngModel)]="emp.fname">
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Last Name</label>
+                  <input type="text" class="form-control" name="lname" [(ngModel)]="emp.lname">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Email Address</label>
+                  <input type="email" class="form-control" name="email" [(ngModel)]="emp.email">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating" >NIC</label>
+                  <input type="text" class="form-control" name="nic" [(ngModel)]="emp.nic">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Address</label>
+                  <input type="text" class="form-control" name="address" [(ngModel)]="emp.address">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Birthday</label><br>
+                  <input type="date" class="form-control" name="birthday" [(ngModel)]="emp.birthday" >
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Contact Number</label>
+                  <input type="text" class="form-control" name="phone" [(ngModel)]="emp.phone">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Date of Joining</label><br>
+                  <input type="date" class="form-control" name="datejoin" [(ngModel)]="emp.datejoin">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Basic Salary</label><br>
+                  <input type="text" class="form-control" name="basicSal" [(ngModel)]="emp.basicsal">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Gender</label>
+                  <div class="form-check form-check-radio">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="exampleRadios" value="option1" [(ngModel)]="emp.gender" checked>
+                      Male
+                      <span class="circle">
+                                            <span class="check"></span>
+                                            </span>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-radio">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="exampleRadios" value="option2" [(ngModel)]="emp.gender">
+                      Female
+                      <span class="circle">
+                                              <span class="check"></span>
+                                             </span>
+                    </label>
+                  </div>
+
+
+                </div>
+              </div>
+
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Role</label>
+                  <br>
+                  <div class="form-check form-check-radio form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" [(ngModel)]="emp.role" checked> Manager
+                      <span class="circle">
+        <span class="check"></span>
+    </span>
+                    </label>
+                  </div><br>
+
+                  <div class="form-check form-check-radio form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2" [(ngModel)]="emp.role"> Administrator
+                      <span class="circle">
+        <span class="check"></span>
+    </span>
+                    </label>
+                  </div><br>
+
+                  <div class="form-check form-check-radio form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3" [(ngModel)]="emp.role"> Cashier
+                      <span class="circle">
+        <span class="check"></span>
+    </span>
+                    </label>
+                  </div><br>
+
+                  <div class="form-check form-check-radio form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4" [(ngModel)]="emp.role"> Other Staff
+                      <span class="circle">
+        <span class="check"></span>
+    </span>
+                    </label>
+                  </div><br>
+
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <button type="submit" class="btn btn-rose pull-right" (click)="addEmployee()">Save Details</button>
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-rose card-header-icon">
+        <div class="card-icon">
+          <i class="material-icons">search</i>
+        </div>
+        <h4 class="card-title">Search Employee</h4>
+      </div>
+      <div class="card-body">
+        <div class="row" >
+
+          <div class="col-md-4" style="margin-left: 500px">
+            <div class="form-group">
+
+              <input type="text" class="form-control" style="width: 450px" placeholder="Search By Employee Name" name="fname" [(ngModel)] = "employeename">
+            </div>
+          </div>
+          <div class="col-md-4" style="margin-left: -250px ;margin-top: 5px">
+            <button type="submit" class="btn btn-rose pull-right" (click)="searchByEmployeeName()" >
+              <i class="material-icons" >search</i></button>
+          </div>
+
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th class="text-center">EmployeeID</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th >Email Address</th>
+              <th >NIC</th>
+              <th >Address</th>
+              <th >Birthday</th>
+              <th >Phone Number</th>
+              <th>Date of Join</th>
+              <th>Basic Salary</th>
+              <th>Gender</th>
+              <th>Role</th>
+
+              <th class="text_right">Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngIf="searchEmployeeValuesIf;else elseBlock">
+              <td>
+                <i class="material-icons" data-notify="icon">add_alert</i>
+                Employee Not Found
+              </td>
+            </tr>
+
+            <ng-template #elseBlock>
+              <tr>
+                <td class = "text-center">
+                  {{searchEmployeeValues.employee_id}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.fname}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.lname}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.email}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.nic}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.address}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.birthday}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.phone}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.datejoin}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.basicsal}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.gender}}
+                </td>
+                <td class = "text-center">
+                  {{searchEmployeeValues.role}}
+                </td>
+
+                <td class="td-actions ">
+
+                  <button type="button" rel="tooltip" class="btn btn-danger" (click) = "deleteEmployee()">
+                    <i class="material-icons">close</i>
+                  </button>
+                </td>
+              </tr>
+            </ng-template>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header card-header-icon card-header-rose">
+          <div class="card-icon">
+            <i class="material-icons">perm_identity</i>
+          </div>
+
+          <h4 class="card-title">Update Employee Details</h4>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Employee ID</label>
+                  <input type="text" class="form-control" name="employee_id" [ngModelOptions] = "{standalone : true}" [(ngModel)]="employee_id1">
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">First Name</label>
+                  <input type="text" class="form-control" name="fname" [ngModelOptions] = "{standalone : true}" [(ngModel)]="fname1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Last Name</label>
+                  <input type="text" class="form-control" name="lname" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "lname1">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Email Address</label>
+                  <input type="email" class="form-control" name="email" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "email1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating" >NIC</label>
+                  <input type="text" class="form-control" name="nic" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "nic1">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Address</label>
+                  <input type="text" class="form-control" name="address" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "address1">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Birthday</label><br>
+                  <input type="date" class="form-control" name="birthday" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "birthday1">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Phone Number</label>
+                  <input type="text" class="form-control" name="phone" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "phone1">
+                </div>
+              </div>
 
             </div>
 
             <div class="row">
-                <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-header card-header-icon card-header-rose">
-                            <div class="card-icon">
-                                <i class="material-icons">perm_identity</i>
-                            </div>
-                            <h4 class="card-title">Update Employee Details
-
-                            </h4>
-                        </div>
-                        <div class="card-body">
-                            <form>
-                                <div class="row">
-
-
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Employee Id</label>
-                                            <input type="text" class="form-control" disabled>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Fist Name</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Last Name</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Email address</label>
-                                            <input type="email" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating" >Nic</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Adress</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Birthday</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label class="bmd-label-floating">Phone Number</label>
-                                            <input type="text" class="form-control">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <button type="submit" class="btn btn-rose pull-right">Update Details</button>
-                                <div class="clearfix"></div>
-                            </form>
-                        </div>
-                    </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Date of Joining</label><br>
+                  <input type="date" class="form-control" name="datejoin" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "datejoin1">
                 </div>
+              </div>
 
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Basic Salary</label><br>
+                  <input type="text" class="form-control" name="basicsal" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "basicsal1">
+                </div>
+              </div>
             </div>
+
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Gender</label>
+                  <div class="form-check form-check-radio">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="exampleRadios" value="option1" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "gender1">
+                      Male
+                      <span class="circle">
+                        <span class="check"></span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-radio">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="exampleRadios" value="option2" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "gender1">
+                      Female
+                      <span class="circle">
+                                              <span class="check"></span>
+                                             </span>
+                    </label>
+                  </div>
+
+
+                </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Role</label>
+                  <br>
+                  <div class="form-check form-check-radio form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "role1"> Manager
+                      <span class="circle">
+        <span class="check"></span>
+    </span>
+                    </label>
+                  </div><br>
+
+                  <div class="form-check form-check-radio form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "role1"> Administrator
+                      <span class="circle">
+        <span class="check"></span>
+    </span>
+                    </label>
+                  </div><br>
+
+                  <div class="form-check form-check-radio form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "role1"> Cashier
+                      <span class="circle">
+        <span class="check"></span>
+    </span>
+                    </label>
+                  </div><br>
+
+                  <div class="form-check form-check-radio form-check-inline">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4" [ngModelOptions] = "{standalone : true}" [(ngModel)] = "role1"> Other Staff
+                      <span class="circle">
+        <span class="check"></span>
+    </span>
+                    </label>
+                  </div><br>
+
+                </div>
+              </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-rose pull-right" (click)="UpdateEmployee()">Update Details</button>
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
