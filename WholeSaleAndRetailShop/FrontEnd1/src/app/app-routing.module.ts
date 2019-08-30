@@ -10,6 +10,7 @@ import {AttendanceComponent} from "./view/attendance/attendance.component";
 import {SalarysheetComponent} from "./view/salarysheet/salarysheet.component";
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
 import {CustomerComponent} from "./view/customer/customer.component";
+import {SupplierOrderAgentItemComponent} from "./view/supplier-order-agent-item/supplier-order-agent-item.component";
 
 
 const routes: Routes = [
@@ -48,7 +49,11 @@ const routes: Routes = [
               {
                 path: 'salary/salarysheet',
                 component: SalarysheetComponent
-              }
+              },
+          {
+            path: 'SupplierOrderAgent',
+            component: SupplierOrderAgentItemComponent
+          }
         ]
     },
     

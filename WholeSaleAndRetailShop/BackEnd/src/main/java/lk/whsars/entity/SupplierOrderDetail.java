@@ -11,6 +11,7 @@ import javax.persistence.ManyToOne;
 public class SupplierOrderDetail {
     @Id
     int supplierOrderId;
+    int quantity;
 
 
     @ManyToOne

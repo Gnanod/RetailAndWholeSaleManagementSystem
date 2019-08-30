@@ -32,4 +32,9 @@ export class ItemService {
         return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByName/'+searchitembyname);
     
     }
+
+  searchByProductName(searchProductName :string) {
+
+    return this.http.get<Item>(environment.backend_url + URL + '/searchByProductName/'+searchProductName);
+  }
 }
