@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-8">
 
       <div class="container-fluid">
         <div class="row">
@@ -17,27 +17,39 @@
               <div class="card-body">
                 <div class="table-responsive">
                   <table class="table">
-                    <thead>
-                    <tr>
-                      <th>Name</th>
-                    </tr>
-                    </thead>
+
                     <tbody>
 
                     <tr>
                       <td>
-                        <div class="dropdown show">
-                          <a class="btn btn-lg btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Uniliver
-                          </a>
+                        <div class="row">
+                          <div class="col-md-8">
+                            <div class="form-group">
+                              <label >Select Companys</label>
+                              <select class="form-control " data-style="select-with-transition"  [(ngModel)]="insertCompany" #mySelect (change)="getMakeCompanyDetails(mySelect.value)">
+                                <option *ngFor="let make of companies" [value]="make.companyName">{{make.companyName}}</option>
 
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Agent1</a>
-                            <a class="dropdown-item" href="#">Agent2</a>
-                            <a class="dropdown-item" href="#">Agent3</a>
+                              </select>
+                            </div>
+
                           </div>
                         </div>
                       </td>
+
+                      <td>
+                        <div class="row">
+                          <div class="col-md-8">
+                            <div class="form-group">
+                              <label >Select Agent</label>
+                              <select class="form-control " data-style="select-with-transition"  [(ngModel)]="insertAgent" >
+                                <option *ngFor="let supplier of searchMakesByCompany" [value]="supplier.suppliername">{{supplier.suppliername}}</option>
+                              </select>
+                            </div>
+
+                          </div>
+                        </div>
+                      </td>
+
                     </tr>
 
                     </tbody>
@@ -50,12 +62,27 @@
       </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
             <div class="card">
               <div class="card-body">
+
+                <div class="row" >
+
+                  <div class="col-md-8" style="margin-left: 10px">
+                    <div class="form-group">
+                      <label class="bmd-label-floating">Search By Order ID</label>
+                      <input type="text" class="form-control" style="width: 200px">
+                    </div>
+                  </div>
+                  <div class="col-md-4" style="margin-left: 200px ;margin-top: -55px">
+                    <button type="submit" class="btn btn-rose pull-right" > <i class="material-icons">search</i></button>
+                  </div>
+
+                </div>
+
 
                 <div class="timeline-panel">
                   <div class="timeline-heading">
@@ -68,17 +95,167 @@
                   <div class="timeline-footer">
                     <div class="dropdown">
                       <button type="button" class="btn btn-round btn-info">
-                        <i>Confirm</i>
-                      </button>
-                      <button type="button" class="btn btn-round btn">
-                        <i>Cancel</i>
+                        <i>Update Status</i>
                       </button>
                     </div>
                   </div>
                 </div>
+
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div></div></div>
+    </div></div>
+
+<div class="col-md-8">
+  <div class="card">
+    <div class="card-header card-header-rose card-header-icon">
+      <div class="card-icon">
+        <i class="material-icons">assignment</i>
+      </div>
+      <h4 class="card-title">Items</h4>
+    </div>
+    <div class="card-body">
+
+      <div class="row" >
+
+        <div class="col-md-4" style="margin-left: 250px">
+          <div class="form-group">
+            <label class="bmd-label-floating">Search By Product Name</label>
+            <input type="text" class="form-control" style="width: 300px" [(ngModel)]="searchProductName">
+          </div>
+        </div>
+        <div class="col-md-5" style="margin-left: -120px ;margin-top: 0px">
+          <button type="submit" class="btn btn-rose pull-right" (click)="searchByProductName()" > <i class="material-icons">search</i></button>
+        </div>
+
+      </div>
+
+
+
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-shopping">
+            <thead>
+            <tr>
+              <th>Product</th>
+              <th class="text-right">Price</th>
+              <th class="text-right">Qty</th>
+              <th class="text-right">Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngIf="searchProductValuesIf;else elseBlock">
+              <td colspan="8" class="alert alert-danger" style="text-align: center">
+                Customer Not Found
+              </td>
+            </tr>
+            <ng-template #elseBlock>
+            <tr>
+              <td class="td-name">
+                <a href="#jacket">Spring Jacket</a>
+                <br />
+              </td>
+              <td class="td-number text-right">
+                <small>&euro;</small>549
+              </td>
+              <td class="td-number text-right">
+                <input type="text" class="form-control-right" style="width: 60px">
+              </td>
+              <td class="td-number">
+                <small>&euro;</small>549
+              </td>
+              <td class="td-actions">
+                <button class="btn btn-primary btn-round">Add</button>
+              </td>
+            </tr>
+
+
+            </ng-template>
+
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="col-md-8">
+  <div class="card">
+    <div class="card-header card-header-rose card-header-icon">
+      <div class="card-icon">
+        <i class="material-icons">assignment</i>
+      </div>
+      <h4 class="card-title">Order list</h4>
+    </div>
+
+
+
+
+    <div class="card-body">
+      <div class="table-responsive">
+        <table class="table table-shopping">
+          <thead>
+          <tr>
+            <th>Product</th>
+            <th class="text-right">Qty</th>
+            <th class="text-right">Amount</th>
+          </tr>
+
+          <tr>
+
+          </tr>
+
+          </thead>
+          <tbody>
+
+          <tr>
+            <td class="td-name">
+              <a href="#nothing">Pencil Skirt</a>
+              <br />
+              <small>by Valentino</small>
+            </td>
+
+            <td class="td-number">
+              1
+            </td>
+            <td class="td-number">
+              <small>&euro;</small>799
+            </td>
+
+            <td class="td-actions">
+              <button class="btn btn-primary btn-round">Remove</button>
+            </td>
+
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td class="td-total">
+              Total
+            </td>
+            <td colspan="1" class="td-price">
+              <small>&euro;</small>2,346
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td colspan="2"></td>
+            <td colspan="2" class="text-right">
+              <button class="btn btn-primary btn-round">Place Order</button>
+            </td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div></div>
+
