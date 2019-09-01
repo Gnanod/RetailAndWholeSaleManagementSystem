@@ -37,8 +37,8 @@ import {DatePipe} from "@angular/common";
       StockHandlingComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+      BrowserModule,
+      AppRoutingModule,
       BrowserAnimationsModule,
       AppRoutingModule,
       FormsModule,
