@@ -11,6 +11,7 @@ import {SalarysheetComponent} from "./view/salarysheet/salarysheet.component";
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
 import {CustomerComponent} from "./view/customer/customer.component";
 import {SupplierOrderAgentItemComponent} from "./view/supplier-order-agent-item/supplier-order-agent-item.component";
+import {CustomerOrderComponent} from "./view/customer-order/customer-order.component";
 
 
 const routes: Routes = [
@@ -54,8 +55,13 @@ const routes: Routes = [
             path: 'SupplierOrderAgent',
             component: SupplierOrderAgentItemComponent
           }
+
         ]
     },
+  {
+    path:'customerorder',
+    component: CustomerOrderComponent,
+  },
     
     {path: '', pathMatch: "full", redirectTo: '/main/dashboard'}
 ];

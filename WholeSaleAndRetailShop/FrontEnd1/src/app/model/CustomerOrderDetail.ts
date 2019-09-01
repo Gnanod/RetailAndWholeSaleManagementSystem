@@ -2,11 +2,17 @@ import {Item} from "./Item";
 import {CustomerOrder} from "./CustomerOrder";
 
 export class CustomerOrderDetail {
-    
-    customerOrderDetail :number;
-    amount :number;
-    discount :number;
+
+    customerOrderDetailId :number;
     customerOrder :CustomerOrder;
-    item : Item;
-    
+    item :Item;
+    qty :number;
+    price :number;
+    customerID : number;
 }
+
+
+
+
+    
+

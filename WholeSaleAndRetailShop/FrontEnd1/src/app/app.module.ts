@@ -20,6 +20,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {DatePipe} from "@angular/common";
+import { CustomerOrderComponent } from './view/customer-order/customer-order.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import {DatePipe} from "@angular/common";
     AttendanceComponent,
     SalarysheetComponent,
       CustomerComponent,
-      StockHandlingComponent
+      StockHandlingComponent,
+      CustomerOrderComponent
   ],
   imports: [
     BrowserModule,
