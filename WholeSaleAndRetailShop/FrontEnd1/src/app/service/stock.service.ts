@@ -16,13 +16,7 @@ export class StockService {
 
   addStock(stock: Stock, itemsTables: Array<StockItemDetails>) {
 
-
-
-
-
-    return this.http.post<Stock>(environment.backend_url + URL + '/addStock',stock);
-
-    // return this.http.get<Stock>(environment.backend_url+URL+'/addStock',stock);
+    return this.http.post<String>(environment.backend_url + URL + '/addStock',stock);
 
   }
 

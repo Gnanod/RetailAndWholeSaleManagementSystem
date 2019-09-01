@@ -42,7 +42,7 @@ import {DatePipe} from "@angular/common";
       BrowserAnimationsModule,
       AppRoutingModule,
       FormsModule,
-      HttpClientModule,ReactiveFormsModule
+      HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [
     DatePipe

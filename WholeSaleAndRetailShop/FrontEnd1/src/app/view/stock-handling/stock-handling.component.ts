@@ -8,6 +8,8 @@ import {Stock} from "../../model/Stock";
 import {DatePipe} from "@angular/common";
 import {Supplier} from "../../model/Supplier";
 import {StockService} from "../../service/stock.service";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {BarcodeService} from "../../service/barcode.service";
 
 @Component({
   selector: 'app-stock-handling',
@@ -16,7 +18,31 @@ import {StockService} from "../../service/stock.service";
 })
 export class StockHandlingComponent implements OnInit {
 
-  constructor(private brandService :BrandService,private itemService :ItemService,private datePipe: DatePipe,private stockService:StockService) { }
+  constructor(private brandService :BrandService,private itemService :ItemService,private datePipe: DatePipe,private stockService:StockService,private barcodeService:BarcodeService) { }
+
+
+  form = new FormGroup({
+    brandname:new FormControl('',Validators.required)
+  });
+
+  form1 = new FormGroup({
+    itemname:new FormControl('',Validators.required),
+  });
+  // form1 = new FormGroup({
+  //   ItemName :new FormControl('',Validators.required),
+  // });
+  // form2 = new FormGroup({
+  //   itemQty :new FormControl('',Validators.required),
+  // });
+
+  // form2 = new FormGroup({
+  //   barcode : new FormControl('',Validators.required),
+  //   tableItemName : new FormControl('',Validators.required),
+  //   buyingPrice : new FormControl('',Validators.required),
+  //   wholePrice : new FormControl('',Validators.required),
+  //   retailPrice : new FormControl('',Validators.required),
+  //   itemQty : new FormControl('',Validators.required)
+  // });
 
   ngOnInit() {
     this.getAllBrands();
@@ -70,11 +96,16 @@ export class StockHandlingComponent implements OnInit {
         this.brandService.addBrand(this.addbrand).subscribe((result)=>{
             
               if(result!=null){
-                  
+               var  textboxes = document.getElementById("itemNameId");
+
                   alert('Brand Added SuccessFully')
-                  this.addbrand = new Brand();
+                 // this.addbrand = new Brand();
+                this.addbrand.brandName = null;
                   this.getAllBrands();
-                  
+
+                var element = document.getElementById("brandNameId");
+                element.classList.remove("is-invalid");
+                  textboxes.focus();
               }
         });
     
@@ -196,21 +227,48 @@ export class StockHandlingComponent implements OnInit {
 
       let stock:Stock = new Stock();
       stock.date=this.datePipe.transform(new Date(), 'yyyy-MM-dd');
-      stock.payment=100000;
-      stock.stockItemDetails=this.itemsTables;
+      stock.payment=this.totAmount;
+
       let sup :Supplier  = new Supplier();
       sup.supplierNic='951960055V'
+
       stock.supplier=sup;
+      stock.stockItemDetails=this.itemsTables;
 
-      console.log("StockItemDetails buting Price"+this.itemsTables[0].buyingPrice);
-      this.stockService.addStock(stock,this.itemsTables).subscribe((result)=>{
 
-        if(stock!=null){
-          alert('Added Successfully')
-        }
+      if(this.itemsTables.length==0){
+        alert('Please Add Items To Table')
+      }else{
+        this.stockService.addStock(stock,this.itemsTables).subscribe((result)=>{
 
-      });
+          if(stock!=null){
+            alert('Added Successfully');
+            this.itemsTables = null;
+          }else{
+            alert('Added Fail');
+          }
+
+        });
+      }
+
   }
+
+
+ // barcodeQuantity:number;
+
+  printBarcode(barcode,barcodeQuantity){
+
+
+
+    this.barcodeService.getBarcodes(barcode,barcodeQuantity).subscribe((result) => {
+
+      if(result!=null){
+        alert('Barcode Document Is Created')
+      }
+
+    });
+  }
+
 
 
 }

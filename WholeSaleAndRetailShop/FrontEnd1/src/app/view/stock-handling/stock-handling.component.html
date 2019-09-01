@@ -1,424 +1,936 @@
+<!--<div class="container-fluid" xmlns="http://www.w3.org/1999/html">-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-6">-->
+            <!--<div class="card">-->
+                <!--<div class="card-header card-header-icon card-header-rose">-->
+                    <!--<div class="card-icon">-->
+                        <!--<i class="material-icons">perm_identity</i>-->
+                    <!--</div>-->
+                    <!--<h4 class="card-title">Add Item Details-->
+
+                    <!--</h4>-->
+                <!--</div>-->
+                <!--<div class="card-body">-->
+                    <!---->
+                        <!--<div class="row">-->
+
+
+                        <!--</div>-->
+                  <!--&lt;!&ndash;<form name="form1" [formGroup]="form1">&ndash;&gt;-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-md-6">-->
+                                <!--<div class="form-group">-->
+                                    <!--<label >Item Name</label>-->
+                                    <!--&lt;!&ndash;<input type="text" class="form-control" id="itemNameId" name="itemName" [(ngModel)]="additem.itemName" formControlName="ItemName" [ngClass]="{'is-invalid':form1.get('ItemName').touched && form1.get('ItemName').invalid}">&ndash;&gt;-->
+                                  <!--<input type="text" class="form-control" id="itemNameId" name="itemName" [(ngModel)]="additem.itemName" >-->
+
+                                  <!--<div class="invalid-feedback">-->
+                                    <!--<div> Item Name Is Required</div>-->
+                                  <!--</div>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+                           <!---->
+                        <!--</div>-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-md-7">-->
+                              <!--<label >Select Brand Name</label>-->
+                                <!--<div class="form-group">-->
+
+                                    <!--<select class="form-control " data-style="select-with-transition"   [(ngModel)]="selectedBrand">-->
+                                        <!--<option *ngFor="let brand of brands" [ngValue]="brand" >{{brand.brandName}}</option>-->
+                                    <!--</select>-->
+
+                                <!--</div>-->
+                                <!---->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--<br>-->
+                    <!--<br>-->
+                        <!--<button type="submit" class="btn btn-rose pull-right" (click)="addItem()" >Save Details</button>-->
+                        <!--<div class="clearfix"></div>-->
+                  <!--&lt;!&ndash;</form>&ndash;&gt;-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="col-md-6">-->
+            <!--<div class="card">-->
+                <!--<div class="card-header card-header-icon card-header-rose">-->
+                    <!--<div class="card-icon">-->
+                        <!--<i class="material-icons">perm_identity</i>-->
+                    <!--</div>-->
+                    <!--<h4 class="card-title">Add Brand Details-->
+
+                    <!--</h4>-->
+                <!--</div>-->
+                <!--<div class="card-body">-->
+                 <!---->
+                        <!--<div class="row">-->
+
+
+                        <!--</div>-->
+                  <!--&lt;!&ndash;[formGroup]="form"&ndash;&gt;-->
+                  <!--<form name="form"  >-->
+                        <!--<div class="row">-->
+                            <!--<div class="col-md-6">-->
+                                <!--<div class="form-group">-->
+                                    <!--<label class="bmd-label-floating">Brand Name</label>-->
+                                  <!--&lt;!&ndash;<input type="text" class="form-control" name="brandName" [(ngModel)]="addbrand.brandName" formControlName="brandName" [ngClass]="{'is-invalid':form.get('brandName').touched && form.get('brandName').invalid}">&ndash;&gt;-->
+                                  <!--&lt;!&ndash;<input type="text" class="form-control" name="brandName" [ngModelOptions]="{standalone: true}" [(ngModel)]="addbrand.brandName" >&ndash;&gt;-->
+                                  <!--<div class="invalid-feedback">-->
+                                    <!--<div> Brand Name Is Required</div>-->
+                                  <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+                        <!---->
+                        <!--<button type="submit" class="btn btn-rose pull-right" (click)="addBrand()"  [disabled]="!form.valid" >Save Details</button>-->
+                        <!--<div class="clearfix"></div>-->
+                  <!--</form>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+<!--<div class="row">-->
+
+    <!--<div class="col-md-12">-->
+        <!--<div class="card">-->
+            <!---->
+            <!---->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+<!--<div class="row">-->
+    <!--<div class="col-md-12">-->
+        <!--<div class="card">-->
+            <!--<div class="card-header card-header-icon card-header-rose">-->
+                <!--<div class="card-icon">-->
+                    <!--<i class="material-icons">perm_identity</i>-->
+                <!--</div>-->
+                <!--<h4 class="card-title">Add Stock Details-->
+
+                <!--</h4>-->
+            <!--</div>-->
+            <!--<br>-->
+            <!--<br>-->
+            <!--<div class="card-body">-->
+
+              <!--&lt;!&ndash;[formGroup]="form2"&ndash;&gt;-->
+              <!--<form name="form2" >-->
+                    <!--<div class="row">-->
+
+                        <!--<div class="col-sm-2">-->
+                            <!--<div class="form-group">-->
+                                <!--<label>Barcode</label>-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control" (keyup)="searchItemDetailsByBarcode($event)" [(ngModel)]="seachItemBarcode" formControlName="barcode" [ngClass]="{'is-invalid':form2.get('barcode').touched && form2.get('barcode').invalid}">&ndash;&gt;-->
+                              <!--<input type="text" class="form-control" (keyup)="searchItemDetailsByBarcode($event)" [(ngModel)]="seachItemBarcode" >-->
+
+                              <!--<div class="invalid-feedback">-->
+                                <!--<div> Barcode Is Required</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-2">-->
+                            <!--<div class="form-group">-->
+                                <!--<label>Item Name</label>-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control" name="itemName"  [(ngModel)]="searchItemName" formControlName="tableItemName" [ngClass]="{'is-invalid':form2.get('tableItemName').touched && form2.get('tableItemName').invalid}">&ndash;&gt;-->
+                              <!--<div class="invalid-feedback">-->
+                                <!--<div> Item Name Is Required</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!---->
+                        <!--<div class="col-sm-2">-->
+                            <!--<div class="form-group">-->
+                                <!--<label>Buying Price</label>-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control" name="buyingPrice"  [(ngModel)]="searchBuyingPrice" formControlName="buyingPrice" [ngClass]="{'is-invalid':form2.get('buyingPrice').touched && form2.get('buyingPrice').invalid}">&ndash;&gt;-->
+                              <!--<div class="invalid-feedback">-->
+                                <!--<div> Buying Is Required</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-2">-->
+                            <!--<div class="form-group">-->
+                                <!--<label>WholeSalePrice</label>-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control" name="wholePrice" [(ngModel)]="searchWholeSalePrice" formControlName="wholePrice" [ngClass]="{'is-invalid':form2.get('wholePrice').touched && form2.get('wholePrice').invalid}">&ndash;&gt;-->
+                              <!--<div class="invalid-feedback">-->
+                                <!--<div> WholeSalePrice Is Required</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!---->
+                        <!---->
+                        <!---->
+                        <!---->
+
+                    <!--</div>-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-3">-->
+                            <!--<div class="form-group">-->
+                                <!--<label>Retail Price</label>-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control" name="retailPrice" [(ngModel)]="searchRetailPrice" formControlName="retPrice" [ngClass]="{'is-invalid':form2.get('retPrice').touched && form2.get('retPrice').invalid}">&ndash;&gt;-->
+                              <!--<div class="invalid-feedback">-->
+                                <!--<div> Retail Is Required</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-3">-->
+                            <!--<div class="form-group">-->
+                                <!--<label>Quantity</label>-->
+                                <!--<input type="text" class="form-control"  [(ngModel)]="itemQuantity" name="itemQty" formControlName="itemQty" [ngClass]="{'is-invalid':form2.get('itemQty').touched && form2.get('itemQty').invalid}">-->
+                              <!--<div class="invalid-feedback">-->
+                                <!--<div> Quantity Is Required</div>-->
+                              <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-3">-->
+                            <!--<div class="form-group">-->
+                                <!--<label>Quantity On Hand</label>-->
+                                <!--<input type="text" class="form-control" name="itemQty" [(ngModel)]="itemDetailsQtyOnHand" disabled>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--&lt;!&ndash;<div class="col-sm-2">&ndash;&gt;-->
+                            <!--&lt;!&ndash;&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--<div class="col-sm-2">-->
+                            <!--<button type="submit" class="btn btn-rose pull-right" (click)="addToTable()">Add To Table</button>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</form>-->
+                    <!--<br>-->
+                    <!--<br>-->
+                    <!--<div class="row">-->
+
+                        <!--<div class="table-responsive">-->
+                        <!--<table class="table">-->
+                            <!--<thead class=" text-primary">-->
+                            <!--<th>-->
+                                <!--BarCode-->
+                            <!--</th>-->
+                            <!--<th>-->
+                                <!--WholeSalePrice-->
+                            <!--</th>-->
+                            <!--<th>-->
+                                <!--RetailPrice-->
+                            <!--</th>-->
+                            <!--<th>-->
+                                <!--Quantity-->
+                            <!--</th>-->
+                            <!--<th>-->
+                                <!--BuyingPrice-->
+                            <!--</th>-->
+                            <!--<th>-->
+                                <!--QuantityOnHand-->
+                            <!--</th>-->
+                            <!--</thead>-->
+                            <!--<tbody>-->
+                            <!---->
+                            <!--<tr *ngFor="let items of itemsTables async" [attr.id]="items.item.barCode">-->
+                                <!--<td>-->
+                                    <!--{{items.item.barCode}}-->
+                                <!--</td>-->
+                                <!--<td>-->
+                                    <!--{{items.item.wholeSalePrice}}-->
+                                <!--</td>-->
+                                <!--<td>-->
+                                    <!--{{items.item.retailPrice}}-->
+                                <!--</td>-->
+                                <!--<td>-->
+                                    <!--{{items.quantity}}-->
+                                <!--</td>-->
+                                <!--<td>-->
+                                   <!--{{items.buyingPrice}}-->
+                                <!--</td>-->
+                                <!--<td>-->
+                                  <!--{{items.item.itemQtyOnHand}}-->
+                                <!--</td>-->
+                                <!--<td class="td-actions ">-->
+                                    <!--<button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteRow(items.item.barCode)">-->
+                                        <!--<i class="material-icons">close</i>-->
+                                    <!--</button>-->
+                                <!--</td>-->
+                            <!--</tr>-->
+                            <!--</tbody>-->
+                        <!--</table>-->
+                    <!--</div>-->
+                        <!---->
+                    <!--</div>-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-4"></div>-->
+                        <!--<div class="col-sm-4"></div>-->
+                        <!--<div class="col-sm-1"></div>-->
+                        <!---->
+                        <!---->
+                        <!--<div class="col-sm-2">-->
+                            <!--<div class="form-group">-->
+                                <!--<label>Amount</label>-->
+                              <!--<input type="text" class="form-control"  [ngModelOptions]="{standalone: true}"[(ngModel)]="totAmount" disabled>-->
+
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-4"></div>-->
+                        <!--<div class="col-sm-4"></div>-->
+                        <!--<div class="col-sm-1"></div>-->
+
+
+                        <!--<div class="col-sm-2">-->
+                            <!--<button type="submit" class="btn btn-rose pull-right" (click)="addStock()">Save Details</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+            <!--</div>-->
+
+            <!---->
+            <!--&lt;!&ndash;<div class="card-body">&ndash;&gt;-->
+                <!--&lt;!&ndash;<form>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+
+
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label class="bmd-label-floating">Employee Id</label>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control" disabled>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+
+                        <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label class="bmd-label-floating">Fist Name</label>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control">&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label class="bmd-label-floating">Last Name</label>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control">&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label class="bmd-label-floating">Email address</label>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<input type="email" class="form-control">&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label class="bmd-label-floating" >Nic</label>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control">&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="col-md-12">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label class="bmd-label-floating">Adress</label>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control">&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label class="bmd-label-floating">Birthday</label>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control">&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<div class="col-md-4">&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label class="bmd-label-floating">Phone Number</label>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<input type="text" class="form-control">&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+                    <!--&lt;!&ndash;<button type="submit" class="btn btn-rose pull-right">Update Details</button>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="clearfix"></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</form>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+<!--<div class="row">-->
+
+    <!--<div class="col-md-12">-->
+        <!--<div class="card">-->
+            <!--<div class="card-header card-header-rose card-header-icon">-->
+                <!--<div class="card-icon">-->
+                    <!--<i class="material-icons">search</i>-->
+                <!--</div>-->
+                <!--<h4 class="card-title">Search  Item Details</h4>-->
+            <!--</div>-->
+            <!--<div class="card-body">-->
+                <!--<div class="row" >-->
+
+                    <!--<div class="col-md-4" style="margin-left: 250px">-->
+                        <!--<div class="form-group">-->
+                            <!--<label class="bmd-label-floating">Search By Item Name</label>-->
+                            <!--<input type="text" class="form-control" style="width: 300px" (keyup)="searchItemByName($event)" [(ngModel)]="searchitembyname">-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-4" style="margin-left: -200px ;margin-top: 25px">-->
+                        <!--<button type="submit" class="btn btn-rose pull-right" (click)="searchVehicleDetailsByNumber()" >   <i class="material-icons">search</i></button>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash;(click)="searchVehicleDetailsByNumber()"&ndash;&gt;-->
+                <!--</div>-->
+
+                <!--<div class="table-responsive">-->
+                    <!--<table class="table" id="vehicleTable">-->
+                        <!--<thead class=" text-primary">-->
+                        <!--<th>-->
+                            <!--BarCode-->
+                        <!--</th>-->
+                        <!--<th>-->
+                            <!--WholeSalePrice-->
+                        <!--</th>-->
+                        <!--<th>-->
+                            <!--RetailPrice-->
+                        <!--</th>-->
+                        <!--<th>-->
+                            <!--BuyingPrice-->
+                        <!--</th>-->
+                        <!--<th>-->
+                            <!--QuantityOnHand-->
+                        <!--</th>-->
+                        <!--</thead>-->
+                        <!--<tbody>-->
+                        <!--<tr *ngIf="searchItemValuesIf;else elseBlock">-->
+                            <!--<td colspan="8" class="alert alert-danger" style="text-align: center">-->
+                                <!--Item Not Found-->
+                            <!--</td>-->
+                        <!--</tr>-->
+
+                        <!--<ng-template #elseBlock>-->
+
+                            <!--<tr *ngFor="let item of searchItemDetails">-->
+                                <!--<td class="text-center">-->
+                                    <!--{{item.barCode}}-->
+                                <!--</td>-->
+                                <!--<td class="text-center">-->
+                                    <!--{{item.wholeSalePrice}}-->
+                                <!--</td>-->
+                                <!--<td class="text-center">-->
+                                    <!--{{item.retailPrice}}-->
+                                <!--</td >-->
+
+                                <!--<td class="text-center">-->
+
+                                <!--</td>-->
+                                <!--<td>-->
+                                    <!--{{item.itemQty}}-->
+                                <!--</td>-->
+                               <!---->
+
+                                <!--<td class="td-actions ">-->
+                                    <!--<button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteVehicle()">-->
+                                        <!--<i class="material-icons">close</i>-->
+                                    <!--</button>-->
+                                <!--</td>-->
+                            <!--</tr>-->
+
+                        <!--</ng-template>-->
+
+                        <!--</tbody>-->
+                    <!--</table>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</div>-->
+
+
 
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header card-header-icon card-header-rose">
-                    <div class="card-icon">
-                        <i class="material-icons">perm_identity</i>
-                    </div>
-                    <h4 class="card-title">Add Item Details
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header card-header-icon card-header-rose">
+          <div class="card-icon">
+            <i class="material-icons">perm_identity</i>
+          </div>
+          <h4 class="card-title">Add Item Details
 
-                    </h4>
-                </div>
-                <div class="card-body">
-                    
-                        <div class="row">
-
-
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="bmd-label-floating">Item Name</label>
-                                    <input type="text" class="form-control" name="itemName" [(ngModel)]="additem.itemName">
-                                </div>
-                            </div>
-                           
-                        </div>
-                        <div class="row">
-                            <div class="col-md-7">
-                                <div class="form-group">
-                                    <label >Select Brand Name</label>
-<br>
-                                    <select class="form-control " data-style="select-with-transition" [ngModelOptions]="{standalone: true}"  [(ngModel)]="selectedBrand">
-                                        <option *ngFor="let brand of brands" [ngValue]="brand">{{brand.brandName}}</option>
-                                    </select>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-rose pull-right" (click)="addItem()">Save Details</button>
-                        <div class="clearfix"></div>
-                    
-                </div>
-            </div>
+          </h4>
         </div>
+        <div class="card-body">
+          <form [formGroup]="form1" name="form" >
 
-        <div class="col-md-6">
-            <div class="card">
-                <div class="card-header card-header-icon card-header-rose">
-                    <div class="card-icon">
-                        <i class="material-icons">perm_identity</i>
-                    </div>
-                    <h4 class="card-title">Add Brand Details
-
-                    </h4>
-                </div>
-                <div class="card-body">
-                 
-                        <div class="row">
+          <div class="row">
 
 
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="bmd-label-floating"   >Brand Name</label>
-                                  <input type="text" class="form-control" name="brandName" [(ngModel)]="addbrand.brandName">
+          </div>
 
-                                </div>
-                            </div>
-
-                        </div>
-                        
-                        <button type="submit" class="btn btn-rose pull-right" (click)="addBrand()">Save Details</button>
-                        <div class="clearfix"></div>
-                    
-                </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="bmd-label-floating">Item Name</label>
+                <input type="text" class="form-control"id="itemNameId"  name="itemName" [(ngModel)]="additem.itemName" formControlName="itemname" [ngClass]="{'is-invalid':form1.get('itemname').touched }">
+              </div>
             </div>
+
+          </div>
+            <br>
+          <div class="row">
+            <div class="col-md-7">
+              <label >Select Brand Name</label>
+              <div class="form-group">
+
+
+                <select class="form-control " data-style="select-with-transition" [ngModelOptions]="{standalone: true}"  [(ngModel)]="selectedBrand">
+                  <option *ngFor="let brand of brands" [ngValue]="brand">{{brand.brandName}}</option>
+                </select>
+              </div>
+
+            </div>
+          </div>
+          <button type="submit" class="btn btn-rose pull-right" (click)="addItem()" [disabled]="!form1.valid" >Save Details</button>
+          <div class="clearfix"></div>
+          </form>
         </div>
+      </div>
     </div>
+
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-header card-header-icon card-header-rose">
+          <div class="card-icon">
+            <i class="material-icons">perm_identity</i>
+          </div>
+          <h4 class="card-title">Add Brand Details
+
+          </h4>
+        </div>
+        <div class="card-body">
+
+          <div class="row">
+
+
+          </div>
+          <form [formGroup]="form" name="form" >
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group" >
+                <label class="">Brand Name</label>
+                <!--<input type="text" class="form-control" name="brandName" id="brandNameId" [(ngModel)]="addbrand.brandName" #brandNameControl="ngModel">-->
+                <input type="text" class="form-control" name="brandName" id="brandNameId" [(ngModel)]="addbrand.brandName" formControlName="brandname" [ngClass]="{'is-invalid':form.get('brandname').touched }">
+                <!--<div class="invalid-feedback" >-->
+                  <!--<div> Brand Name Is Required</div>-->
+                <!--</div>-->
+              </div>
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-rose pull-right" [disabled]="!form.valid" (click)="addBrand()">Save Details</button>
+          <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 <div class="row">
 
-    <div class="col-md-12">
-        <div class="card">
-            
-            
-        </div>
+  <div class="col-md-12">
+    <div class="card">
+
+
     </div>
+  </div>
 
 </div>
 
 <div class="row">
-    <div class="col-md-12">
-        <div class="card">
-            <div class="card-header card-header-icon card-header-rose">
-                <div class="card-icon">
-                    <i class="material-icons">perm_identity</i>
-                </div>
-                <h4 class="card-title">Add Stock Details
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-icon card-header-rose">
+        <div class="card-icon">
+          <i class="material-icons">perm_identity</i>
+        </div>
+        <h4 class="card-title">Add Stock Details
 
-                </h4>
-            </div>
-            <br>
-            <br>
-            <div class="card-body">
+        </h4>
+      </div>
+      <br>
+      <br>
+      <div class="card-body">
 
-                    <div class="row">
+        <div class="row">
 
-                        <div class="col-sm-2">
-                            <div class="form-group">
-                                <label>Barcode</label>
-                                <input type="text" class="form-control" (keyup)="searchItemDetailsByBarcode($event)" [(ngModel)]="seachItemBarcode">
-                               
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="form-group">
-                                <label>Item Name</label>
-                                <input type="text" class="form-control" name="itemName"[ngModelOptions]="{standalone: true}" [(ngModel)]="searchItemName">
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-2">
-                            <div class="form-group">
-                                <label>Buying Price</label>
-                                <input type="text" class="form-control" name="buyingPrice" [ngModelOptions]="{standalone: true}" [(ngModel)]="searchBuyingPrice">
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="form-group">
-                                <label>WholeSalePrice</label>
-                                <input type="text" class="form-control" name="wholeSalePrice" [ngModelOptions]="{standalone: true}"[(ngModel)]="searchWholeSalePrice">
-                            </div>
-                        </div>
-                        
-                        
-                        
-                        
-
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label>Retail Price</label>
-                                <input type="text" class="form-control" name="retailPrice"[ngModelOptions]="{standalone: true}" [(ngModel)]="searchRetailPrice">
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label>Quantity</label>
-                                <input type="text" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="itemQuantity">
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="form-group">
-                                <label>Quantity On Hand</label>
-                                <input type="text" class="form-control" name="itemQty" [ngModelOptions]="{standalone: true}"[(ngModel)]="itemDetailsQtyOnHand">
-                            </div>
-                        </div>
-                        <!--<div class="col-sm-2">-->
-                            <!---->
-                        <!--</div>-->
-                        <div class="col-sm-2">
-                            <button type="submit" class="btn btn-rose pull-right" (click)="addToTable()">Add To Table</button>
-
-                        </div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="row">
-
-                        <div class="table-responsive">
-                        <table class="table">
-                            <thead class=" text-primary">
-                            <th>
-                                BarCode
-                            </th>
-                            <th>
-                                WholeSalePrice
-                            </th>
-                            <th>
-                                RetailPrice
-                            </th>
-                            <th>
-                                Quantity
-                            </th>
-                            <th>
-                                BuyingPrice
-                            </th>
-                            <th>
-                                QuantityOnHand
-                            </th>
-                            </thead>
-                            <tbody>
-                            
-                            <tr *ngFor="let items of itemsTables async" [attr.id]="items.item.barCode">
-                                <td>
-                                    {{items.item.barCode}}
-                                </td>
-                                <td>
-                                    {{items.item.wholeSalePrice}}
-                                </td>
-                                <td>
-                                    {{items.item.retailPrice}}
-                                </td>
-                                <td>
-                                    {{items.quantity}}
-                                </td>
-                                <td>
-                                   {{items.buyingPrice}}
-                                </td>
-                                <td>
-                                  {{items.item.itemQtyOnHand}}
-                                </td>
-                                <td class="td-actions ">
-                                    <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteRow(items.item.barCode)">
-                                        <i class="material-icons">close</i>
-                                    </button>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                        
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-1"></div>
-                        
-                        
-                        <div class="col-sm-2">
-                            <div class="form-group">
-                                <label>Amount</label>
-                              <input type="text" class="form-control"  [ngModelOptions]="{standalone: true}"[(ngModel)]="totAmount">
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-1"></div>
-
-
-                        <div class="col-sm-2">
-                            <button type="submit" class="btn btn-rose pull-right" (click)="addStock()">Save Details</button>
-                        </div>
-                    </div>
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label>Barcode</label>
+              <input type="text" class="form-control" (keyup)="searchItemDetailsByBarcode($event)" [(ngModel)]="seachItemBarcode">
 
             </div>
-            
-            
-            <!--<div class="card-body">-->
-                <!--<form>-->
-                    <!--<div class="row">-->
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label>Item Name</label>
+              <input type="text" class="form-control" name="itemName"[ngModelOptions]="{standalone: true}" [(ngModel)]="searchItemName" disabled>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label>Buying Price</label>
+              <input type="Number" class="form-control" name="buyingPrice" [ngModelOptions]="{standalone: true}" [(ngModel)]="searchBuyingPrice">
+            </div>
+          </div>
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label>WholeSalePrice</label>
+              <input type="Number" class="form-control" name="wholeSalePrice" [ngModelOptions]="{standalone: true}"[(ngModel)]="searchWholeSalePrice">
+            </div>
+          </div>
 
 
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-6">-->
-                            <!--<div class="form-group">-->
-                                <!--<label class="bmd-label-floating">Employee Id</label>-->
-                                <!--<input type="text" class="form-control" disabled>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="row">-->
 
-                        <!--<div class="col-md-6">-->
-                            <!--<div class="form-group">-->
-                                <!--<label class="bmd-label-floating">Fist Name</label>-->
-                                <!--<input type="text" class="form-control">-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-6">-->
-                            <!--<div class="form-group">-->
-                                <!--<label class="bmd-label-floating">Last Name</label>-->
-                                <!--<input type="text" class="form-control">-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-4">-->
-                            <!--<div class="form-group">-->
-                                <!--<label class="bmd-label-floating">Email address</label>-->
-                                <!--<input type="email" class="form-control">-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-4">-->
-                            <!--<div class="form-group">-->
-                                <!--<label class="bmd-label-floating" >Nic</label>-->
-                                <!--<input type="text" class="form-control">-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
 
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-12">-->
-                            <!--<div class="form-group">-->
-                                <!--<label class="bmd-label-floating">Adress</label>-->
-                                <!--<input type="text" class="form-control">-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="row">-->
-                        <!--<div class="col-md-4">-->
-                            <!--<div class="form-group">-->
-                                <!--<label class="bmd-label-floating">Birthday</label>-->
-                                <!--<input type="text" class="form-control">-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <!--<div class="col-md-4">-->
-                            <!--<div class="form-group">-->
-                                <!--<label class="bmd-label-floating">Phone Number</label>-->
-                                <!--<input type="text" class="form-control">-->
-                            <!--</div>-->
-                        <!--</div>-->
 
-                    <!--</div>-->
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Retail Price</label>
+              <input type="Number" class="form-control" name="retailPrice"[ngModelOptions]="{standalone: true}" [(ngModel)]="searchRetailPrice">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Quantity</label>
+              <input type="Number" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="itemQuantity">
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label>Quantity On Hand</label>
+              <input type="Number" class="form-control" name="itemQty" [ngModelOptions]="{standalone: true}"[(ngModel)]="itemDetailsQtyOnHand" disabled>
+            </div>
+          </div>
+          <!--<div class="col-sm-2">-->
+          <!---->
+          <!--</div>-->
+          <div class="col-sm-2">
+            <button type="submit" class="btn btn-rose pull-right" (click)="addToTable()">Add To Table</button>
 
-                    <!--<button type="submit" class="btn btn-rose pull-right">Update Details</button>-->
-                    <!--<div class="clearfix"></div>-->
-                <!--</form>-->
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+
+          <div class="table-responsive">
+            <table class="table">
+              <thead class=" text-primary">
+              <th>
+                BarCode
+              </th>
+              <th>
+                WholeSalePrice
+              </th>
+              <th>
+                RetailPrice
+              </th>
+              <th>
+                Quantity
+              </th>
+              <th>
+                BuyingPrice
+              </th>
+              <th>
+                QuantityOnHand
+              </th>
+              </thead>
+              <tbody>
+
+              <tr *ngFor="let items of itemsTables async" [attr.id]="items.item.barCode">
+                <td>
+                  {{items.item.barCode}}
+                </td>
+                <td>
+                  {{items.item.wholeSalePrice}}
+                </td>
+                <td>
+                  {{items.item.retailPrice}}
+                </td>
+                <td>
+                  {{items.quantity}}
+                </td>
+                <td>
+                  {{items.buyingPrice}}
+                </td>
+                <td>
+                  {{items.item.itemQtyOnHand}}
+                </td>
+                <td class="td-actions ">
+                  <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteRow(items.item.barCode)">
+                    <i class="material-icons">close</i>
+                  </button>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4"></div>
+          <div class="col-sm-1"></div>
+
+
+          <div class="col-sm-2">
+            <div class="form-group">
+              <label>Amount</label>
+              <input type="text" class="form-control"  [ngModelOptions]="{standalone: true}"[(ngModel)]="totAmount">
+
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4"></div>
+          <div class="col-sm-4"></div>
+          <div class="col-sm-1"></div>
+
+
+          <div class="col-sm-2">
+            <button type="submit" class="btn btn-rose pull-right" (click)="addStock()">Save Details</button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!--<div class="card-body">-->
+      <!--<form>-->
+      <!--<div class="row">-->
+
+
+      <!--</div>-->
+      <!--<div class="row">-->
+      <!--<div class="col-md-6">-->
+      <!--<div class="form-group">-->
+      <!--<label class="bmd-label-floating">Employee Id</label>-->
+      <!--<input type="text" class="form-control" disabled>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+
+      <!--<div class="col-md-6">-->
+      <!--<div class="form-group">-->
+      <!--<label class="bmd-label-floating">Fist Name</label>-->
+      <!--<input type="text" class="form-control">-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-md-6">-->
+      <!--<div class="form-group">-->
+      <!--<label class="bmd-label-floating">Last Name</label>-->
+      <!--<input type="text" class="form-control">-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+      <!--<div class="col-md-4">-->
+      <!--<div class="form-group">-->
+      <!--<label class="bmd-label-floating">Email address</label>-->
+      <!--<input type="email" class="form-control">-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-md-4">-->
+      <!--<div class="form-group">-->
+      <!--<label class="bmd-label-floating" >Nic</label>-->
+      <!--<input type="text" class="form-control">-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+
+      <!--<div class="row">-->
+      <!--<div class="col-md-12">-->
+      <!--<div class="form-group">-->
+      <!--<label class="bmd-label-floating">Adress</label>-->
+      <!--<input type="text" class="form-control">-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="row">-->
+      <!--<div class="col-md-4">-->
+      <!--<div class="form-group">-->
+      <!--<label class="bmd-label-floating">Birthday</label>-->
+      <!--<input type="text" class="form-control">-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--<div class="col-md-4">-->
+      <!--<div class="form-group">-->
+      <!--<label class="bmd-label-floating">Phone Number</label>-->
+      <!--<input type="text" class="form-control">-->
+      <!--</div>-->
+      <!--</div>-->
+
+      <!--</div>-->
+
+      <!--<button type="submit" class="btn btn-rose pull-right">Update Details</button>-->
+      <!--<div class="clearfix"></div>-->
+      <!--</form>-->
+      <!--</div>-->
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-rose card-header-icon">
+        <div class="card-icon">
+          <i class="material-icons">search</i>
+        </div>
+        <h4 class="card-title">Search  Vehicle</h4>
+      </div>
+      <div class="card-body">
+        <div class="row" >
+
+          <div class="col-md-4" style="margin-left: 250px">
+            <div class="form-group">
+              <label class="bmd-label-floating">Search By Item Name</label>
+              <input type="text" class="form-control" style="width: 300px" (keyup)="searchItemByName($event)" [(ngModel)]="searchitembyname">
+            </div>
+          </div>
+          <div class="col-md-4" style="margin-left: -200px ;margin-top: 25px">
+            <button type="submit" class="btn btn-rose pull-right" (click)="searchVehicleDetailsByNumber()" >   <i class="material-icons">search</i></button>
+          </div>
+          <!--(click)="searchVehicleDetailsByNumber()"-->
+        </div>
+
+        <div class="table-responsive">
+          <table class="table" id="vehicleTable">
+            <thead class=" text-primary">
+            <th>
+              BarCode
+            </th>
+            <th>
+              WholeSalePrice
+            </th>
+            <th>
+              RetailPrice
+            </th>
+            <th>
+              QuantityOnHand
+            </th>
+            </thead>
+            <tbody>
+            <tr *ngIf="searchItemValuesIf;else elseBlock">
+              <td colspan="8" class="alert alert-danger" style="text-align: center">
+                Item Not Found
+              </td>
+            </tr>
+
+            <ng-template #elseBlock>
+
+              <tr *ngFor="let item of searchItemDetails">
+                <td class="text-center">
+                  {{item.barCode}}
+                </td>
+                <td class="text-center">
+                  {{item.wholeSalePrice}}
+                </td>
+                <td class="text-center">
+                  {{item.retailPrice}}
+                </td >
+
+                <td class="text-center">
+                  {{item.itemQtyOnHand}}
+                </td>
+
+                <td class="text-center">
+
+                  <div class="form-group">
+
+                    <input type="Number" class="form-control" name="Item"  [(ngModel)]="item.barcodeQuantity"  >
+
+                  </div>
+
+
+                </td>
+
+                <td class="td-actions ">
+                  <button type="button" rel="tooltip" class="btn btn-danger" (click)="printBarcode(item.barCode,item.barcodeQuantity)">
+                    <!--<i class="material-icons">close</i>-->
+                  </button>
+                </td>
+              </tr>
+
+            </ng-template>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--<div class="row">-->
+  <!--<div class="col-md-6">-->
+    <!--<div class="card">-->
+      <!--<div class="card-header card-header-icon card-header-rose">-->
+        <!--<div class="card-icon">-->
+          <!--<i class="material-icons">perm_identity</i>-->
+        <!--</div>-->
+        <!--<h4 class="card-title">Print  Barcodes-->
+
+        <!--</h4>-->
+      <!--</div>-->
+      <!--<div class="card-body">-->
+
+        <!--<div class="row">-->
+
+
+        <!--</div>-->
+        <!--<form [formGroup]="form" name="form" >-->
+          <!--<div class="row">-->
+            <!--<div class="col-md-6">-->
+              <!--<div class="form-group" >-->
+                <!--<label class="">Item Name</label>-->
+                <!--&lt;!&ndash;<input type="text" class="form-control" name="brandName" id="brandNameId" [(ngModel)]="addbrand.brandName" #brandNameControl="ngModel">&ndash;&gt;-->
+                <!--<input type="text" class="form-control" name="Item"  [(ngModel)]="addbrand.brandName" formControlName="brandname" [ngClass]="{'is-invalid':form.get('brandname').touched }">-->
+
+              <!--</div>-->
             <!--</div>-->
-        </div>
-    </div>
 
-</div>
+          <!--</div>-->
 
-<div class="row">
+          <!--<button type="submit" class="btn btn-rose pull-right" [disabled]="!form.valid" (click)="addBrand()">Save Details</button>-->
+          <!--<div class="clearfix"></div>-->
+        <!--</form>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
 
-    <div class="col-md-12">
-        <div class="card">
-            <div class="card-header card-header-rose card-header-icon">
-                <div class="card-icon">
-                    <i class="material-icons">search</i>
-                </div>
-                <h4 class="card-title">Search  Vehicle</h4>
-            </div>
-            <div class="card-body">
-                <div class="row" >
-
-                    <div class="col-md-4" style="margin-left: 250px">
-                        <div class="form-group">
-                            <label class="bmd-label-floating">Search By Item Name</label>
-                            <input type="text" class="form-control" style="width: 300px" (keyup)="searchItemByName($event)" [(ngModel)]="searchitembyname">
-                        </div>
-                    </div>
-                    <div class="col-md-4" style="margin-left: -200px ;margin-top: 25px">
-                        <button type="submit" class="btn btn-rose pull-right" (click)="searchVehicleDetailsByNumber()" >   <i class="material-icons">search</i></button>
-                    </div>
-                    <!--(click)="searchVehicleDetailsByNumber()"-->
-                </div>
-
-                <div class="table-responsive">
-                    <table class="table" id="vehicleTable">
-                        <thead class=" text-primary">
-                        <th>
-                            BarCode
-                        </th>
-                        <th>
-                            WholeSalePrice
-                        </th>
-                        <th>
-                            RetailPrice
-                        </th>
-                        <th>
-                            BuyingPrice
-                        </th>
-                        <th>
-                            QuantityOnHand
-                        </th>
-                        </thead>
-                        <tbody>
-                        <tr *ngIf="searchItemValuesIf;else elseBlock">
-                            <td colspan="8" class="alert alert-danger" style="text-align: center">
-                                Item Not Found
-                            </td>
-                        </tr>
-
-                        <ng-template #elseBlock>
-
-                            <tr *ngFor="let item of searchItemDetails">
-                                <td class="text-center">
-                                    {{item.barCode}}
-                                </td>
-                                <td class="text-center">
-                                    {{item.wholeSalePrice}}
-                                </td>
-                                <td class="text-center">
-                                    {{item.retailPrice}}
-                                </td >
-
-                                <td class="text-center">
-
-                                </td>
-                                <td>
-                                    {{item.itemQty}}
-                                </td>
-                               
-
-                                <td class="td-actions ">
-                                    <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteVehicle()">
-                                        <i class="material-icons">close</i>
-                                    </button>
-                                </td>
-                            </tr>
-
-                        </ng-template>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
+<!--</div>-->

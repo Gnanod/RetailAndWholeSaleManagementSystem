@@ -53,7 +53,6 @@ public class Stock {
 
     public void setSupplier(Supplier supplier) {
 
-        System.out.println("UUUUUUUUUUU");
         this.supplier = supplier;
     }
 
@@ -62,7 +61,12 @@ public class Stock {
     }
 
     public void setStockItemDetails(Set<StockItemDetails> stockItemDetails) {
-        System.out.println("KKKKKKKKKKKKKKKKKKKK");
+
+        for (StockItemDetails i: stockItemDetails
+        ) {
+            i.setStock(this);
+        }
+
         this.stockItemDetails = stockItemDetails;
     }
 }
