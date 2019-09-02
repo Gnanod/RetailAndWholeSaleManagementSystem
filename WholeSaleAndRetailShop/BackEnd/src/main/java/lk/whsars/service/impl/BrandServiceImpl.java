@@ -24,4 +24,11 @@ public class BrandServiceImpl implements BrandService {
     public List<Brand> getAllBrands() {
         return brandRepository.findAll();
     }
+
+    @Override
+    public String deleteBrand(int brandId) {
+
+        brandRepository.deleteById(brandId);
+        return "9";
+    }
 }

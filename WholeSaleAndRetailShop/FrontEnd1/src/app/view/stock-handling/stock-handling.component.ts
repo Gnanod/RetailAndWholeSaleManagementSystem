@@ -270,5 +270,16 @@ export class StockHandlingComponent implements OnInit {
   }
 
 
+  deleteBrand(brandId: number) {
 
+      console.log('BrandId'+brandId)
+    this.brandService.deleteBrand(brandId).subscribe((result) => {
+
+      if(result!=null){
+        alert('Brand Is Added');
+      }
+
+    });
+
+  }
 }

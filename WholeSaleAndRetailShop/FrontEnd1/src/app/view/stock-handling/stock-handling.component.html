@@ -467,7 +467,7 @@
       <div class="card">
         <div class="card-header card-header-icon card-header-rose">
           <div class="card-icon">
-            <i class="material-icons">perm_identity</i>
+            <i class="fas fa-cart-plus"></i>
           </div>
           <h4 class="card-title">Add Item Details
 
@@ -515,7 +515,7 @@
       <div class="card">
         <div class="card-header card-header-icon card-header-rose">
           <div class="card-icon">
-            <i class="material-icons">perm_identity</i>
+            <i class="fas fa-code-branch"></i>
           </div>
           <h4 class="card-title">Add Brand Details
 
@@ -567,7 +567,7 @@
     <div class="card">
       <div class="card-header card-header-icon card-header-rose">
         <div class="card-icon">
-          <i class="material-icons">perm_identity</i>
+          <i class="fas fa-cubes"></i>
         </div>
         <h4 class="card-title">Add Stock Details
 
@@ -808,7 +808,7 @@
     <div class="card">
       <div class="card-header card-header-rose card-header-icon">
         <div class="card-icon">
-          <i class="material-icons">search</i>
+          <i class="fas fa-search"></i>
         </div>
         <h4 class="card-title">Search  Item Details </h4>
       </div>
@@ -821,9 +821,9 @@
               <input type="text" class="form-control" style="width: 300px" (keyup)="searchItemByName($event)" [(ngModel)]="searchitembyname">
             </div>
           </div>
-          <div class="col-md-4" style="margin-left: -200px ;margin-top: 25px">
-            <button type="submit" class="btn btn-rose pull-right" (click)="searchVehicleDetailsByNumber()" >   <i class="material-icons">search</i></button>
-          </div>
+          <!--<div class="col-md-4" style="margin-left: -200px ;margin-top: 25px">-->
+            <!--<button type="submit" class="btn btn-rose pull-right" (click)="searchVehicleDetailsByNumber()" ><i class="fas fa-search"></i></button>-->
+          <!--</div>-->
           <!--(click)="searchVehicleDetailsByNumber()"-->
         </div>
 
@@ -878,10 +878,13 @@
 
                 </td>
 
-                <td class="td-actions ">
-                  <button type="button" rel="tooltip" class="btn btn-danger" (click)="printBarcode(item.barCode,item.barcodeQuantity)">
-                    <!--<i class="material-icons">close</i>-->
-                  </button>
+                <td >
+
+                  <button type="submit" class="btn btn-rose pull-right" (click)="printBarcode(item.barCode,item.barcodeQuantity)">  <i class="fab fa-500px"></i></button>
+
+                  <!--<button type="button" rel="tooltip" class="btn btn-danger" (click)="printBarcode(item.barCode,item.barcodeQuantity)">-->
+                  <!---->
+                  <!--</button>-->
                 </td>
               </tr>
 
@@ -896,6 +899,65 @@
 
 </div>
 
+<div class="row">
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header card-header-icon card-header-rose">
+        <div class="card-icon">
+          <i class="fas fa-trash-alt"></i>
+        </div>
+        <h4 class="card-title">Delete Brand Details
+
+        </h4>
+      </div>
+      <div class="card-body">
+
+        <div class="row">
+          <table class="table">
+            <thead class=" text-primary">
+            <th>
+              BrandID
+            </th>
+            <th>
+              Brand Name
+            </th>
+
+            </thead>
+            <tbody>
+
+
+            <tr *ngFor="let brand of brands">
+              <td>
+                {{brand.brandId}}
+              </td>
+              <td>
+                {{brand.brandName}}
+              </td>
+              <td>
+                <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteBrand(brand.brandId)">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </td>
+            </tr>
+
+
+            </tbody>
+          </table>
+
+
+          <div class="col-md-6">
+
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
 <!--<div class="row">-->
   <!--<div class="col-md-6">-->
     <!--<div class="card">-->
