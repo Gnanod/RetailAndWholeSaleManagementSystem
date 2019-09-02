@@ -1,15 +1,15 @@
 export class Employee
 {
   employee_id: number;
-  fname: String;
-  lname: String ;
-  email: String;
-  nic: String;
-  address: String;
-  birthday: String;
-  phone: String;
-  datejoin: String;
-  gender: String;
-  role: String;
-  basicsal: String;
+  fname: string;
+  lname: string ;
+  email: string;
+  nic: string;
+  address: string;
+  birthday: string;
+  phone: string;
+  datejoin: string;
+  gender: string;
+  role: string;
+  basicsal: string;
 }
