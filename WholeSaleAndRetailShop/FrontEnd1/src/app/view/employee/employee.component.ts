@@ -21,17 +21,17 @@ export class EmployeeComponent implements OnInit {
 
   employeename : string;
   employee_id1: number;
-  fname1: String;
-  lname1: String;
-  email1: String;
-  nic1: String;
-  address1: String;
-  birthday1: String;
-  phone1: String;
-  datejoin1: String;
-  basicsal1: String;
-  role1:String;
-  gender1:String;
+  fname1: string;
+  lname1: string;
+  email1: string;
+  nic1: string;
+  address1: string;
+  birthday1: string;
+  phone1: string;
+  datejoin1: string;
+  basicsal1: string;
+  role1:string;
+  gender1:string;
 
   constructor(private route: Router, private employeeService: EmployeeService) {
   }

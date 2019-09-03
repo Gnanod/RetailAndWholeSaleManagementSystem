@@ -23,6 +23,8 @@ import {DatePipe} from "@angular/common";
 import { CustomerOrderComponent } from './view/customer-order/customer-order.component';
 import { ReturnItemsComponent } from './view/retitems/retitems.component';
 
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,7 @@ import { ReturnItemsComponent } from './view/retitems/retitems.component';
       AppRoutingModule,
       BrowserAnimationsModule,
       AppRoutingModule,
-      FormsModule,
+      FormsModule,FontAwesomeModule,
       HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [
