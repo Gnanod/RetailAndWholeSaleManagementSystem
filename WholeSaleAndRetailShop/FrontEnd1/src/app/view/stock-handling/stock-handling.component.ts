@@ -208,10 +208,7 @@ export class StockHandlingComponent implements OnInit {
           this.itemDetailsQtyOnHand = null;
           this.seachItemBarcode = null;
           this.itemQuantity = null;
-
-
         }
-
       }
     }
 
@@ -219,6 +216,7 @@ export class StockHandlingComponent implements OnInit {
     for(let i = 0; i < this.itemsTables.length; ++i){
       if (this.itemsTables[i].item.barCode === id) {
         this.itemsTables.splice(i,1);
+
       }
     }
   }

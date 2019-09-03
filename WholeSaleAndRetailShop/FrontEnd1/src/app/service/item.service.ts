@@ -18,25 +18,30 @@ export class ItemService {
 
     addItem(additem: Item) {
     
-        return this.http.post<Item>(environment.backend_url + URL + '/AddItem',additem);
+      return this.http.post<Item>(environment.backend_url + URL + '/AddItem',additem);
 
     }
 
     searchItemDetailsByName(searchitembyname: string) {
 
-        return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByName/'+searchitembyname);
-    
+      return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByName/'+searchitembyname);
     }
 
-  searchByProductName(searchProductName :string) {
+    searchByProductName(searchProductName :string) {
 
-    return this.http.get<Item>(environment.backend_url + URL + '/searchByProductName/'+searchProductName);
-  }
+      return this.http.get<Item>(environment.backend_url + URL + '/searchByProductName/'+searchProductName);
+    }
+
     searchItemDetailsByBarcode(seachItemBarcode: string) {
         
       return this.http.get<Item>(environment.backend_url+URL+'/searchItemDetailsByBarcode/'+seachItemBarcode);
 
     }
+
+    // searchItemDetailsByNameOrId(searchItemNameOrId: string){
+    //
+    //   return this.http.get<Item>(environment.backend_url+URL+'/searchItemDetailsByNameOrId/'+searchItemNameOrId);
+    // }
 
 
 }

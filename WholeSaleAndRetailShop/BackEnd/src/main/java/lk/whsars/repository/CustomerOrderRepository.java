@@ -9,8 +9,12 @@ import java.util.List;
 
 public interface CustomerOrderRepository extends JpaRepository<CustomerOrder,String> {
 
-//    @Query(value = "from Item  where barCode=?1")
-//    List<Item> findAllItemsByName(String name);
+    @Query(value = "from Item  where itemName=?1 or barCode=?1")
+    List<Item> findAllItemsByNameOrId(String nameOrId);
+
+    @Query(value = "from Item  where barCode = ?1")
+    List<Item> getAllItems(String searchName);
+
 
 //    @Query(value = "SELECT * FROM CustomerOrder")
 //    List<CustomerOrder>
