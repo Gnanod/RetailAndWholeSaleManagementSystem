@@ -197,9 +197,15 @@ export class SupplierOrderComponent implements OnInit {
     for(let i = 0; i < this.supplierOrderDetailsArray.length; ++i){
       if (this.supplierOrderDetailsArray[i].item.barCode === id) {
 
-        let price :number = this.supplierOrderDetailsArray[i].price;
-        let quantity :number =this.supplierOrderDetailsArray[i].quantity;
-        let tot:number=price * quantity;
+        var price :number = this.supplierOrderDetailsArray[i].price;
+        console.log("JJJJ"+price);
+
+        var quantity :number =this.supplierOrderDetailsArray[i].quantity;
+        console.log("JJJJ"+quantity);
+
+        let tot:number=price*quantity;
+        console.log("tot"+this.totalAmount);
+        console.log("Totallllllllllllllllllllll"+tot);
         this.totalAmount = this.totalAmount-tot;
         this.supplierOrderDetailsArray.splice(i,1);
 
