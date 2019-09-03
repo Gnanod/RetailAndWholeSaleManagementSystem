@@ -134,20 +134,33 @@ export class StockHandlingComponent implements OnInit {
     }
 
     searchItemDetailsByBarcode(event :any){
-        this.itemService.searchItemDetailsByBarcode(this.seachItemBarcode).subscribe((result)=>{
-            if(result!=null){
 
-                this.itemDetailsObject=result;
-              this.searchItemName =this.itemDetailsObject.itemName;
-             // this.searchBuyingPrice = this.itemDetailsObject.buyingPrice;
-              this.searchWholeSalePrice =this.itemDetailsObject.wholeSalePrice.toString();
-              this.searchRetailPrice =this.itemDetailsObject.retailPrice.toString();
-              this.itemDetailsQtyOnHand =this.itemDetailsObject.itemQtyOnHand.toString();
-              // this.itemQuantity =this.itemDetailsObject.i
-              // this.itemQuantityOnHand:string;
-              //   this.itemQuantityOnHand = this.itemDetailsObject.itemQtyOnHand.toString();
-            }
+
+      if(this.seachItemBarcode.length!=0){
+        this.itemService.searchItemDetailsByBarcode(this.seachItemBarcode).subscribe((result)=>{
+          if(result!=null){
+
+            this.itemDetailsObject=result;
+            this.searchItemName =this.itemDetailsObject.itemName;
+            // this.searchBuyingPrice = this.itemDetailsObject.buyingPrice;
+         //   this.searchWholeSalePrice =this.itemDetailsObject.wholeSalePrice.toString();
+           // this.searchRetailPrice =this.itemDetailsObject.retailPrice.toString();
+            this.itemDetailsQtyOnHand =this.itemDetailsObject.itemQtyOnHand.toString();
+            // this.itemQuantity =this.itemDetailsObject.i
+            // this.itemQuantityOnHand:string;
+            //   this.itemQuantityOnHand = this.itemDetailsObject.itemQtyOnHand.toString();
+          }else{
+            console.log(" this.itemDetailsObject"+ this.itemDetailsObject);
+            this.itemDetailsObject=new Item();
+            this.searchItemName = null;
+            this.itemDetailsQtyOnHand=null;
+          }
         })
+      }else{
+        this.searchItemName = null;
+        this.itemDetailsQtyOnHand=null;
+      }
+
     }
 
     searchItemByName(event: any){
@@ -174,7 +187,59 @@ export class StockHandlingComponent implements OnInit {
 
     addToTable(){
 
+
+
+
+
       if(this.seachItemBarcode !=null && this.searchItemName!=null && this.searchBuyingPrice!=null && this.searchWholeSalePrice != null && this.searchRetailPrice !=null && this.itemDetailsQtyOnHand !=null && this.itemQuantity!=null ) {
+
+
+        // for(let i = 0; i <  this.itemsTables.length; ++i){
+        //   if ( this.itemsTables[i].item.barCode === this.seachItemBarcode ) {
+        //
+        //     this.itemsTables[i].buyingPrice=parseFloat(this.searchBuyingPrice);
+        //     this.itemsTables[i].quantity
+        //
+        //   }else{
+        //
+        //     let stockItemDetails: StockItemDetails = new StockItemDetails();
+        //     this.itemDetailsObject.barCode = this.seachItemBarcode;
+        //     this.itemDetailsObject.retailPrice = parseFloat(this.searchRetailPrice);
+        //     this.itemDetailsObject.wholeSalePrice = parseFloat(this.searchWholeSalePrice);
+        //     // this.itemDetailsObject.buyingPrice = this.searchBuyingPrice;
+        //     console.log("Buying price 8888888888888:"+this.searchBuyingPrice);
+        //     // console.log("Buying price1111 :"+ this.itemDetailsObject.buyingPrice);
+        //     this.itemDetailsObject.itemName = this.searchItemName;
+        //
+        //
+        //     let totalQuantityOnHand: number;
+        //     totalQuantityOnHand = parseInt(this.itemQuantity) + parseInt(this.itemDetailsQtyOnHand);
+        //     this.itemDetailsObject.itemQtyOnHand = totalQuantityOnHand;
+        //     stockItemDetails.quantity = parseInt(this.itemQuantity);
+        //     stockItemDetails.item = this.itemDetailsObject;
+        //     stockItemDetails.buyingPrice= parseFloat(this.searchBuyingPrice);
+        //
+        //     let amount :number;
+        //     amount = this.totAmount+(stockItemDetails.buyingPrice*stockItemDetails.quantity);
+        //     let stringAmount :string=amount.toString();
+        //     this.totAmount=parseFloat(stringAmount);
+        //
+        //     if (this.seachItemBarcode != null && this.searchItemName != null && this.searchBuyingPrice != null && this.searchWholeSalePrice != null && this.searchRetailPrice != null && this.itemDetailsQtyOnHand != null && this.itemQuantity != null) {
+        //
+        //       this.itemsTables.push(stockItemDetails);
+        //       this.searchItemName = null;
+        //       this.searchBuyingPrice = null;
+        //       this.searchWholeSalePrice = null;
+        //       this.searchRetailPrice = null;
+        //       this.itemDetailsQtyOnHand = null;
+        //       this.seachItemBarcode = null;
+        //       this.itemQuantity = null;
+        //
+        //
+        //
+        //     }
+        //   }
+        // }
 
         let stockItemDetails: StockItemDetails = new StockItemDetails();
         this.itemDetailsObject.barCode = this.seachItemBarcode;
