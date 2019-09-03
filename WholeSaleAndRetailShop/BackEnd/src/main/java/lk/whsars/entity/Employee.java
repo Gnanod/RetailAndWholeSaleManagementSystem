@@ -27,6 +27,8 @@ public class Employee {
     private String basicsal;
 
 
+
+
 //    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "employee")
 //    @OnDelete(action = OnDeleteAction.CASCADE)
 //    @JsonIgnore
