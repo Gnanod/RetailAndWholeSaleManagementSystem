@@ -7,47 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e147aff-134b-47b2-b67e-badeec700322" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/SupplierOrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/SupplierOrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Supplier.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Supplier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/SupplierOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/SupplierOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/SupplierOrderDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/SupplierOrderDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierOrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierOrderRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierRepositoryH.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierRepositoryH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierOrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierServiceH.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierServiceH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/ItemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/ItemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierOrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierOrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierServiceImplH.java" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierServiceImplH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/controller/CustomerController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/controller/ItemController.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/controller/ItemController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/controller/SupplierOrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/controller/SupplierOrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/entity/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/entity/Supplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/entity/SupplierOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/entity/SupplierOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/entity/SupplierOrderDetail.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/entity/SupplierOrderDetail.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/repository/ItemRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/repository/ItemRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/repository/SupplierOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/repository/SupplierOrderRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/repository/SupplierRepositoryH.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/repository/SupplierRepositoryH.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/ItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/ItemService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/SupplierOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/SupplierOrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/SupplierServiceH.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/SupplierServiceH.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/impl/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/impl/CustomerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/impl/ItemServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/impl/ItemServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/impl/SupplierOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/impl/SupplierOrderServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/impl/SupplierServiceImplH.class" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/target/classes/lk/whsars/service/impl/SupplierServiceImplH.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/model/Supplier.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/model/Supplier.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrder.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrder.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrderDetail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrderDetail.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/service/item.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/service/item.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/service/supplier-order.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/service/supplier-order.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/employee/employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/employee/employee.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/BackEnd/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -177,7 +143,7 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="css" value="3" />
-          <entry key="html" value="30" />
+          <entry key="html" value="46" />
           <entry key="java" value="268" />
           <entry key="properties" value="4" />
           <entry key="ts" value="132" />
@@ -187,7 +153,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="30" />
+          <entry key="HTML" value="46" />
           <entry key="JAVA" value="268" />
           <entry key="Properties" value="4" />
           <entry key="TypeScript" value="132" />
@@ -200,7 +166,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="933" />
+          <entry key="html" value="972" />
           <entry key="java" value="3851" />
           <entry key="properties" value="37" />
           <entry key="ts" value="4628" />
@@ -208,7 +174,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="933" />
+          <entry key="HTML" value="972" />
           <entry key="JAVA" value="3851" />
           <entry key="Properties" value="37" />
           <entry key="TypeScript" value="4628" />
@@ -236,50 +202,41 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html">
+        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="222" column="98" selection-start-line="222" selection-start-column="98" selection-end-line="222" selection-end-column="98" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="204">
+              <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="91" column="55" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.ts">
+        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="200" column="73" selection-start-line="200" selection-start-column="73" selection-end-line="200" selection-end-column="73" />
+            <state relative-caret-position="187">
+              <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="139" column="77" selection-start-line="139" selection-start-column="77" selection-end-line="139" selection-end-column="98" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order-agent-item/supplier-order-agent-item.component.ts">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order-agent-item/supplier-order-agent-item.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -310,12 +267,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Brand.java" />
-        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/BrandController.java" />
-        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/StockDetailRepository.java" />
-        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/IdEntity.java" />
-        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/IdService.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/IdGenerator/IdGenerator.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/IdRepository.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/IdServiceImpl.java" />
@@ -358,9 +309,15 @@
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/SupplierOrderController.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierOrderRepository.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierOrderServiceImpl.java" />
-        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.ts" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/employee/employee.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" />
       </list>
     </option>
   </component>
@@ -393,6 +350,9 @@
     <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="1" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -410,110 +370,6 @@
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
               <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="whsars" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="whsars" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="whsars" type="462c0819:PsiDirectoryNode" />
-              <item name="DTO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="whsars" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="whsars" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="whsars" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="whsars" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
               <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -528,22 +384,6 @@
               <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
@@ -560,25 +400,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="stock-handling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="supplier-order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="supplier-order-agent-item" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
@@ -700,10 +522,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267693000" />
+    <option name="totallyTimeSpent" value="275736000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="-10" width="1386" height="788" extended-state="1" />
+    <frame x="-10" y="-10" width="1386" height="788" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
@@ -765,86 +587,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/environments/environment.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/StockContoller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/StockDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/model/Brand.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CustomerOrderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="85" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/BrandRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/StockService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-665">
-          <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/ItemRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CompanyRepoH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -914,13 +656,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5644">
-          <caret line="332" lean-forward="true" selection-start-line="332" selection-end-line="332" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/model/Company.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -946,20 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1083,16 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierRepositoryH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierOrderRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1117,10 +828,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="1143" column="10" selection-start-line="1143" selection-start-column="10" selection-end-line="1143" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="199" column="27" selection-start-line="199" selection-start-column="27" selection-end-line="199" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1138">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierRepositoryH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="257" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="222" column="98" selection-start-line="222" selection-start-column="98" selection-end-line="222" selection-end-column="98" />
+        <state relative-caret-position="51">
+          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -1129,13 +912,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.ts">
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/employee/employee.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="200" column="73" selection-start-line="200" selection-start-column="73" selection-end-line="200" selection-end-column="73" />
+        <state relative-caret-position="34">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="810" column="10" selection-start-line="810" selection-start-column="10" selection-end-line="810" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="139" column="77" selection-start-line="139" selection-start-column="77" selection-end-line="139" selection-end-column="98" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="91" column="55" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="44" />
         </state>
       </provider>
     </entry>
