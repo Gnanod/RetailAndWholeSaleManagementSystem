@@ -1,7 +1,15 @@
+import {SupplierOrder} from "./SupplierOrder";
+import {Item} from "./Item";
+
 export  class SupplierOrderDetail {
-    supplierId:string;
-    companyName:string;
-    supplierName:string;
-    orderId:string;
+
+  supplierOrderId :number;
+  quantity:number;
+  price:number;
+  supplierOrder:SupplierOrder;
+  item :Item;
+
+
+
 
 }

@@ -1,10 +1,8 @@
 package lk.whsars.controller;
 
 
-import lk.whsars.entity.Company;
-import lk.whsars.entity.Supplier;
-import lk.whsars.entity.SupplierOrder;
-import lk.whsars.entity.SupplierOrderDetail;
+import lk.whsars.DTO.SupplierOrderSearchDto;
+import lk.whsars.entity.*;
 import lk.whsars.service.SupplierOrderService;
 import lk.whsars.service.SupplierServiceH;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,9 +28,18 @@ public class SupplierOrderController {
     }
 
     @PostMapping(value = "updateSupplierOrder")
-    public SupplierOrder updateSupplierOrder(@RequestBody SupplierOrder supplierOrder){
+    public String updateSupplierOrder(@RequestBody SupplierOrder supplierOrder){
 
-        return supplierOrderService.updateSupplierOrder(supplierOrder);
+        String s1 = supplierOrderService.updateSupplierOrder(supplierOrder);
+
+        if(s1!=null){
+
+            return "9";
+
+        }else{
+            return null;
+
+        }
     }
 
     @GetMapping(value ="/getAllCompany")
@@ -57,4 +64,33 @@ public class SupplierOrderController {
 
         return s1;
     }
+
+    @GetMapping(value ="/getItemDetails/{nic}")
+    public List<Item> getAllItemsToCart(@PathVariable String nic){
+
+        System.out.println("KKKKKKK");
+
+        List<Item> s1 = supplierServiceH.getAllItemsToCart(nic);
+
+
+        return s1;
+    }
+
+
+    @PostMapping(value = "/saveJoBOrder")
+    public String addSupplierOrderToDb(@RequestBody SupplierOrder supplierOrder){
+
+        SupplierOrder s1 = supplierOrderService.addSupplierOrderToDb(supplierOrder);
+
+        return "9";
+    }
+
+    @GetMapping(value = "/getSupplierOrder/{orderId}")
+    public SupplierOrderSearchDto searchByOrderId(@PathVariable Integer orderId){
+        System.out.println("JJJJJ");
+        return supplierOrderService.searchByOrderId(orderId);
+    }
+
+
+
 }

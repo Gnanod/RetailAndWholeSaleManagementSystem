@@ -2,6 +2,7 @@ import {SupplierOrder} from "./SupplierOrder";
 import {Stock} from "./Stock";
 
 export class Supplier {
+
   supplierNic:string;
   suppliername:string;
   company:string;
@@ -9,6 +10,4 @@ export class Supplier {
   stock :Stock;
 
 
-
-   supplierNic:string;
 }

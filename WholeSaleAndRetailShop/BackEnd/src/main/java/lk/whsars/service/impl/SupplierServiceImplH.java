@@ -1,6 +1,8 @@
 package lk.whsars.service.impl;
 
+import lk.whsars.entity.Item;
 import lk.whsars.entity.Supplier;
+import lk.whsars.entity.SupplierOrder;
 import lk.whsars.repository.SupplierRepositoryH;
 import lk.whsars.service.SupplierServiceH;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,11 +28,35 @@ public class SupplierServiceImplH implements SupplierServiceH {
             Supplier s1 = new Supplier();
 
             s1.setSuppliername(o[0].toString());
-
+            s1.setSupplierNic(o[1].toString());
             System.out.println("KKKK"+s1.getSuppliername());
             l1.add(s1);
         }
 
         return l1;
     }
+
+    @Override
+    public List<Item> getAllItemsToCart(String nic) {
+
+        List<Object[]> ob = supplierRepositoryH.getAllItemsToCart(nic);
+
+        List<Item> i = new ArrayList<>();
+        for ( Object o[]: ob
+        ) {
+            Item i1 = new Item();
+
+            i1.setBarCode(o[0].toString());
+            i1.setItemName(o[1].toString());
+            i1.setRetailPrice(Double.parseDouble(o[2].toString()));
+
+
+
+            i.add(i1);
+        }
+
+
+        return i;
+    }
+
 }

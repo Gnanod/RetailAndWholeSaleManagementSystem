@@ -69,8 +69,5 @@ public class Supplier {
 
     public void setCompany(String company) {
         this.company = company;
-
-    public void setStock(Set<Stock> stock) {
-        this.stock = stock;
     }
 }

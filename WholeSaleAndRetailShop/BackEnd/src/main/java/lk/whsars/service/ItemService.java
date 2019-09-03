@@ -12,7 +12,6 @@ public interface ItemService {
 
     List<Item> getAllItems(String name);
 
-    Item searchByProductName(String name);
     Item getAllItemsByBarcode(String searchBarcode);
 
 
