@@ -28,10 +28,6 @@ export class ItemService {
     
     }
 
-  searchByProductName(searchProductName :string) {
-
-    return this.http.get<Item>(environment.backend_url + URL + '/searchByProductName/'+searchProductName);
-  }
     searchItemDetailsByBarcode(seachItemBarcode: string) {
         
       return this.http.get<Item>(environment.backend_url+URL+'/searchItemDetailsByBarcode/'+seachItemBarcode);

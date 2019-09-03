@@ -284,6 +284,7 @@ export class StockHandlingComponent implements OnInit {
     for(let i = 0; i < this.itemsTables.length; ++i){
       if (this.itemsTables[i].item.barCode === id) {
         this.itemsTables.splice(i,1);
+
       }
     }
   }
@@ -292,6 +293,9 @@ export class StockHandlingComponent implements OnInit {
 
       let stock:Stock = new Stock();
       stock.date=this.datePipe.transform(new Date(), 'yyyy-MM-dd');
+      stock.payment=100000;
+      stock.stockItemDetails=this.itemsTables;
+      stock.stockItemDetails=this.itemsTables;
       stock.payment=this.totAmount;
 
       let sup :Supplier  = new Supplier();
