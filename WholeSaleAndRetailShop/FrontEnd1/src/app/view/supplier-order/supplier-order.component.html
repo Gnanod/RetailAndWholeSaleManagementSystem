@@ -8,7 +8,7 @@
             <div class="card">
               <div class="card-header card-header-rose card-header-icon">
                 <div class="card-icon">
-                  <i class="material-icons">store</i>
+                  <i class="fas fa-warehouse"></i>
                   <!--ghjgkjgkjgk-->
                   <!--hjkh-->
                 </div>
@@ -41,8 +41,8 @@
                           <div class="col-md-8">
                             <div class="form-group">
                               <label >Select Agent</label>
-                              <select class="form-control " data-style="select-with-transition"  [(ngModel)]="insertAgent" >
-                                <option *ngFor="let supplier of searchMakesByCompany" [value]="supplier.suppliername">{{supplier.suppliername}}</option>
+                              <select class="form-control " data-style="select-with-transition"  [(ngModel)]="selectedAgentNic" #mySelect (change)="getItemDetails(selectedAgentNic)">
+                                <option *ngFor="let supplier of searchMakesByCompany" [ngValue]="supplier">{{supplier.suppliername}}</option>
                               </select>
                             </div>
 
@@ -72,35 +72,49 @@
                 <div class="row" >
 
                   <div class="col-md-8" style="margin-left: 10px">
+
                     <div class="form-group">
                       <label class="bmd-label-floating">Search By Order ID</label>
-                      <input type="text" class="form-control" style="width: 200px">
+                      <input type="text" class="form-control" style="width: 200px" (keyup)="searchOrderByOrderId($event)"[(ngModel)]="searchOrderById" >
                     </div>
                   </div>
-                  <div class="col-md-4" style="margin-left: 200px ;margin-top: -55px">
-                    <button type="submit" class="btn btn-rose pull-right" > <i class="material-icons">search</i></button>
-                  </div>
-
+                  <!--<div class="col-md-4" style="margin-left: 200px ;margin-top: -55px">-->
+                    <!--<button type="submit" class="btn btn-rose pull-right" > <i class="material-icons">search</i></button>-->
+                  <!--</div>-->
                 </div>
 
-
-                <div class="timeline-panel">
+                  <table>
+                    <tbody>
+                    <!--<tr *ngIf="searchOrderValuesIf;else elseBlock">-->
+                      <!--<td colspan="8" class="alert alert-danger" style="text-align: center">-->
+                        <!--Order Not Found-->
+                      <!--</td>-->
+                    <!--</tr>-->
+                    <!--<ng-template #elseBlock>-->
+                <div class="timeline-panel" >
+                  <tr>
                   <div class="timeline-heading">
-                    <span class="badge badge-pill badge-info">Agent name</span>
+                    <span class="badge badge-info">{{searchOrder.supplierName}}</span>
                   </div>
+                  </tr>
                   <div class="timeline-body">
-                    <h6>Company Name : Uniliver</h6>
-                    <h6>Ordered date : 2019/02/07</h6>
+                    <!--<tr><h6>Supplier Name : {{searchOrder.supplierName}}</h6></tr>-->
+                    <tr><h6>Company Name : {{searchOrder.companyName}}</h6></tr>
+                    <tr><h6>Ordered date : {{searchOrder.date}}</h6></tr>
                   </div>
                   <div class="timeline-footer">
+                    <tr>
                     <div class="dropdown">
-                      <button type="button" class="btn btn-round btn-info">
+                      <button type="button" class="btn btn-round btn-info" (click)="updateSupplierOrder()">
                         <i>Update Status</i>
                       </button>
                     </div>
+                    </tr>
                   </div>
                 </div>
-
+                    <!--</ng-template>-->
+                    </tbody>
+                  </table>
 
               </div>
             </div>
@@ -113,67 +127,45 @@
   <div class="card">
     <div class="card-header card-header-rose card-header-icon">
       <div class="card-icon">
-        <i class="material-icons">assignment</i>
+        <i class="fas fa-indent"></i>
       </div>
       <h4 class="card-title">Items</h4>
     </div>
     <div class="card-body">
 
-      <div class="row" >
-
-        <div class="col-md-4" style="margin-left: 250px">
-          <div class="form-group">
-            <label class="bmd-label-floating">Search By Product Name</label>
-            <input type="text" class="form-control" style="width: 300px" [(ngModel)]="searchProductName">
-          </div>
-        </div>
-        <div class="col-md-5" style="margin-left: -120px ;margin-top: 0px">
-          <button type="submit" class="btn btn-rose pull-right" (click)="searchByProductName()" > <i class="material-icons">search</i></button>
-        </div>
-
-      </div>
-
-
-
       <div class="card-body">
         <div class="table-responsive">
-          <table class="table table-shopping">
+          <table class="table shopping">
             <thead>
             <tr>
+              <th>Barcode</th>
               <th>Product</th>
               <th class="text-right">Price</th>
-              <th class="text-right">Qty</th>
-              <th class="text-right">Amount</th>
+              <th class="text-center">Qty</th>
+
             </tr>
             </thead>
             <tbody>
-            <tr *ngIf="searchProductValuesIf;else elseBlock">
-              <td colspan="8" class="alert alert-danger" style="text-align: center">
-                Customer Not Found
-              </td>
-            </tr>
-            <ng-template #elseBlock>
-            <tr>
+
+            <tr *ngFor="let item of itemsArray async" >
               <td class="td-name">
-                <a href="#jacket">Spring Jacket</a>
+                <a href="" style="color: #8e24aa">{{item.barCode}}</a>
                 <br />
               </td>
               <td class="td-number text-right">
-                <small>&euro;</small>549
+                <small>&euro;</small>{{item.itemName}}
               </td>
-              <td class="td-number text-right">
-                <input type="text" class="form-control-right" style="width: 60px">
+              <td class="td-number text-center">
+                {{item.retailPrice}}
               </td>
-              <td class="td-number">
-                <small>&euro;</small>549
+              <td class="td-number text-center">
+                <input type="text" class="form-control-right" style="width: 60px" [(ngModel)]="item.itemQtyOnHand">
               </td>
+
               <td class="td-actions">
-                <button class="btn btn-primary btn-round">Add</button>
+                <button class="btn btn-primary btn-round" (click)="AddItemsToTable(item.barCode,item.itemName,item.itemQtyOnHand,item.retailPrice)">Add</button>
               </td>
             </tr>
-
-
-            </ng-template>
 
             </tbody>
           </table>
@@ -190,7 +182,7 @@
   <div class="card">
     <div class="card-header card-header-rose card-header-icon">
       <div class="card-icon">
-        <i class="material-icons">assignment</i>
+        <i class="fas fa-file-alt"></i>
       </div>
       <h4 class="card-title">Order list</h4>
     </div>
@@ -203,51 +195,54 @@
         <table class="table table-shopping">
           <thead>
           <tr>
+            <th>Barcode</th>
             <th>Product</th>
-            <th class="text-right">Qty</th>
-            <th class="text-right">Amount</th>
+            <th >Qty</th>
+            <th >Amount</th>
           </tr>
 
-          <tr>
 
-          </tr>
 
           </thead>
           <tbody>
 
-          <tr>
-            <td class="td-name">
-              <a href="#nothing">Pencil Skirt</a>
-              <br />
-              <small>by Valentino</small>
-            </td>
+          <tr *ngFor="let items of supplierOrderDetailsArray async" >
+            <td >
+              {{items.item.barCode}}
 
-            <td class="td-number">
-              1
             </td>
-            <td class="td-number">
-              <small>&euro;</small>799
-            </td>
+            <td >
+              {{items.item.itemName}}
 
-            <td class="td-actions">
-              <button class="btn btn-primary btn-round">Remove</button>
             </td>
-
+            <td >
+              {{items.quantity}}
+            </td>
+            <td >
+              {{items.price }}
+            </td>
+            <td class="td-actions" >
+              <!--<button class="btn btn-primary btn-round" (click)="deleteOrderRow(items.supplierOrder.supplierOrderId)">Remove</button>-->
+              <button class="btn btn-primary btn-round" (click)="deleteOrderRow(items.item.barCode)"> Remove </button>
+            </td>
           </tr>
+
+
+
           <tr>
             <td colspan="2"></td>
             <td class="td-total">
               Total
             </td>
             <td colspan="1" class="td-price">
-              <small>&euro;</small>2,346
+              {{this.totalAmount}}
             </td>
             <td></td>
           </tr>
           <tr>
             <td colspan="2"></td>
             <td colspan="2" class="text-right">
-              <button class="btn btn-primary btn-round">Place Order</button>
+              <button class="btn btn-primary btn-round" (click)="saveJobOrder()">Place Order</button>
             </td>
           </tr>
 

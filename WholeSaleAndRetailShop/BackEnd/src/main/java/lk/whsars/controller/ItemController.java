@@ -42,12 +42,7 @@ public class ItemController {
       }
    }
 
-   @GetMapping(value = "/searchByProductName/{name}")
-   public Item searchByProductName(@PathVariable String name){
 
-      return itemService.searchByProductName(name);
-
-   }
    @GetMapping(value = "/searchItemDetailsByBarcode/{searchBarcode}")
    public Item getItemDetailsByBarcode(@PathVariable String searchBarcode){
       if(searchBarcode!=null){

@@ -12,22 +12,16 @@ public class SupplierOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int supplierOrderId;
-    int companyName;
-    int supplierId;
-    String productName;
-    int quantity;
-    double amount;
+    String companyName;
     double total;
     String status;
-
+    String date;
 
     @ManyToOne
     private Supplier supplier;
     @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "supplierOrder")
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Set<SupplierOrderDetail> supplierOrderDetails;
-//    
-
 
     public int getSupplierOrderId() {
         return supplierOrderId;
@@ -37,44 +31,12 @@ public class SupplierOrder {
         this.supplierOrderId = supplierOrderId;
     }
 
-    public int getSupplierId() {
-        return supplierId;
-    }
-
-    public void setSupplierId(int supplierId) {
-        this.supplierId = supplierId;
-    }
-
-    public int getAgentid() {
+    public String getCompanyName() {
         return companyName;
     }
 
-    public void setAgentid(int agentid) {
-        this.companyName = agentid;
-    }
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public double getAmount() {
-        return amount;
-    }
-
-    public void setAmount(double amount) {
-        this.amount = amount;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
     public double getTotal() {
@@ -91,5 +53,35 @@ public class SupplierOrder {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Supplier getSupplier() {
+        return supplier;
+    }
+
+    public void setSupplier(Supplier supplier) {
+        this.supplier = supplier;
+    }
+
+    public Set<SupplierOrderDetail> getSupplierOrderDetails() {
+        return supplierOrderDetails;
+    }
+
+    public void setSupplierOrderDetails(Set<SupplierOrderDetail> supplierOrderDetails) {
+
+
+        for (SupplierOrderDetail s1 : supplierOrderDetails
+             ) {
+            s1.setSupplierOrder(this);
+        }
+        this.supplierOrderDetails = supplierOrderDetails;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }

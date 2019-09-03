@@ -27,11 +27,14 @@ export class ItemService {
       return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByName/'+searchitembyname);
     }
 
+<<<<<<< HEAD
     searchByProductName(searchProductName :string) {
 
       return this.http.get<Item>(environment.backend_url + URL + '/searchByProductName/'+searchProductName);
     }
 
+=======
+>>>>>>> 455af6a590379a3d4d16620acaf351f49d064cdd
     searchItemDetailsByBarcode(seachItemBarcode: string) {
         
       return this.http.get<Item>(environment.backend_url+URL+'/searchItemDetailsByBarcode/'+seachItemBarcode);

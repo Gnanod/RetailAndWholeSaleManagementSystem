@@ -5,7 +5,7 @@
       <div class="card">
         <div class="card-header card-header-icon card-header-rose">
           <div class="card-icon">
-            <i class="material-icons">perm_identity</i>
+            <i class="fas fa-id-card-alt"></i>
           </div>
           <h4 class="card-title"><b><b>Customer Details</b></b>
 
@@ -121,7 +121,7 @@
       <div class="card">
         <div class="card-header card-header-rose card-header-icon">
           <div class="card-icon">
-            <i class="material-icons">assignment</i>
+            <i class="fas fa-address-card"></i>
           </div>
           <h4 class="card-title"><b><b>Customers Table</b></b></h4>
 
@@ -131,15 +131,17 @@
 
           <div class="row" >
 
-            <div class="col-md-4" style="margin-left: 450px">
+            <div class="col-md-4" style="margin-left: 550px">
               <div class="form-group">
                 <label class="bmd-label-floating">Search By Name</label>
-                <input type="text" class="form-control" style="width: 600px" (keyup)="searchCustomerDetailsByNIC($event)" [(ngModel)]="searchCustomerNIC">
+                <input type="text" class="form-control" style="width: 350px" (keyup)="searchCustomerDetailsByNIC($event)" [(ngModel)]="searchCustomerNIC">
+
+              <div class="col-md-4" style="margin-left: 300px ;margin-top: -48px">
+                <button type="submit" class="btn btn-rose pull-right" >   <i class="fas fa-search"></i></button>
+              </div>
               </div>
             </div>
-            <div class="col-md-4" style="margin-left: -100px ;margin-top: -5px">
-              <button type="submit" class="btn btn-rose pull-right" >   <i class="material-icons">search</i></button>
-            </div>
+
 
           </div><br><br>
 
@@ -233,7 +235,7 @@
       <div class="card">
         <div class="card-header card-header-icon card-header-rose">
           <div class="card-icon">
-            <i class="material-icons">perm_identity</i>
+            <i class="fas fa-user-edit"></i>
           </div>
           <h4 class="card-title"><b><b>Update Customer Details</b></b>
 

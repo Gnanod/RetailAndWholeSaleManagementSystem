@@ -225,6 +225,9 @@ export class StockHandlingComponent implements OnInit {
 
       let stock:Stock = new Stock();
       stock.date=this.datePipe.transform(new Date(), 'yyyy-MM-dd');
+      stock.payment=100000;
+      stock.stockItemDetails=this.itemsTables;
+      stock.stockItemDetails=this.itemsTables;
       stock.payment=this.totAmount;
 
       let sup :Supplier  = new Supplier();
@@ -268,5 +271,16 @@ export class StockHandlingComponent implements OnInit {
   }
 
 
+  deleteBrand(brandId: number) {
 
+      console.log('BrandId'+brandId)
+    this.brandService.deleteBrand(brandId).subscribe((result) => {
+
+      if(result!=null){
+        alert('Brand Is Added');
+      }
+
+    });
+
+  }
 }

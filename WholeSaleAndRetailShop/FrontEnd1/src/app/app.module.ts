@@ -21,7 +21,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {DatePipe} from "@angular/common";
 import { CustomerOrderComponent } from './view/customer-order/customer-order.component';
-
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -39,11 +40,11 @@ import { CustomerOrderComponent } from './view/customer-order/customer-order.com
       CustomerOrderComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+      BrowserModule,
+      AppRoutingModule,
       BrowserAnimationsModule,
       AppRoutingModule,
-      FormsModule,
+      FormsModule,FontAwesomeModule,
       HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [
