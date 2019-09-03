@@ -1,11 +1,13 @@
 package lk.whsars.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import javax.persistence.*;
-import java.util.Set;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Company {
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,9 +19,6 @@ public class Company {
     String fax;
     String website;
 
-    @OneToMany
-    @JsonIgnore
-    private Set<Supplier> supplierset;
 
 
     public int getCompanyId() {

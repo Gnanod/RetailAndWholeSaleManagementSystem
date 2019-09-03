@@ -22,6 +22,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {DatePipe} from "@angular/common";
 import { CustomerOrderComponent } from './view/customer-order/customer-order.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { SupplierComponent } from './view/supplier/supplier.component';
+import { CompanyComponent } from './view/company/company.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -37,7 +39,9 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     SalarysheetComponent,
       CustomerComponent,
       StockHandlingComponent,
-      CustomerOrderComponent
+      CustomerOrderComponent,
+      SupplierComponent,
+      CompanyComponent
   ],
   imports: [
       BrowserModule,

@@ -27,9 +27,9 @@ public class SupplierServiceImplH implements SupplierServiceH {
              ) {
             Supplier s1 = new Supplier();
 
-            s1.setSuppliername(o[0].toString());
+            s1.setSupplierName(o[0].toString());
             s1.setSupplierNic(o[1].toString());
-            System.out.println("KKKK"+s1.getSuppliername());
+
             l1.add(s1);
         }
 

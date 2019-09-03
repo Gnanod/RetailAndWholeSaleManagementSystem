@@ -8,13 +8,13 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 
-public interface SupplierOrderRepository extends JpaRepository<SupplierOrder,String> {
+public interface SupplierOrderRepository extends JpaRepository<SupplierOrder,Integer> {
 
 //    @Query(value = "select so.companyName,so.date,s.supplierName from SupplierOrder so, SupplierOrderDetails sd,Supplier s where so.supplierOrderId = sd.supplierOrderSupplierOrderId")
 //    SupplierOrder searchByOrderId(Integer supplier_order_supplier_order_id);
 //
 
-    @Query(value="select s.company,date,s.suppliername,so.status,so.total,so.supplierOrderId,s.supplierNic from Supplier s, SupplierOrder so where s.supplierNic=so.supplier.supplierNic and so.supplierOrderId=:supplierOrderId")
+    @Query(value="select s.company,date,s.supplierName,so.status,so.total,so.supplierOrderId,s.supplierNic from Supplier s, SupplierOrder so where s.supplierNic=so.supplier.supplierNic and so.supplierOrderId=:supplierOrderId")
     List<Object[]> searchSupplierOrder(@Param("supplierOrderId")int supplierOrderId);
 
     @Query(value ="update SupplierOrder set status = 'true' where supplierOrderId=:supplierOrderId")

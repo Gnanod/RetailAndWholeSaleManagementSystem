@@ -235,7 +235,7 @@ export class SupplierOrderComponent implements OnInit {
 
           supplier.supplierNic = this.searchOrder.supplierNIC;
           console.log('LKKKK'+ supplier.supplierNic);
-          supplier.suppliername=this.searchOrder.supplierName;
+          supplier.supplierName=this.searchOrder.supplierName;
           supplierorder.supplier=supplier;
 
           supplierorder.status="TRUE";

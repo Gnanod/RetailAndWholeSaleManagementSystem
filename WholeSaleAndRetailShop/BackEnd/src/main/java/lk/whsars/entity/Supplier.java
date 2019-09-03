@@ -10,22 +10,40 @@ import java.util.Set;
 @Entity
 public class Supplier {
     @Id
-    String supplierNic;
-    String suppliername;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+     int supplierId;
     String company;
+    String supplierNic;
+    String supplierName;
+    String address;
+    String email;
+    String phone;
+    String fax;
 
-//    @ManyToOne
-//    @JoinColumn(nullable = false)
-//    private Company company;
-
-    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "supplier")
+    @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "supplier")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<SupplierOrder> supplierOrders;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "supplier")
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "supplier")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<Stock> stock;
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public int getSupplierId() {
+        return supplierId;
+    }
+
+    public void setSupplierId(int supplierId) {
+        this.supplierId = supplierId;
+    }
 
     public String getSupplierNic() {
         return supplierNic;
@@ -34,22 +52,6 @@ public class Supplier {
     public void setSupplierNic(String supplierNic) {
         this.supplierNic = supplierNic;
     }
-
-    public String getSuppliername() {
-        return suppliername;
-    }
-
-    public void setSuppliername(String suppliername) {
-        this.suppliername = suppliername;
-    }
-
-    public String getCompany() {
-        return company;
-    }
-
-//    public void setCompany(Company company) {
-//        this.company = company;
-//    }
 
     public Set<SupplierOrder> getSupplierOrders() {
         return supplierOrders;
@@ -67,7 +69,43 @@ public class Supplier {
         this.stock = stock;
     }
 
-    public void setCompany(String company) {
-        this.company = company;
+    public String getSupplierName() {
+        return supplierName;
+    }
+
+    public void setSupplierName(String supplierName) {
+        this.supplierName = supplierName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getFax() {
+        return fax;
+    }
+
+    public void setFax(String fax) {
+        this.fax = fax;
     }
 }
