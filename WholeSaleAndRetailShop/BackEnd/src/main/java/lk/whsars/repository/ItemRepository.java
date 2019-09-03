@@ -18,5 +18,6 @@ public interface ItemRepository extends JpaRepository<Item,String> {
     @Query(value = "from Item  where barCode like %?1")
     Item findAllItemsByBarcode(String searchBarcode);
 
-
+    @Query(value = "from Item  where barCode = ?1")
+    Item findAllItemsByBarcodeNotLike(String searchBarcode);
 }

@@ -14,6 +14,7 @@ export class Item {
     customerOrderDetails: Array<CustomerOrderDetail>;
     supplierOrderDetails: Array<SupplierOrderDetail>;
     stockItemDetails: Array<StockItemDetails>;
+    barcodeQuantity:number;
 
 
 }

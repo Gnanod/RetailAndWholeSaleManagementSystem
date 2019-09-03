@@ -31,5 +31,11 @@ public class BrandController {
 
         return  brandService.getAllBrands();
     }
-    
+
+    @DeleteMapping(value = "/deleteBrand/{brandId}")
+    public String deleteBrand(@PathVariable int brandId){
+
+        return  brandService.deleteBrand(brandId);
+
+    }
 }

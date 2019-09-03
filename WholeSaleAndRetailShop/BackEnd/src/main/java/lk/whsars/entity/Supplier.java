@@ -18,11 +18,11 @@ public class Supplier {
 //    @JoinColumn(nullable = false)
 //    private Company company;
 
-    @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "supplier")
+    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "supplier")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<SupplierOrder> supplierOrders;
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "supplier")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "supplier")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
     private Set<Stock> stock;

@@ -26,4 +26,10 @@ export class BrandService {
         return this.http.get<Array<Brand>>(environment.backend_url + URL + '/getAllBrand');
 
     }
+
+  deleteBrand(brandId: number) {
+
+    return this.http.delete<string>(environment.backend_url + URL + '/deleteBrand/'+brandId);
+
+  }
 }
