@@ -115,8 +115,8 @@ export class CustomerOrderComponent implements OnInit {
       this.customerOrderService.addCustomerOrder(this.addCusOrder).subscribe((result) => {
 
         if (result != null) {
-
           alert('Order Added SuccessFully')
+          window.location.reload();
           this.addCusOrder = new CustomerOrder();
           this.Cusdetail = new Customer();
           console.log(this.CusOrder);
