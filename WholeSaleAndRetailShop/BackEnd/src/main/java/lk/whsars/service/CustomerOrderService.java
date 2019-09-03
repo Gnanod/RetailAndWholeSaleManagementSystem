@@ -9,6 +9,11 @@ public interface CustomerOrderService {
 
     String addCustomerOrder(CustomerOrder customerOrder);
 
+    List<Item> getAllItemsForCounter(String nameOrId);
+
+    List<Item> getAllItems(String searchName);
+
+
 //  List<Item> getAllItems(String name);
 
 }

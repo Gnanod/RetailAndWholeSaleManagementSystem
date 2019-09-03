@@ -273,10 +273,7 @@ export class StockHandlingComponent implements OnInit {
           this.itemDetailsQtyOnHand = null;
           this.seachItemBarcode = null;
           this.itemQuantity = null;
-
-
         }
-
       }
     }
 

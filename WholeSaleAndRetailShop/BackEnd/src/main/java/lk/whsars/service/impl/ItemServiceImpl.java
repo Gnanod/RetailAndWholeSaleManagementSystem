@@ -37,6 +37,24 @@ public class ItemServiceImpl implements ItemService {
        }
     }
 
+//    @Override
+//    public List<Item> getAllItemsForCounter(String nameOrId) {
+//
+//        List<Item> item= itemRepository.findAllItemsByNameOrId(nameOrId);
+//        if(item.size()!=0){
+//            return item;
+//
+//        }else{
+//
+//            return null;
+//
+//        }
+//    }
+
+    @Override
+    public Item searchByProductName(String name) {
+        return itemRepository.searchByProductName(name);
+    }
 
     public Item getAllItemsByBarcode(String searchBarcode) {
         Item item= itemRepository.findAllItemsByBarcode(searchBarcode);
