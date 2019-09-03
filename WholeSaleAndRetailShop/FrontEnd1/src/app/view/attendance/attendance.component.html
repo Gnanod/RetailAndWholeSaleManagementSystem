@@ -22,7 +22,7 @@
                   <i class="material-icons">store</i>
                 </div>
                 <h3 class="card-title">Number Of Employee</h3>
-                <h3 class="card-title">100</h3>
+                <h3 class="card-title"> </h3>
 
               </div>
               <div class="card-footer">
@@ -47,23 +47,15 @@
 
                 <div  >
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter Employee ID">
+                    <input type="text" class="form-control" placeholder="Enter Employee ID" [(ngModel)]="empId">
                   </div>
                 </div>
 
                 <div class="col-md-4 col-sm-5">
-                  <button class="btn btn-dribbble">
+                  <button class="btn btn-dribbble" (click)="addAttendance(empId)">
                     IN TIME
                   </button>
                 </div>
-
-                <div class="col-md-4 col-sm-5">
-                  <button class="btn btn-dribbble">
-                    OUT TIME
-                  </button>
-                </div>
-
-                <button class="btn btn-primary btn-sm">SAVE</button>
 
               </div>
               <div class="card-footer">
@@ -84,6 +76,71 @@
 </div>
 
 
+<nav class="navbar navbar-expand-lg bg-warning">
+  <!-- Navbar content -->
+  <form class="form-inline ml-auto">
+    <div class="form-group no-border">
+      <input type="text" class="form-control" placeholder="Search" name="attId" [(ngModel)]="attendanceId">
+    </div>
+    <button type="submit" class="btn btn-just-icon btn-round" (click)="searchById()">
+      <i class="now-ui-icons ui-1_zoom-bold" class="material-icons">search</i>
+    </button>
+  </form>
+</nav>
+<!--Search and delete-->
+<div>
+  <div class="card">
+    <div class="card-header card-header-text card-header-warning">
+      <div class="card-text">
+        <h4 class="card-title">Search & Delete</h4>
+        <p class="card-category">Attendence</p>
+      </div>
+    </div>
+    <div class="card-body table-responsive">
+      <table class="table table-hover">
+        <thead class="text-warning">
+        <th>ID</th>
+        <th>Employee</th>
+        <th>Name</th>
+        <th>IN Time</th>
+        <th>OUT time</th>
+        <th>Delete</th>
+
+        </thead>
+        <tbody>
+        <tr *ngIf="searchAttIf;else eLseBLock">
+          <td>
+            <i class="material-icons" data-notify="icon">add_alert</i>
+            Not Found
+          </td>
+        </tr>
+        <ng-template #eLseBLock>
+          <tr>
+            <td>
+              {{searchatt.attendanceId}}
+            </td>
+            <td>{{searchatt.employee.employee_id}}</td>
+            <td>
+              {{searchatt.inTime}}
+            </td>
+            <td>
+              {{searchatt.outTime}}
+            </td>
+            <td>
+              {{searchatt.day}}
+            </td>
+            <td>
+              <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteAttendance()">
+                <i class="material-icons">close</i>
+              </button>
+            </td>
+          </tr>
+        </ng-template>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 <div>
   <div class="card">
@@ -103,30 +160,28 @@
         <th>View</th>
         </thead>
         <tbody>
-        <tr>
-          <td>1</td>
-          <td>Dakota Rice</td>
-          <td>10</td>
-          <td>8</td>
+
+        <tr *ngFor="let att of attend">
+          <td>
+            {{att.attendanceId}}
+          </td>
+          <td>{{att.employee.employee_id}}</td>
+          <td>
+            {{att.day}}
+          </td>
+          <td>
+            {{att.inTime}}
+          </td>
+          <td>
+            {{att.outTime}}
+          </td>
+          <td>
+            <button class="btn btn-dribbble" (click)="updateOutTime(att.attendanceId,att.inTime,att.day,att.employee,att.outTime)">
+              OUT TIME
+            </button>
+          </td>
         </tr>
-        <tr>
-          <td>2</td>
-          <td>Minerva Hooper</td>
-          <td>10</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Sage Rodriguez</td>
-          <td>10</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Philip Chaney</td>
-          <td>10</td>
-          <td>8</td>
-        </tr>
+
         </tbody>
       </table>
     </div>
