@@ -45,7 +45,7 @@ export class AttendanceService {
   deletAttendace(attendanceId: number) {
 
     console.log("attendance"+attendanceId);
-    return this.http.delete<string>(environment.backend_url+URL+'/deleteAttendance/'+attendanceId);
+    return this.http.delete<string>(environment.backend_url+URL+'/AttendanceDelete/'+attendanceId);
 
   }
 }

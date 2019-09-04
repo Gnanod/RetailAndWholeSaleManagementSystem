@@ -23,7 +23,7 @@ export class AttendanceComponent implements OnInit {
   ans :number;
   //ans: string;
   //ans :Attendance = new Attendance();
-  ans: number;
+  //ans: number;
 
   constructor(private attendanceService:AttendanceService,private datepipe:DatePipe) { }
 
@@ -137,11 +137,14 @@ export class AttendanceComponent implements OnInit {
       }
     })
   }
+
+
+
   counter(){
 
     this.attendanceService.counter().subscribe((result)=>{
       console.log(this.ans);
-      this.ans =result ;
+     // this.ans =result ;
       console.log("HHHH"+this.ans)
       this.ans =parseInt(result.toString()) ;
     })

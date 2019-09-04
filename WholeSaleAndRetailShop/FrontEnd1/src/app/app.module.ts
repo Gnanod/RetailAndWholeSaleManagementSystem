@@ -43,7 +43,7 @@ import { CompanyComponent } from './view/company/company.component';
       StockHandlingComponent,
       CustomerOrderComponent,
       SupplierComponent,
-      CompanyComponent
+      CompanyComponent,
       ReturnItemsComponent
   ],
   imports: [

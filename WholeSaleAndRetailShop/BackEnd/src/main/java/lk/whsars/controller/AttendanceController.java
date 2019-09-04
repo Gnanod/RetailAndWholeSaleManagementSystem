@@ -58,10 +58,17 @@ public class AttendanceController {
 
 
 
-    @DeleteMapping(value = "/deleteAttendance/{attId}")
-    public String deleteAttendance(@PathVariable int attId){
+//    @DeleteMapping(value = "/deleteAttendance/{attId}")
+//    public String deleteAttendance(@PathVariable int attId){
+//
+//        System.out.println("JJJJJK");
+//        return  attendanceService.deleteAttendance(attId);
+//
+//    }
 
-        System.out.println("JJJJJK");
+    @DeleteMapping(value = "/AttendanceDelete/{attId}")
+    public String deleteAttendance(@PathVariable int attId){
+        System.out.println("JJJ");
         return  attendanceService.deleteAttendance(attId);
 
     }

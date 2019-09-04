@@ -22,11 +22,9 @@
                   <i class="fas fa-store-alt"></i>
                 </div>
                 <h3 class="card-title">Number Of Employee</h3>
-<<<<<<< HEAD
+
                 <h3 class="card-title"> {{this.ans}}</h3>
-=======
-                <h3 class="card-title">{{ans}}</h3>
->>>>>>> 3b40551f166d0b265525cb031d2e7cca79329027
+
 
               </div>
               <div class="card-footer">
@@ -114,9 +112,8 @@
         </thead>
         <tbody>
         <tr *ngIf="searchAttIf;else eLseBLock">
-          <td>
-            <i class="material-icons" data-notify="icon">add_alert</i>
-            Not Found
+          <td colspan="16" class="alert alert-danger" style="text-align: center">
+            Attendance Details Not Found
           </td>
         </tr>
         <ng-template #eLseBLock>
