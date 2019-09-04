@@ -1,62 +1,88 @@
 diff a/WholeSaleAndRetailShop/.idea/workspace.xml b/WholeSaleAndRetailShop/.idea/workspace.xml	(rejected hunks)
-@@ -751,43 +751,41 @@
-         </state>
-       </provider>
-     </entry>
--    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.ts">
-+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts">
-       <provider selected="true" editor-type-id="text-editor">
--        <state relative-caret-position="136">
--          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-+        <state relative-caret-position="426">
-+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
-+          <folding>
-+            <element signature="n#!!doc" expanded="true" />
-+            <element signature="e#104#143#0" expanded="true" />
-+          </folding>
-         </state>
-       </provider>
-     </entry>
--    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html">
--      <provider selected="true" editor-type-id="text-editor" />
--    </entry>
--    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html">
-+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts">
-       <provider selected="true" editor-type-id="text-editor">
--        <state relative-caret-position="255">
--          <caret line="25" column="79" selection-start-line="25" selection-start-column="70" selection-end-line="25" selection-end-column="79" />
-+        <state relative-caret-position="408">
-+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-           <folding>
--            <element signature="e#400#406#0" expanded="true" />
-+            <element signature="e#0#58#0" expanded="true" />
-           </folding>
-         </state>
-       </provider>
-     </entry>
--    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.ts">
-+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.ts">
-       <provider selected="true" editor-type-id="text-editor">
--        <state relative-caret-position="392">
--          <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
--          <folding>
--            <element signature="e#0#50#0" expanded="true" />
--          </folding>
-+        <state relative-caret-position="136">
-+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-         </state>
-       </provider>
-     </entry>
-+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html">
-+      <provider selected="true" editor-type-id="text-editor" />
-+    </entry>
-     <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/ItemRepository.java">
-       <provider selected="true" editor-type-id="text-editor">
-         <state relative-caret-position="102">
-           <caret line="6" column="58" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
--          <folding>
--            <element signature="imports" expanded="true" />
--          </folding>
-         </state>
-       </provider>
-     </entry>
+@@ -75,29 +75,76 @@
+           </provider>
+         </entry>
+       </file>
+-      <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts">
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/AttendanceController.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="888">
++              <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#1133#1134#0" expanded="true" />
++                <element signature="e#1192#1193#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/AttendanceServiceImpl.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="345">
++              <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="-34">
++              <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/employee.service.ts">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-205">
+-              <caret line="7" selection-start-line="7" selection-end-line="8" />
++            <state relative-caret-position="288">
++              <caret line="45" selection-start-line="45" selection-end-line="45" />
++              <folding>
++                <element signature="e#0#43#0" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Application.java">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/EmployeeController.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="153">
+-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
++            <state relative-caret-position="261">
++              <caret line="53" selection-start-line="53" selection-end-line="53" />
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/resources/application.properties">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/EmployeeServiceImpl.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="51">
+-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
++            <state relative-caret-position="244">
++              <caret line="52" selection-start-line="52" selection-end-line="52" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/EmployeeService.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="244">
++              <caret line="19" selection-start-line="19" selection-end-line="19" />
+             </state>
+           </provider>
+         </entry>

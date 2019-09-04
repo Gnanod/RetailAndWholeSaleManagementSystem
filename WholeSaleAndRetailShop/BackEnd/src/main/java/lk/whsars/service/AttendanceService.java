@@ -17,4 +17,6 @@ public interface AttendanceService {
     void deleteAtt(int attendanceId);
 
     int counter();
+
+    String deleteAttendance(int attId);
 }

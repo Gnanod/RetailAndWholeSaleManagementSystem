@@ -48,7 +48,7 @@ const routes: Routes = [
                 component: AttendanceComponent
               },
               {
-                path: 'salary/salarysheet',
+                path: 'salarysheet',
                 component: SalarysheetComponent
               },
           {
