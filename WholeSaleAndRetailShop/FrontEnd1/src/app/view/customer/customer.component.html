@@ -133,7 +133,7 @@
 
             <div class="col-md-4" style="margin-left: 550px">
               <div class="form-group">
-                <label class="bmd-label-floating">Search By Name</label>
+                <label class="bmd-label-floating">Search By NIC</label>
                 <input type="text" class="form-control" style="width: 350px" (keyup)="searchCustomerDetailsByNIC($event)" [(ngModel)]="searchCustomerNIC">
 
               <div class="col-md-4" style="margin-left: 300px ;margin-top: -48px">
@@ -166,9 +166,9 @@
               </thead>
               <tbody>
               <tr *ngIf="searchCustomerValueIf;else elseBlock">
-                  <td colspan="8" class="alert alert-danger" style="text-align: center">
-                    Customer Not Found
-                  </td>
+                <td colspan="16" class="alert alert-danger" style="text-align: center">
+                  Customer Not Found
+                </td>
               </tr>
               <ng-template #elseBlock>
               <tr>

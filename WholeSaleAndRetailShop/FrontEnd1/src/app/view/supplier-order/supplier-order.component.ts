@@ -98,6 +98,7 @@ export class SupplierOrderComponent implements OnInit {
   getMakeCompanyDetails(value :string){
 
 
+
     this.make_company.getAgentDetails(this.insertCompany).subscribe(result=>{
 
       if(result!=null){

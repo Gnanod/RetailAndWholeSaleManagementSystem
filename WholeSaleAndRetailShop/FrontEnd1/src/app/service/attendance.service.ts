@@ -38,7 +38,7 @@ export class AttendanceService {
   }
 
   counter(){
-    return this.http.get<Attendance>(environment.backend_url+URL+'/countAttend');
+    return this.http.get<number>(environment.backend_url+URL+'/countAttend');
   }
 
   deletAttendace(attendanceId: number) {

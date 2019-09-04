@@ -20,13 +20,14 @@ export class AttendanceComponent implements OnInit {
   att : Attendance = new Attendance();
   attendanceId :string;
   deleteatt : Attendance = new Attendance();
-  ans :Attendance = new Attendance();
+  ans :number;
   //ans: string;
 
   constructor(private attendanceService:AttendanceService,private datepipe:DatePipe) { }
 
   ngOnInit() {
     this.getallattendance();
+    this.counter();
     //this.searchAttIf = true;
   }
 
@@ -124,7 +125,7 @@ export class AttendanceComponent implements OnInit {
 
   deleteAttendance(){
     this.attendanceService.deletAttendace(this.deleteatt.attendanceId).subscribe((result)=>{
-      if(result == null){
+      if(result != null){
         alert('Deleted Successfully');
       }else{
         alert('failed');
@@ -135,6 +136,7 @@ export class AttendanceComponent implements OnInit {
     this.attendanceService.counter().subscribe((result)=>{
       console.log(this.ans);
       this.ans =result ;
+      console.log("HHHH"+this.ans)
     })
   }
 }

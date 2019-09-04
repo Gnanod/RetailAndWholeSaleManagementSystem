@@ -36,13 +36,19 @@ AttendanceServiceImpl implements AttendanceService {
         return attendanceRepository.save(att);
     }
 
-    @DeleteMapping
+    @Override
     public void deleteAtt(int attendanceId){
         attendanceRepository.deleteById(attendanceId);
     }
 
     @Override
     public int counter(){
-        return attendanceRepository.counter();
+
+       Object o= attendanceRepository.counter();
+       String a = o.toString();
+       int a1 =Integer.parseInt(a);
+        System.out.println("DDDD"+a);
+        return a1;
+
     }
 }

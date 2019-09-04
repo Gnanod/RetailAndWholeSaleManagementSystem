@@ -10,6 +10,8 @@ import {Supplier} from "../../model/Supplier";
 import {StockService} from "../../service/stock.service";
 import {FormControl, FormGroup, Validators} from "@angular/forms";
 import {BarcodeService} from "../../service/barcode.service";
+import {Company} from "../../model/Company";
+import {SupplierOrderService} from "../../service/supplier-order.service";
 
 @Component({
   selector: 'app-stock-handling',
@@ -18,7 +20,7 @@ import {BarcodeService} from "../../service/barcode.service";
 })
 export class StockHandlingComponent implements OnInit {
 
-  constructor(private brandService :BrandService,private itemService :ItemService,private datePipe: DatePipe,private stockService:StockService,private barcodeService:BarcodeService) { }
+  constructor(private brandService :BrandService,private itemService :ItemService,private datePipe: DatePipe,private stockService:StockService,private barcodeService:BarcodeService,private make_company : SupplierOrderService,private supplierService:SupplierOrderService) { }
 
 
   form = new FormGroup({
@@ -46,7 +48,40 @@ export class StockHandlingComponent implements OnInit {
 
   ngOnInit() {
     this.getAllBrands();
+    this.getAllCompanies();
   }
+
+  //getCompanyDetails
+  selectedCompany : Company = new Company();
+  companies :Array<Company> = new Array<Company>();
+  insertCompany:string;
+  searchMakesByCompany: Array<Supplier> = new Array<Supplier>();
+  selectedAgentNic :Supplier = new Supplier();
+
+  getMakeCompanyDetails(value :string){
+
+    this.make_company.getAgentDetails(this.insertCompany).subscribe(result=>{
+
+      if(result!=null){
+
+
+        this.searchMakesByCompany=result;
+        this.selectedAgentNic=this.searchMakesByCompany[0];
+        //console.log(" this.selectedAgentNic"+ result[0].company)
+      }
+    });
+  }
+
+  getAllCompanies() {
+
+    console.log(this.insertCompany);
+    this.supplierService.getAllCompany().subscribe((result) => {
+      this.companies = result;
+      //  this.insertCompany=this.companies[0].companyName;
+    });
+
+  }
+
 
   //DatePipe
 
@@ -142,13 +177,13 @@ export class StockHandlingComponent implements OnInit {
 
             this.itemDetailsObject=result;
             this.searchItemName =this.itemDetailsObject.itemName;
-            // this.searchBuyingPrice = this.itemDetailsObject.buyingPrice;
-         //   this.searchWholeSalePrice =this.itemDetailsObject.wholeSalePrice.toString();
-           // this.searchRetailPrice =this.itemDetailsObject.retailPrice.toString();
             this.itemDetailsQtyOnHand =this.itemDetailsObject.itemQtyOnHand.toString();
-            // this.itemQuantity =this.itemDetailsObject.i
-            // this.itemQuantityOnHand:string;
-            //   this.itemQuantityOnHand = this.itemDetailsObject.itemQtyOnHand.toString();
+
+            // var element = document.getElementById("brandNameId");
+            // element.classList.remove("is-invalid");
+            var  buyPrice = document.getElementById("buyPrice")
+            buyPrice.focus();
+
           }else{
             console.log(" this.itemDetailsObject"+ this.itemDetailsObject);
             this.itemDetailsObject=new Item();
@@ -290,14 +325,15 @@ export class StockHandlingComponent implements OnInit {
 
       let stock:Stock = new Stock();
       stock.date=this.datePipe.transform(new Date(), 'yyyy-MM-dd');
-      stock.payment=100000;
       stock.stockItemDetails=this.itemsTables;
       stock.stockItemDetails=this.itemsTables;
       stock.payment=this.totAmount;
 
       let sup :Supplier  = new Supplier();
-      sup.supplierNic='951960055V'
-
+      sup= this.selectedAgentNic;
+      console.log("JJJJKK"+this.selectedAgentNic.supplierId)
+     // sup.supplierNic='951960055V'
+     //  sup.supplierId=2;
       stock.supplier=sup;
       stock.stockItemDetails=this.itemsTables;
 
@@ -309,7 +345,7 @@ export class StockHandlingComponent implements OnInit {
 
           if(stock!=null){
             alert('Added Successfully');
-            this.itemsTables = null;
+            this.itemsTables = new Array<StockItemDetails>();
           }else{
             alert('Added Fail');
           }
