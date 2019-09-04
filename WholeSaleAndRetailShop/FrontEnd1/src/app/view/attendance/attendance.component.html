@@ -17,7 +17,7 @@
 
           <div class="col-md-4 ml-auto mr-auto">
             <div class="card card-stats" style="box-shadow:0 1px 6px">
-              <div class="card-header card-header-success card-header-icon">
+              <div class="card-header card-header-icon card-header-info">
                 <div class="card-icon">
                   <i class="fas fa-store-alt"></i>
                 </div>
@@ -27,7 +27,7 @@
               </div>
               <div class="card-footer">
                 <div class="stats">
-                  <i class="material-icons">date_range</i> For Today
+                  <i class="material-icons"></i> For Today
                 </div>
               </div>
             </div>
@@ -36,7 +36,7 @@
           <div class="col-md-4 ml-auto mr-auto">
 
             <div class="card card-stats" style="box-shadow:0 1px 6px">
-              <div class="card-header card-header-rose card-header-icon">
+              <div class="card-header card-header-icon card-header-info">
                 <div class="card-icon">
                   <i class="fas fa-file-alt"></i>
                 </div>
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-5">
-                  <button class="btn btn-dribbble" (click)="addAttendance(empId)">
+                  <button class="btn btn-info" (click)="addAttendance(empId)">
                     IN TIME
                   </button>
                 </div>
@@ -60,7 +60,7 @@
               </div>
               <div class="card-footer">
                 <div class="stats">
-                  <i class="material-icons">local_offer</i> For Today
+                  <i class="material-icons"></i> For Today
                 </div>
               </div>
             </div>
@@ -76,13 +76,13 @@
 </div>
 
 
-<nav class="navbar navbar-expand-lg bg-warning">
+<nav class="navbar navbar-expand-lg " style="background-color: #b8ecf3">
   <!-- Navbar content -->
-  <form class="form-inline ml-auto">
+  <form class="form-inline ml-auto" >
     <div class="form-group no-border">
       <input type="text" class="form-control" placeholder="Search" name="attId" [(ngModel)]="attendanceId">
     </div>
-    <button type="submit" class="btn btn-just-icon btn-round" (click)="searchById()">
+    <button type="submit" class="btn btn-just-icon btn-round btn-info" (click)="searchById()">
       <i class="now-ui-icons ui-1_zoom-bold" class="fas fa-search"></i>
     </button>
   </form>
@@ -90,7 +90,7 @@
 <!--Search and delete-->
 <div>
   <div class="card">
-    <div class="card-header card-header-text card-header-warning">
+    <div class="card-header card-header-text card-header-info">
       <div class="card-text">
         <h4 class="card-title">Search & Delete</h4>
         <p class="card-category">Attendence</p>
@@ -98,7 +98,7 @@
     </div>
     <div class="card-body table-responsive">
       <table class="table table-hover">
-        <thead class="text-warning">
+        <thead class="text" style="background-color: #b8ecf3">
         <th>ID</th>
         <th>Employee</th>
         <th>Name</th>
@@ -110,7 +110,7 @@
         <tbody>
         <tr *ngIf="searchAttIf;else eLseBLock">
           <td>
-            <i class="material-icons" data-notify="icon">add_alert</i>
+            <i class="material-icons" data-notify="icon"></i>
             Not Found
           </td>
         </tr>
@@ -144,7 +144,7 @@
 
 <div>
   <div class="card">
-    <div class="card-header card-header-text card-header-warning">
+    <div class="card-header card-header-text card-header-info">
       <div class="card-text">
         <h4 class="card-title">Employees Stats</h4>
         <p class="card-category">Today Attendence</p>
@@ -152,7 +152,7 @@
     </div>
     <div class="card-body table-responsive">
       <table class="table table-hover">
-        <thead class="text-warning">
+        <thead class="text" style="background-color: #b8ecf3">
         <th>ID</th>
         <th>Name</th>
         <th>IN Time</th>
@@ -176,7 +176,7 @@
             {{att.outTime}}
           </td>
           <td>
-            <button class="btn btn-dribbble" (click)="updateOutTime(att.attendanceId,att.inTime,att.day,att.employee,att.outTime)">
+            <button class="btn btn-info" (click)="updateOutTime(att.attendanceId,att.inTime,att.day,att.employee,att.outTime)">
               OUT TIME
             </button>
           </td>

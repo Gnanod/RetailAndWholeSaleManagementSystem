@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card">
-              <div class="card-header card-header-rose card-header-icon">
+              <div class="card-header card-header-icon card-header-info">
                 <div class="card-icon">
                   <i class="fas fa-warehouse"></i>
                   <!--ghjgkjgkjgk-->
@@ -125,7 +125,7 @@
 
 <div class="col-md-8">
   <div class="card">
-    <div class="card-header card-header-rose card-header-icon">
+    <div class="card-header card-header-icon card-header-info">
       <div class="card-icon">
         <i class="fas fa-indent"></i>
       </div>
@@ -163,7 +163,7 @@
               </td>
 
               <td class="td-actions">
-                <button class="btn btn-primary btn-round" (click)="AddItemsToTable(item.barCode,item.itemName,item.itemQtyOnHand,item.retailPrice)">Add</button>
+                <button class="btn btn-primary btn-round btn-info" (click)="AddItemsToTable(item.barCode,item.itemName,item.itemQtyOnHand,item.retailPrice)">Add</button>
               </td>
             </tr>
 
@@ -180,7 +180,7 @@
 
 <div class="col-md-8">
   <div class="card">
-    <div class="card-header card-header-rose card-header-icon">
+    <div class="card-header card-header-icon card-header-info">
       <div class="card-icon">
         <i class="fas fa-file-alt"></i>
       </div>
@@ -223,7 +223,7 @@
             </td>
             <td class="td-actions" >
               <!--<button class="btn btn-primary btn-round" (click)="deleteOrderRow(items.supplierOrder.supplierOrderId)">Remove</button>-->
-              <button class="btn btn-primary btn-round" (click)="deleteOrderRow(items.item.barCode)"> Remove </button>
+              <button class="btn btn-primary btn-round " (click)="deleteOrderRow(items.item.barCode)"> Remove </button>
             </td>
           </tr>
 
@@ -242,7 +242,7 @@
           <tr>
             <td colspan="2"></td>
             <td colspan="2" class="text-right">
-              <button class="btn btn-primary btn-round" (click)="saveJobOrder()">Place Order</button>
+              <button class="btn btn-primary btn-round btn-info" (click)="saveJobOrder()">Place Order</button>
             </td>
           </tr>
 
