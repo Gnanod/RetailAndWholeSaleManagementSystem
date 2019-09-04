@@ -55,12 +55,7 @@ public class SupplierOrderController {
         System.out.println("print" + companyName );
 
         List<Supplier> s1 = supplierServiceH.getAllAgentsformCompany(companyName);
-        for (Supplier f: s1
-             ) {
 
-            f.getSuppliername();
-            System.out.println( "LLLLLL"+f.getSuppliername());
-        }
 
         return s1;
     }

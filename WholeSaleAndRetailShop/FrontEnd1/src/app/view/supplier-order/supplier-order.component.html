@@ -42,7 +42,7 @@
                             <div class="form-group">
                               <label >Select Agent</label>
                               <select class="form-control " data-style="select-with-transition"  [(ngModel)]="selectedAgentNic" #mySelect (change)="getItemDetails(selectedAgentNic)">
-                                <option *ngFor="let supplier of searchMakesByCompany" [ngValue]="supplier">{{supplier.suppliername}}</option>
+                                <option *ngFor="let supplier of searchMakesByCompany" [ngValue]="supplier">{{supplier.supplierName}}</option>
                               </select>
                             </div>
 

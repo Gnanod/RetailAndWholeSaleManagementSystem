@@ -1,0 +1,345 @@
+<div class="container-fluid" >
+  <div class="row">
+    <div class="col-md-11">
+      <div class="card">
+        <div class="card-header card-header-icon card-header-rose">
+          <div class="card-icon">
+            <i class="material-icons">perm_identity</i>
+          </div>
+          <h4 class="card-title">Add Supplier Details
+
+          </h4>
+        </div>
+        <div class="card-body">
+          <!--<form>-->
+
+            <div class="row">
+
+
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+
+                  <label class="bmd-label-floating">Supplier Name</label>
+                  <input type="text" class="form-control"  name="supplierName" [(ngModel)]="sup.supplierName">
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Supplier Nic</label>
+                  <input type="text" class="form-control" name="supplierNic" [(ngModel)]="sup.supplierNic">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Supplier address</label>
+                  <input type="email" class="form-control" name="address" [(ngModel)]="sup.address">
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="form-group">
+                  <label class="bmd-label-floating" >Email</label>
+                  <input type="text" class="form-control" name="email" [(ngModel)]="sup.email">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Phone</label>
+                  <input type="text" class="form-control" name="phone" [(ngModel)]="sup.phone">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="bmd-label-floating">Fax</label>
+                  <input type="text" class="form-control" name="fax" [(ngModel)]="sup.fax" [ngModelOptions]="{standalone: true}">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <label >Select Company</label>
+                <div class="form-group">
+
+                  <select class="form-control "  data-style="select-with-transition" [(ngModel)]="sup.company" >
+
+                    <option>Maliban</option>
+                    <option>Munchi</option>
+                    <option>Uniliver</option>
+
+                  </select>
+
+                </div>
+
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-rose pull-right" (click)="addSupplier()">Save Details</button>
+            <div class="clearfix"></div>
+          <!--</form>-->
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-rose card-header-icon">
+        <div class="card-icon">
+          <i class="material-icons">search</i>
+        </div>
+        <h4 class="card-title">Search Supplier</h4>
+      </div>
+      <div class="card-body">
+        <div class="row" >
+
+          <div class="col-md-4" style="margin-left: 370px">
+            <div class="form-group">
+              <label class="bmd-label-floating">Search By Nic</label>
+              <input type="text" class="form-control" style="width: 450px" (keyup)="searchSupplierDetailsByNic($event)" [(ngModel)]="SearchSupplierNic1">
+            </div>
+          </div>
+          <div class="col-md-4" style="margin-left: -100px ;margin-top: 5px">
+            <button type="submit" class="btn btn-rose pull-right" >   <i class="material-icons">search</i></button>
+          </div>
+
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th class="text-center"></th>
+              <th>Supplier Id</th>
+              <th>Supplier Nic</th>
+              <th>Supplier Name</th>
+              <th >Address</th>
+              <th >Email Address</th>
+              <th >Phone Number</th>
+              <th >Fax</th>
+              <th>Action</th>
+
+              <th ></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngIf="searchSupplierValueIf;else elseBlock">
+              <td colspan="8" class="alert alert-danger" style="...">
+                Supplier Not Found
+              </td>
+            </tr>
+            <ng-template #elseBlock>
+              <tr>
+                <td class="text-center">
+                  {{searchSupplierDetails.supplierId}}
+                </td>
+                <td class="text-center">
+                  {{searchSupplierDetails.supplierNic}}
+                </td>
+                <td class="text-center">
+                  {{searchSupplierDetails.supplierName}}
+                </td>
+                <td class="text-center">
+                  {{searchSupplierDetails.address}}
+                </td>
+                <td class="text-center">
+                  {{searchSupplierDetails.email}}
+                </td>
+                <td class="text-center">
+                  {{searchSupplierDetails.phone}}
+                </td>
+                <td class="text-center">
+                  {{searchSupplierDetails.fax}}
+                </td>
+
+                <td class="td-actions text-right">
+
+                  <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteSupplier()">
+                    <i class="material-icons">close</i>
+                  </button>
+                </td>
+              </tr>
+
+            </ng-template>
+
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--<div class="row">-->
+<!--  <div class="col-md-8">-->
+<!--    <div class="card">-->
+<!--      <div class="card-header card-header-icon card-header-rose">-->
+<!--        <div class="card-icon">-->
+<!--          <i class="material-icons">perm_identity</i>-->
+<!--        </div>-->
+<!--        <h4 class="card-title">Update Supplier Details-->
+
+<!--        </h4>-->
+<!--      </div>-->
+<!--      <div class="card-body">-->
+<!--        <form>-->
+<!--          <div class="row">-->
+
+
+<!--          </div>-->
+<!--                    <div class="row">-->
+<!--                      <div class="col-md-6">-->
+<!--                        <div class="form-group">-->
+<!--                          <label class="bmd-label-floating">Supplier Id</label>-->
+<!--                          <input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[ngModel]="supplierId">-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--          <div class="row">-->
+
+
+<!--            <div class="col-md-6">-->
+<!--              <div class="form-group">-->
+<!--                <label class="bmd-label-floating">Supplier Nic</label>-->
+<!--                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[(ngModel)]=" supplierNic">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-6">-->
+<!--              <div class="form-group">-->
+<!--                <label class="bmd-label-floating">Supplier Name</label>-->
+<!--                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierName1">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="row">-->
+<!--            <div class="col-md-4">-->
+<!--              <div class="form-group">-->
+<!--                <label class="bmd-label-floating">Supplier address</label>-->
+<!--                <input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierAddress">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--              <div class="col-md-4">-->
+<!--                <div class="form-group">-->
+<!--                  <label class="bmd-label-floating">Email address</label>-->
+<!--                  <input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="emailAddress">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="col-md-4">-->
+<!--                <div class="form-group">-->
+<!--                  <label class="bmd-label-floating" >Phone</label>-->
+<!--                  <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="phoneNumber">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="row">-->
+<!--              <div class="col-md-12">-->
+<!--                <div class="form-group">-->
+<!--                  <label class="bmd-label-floating">Fax</label>-->
+<!--                  <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="faxNumber">-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <button type="submit" class="btn btn-rose pull-right" (click)="updateSupplier()">Update Details</button>-->
+<!--            <div class="clearfix"></div>-->
+<!--          </div>-->
+<!--        </form>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--</div>-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-header card-header-icon card-header-rose">
+          <div class="card-icon">
+            <i class="material-icons">perm_identity</i>
+          </div>
+          <h4 class="card-title"><b><b>Update Supplier Details</b></b>
+
+          </h4>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="bmd-label-floating">Supplier Id</label>
+                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[ngModel]="supplierId">
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="bmd-label-floating">Supplier Nic</label>
+                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[(ngModel)]=" supplierNic">
+              </div>
+            </div>
+
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="bmd-label-floating">Supplier Name</label>
+                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierName1">
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="bmd-label-floating">Supplier address</label>
+                <input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierAddress">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="bmd-label-floating">Email address</label>
+                <input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="emailAddress">
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="bmd-label-floating" >Phone</label>
+                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="phoneNumber">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="bmd-label-floating">Fax</label>
+                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="faxNumber">
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-rose pull-right"  (click)="updateSupplier()">Update Details</button>
+            <div class="clearfix"></div>
+
+
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+

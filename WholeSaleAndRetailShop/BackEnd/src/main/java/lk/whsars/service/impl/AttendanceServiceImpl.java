@@ -11,8 +11,7 @@ import javax.persistence.OneToMany;
 import java.util.List;
 
 @Service
-public class
-AttendanceServiceImpl implements AttendanceService {
+public class AttendanceServiceImpl implements AttendanceService {
     @Autowired
     private AttendanceRepository attendanceRepository;
 
@@ -36,13 +35,25 @@ AttendanceServiceImpl implements AttendanceService {
         return attendanceRepository.save(att);
     }
 
-    @DeleteMapping
+    @Override
     public void deleteAtt(int attendanceId){
         attendanceRepository.deleteById(attendanceId);
     }
 
     @Override
     public int counter(){
-        return attendanceRepository.counter();
+
+       Object o= attendanceRepository.counter();
+       String a = o.toString();
+       int a1 =Integer.parseInt(a);
+        System.out.println("DDDD"+a);
+        return a1;
+
+    }
+
+    @Override
+    public String deleteAttendance(int attId) {
+        attendanceRepository.deleteById(attId);
+        return "9";
     }
 }

@@ -32,6 +32,21 @@
                         <p #employee>Employees</p>
                     </a>
                 </li>
+              <li class="nav-item" [ngClass]="{'active': headerText=='Supplier'}" (click)="changeRoute(sup.innerHTML)">
+                <a class="nav-link">
+                  <i class="fas fa-user-friends"></i>
+                  <p #sup>Supplier</p>
+                </a>
+              </li>
+
+              <li class="nav-item" [ngClass]="{'active': headerText=='Company'}" (click)="changeRoute(compnay.innerHTML)">
+                <a class="nav-link">
+
+                  <i class="fas fa-building"></i>
+                  <p #compnay>Company</p>
+                </a>
+              </li>
+
               <li class="nav-item" [ngClass]="{'active': headerText=='SupplierOrder'}" (click)="changeRoute(suplierOrder.innerHTML)">
                 <a class="nav-link">
                   <i class="fas fa-file-invoice-dollar"></i>

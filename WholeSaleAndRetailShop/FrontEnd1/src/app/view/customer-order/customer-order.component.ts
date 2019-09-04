@@ -147,6 +147,8 @@ export class CustomerOrderComponent implements OnInit {
           this.searchItemDetails=result;
           //this.searchItemDetails.push(result);
           console.log(this.searchItemDetails);
+
+
         }
       });
     }else{

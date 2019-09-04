@@ -35,7 +35,7 @@ export class SupplierOrderService {
   }
 
   getAgentDetails(selectagent:string){
-    console.log("GGGHHHHHHJJJJJJJJJJ"+selectagent);
+
     return this.http.get<Array<Supplier>>(environment.backend_url+URL+"/getMakeAgent/"+selectagent);
   }
 

@@ -20,13 +20,16 @@ export class AttendanceComponent implements OnInit {
   att : Attendance = new Attendance();
   attendanceId :string;
   deleteatt : Attendance = new Attendance();
-  ans :Attendance = new Attendance();
+  ans :number;
   //ans: string;
+  //ans :Attendance = new Attendance();
+  //ans: number;
 
   constructor(private attendanceService:AttendanceService,private datepipe:DatePipe) { }
 
   ngOnInit() {
     this.getallattendance();
+    this.counter();
     //this.searchAttIf = true;
   }
 
@@ -57,7 +60,7 @@ export class AttendanceComponent implements OnInit {
 
     att.day = this.datepipe.transform(new Date(),'yyyy-MM-dd');
     console.log("KKK"+att.day);
-    att.inTime = this.datepipe.transform(new Date(),'HH-MM-SS', )
+    att.inTime = this.datepipe.transform(new Date(),'HH-MM-SS' )
     let emp :Employee = new Employee();
 
     emp.employee_id=parseInt(id);
@@ -89,7 +92,7 @@ export class AttendanceComponent implements OnInit {
 
   updateOutTime(id, intime, day,emp,outtime) {
     if (outtime != null) {
-      alert("Can Not Update Time Again")
+      alert("Can Not Update Time Again!")
     } else {
 
 
@@ -123,18 +126,27 @@ export class AttendanceComponent implements OnInit {
   }
 
   deleteAttendance(){
+    console.log("addid"+this.deleteatt.attendanceId);
+
     this.attendanceService.deletAttendace(this.deleteatt.attendanceId).subscribe((result)=>{
-      if(result == null){
+      if(result != null){
         alert('Deleted Successfully');
+
       }else{
         alert('failed');
       }
     })
   }
+
+
+
   counter(){
+
     this.attendanceService.counter().subscribe((result)=>{
       console.log(this.ans);
-      this.ans =result ;
+     // this.ans =result ;
+      console.log("HHHH"+this.ans)
+      this.ans =parseInt(result.toString()) ;
     })
   }
 }

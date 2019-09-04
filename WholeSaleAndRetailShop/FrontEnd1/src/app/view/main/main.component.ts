@@ -47,6 +47,10 @@ export class MainComponent implements OnInit {
             this.headerText="StockHandling";
         }else if (this.router.url=='/main/customer'){
             this.headerText="Customers";
+        }else if(this.router.url== '/main/supplier') {
+          this.headerText = "Supplier";
+        }else if(this.router.url == '/main/Company'){
+          this.headerText="Company";
         }
 
 
@@ -67,15 +71,22 @@ export class MainComponent implements OnInit {
       } else if (button == "SupplierOrder") {
         this.router.navigate(['/main/supplierorder'])
       }else if(button == "Salary"){
-  this.router.navigate(['/main/salary'])
-}else if(button == "Attendance"){
-  this.router.navigate(['/main/attendance'])
-}else if(button == "StockHandling"){
-  this.router.navigate(['/main/StockHandling'])
-}else if(button=="Customer"){
-  this.router.navigate(['/main/customer'])
+        this.router.navigate(['/main/salary'])
+      }else if(button == "Attendance"){
+        this.router.navigate(['/main/attendance'])
+      }else if(button == "StockHandling"){
+        this.router.navigate(['/main/StockHandling'])
+      }else if(button=="Customer"){
+        this.router.navigate(['/main/customer'])
+      }else if (button == "Supplier") {
 
-}
+        this.router.navigate(['/main/supplier'])
+
+      }else if(button == "Company"){
+
+        this.router.navigate(['/main/Company'])
+
+      }
     }
         
 

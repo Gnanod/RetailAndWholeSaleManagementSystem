@@ -101,7 +101,7 @@ public class BarCode {
                 code128.setCodeType(Barcode128.CODE128);
                 Image code128Image = code128.createImageWithBarcode(cb, null, null);
 
-                code128Image.scalePercent(180);
+                code128Image.scalePercent(580);
 
                 if (code.getBarCode() == null || code.getBarCode() == "") {
                     PdfPCell cell = new PdfPCell();

@@ -25,12 +25,13 @@ public class SupplierServiceImplH implements SupplierServiceH {
         List<Supplier> l1 = new ArrayList<>();
         for ( Object o[]: ob
              ) {
-            Supplier s1 = new Supplier();
 
-            s1.setSuppliername(o[0].toString());
+            Supplier s1 = new Supplier();
+            s1.setSupplierName(o[0].toString());
             s1.setSupplierNic(o[1].toString());
-            System.out.println("KKKK"+s1.getSuppliername());
+            s1.setSupplierId(Integer.parseInt(o[2].toString()));
             l1.add(s1);
+
         }
 
         return l1;

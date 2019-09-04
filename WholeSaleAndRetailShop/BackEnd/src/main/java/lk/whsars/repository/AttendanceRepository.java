@@ -11,7 +11,7 @@ public interface AttendanceRepository extends JpaRepository<Attendance,Integer> 
     @Query(value = "from Attendance where attendanceId=?1")
     Attendance searchById(int attendanceId);
 
-    @Query(value = "select sum(attendanceId) from Attendance where day = curdate group by curdate")
-    int counter();
+    @Query(value = "select count(attendance_id) from Attendance where day =current_date group by current_date ",nativeQuery = true)
+    Object counter();
 
 }
