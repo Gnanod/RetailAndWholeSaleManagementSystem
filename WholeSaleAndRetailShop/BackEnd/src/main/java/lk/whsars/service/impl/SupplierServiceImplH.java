@@ -24,7 +24,7 @@ public class SupplierServiceImplH implements SupplierServiceH {
 
         List<Supplier> l1 = new ArrayList<>();
         for ( Object o[]: ob
-             ) {
+        ) {
 
             Supplier s1 = new Supplier();
             s1.setSupplierName(o[0].toString());
@@ -59,5 +59,4 @@ public class SupplierServiceImplH implements SupplierServiceH {
 
         return i;
     }
-
 }
