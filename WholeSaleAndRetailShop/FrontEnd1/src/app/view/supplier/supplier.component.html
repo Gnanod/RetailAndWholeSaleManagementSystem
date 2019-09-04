@@ -2,9 +2,9 @@
   <div class="row">
     <div class="col-md-11">
       <div class="card">
-        <div class="card-header card-header-icon card-header-rose">
+        <div class="card-header card-header-icon card-header-info">
           <div class="card-icon">
-            <i class="material-icons">perm_identity</i>
+            <i class="fas fa-user-tie"></i>
           </div>
           <h4 class="card-title">Add Supplier Details
 
@@ -82,7 +82,7 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-rose pull-right" (click)="addSupplier()">Save Details</button>
+            <button type="submit" class="btn btn-info pull-right" (click)="addSupplier()">Save Details</button>
             <div class="clearfix"></div>
           <!--</form>-->
         </div>
@@ -96,9 +96,9 @@
 
   <div class="col-md-12">
     <div class="card">
-      <div class="card-header card-header-rose card-header-icon">
+      <div class="card-header card-header-info card-header-icon">
         <div class="card-icon">
-          <i class="material-icons">search</i>
+          <i class="fas fa-search"></i>
         </div>
         <h4 class="card-title">Search Supplier</h4>
       </div>
@@ -111,8 +111,8 @@
               <input type="text" class="form-control" style="width: 450px" (keyup)="searchSupplierDetailsByNic($event)" [(ngModel)]="SearchSupplierNic1">
             </div>
           </div>
-          <div class="col-md-4" style="margin-left: -100px ;margin-top: 5px">
-            <button type="submit" class="btn btn-rose pull-right" >   <i class="material-icons">search</i></button>
+          <div class="col-md-4" style="margin-left: -200px ;margin-top: 0px">
+            <button type="submit" class="btn btn-info pull-right" >   <i class="fas fa-search"></i></button>
           </div>
 
         </div>
@@ -136,7 +136,7 @@
             </thead>
             <tbody>
             <tr *ngIf="searchSupplierValueIf;else elseBlock">
-              <td colspan="8" class="alert alert-danger" style="...">
+              <td colspan="10" class="alert alert-danger text-center" style="...">
                 Supplier Not Found
               </td>
             </tr>
@@ -267,11 +267,11 @@
 <!--</div>-->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-7">
       <div class="card">
-        <div class="card-header card-header-icon card-header-rose">
+        <div class="card-header card-header-icon card-header-info">
           <div class="card-icon">
-            <i class="material-icons">perm_identity</i>
+            <i class="fas fa-address-book"></i>
           </div>
           <h4 class="card-title"><b><b>Update Supplier Details</b></b>
 
@@ -328,7 +328,7 @@
               </div>
             </div>
 
-            <button type="submit" class="btn btn-rose pull-right"  (click)="updateSupplier()">Update Details</button>
+            <button type="submit" class="btn btn-info pull-right"  (click)="updateSupplier()">Update Details</button>
             <div class="clearfix"></div>
 
 
