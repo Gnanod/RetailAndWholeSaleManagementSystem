@@ -38,24 +38,31 @@ public class AttendanceController {
     public Attendance updateOutTime(@RequestBody Attendance att){
         return attendanceService.updateOutTime(att);
     }
-
-    @DeleteMapping(value = "/deleteAttendance/{attendanceId)")
-    public void deleteAtt(@PathVariable String attendanceId){
-
-        System.out.println("Attendance"+attendanceId);
-        System.out.println("KKKKKKK");
-
-        attendanceService.deleteAtt(Integer.parseInt(attendanceId));
-
-
-    }
+//
+//    @DeleteMapping(value = "/deleteAttendance/{attendanceId)")
+//    public void deleteAtt(@PathVariable int attendanceId){
+//
+//        System.out.println("Attendance"+attendanceId);
+//        System.out.println("KKKKKKK");
+//
+//        attendanceService.deleteAtt(attendanceId);
+//
+//
+//    }
 
     @GetMapping(value = "/countAttend")
     public int counter(){
-
+    System.out.println("Counter");
         return attendanceService.counter();
     }
 
 
 
+    @DeleteMapping(value = "/deleteAttendance/{attId}")
+    public String deleteAttendance(@PathVariable int attId){
+
+        System.out.println("JJJJJK");
+        return  attendanceService.deleteAttendance(attId);
+
+    }
 }

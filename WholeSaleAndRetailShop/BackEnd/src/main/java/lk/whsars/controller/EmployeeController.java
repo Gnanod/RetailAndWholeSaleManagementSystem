@@ -36,6 +36,7 @@ class EmployeeController {
 
 
 
+
     @PostMapping(value = "/updateEmployee")
     public Employee UpdateEmployee(@RequestBody Employee employee){
 
@@ -51,6 +52,7 @@ class EmployeeController {
         return employeeService.searchByEmployeeName(fname);
 
     }
+
 
 }
 

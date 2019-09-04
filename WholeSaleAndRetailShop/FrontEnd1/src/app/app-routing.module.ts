@@ -14,6 +14,7 @@ import {SupplierOrderAgentItemComponent} from "./view/supplier-order-agent-item/
 import {CustomerOrderComponent} from "./view/customer-order/customer-order.component";
 import {SupplierComponent} from "./view/supplier/supplier.component";
 import {CompanyComponent} from "./view/company/company.component";
+import {ReturnItemsComponent} from "./view/retitems/retitems.component";
 
 
 const routes: Routes = [
@@ -26,9 +27,13 @@ const routes: Routes = [
                 component: EmployeeComponent
             },
             {
-              path:'customer',
-              component:CustomerComponent  
-            },
+            path:'customer',
+            component:CustomerComponent
+          },
+          {
+            path:'retitems',
+            component:ReturnItemsComponent
+          },
             {
                 path: 'dashboard',
                 component: DashboardComponent
@@ -50,9 +55,13 @@ const routes: Routes = [
                 component: AttendanceComponent
               },
               {
-                path: 'salary/salarysheet',
+                path: 'salarysheet',
                 component: SalarysheetComponent
               },
+            path: 'salary/salarysheet',
+            component: SalarysheetComponent
+          },
+
           {
             path :'Company',
             component:CompanyComponent

@@ -12,7 +12,7 @@ public interface ItemService {
     Item addItem(Item item);
 
     List<Item> getAllItems(String name);
-
+    Item searchByItemBarcode(String name);
     Item searchByProductName(String name);
 
     Item getAllItemsByBarcode(String searchBarcode);

@@ -54,7 +54,10 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public Item searchByProductName(String name) {
         return itemRepository.searchByProductName(name);
+
+
     }
+
 
     public Item getAllItemsByBarcode(String searchBarcode) {
         Item item= itemRepository.findAllItemsByBarcode(searchBarcode);
@@ -67,6 +70,12 @@ public class ItemServiceImpl implements ItemService {
             return null;
 
         }
+    }
+
+    @Override
+    public Item searchByItemBarcode(String name) {
+        return itemRepository.searchByProductName(name);
+
     }
 
 

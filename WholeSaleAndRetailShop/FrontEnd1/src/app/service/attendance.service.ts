@@ -39,12 +39,13 @@ export class AttendanceService {
 
   counter(){
     return this.http.get<number>(environment.backend_url+URL+'/countAttend');
+    return this.http.get(environment.backend_url+URL+'/countAttend');
   }
 
   deletAttendace(attendanceId: number) {
 
     console.log("attendance"+attendanceId);
-    return this.http.delete<number>(environment.backend_url+URL+'/deleteAttendance/'+attendanceId);
+    return this.http.delete<string>(environment.backend_url+URL+'/deleteAttendance/'+attendanceId);
 
   }
 }

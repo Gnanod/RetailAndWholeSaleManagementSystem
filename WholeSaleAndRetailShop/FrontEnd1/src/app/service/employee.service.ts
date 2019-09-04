@@ -44,9 +44,7 @@ export class EmployeeService {
 
   }
 
-  getSalaryDetails(){
-    return this.http.get<Array<Employee>>(environment.backend_url+URL+'getempsalary');
-  }
+
 }
 
 

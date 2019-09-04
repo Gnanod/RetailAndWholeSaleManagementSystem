@@ -1,4 +1,5 @@
 diff a/WholeSaleAndRetailShop/.idea/workspace.xml b/WholeSaleAndRetailShop/.idea/workspace.xml	(rejected hunks)
+<<<<<<< HEAD
 @@ -267,57 +267,57 @@
    <component name="IdeDocumentHistory">
      <option name="CHANGED_PATHS">
@@ -82,3 +83,92 @@ diff a/WholeSaleAndRetailShop/.idea/workspace.xml b/WholeSaleAndRetailShop/.idea
        </list>
      </option>
    </component>
+=======
+@@ -75,29 +75,76 @@
+           </provider>
+         </entry>
+       </file>
+-      <file pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts">
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/AttendanceController.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="888">
++              <caret line="63" column="50" selection-start-line="63" selection-start-column="50" selection-end-line="63" selection-end-column="50" />
++              <folding>
++                <element signature="imports" expanded="true" />
++                <element signature="e#1133#1134#0" expanded="true" />
++                <element signature="e#1192#1193#0" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/AttendanceServiceImpl.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="345">
++              <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="-34">
++              <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/employee.service.ts">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-205">
+-              <caret line="7" selection-start-line="7" selection-end-line="8" />
++            <state relative-caret-position="288">
++              <caret line="45" selection-start-line="45" selection-end-line="45" />
++              <folding>
++                <element signature="e#0#43#0" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Application.java">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/EmployeeController.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="153">
+-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
++            <state relative-caret-position="261">
++              <caret line="53" selection-start-line="53" selection-end-line="53" />
+             </state>
+           </provider>
+         </entry>
+       </file>
+       <file pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/resources/application.properties">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/EmployeeServiceImpl.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="51">
+-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
++            <state relative-caret-position="244">
++              <caret line="52" selection-start-line="52" selection-end-line="52" />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/EmployeeService.java">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="244">
++              <caret line="19" selection-start-line="19" selection-end-line="19" />
+             </state>
+           </provider>
+         </entry>
+>>>>>>> 3b40551f166d0b265525cb031d2e7cca79329027

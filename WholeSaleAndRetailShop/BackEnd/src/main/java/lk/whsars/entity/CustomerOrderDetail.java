@@ -9,7 +9,7 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-    public class CustomerOrderDetail {
+public class CustomerOrderDetail {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private int customerOrderDetailId;

@@ -11,8 +11,7 @@ import javax.persistence.OneToMany;
 import java.util.List;
 
 @Service
-public class
-AttendanceServiceImpl implements AttendanceService {
+public class AttendanceServiceImpl implements AttendanceService {
     @Autowired
     private AttendanceRepository attendanceRepository;
 
@@ -50,5 +49,11 @@ AttendanceServiceImpl implements AttendanceService {
         System.out.println("DDDD"+a);
         return a1;
 
+    }
+
+    @Override
+    public String deleteAttendance(int attId) {
+        attendanceRepository.deleteById(attId);
+        return "9";
     }
 }
