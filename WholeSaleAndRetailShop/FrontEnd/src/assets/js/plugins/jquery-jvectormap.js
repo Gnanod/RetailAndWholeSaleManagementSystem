@@ -494,7 +494,7 @@ jvm.AbstractElement.prototype.set = function(property, value) {
 };
 
 /**
- * Returns value of attribute.
+ * ReturnItem value of attribute.
  * @param {String} name Name of attribute
  */
 jvm.AbstractElement.prototype.get = function(property) {
@@ -704,7 +704,7 @@ jvm.SVGElement.prototype.addClass = function(className) {
 };
 
 /**
- * Returns constructor for element by name prefixed with 'VML'.
+ * ReturnItem constructor for element by name prefixed with 'VML'.
  * @param {String} ctr Name of basic constructor to return
  * proper implementation for.
  * @returns Function
@@ -925,7 +925,7 @@ jvm.VMLElement.initializeVML = function() {
 };
 
 /**
- * Returns constructor for element by name prefixed with 'VML'.
+ * ReturnItem constructor for element by name prefixed with 'VML'.
  * @param {String} ctr Name of basic constructor to return
  * proper implementation for.
  * @returns Function
@@ -954,7 +954,7 @@ jvm.VMLElement.prototype.applyAttr = function(attr, value) {
 };
 
 /**
- * Returns boundary box for the element.
+ * ReturnItem boundary box for the element.
  * @returns {Object} Boundary box with numeric fields: x, y, width, height
  * @override
  */

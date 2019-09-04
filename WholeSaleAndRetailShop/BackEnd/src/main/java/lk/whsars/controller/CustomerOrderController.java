@@ -2,11 +2,15 @@ package lk.whsars.controller;
 
 import lk.whsars.entity.CustomerOrder;
 import lk.whsars.entity.CustomerOrderDetail;
+import lk.whsars.entity.Item;
 import lk.whsars.service.CustomerOrderDetailService;
 import lk.whsars.service.CustomerOrderService;
+import lk.whsars.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.reactive.error.DefaultErrorAttributes;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @CrossOrigin
 @RestController
@@ -15,7 +19,9 @@ public class CustomerOrderController {
 
     @Autowired
     private CustomerOrderService customerOrderService;
-    private CustomerOrderDetailService customerOrderDetailService;
+
+    @Autowired
+    private ItemService itemService;
 
 
     @PostMapping(value = "/addCustomerOrder")
@@ -28,7 +34,17 @@ public class CustomerOrderController {
         }else{
             return null;
         }
+    }
 
+
+    @GetMapping(value = "/searchItemDetailsByNameOrId/{searchNameOrId}")
+    public List<Item> getAllItemsForCounter(@PathVariable String searchNameOrId){
+        System.out.println("PathVarialble"+searchNameOrId);
+        if(searchNameOrId!=null){
+            return customerOrderService.getAllItemsForCounter(searchNameOrId);
+        }else{
+            return  null;
+        }
     }
 
 //    @PostMapping(value = "/addCustomerOrderDetail")
@@ -36,5 +52,15 @@ public class CustomerOrderController {
 //        System.out.println(customerOrderDetail);
 //        return customerOrderDetailService.addCustomerOrderDetail(customerOrderDetail);
 //    }
+
+    @GetMapping(value = "/searchItemDetailsByBarcode/{searchName}")
+    public List<Item> getItemDetails(@PathVariable String searchName){
+        System.out.println("PathVarialble"+searchName);
+        if(searchName!=null){
+            return customerOrderService.getAllItems(searchName);
+        }else{
+            return  null;
+        }
+    }
 
 }

@@ -21,6 +21,8 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {DatePipe} from "@angular/common";
 import { CustomerOrderComponent } from './view/customer-order/customer-order.component';
+import { ReturnItemsComponent } from './view/retitems/retitems.component';
+
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -37,7 +39,8 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
     SalarysheetComponent,
       CustomerComponent,
       StockHandlingComponent,
-      CustomerOrderComponent
+      CustomerOrderComponent,
+      ReturnItemsComponent
   ],
   imports: [
       BrowserModule,

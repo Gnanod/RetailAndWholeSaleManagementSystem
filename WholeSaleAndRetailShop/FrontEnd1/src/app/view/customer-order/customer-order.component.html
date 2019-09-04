@@ -85,7 +85,7 @@
       <div class="card">
         <div class="card-header card-header-rose card-header-icon">
           <div class="card-icon">
-            <i class="material-icons">search</i>
+            <i class="fas fa-search"></i>
           </div>
           <h4 class="card-title">Search Item</h4>
         </div>
@@ -95,12 +95,12 @@
             <div style="margin-left: 35%; width: 50%">
               <div class="form-group">
                 <label class="bmd-label-floating">Search By Name & Tag ID</label>
-                <input type="text" class="form-control" (keyup)="searchItemByName($event)" [(ngModel)]="searchitembyname">
+                <input type="text" class="form-control" (keyup)="searchItemByNameOrId($event)" [(ngModel)]="searchitembynameOrId">
               </div>
             </div>
             <div  style="margin-left: 90%; margin-top: -5%">
               <button type="submit" class="btn btn-rose pull-right"  >
-                <i class="material-icons">search</i></button>
+                <i class="fas fa-search"></i></button>
             </div>
 
           </div>
@@ -134,10 +134,10 @@
                 <td class="text-center">{{item.itemName}}</td>
                 <td class="text-center">{{item.brand.brandName}}</td>
                 <td class="text-center">{{item.retailPrice}}</td>
-                <td class="text-center"><input type="text" class="form-control text-center"[(ngModel)]="qty"></td >
+                <td class="text-center"><input type="text" class="form-control text-center" required [(ngModel)]="qty"/></td >
                 <td style=" ">
                   <button href="#pablo" class="btn btn-primary btn-round" style="float:right; margin-right:15px" (click)="cusOrderDetail()">
-                    <i class="material-icons">add</i>
+                    <i class="fas fa-add"></i>
                     Add
                   </button>
                 </td>
@@ -161,7 +161,7 @@
       <div class="card">
         <div class="card-header card-header-rose card-header-icon">
           <div class="card-icon">
-            <i class="material-icons">add_shopping_cart</i>
+            <i class="fas fa-cart-plus"></i>
           </div>
           <h4 class="card-title">Cart</h4>
         </div>
@@ -191,9 +191,10 @@
                   <td class="text-center">{{orderDetail.item.retailPrice}}</td>
                   <td class="text-center">{{orderDetail.qty}}</td>
                   <td class="text-center">{{orderDetail.price}}</td>
+                  <input type="hidden" ng-model="record.usersId" value="{{orderDetail.item.itemQtyOnHand}}" [(ngModel)]="itemQtyOnHand"/>
                   <td class="td-actions ">
-                    <button type="button" rel="tooltip" class="btn btn-danger" id="itemRemove">
-                      <i class="material-icons">close</i>
+                    <button type="button" rel="tooltip" class="btn btn-danger" id="itemRemove"(click)="deleteRow(orderDetail.item.barCode)">
+                      <i class="fas fa-close"></i>
                       <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                     </button>
                   </td>
@@ -222,10 +223,10 @@
             <ul>
               <div class="form-group bmd-form-group">
                 <label for="exampleEmail" class="bmd-label-floating">Loyalty card</label>
-                <input type="email" class="form-control" id="exampleEmail">
+                <input type="num" class="form-control" id="exampleEmail" [(ngModel)]="customerId">
                 <tr>
                   <button class="btn btn-primary btn-sm">Add</button>
-                  <button class="btn btn-primary btn-sm">Remove</button>
+                  <button class="btn btn-primary btn-sm" (click)="removeCustomer()">Remove</button>
                 </tr>
               </div>
               <input type="text" class="form-control">

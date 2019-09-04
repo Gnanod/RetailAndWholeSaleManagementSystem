@@ -28,23 +28,51 @@ public class CustomerOrderServiceImpl implements CustomerOrderService {
     public String addCustomerOrder(CustomerOrder customerOrder) {
         System.out.println(customerOrder);
 
-
-         CustomerOrder c1 = customerOrderRepository.save(customerOrder);
+        CustomerOrder c1 = customerOrderRepository.save(customerOrder);
 
         if(c1!=null){
-
             Set<CustomerOrderDetail> stockItemDetails = customerOrder.getCustomerOrderDetailSet();
-            for (CustomerOrderDetail s2: stockItemDetails
-            ) {
+            for (CustomerOrderDetail s2: stockItemDetails)
+            {
 
-                Item i = s2.getItem();
+                 Item i = s2.getItem();
+               i.getItemQtyOnHand();
                 itemRepository.save(i);
-
             }
-            return "9";
+            return "99";
 
         }else{
             return null;
+        }
+
+    }
+
+    @Override
+    public List<Item> getAllItemsForCounter(String nameOrId) {
+        ;
+        List<Item> item= customerOrderRepository.findAllItemsByNameOrId(nameOrId);
+        if(item.size()!=0){
+            return item;
+
+        }else{
+
+            return null;
+
+        }
+    }
+
+    @Override
+    public List<Item> getAllItems(String searchName) {
+
+        List<Item> item = customerOrderRepository.getAllItems(searchName);
+        if(item.size()!=0){
+
+            return item;
+
+        }else{
+
+            return null;
+
         }
 
     }

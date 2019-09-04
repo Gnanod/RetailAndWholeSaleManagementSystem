@@ -21,6 +21,11 @@ export class CustomerOrderService {
 
   }
 
+  // searchItemDetailsByNameOrId(searchItemNameOrId: string){
+  //
+  //   return this.http.get<Array<Item>>(environment.backend_url+URL+'/searchItemDetailsByNameOrId/'+searchItemNameOrId);
+  // }
+
   // addCustomerOrderDetail(custorderDetail: CustomerOrderDetail) {
   //   console.log(custorderDetail);
   //   return this.http.post<CustomerOrderDetail>(environment.backend_url + URL + '/addCustomerOrderDetail',custorderDetail);
@@ -33,5 +38,10 @@ export class CustomerOrderService {
   //
   // }
 
+  searchItemDetailsByBarcode(searchitembyname: string) {
+
+    return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByBarcode/'+searchitembyname);
+
+  }
 
 }

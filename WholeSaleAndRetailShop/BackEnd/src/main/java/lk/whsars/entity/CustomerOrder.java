@@ -14,7 +14,7 @@ public class CustomerOrder {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerOrderId;
 
-    private LocalDateTime date;
+   // private string date;
     private double totalPrice;
     private double discount;
 
@@ -25,6 +25,11 @@ public class CustomerOrder {
     @OneToMany(cascade = CascadeType.ALL,mappedBy = "customerOrder")
     private Set<CustomerOrderDetail> customerOrderDetailSet;
 
+
+    @OneToMany(cascade = CascadeType.ALL,mappedBy = "customerOrder")
+    private Set<ReturnItem> returnItemSet;
+
+
     public int getCustomerOrderId() {
         return customerOrderId;
     }
@@ -33,13 +38,13 @@ public class CustomerOrder {
         this.customerOrderId = customerOrderId;
     }
 
-    public LocalDateTime getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDateTime date) {
-        this.date = date;
-    }
+//    public LocalDateTime getDate() {
+//        return date;
+//    }
+//
+//    public void setDate(LocalDateTime date) {
+//        this.date = date;
+//    }
 
     public double getTotalPrice() {
         return totalPrice;
