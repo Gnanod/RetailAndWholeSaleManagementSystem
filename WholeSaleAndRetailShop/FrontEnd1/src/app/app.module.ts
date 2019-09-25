@@ -26,6 +26,7 @@ import { ReturnItemsComponent } from './view/retitems/retitems.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
+import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -44,7 +45,8 @@ import { CompanyComponent } from './view/company/company.component';
       CustomerOrderComponent,
       SupplierComponent,
       CompanyComponent,
-      ReturnItemsComponent
+      ReturnItemsComponent,
+      LowStockLevelComponent
   ],
   imports: [
       BrowserModule,

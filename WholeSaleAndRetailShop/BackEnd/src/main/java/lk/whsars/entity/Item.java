@@ -17,6 +17,8 @@ public class Item {
     private double itemQtyOnHand;
     private double wholeSalePrice;
     private double retailPrice;
+    private double stockLevel;
+
     
     @ManyToOne
     @OnDelete(action = OnDeleteAction.CASCADE)
@@ -108,5 +110,13 @@ public class Item {
     public void setStockItemDetails(Set<StockItemDetails> stockItemDetails) {
 
         this.stockItemDetails = stockItemDetails;
+    }
+
+    public double getStockLevel() {
+        return stockLevel;
+    }
+
+    public void setStockLevel(double stockLevel) {
+        this.stockLevel = stockLevel;
     }
 }
