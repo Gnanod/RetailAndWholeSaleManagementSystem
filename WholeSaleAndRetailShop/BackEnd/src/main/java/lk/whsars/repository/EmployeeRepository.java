@@ -9,7 +9,7 @@ public interface EmployeeRepository extends JpaRepository<Employee,Integer> {
 
     //void deleteById(int employeeId);
 
-    @Query(value = "from Employee where fname = ?1")
+    @Query(value = "from Employee where fname =?1")
     Employee searchByEmployeeName(String fname);
 
 

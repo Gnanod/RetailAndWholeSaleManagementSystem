@@ -21,9 +21,7 @@ export class AttendanceComponent implements OnInit {
   attendanceId :string;
   deleteatt : Attendance = new Attendance();
   ans :number;
-  //ans: string;
-  //ans :Attendance = new Attendance();
-  //ans: number;
+   atid : string;
 
   constructor(private attendanceService:AttendanceService,private datepipe:DatePipe) { }
 
@@ -41,17 +39,22 @@ export class AttendanceComponent implements OnInit {
   }
 
   searchById(){
-    this.attendanceService.searchById(this.attendanceId).subscribe((result)=>{
 
-      console.log(result);
-      if(result == null){
-        this.searchAttIf = true;
-      }else{
-        this.searchAttIf = false;
-        this.searchatt = result;
-        this.deleteatt.attendanceId = result.attendanceId;
-      }
-    });
+    if (this.attendanceId == null){
+      alert("Please Enter Id")
+    } else {
+      this.attendanceService.searchById(this.attendanceId).subscribe((result) => {
+
+        console.log(result);
+        if (result == null) {
+          this.searchAttIf = true;
+        } else {
+          this.searchAttIf = false;
+          this.searchatt = result;
+          this.deleteatt.attendanceId = result.attendanceId;
+        }
+      });
+    }
   }
 
   addAttendance(id){
@@ -147,6 +150,18 @@ export class AttendanceComponent implements OnInit {
      // this.ans =result ;
       console.log("HHHH"+this.ans)
       this.ans =parseInt(result.toString()) ;
+    })
+  }
+
+  checkEmployee(){
+    this.attendanceService.checkEmployee(this.empId).subscribe((result)=>{
+
+      if(result != null){
+        alert("Can not enter Attendance Again!!!");
+      }
+      else{
+        this.addAttendance(this.empId);
+      }
     })
   }
 }
