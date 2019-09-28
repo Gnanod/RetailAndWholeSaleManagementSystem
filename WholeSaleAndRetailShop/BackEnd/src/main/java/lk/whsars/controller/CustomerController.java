@@ -34,4 +34,16 @@ public class CustomerController {
     void deleteCustomer(@PathVariable String cusID){
         customerService.deleteCustomer(cusID);
     }
+
+
+    @GetMapping(value = "/searchByCustomerID/{cID}")
+    public Customer searchByCustomerID(@PathVariable int cID ){
+        System.out.println("cusID"+cID);
+        return customerService.searchByCustomerID(cID);
+    }
+
+    @PostMapping(value = "/updateLoyaltyPoints")
+    public Customer updateLoyaltyPoints(@RequestBody Customer customer){
+        return customerService.updateLoyaltyPoints(customer);
+    }
 }

@@ -7,9 +7,9 @@
 
 
     <li class="nav-item" style="margin-left: 5px;">
-      <a href="#pablo" class="btn btn-primary btn-raised btn-fab btn-round" data-toggle="dropdown">
+      <button class="btn btn-primary btn-raised btn-fab btn-round" (click)="lastOrderUndo()">
         <i class="fa fa-history"></i>
-      </a>
+      </button>
     </li>
 
 
@@ -222,15 +222,21 @@
               <small>LKR</small>{{totalPrice}}</h1>
             <ul>
               <div class="form-group bmd-form-group">
-                <label for="exampleEmail" class="bmd-label-floating">Loyalty card</label>
-                <input type="num" class="form-control" id="exampleEmail" [(ngModel)]="customerId">
+                <label for="CustomerID" class="bmd-label-floating">Loyalty card</label>
+                <input type="num" class="form-control" id="CustomerID" [(ngModel)]="customerId">
                 <tr>
-                  <button class="btn btn-primary btn-sm">Add</button>
+                  <button class="btn btn-primary btn-sm" (click)="addDiscount()">Add</button>
                   <button class="btn btn-primary btn-sm" (click)="removeCustomer()">Remove</button>
                 </tr>
               </div>
-              <input type="text" class="form-control">
-              <input type="text" class="form-control">
+              <div class="form-group bmd-form-group">
+                <label for="lastAmount" class="bmd-label">Discount</label>
+                <input type="text" class="form-control" id="discount" [(ngModel)]="discount">
+              </div>
+              <div class="form-group bmd-form-group">
+                <label for="lastAmount" class="bmd-label">Last Amount</label>
+                <input type="text" class="form-control" id="lastAmount"  [(ngModel)]="lastAmount">
+              </div>
             </ul>
             <button class="btn btn-primary btn-round" (click)="addCustomerOrder()">
               Conform
