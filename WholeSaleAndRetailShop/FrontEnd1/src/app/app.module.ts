@@ -49,7 +49,10 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
       CompanyComponent,
       ReturnItemsComponent,
       LowStockLevelComponent,
+<<<<<<< HEAD
       CustomerOrderReportComponent
+=======
+>>>>>>> 1efb3a09f1feeccd23fe0d95dfe5f41b82c92a70
   ],
   imports: [
       BrowserModule,
@@ -57,7 +60,8 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
       BrowserAnimationsModule,
       AppRoutingModule,
       FormsModule,FontAwesomeModule,
-      HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
+      HttpClientModule,
+      ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [
     DatePipe
