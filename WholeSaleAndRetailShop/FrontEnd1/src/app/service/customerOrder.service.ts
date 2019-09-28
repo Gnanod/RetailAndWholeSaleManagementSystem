@@ -44,4 +44,30 @@ export class CustomerOrderService {
 
   }
 
+  searchLastOrder() {
+
+    return this.http.get <String>(environment.backend_url + URL + '/searchLastOrder');
+
+  }
+  //
+  // searchItemDetailsByBarcodef(searchitembyname: string) {
+  //
+  //   return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByBarcode/'+searchitembyname);
+  // }
+  //
+
+  // searchLastCustomerOrder(){
+  //   return this.http.get<Array<CustomerOrder>>(environment.backend_url + URL + '/searchItemDetailsByBarcode');
+  // }
+
+
+  lastOrderUndo(lastOrderId:number){
+    //console.log(lastOrderId)
+    return this.http.delete<number>(environment.backend_url + URL + '/deleteCustomerOrder/'+lastOrderId);
+    console.log(lastOrderId)
+  }
+
+
+
+
 }

@@ -46,7 +46,7 @@ import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.c
       SupplierComponent,
       CompanyComponent,
       ReturnItemsComponent,
-      LowStockLevelComponent
+      LowStockLevelComponent,
   ],
   imports: [
       BrowserModule,
@@ -54,7 +54,8 @@ import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.c
       BrowserAnimationsModule,
       AppRoutingModule,
       FormsModule,FontAwesomeModule,
-      HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
+      HttpClientModule,
+      ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [
     DatePipe

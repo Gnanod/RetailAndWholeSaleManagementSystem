@@ -2,6 +2,7 @@ import {Component, OnInit} from "@angular/core";
 import {Router} from "@angular/router";
 import {EmployeeService} from "../../service/employee.service";
 import {Employee} from "../../model/Employee";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 //import {Employee, Employee} from "../../model/Employee";
 
 @Component({
@@ -33,6 +34,19 @@ export class EmployeeComponent implements OnInit {
   role1:string;
   gender1:string;
 
+  form = new FormGroup({
+    fname : new FormControl('',Validators.required),
+    lname : new FormControl('',Validators.required),
+    email : new FormControl('',[Validators.required,Validators.email]),
+    nic : new FormControl('',Validators.required),
+    address : new FormControl('',Validators.required),
+    birthday : new FormControl('',Validators.required),
+    phone : new FormControl('',Validators.required),
+    datejoin : new FormControl('',Validators.required),
+    basicSal : new FormControl('',Validators.required)
+
+  })
+
   constructor(private route: Router, private employeeService: EmployeeService) {
   }
 
@@ -41,6 +55,10 @@ export class EmployeeComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onSubmit(){
+    alert(JSON.stringify(this.form.value))
   }
 
   addEmployee(){
