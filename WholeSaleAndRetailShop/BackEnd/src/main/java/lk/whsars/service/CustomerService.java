@@ -12,7 +12,7 @@ public interface CustomerService {
 
     Customer searchByCustomerNIC(String nic);
 
-    Customer searchByCustomerID(int cID);
+    Customer searchByCustomerID(String phone);
 
     Customer updateLoyaltyPoints(Customer customer);
 }

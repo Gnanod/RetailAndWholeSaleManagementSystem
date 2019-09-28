@@ -35,7 +35,7 @@ public class CustomerServiceImpl implements CustomerService {
     }
 
     @Override
-    public Customer searchByCustomerID(int cID) { return customerRepository.searchByCustomerDetailsByID(cID); }
+    public Customer searchByCustomerID(String phone) { return customerRepository.searchByCustomerDetailsByID(phone); }
 
     @Override
     public Customer updateLoyaltyPoints(Customer customer) { return customerRepository.save(customer); }

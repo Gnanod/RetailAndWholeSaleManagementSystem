@@ -16,6 +16,7 @@ import {SupplierComponent} from "./view/supplier/supplier.component";
 import {CompanyComponent} from "./view/company/company.component";
 import {ReturnItemsComponent} from "./view/retitems/retitems.component";
 import {LowStockLevelComponent} from "./view/low-stock-level/low-stock-level.component";
+import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
 
 
 const routes: Routes = [
@@ -58,7 +59,8 @@ const routes: Routes = [
       {
         path: 'salarysheet',
         component: SalarysheetComponent
-      }, {
+      },
+      {
         path: 'salary/salarysheet',
         component: SalarysheetComponent
       },
@@ -66,7 +68,6 @@ const routes: Routes = [
       {
         path: 'Company',
         component: CompanyComponent
-
       },
       {
         path: 'supplier',
@@ -79,7 +80,10 @@ const routes: Routes = [
       {
         path:'LowStockLevel',
         component:LowStockLevelComponent
-
+      },
+      {
+        path:'CustomerOrderReport',
+        component:CustomerOrderReportComponent
       }
 
     ]

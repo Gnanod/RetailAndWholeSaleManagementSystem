@@ -25,20 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order/customer-order.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1415">
-              <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order/customer-order.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="220" column="49" selection-start-line="220" selection-start-column="49" selection-end-line="220" selection-end-column="49" />
+            <state relative-caret-position="2805">
+              <caret line="165" column="49" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -47,12 +38,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CustomerOrderRepository.java">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/CustomerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="9" column="87" lean-forward="true" selection-start-line="9" selection-start-column="87" selection-end-line="9" selection-end-column="87" />
+            <state relative-caret-position="204">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/CustomerServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
               <folding>
-                <element signature="e#0#42#1" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#934#935#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CustomerRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#27#1" expanded="true" />
                 <element signature="e#0#29#1" expanded="true" />
               </folding>
             </state>
@@ -60,10 +73,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/CustomerOrder.java">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Customer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -86,6 +99,7 @@
       <find>getMakeCompanyDetails</find>
       <find>make_agent</find>
       <find>companies</find>
+      <find>customerId</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/SupplierOrder.java" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrderSearchDto.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierOrderService.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/SupplierOrderSearchDto.java" />
@@ -112,9 +125,6 @@
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier/supplier.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" />
-        <option value="$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/StockService.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Item.java" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/model/Item.ts" />
@@ -128,22 +138,26 @@
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/ReportController.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/BarcodeGenerateController.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Common/BarCode.java" />
-        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/low-stock-level/low-stock-level.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/low-stock-level/low-stock-level.component.ts" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/service/stock.service.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/StockContoller.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Common/LowStockLevelReport.java" />
-        <option value="$PROJECT_DIR$/FrontEnd1/src/app/service/customer.service.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order/customer-order.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/service/customerOrder.service.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/CustomerOrderController.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/CustomerOrderService.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CustomerOrderRepository.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/CustomerOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/low-stock-level/low-stock-level.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CustomerRepository.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/CustomerServiceImpl.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CustomerOrderRepository.java" />
-        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/CustomerOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/service/customer.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order/customer-order.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order/customer-order.component.ts" />
       </list>
     </option>
@@ -155,7 +169,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="width" value="1379" />
     <option name="height" value="735" />
@@ -211,6 +225,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="whsars" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="whsars" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
@@ -332,6 +356,33 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="customer-order" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="customer-order-report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="low-stock-level" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -450,12 +501,12 @@
       <workItem from="1569085428115" duration="73000" />
       <workItem from="1569085546300" duration="3526000" />
       <workItem from="1569339621175" duration="30522000" />
-      <workItem from="1569649183673" duration="4699000" />
+      <workItem from="1569649183673" duration="23820000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318291000" />
+    <option name="totallyTimeSpent" value="337412000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -467,7 +518,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
@@ -478,69 +529,34 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Java Enterprise" order="0" weight="0.32977098" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49924126" weight="0.3197158" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.27633587" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32977098" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32824427" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007587" side_tool="true" weight="0.3294509" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.30687022" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932885" weight="0.39431617" />
-      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.32977098" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Java Enterprise" order="1" weight="0.32977098" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49924126" weight="0.28596804" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49878544" weight="0.26110125" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.32977098" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32824427" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50121456" side_tool="true" weight="0.651865" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.30687022" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.49932885" weight="0.330373" />
+      <window_info anchor="bottom" id="TypeScript" order="15" weight="0.32977098" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Web" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.7650376" visible="true" weight="0.3088012" />
-      <window_info id="Structure" order="2" sideWeight="0.2340824" side_tool="true" weight="0.27978885" />
-      <window_info id="Designer" order="3" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Java Enterprise" order="0" weight="0.32977098" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.0" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.27633587" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32977098" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32824427" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50067115" side_tool="true" weight="0.20141844" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.30687022" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932885" visible="true" weight="0.2279534" />
-      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.32977098" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -557,81 +573,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/retitems/retitems.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2771">
-          <caret line="163" selection-start-line="163" selection-end-line="163" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier/supplier.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="262" column="19" selection-start-line="262" selection-start-column="19" selection-end-line="262" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier/supplier.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="94" column="81" selection-start-line="94" selection-start-column="68" selection-end-line="94" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="90" column="50" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="75" column="35" lean-forward="true" selection-start-line="75" selection-start-column="35" selection-end-line="75" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/ItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/StockService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/model/Item.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
@@ -695,38 +636,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/LowStockLevelDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="10" selection-end-column="27" />
-          <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#446#447#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#522#523#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/DTO/LowStockLevelDTO.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -799,46 +712,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/low-stock-level/low-stock-level.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="65" column="86" lean-forward="true" selection-start-line="65" selection-start-column="86" selection-end-line="65" selection-end-column="86" />
-          <folding>
-            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/low-stock-level/low-stock-level.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/StockContoller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Common/LowStockLevelReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="101" column="41" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -860,68 +739,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/customer.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-321">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/customerOrder.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/CustomerLastOrderDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/CustomerOrderService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="18" column="9" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/CustomerOrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="71" column="22" selection-start-line="71" selection-start-column="22" selection-end-line="71" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="52" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/CustomerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="40" column="104" selection-start-line="40" selection-start-column="104" selection-end-line="40" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CustomerRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#27#1" expanded="true" />
-            <element signature="e#0#29#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -943,10 +764,196 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/LowStockLevelDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#308#309#0" expanded="true" />
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#412#413#0" expanded="true" />
+            <element signature="e#446#447#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#560#561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-48">
+          <caret line="51" column="25" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="80" column="20" lean-forward="true" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Common/LowStockLevelReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/StockContoller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/DTO/LowStockLevelDTO.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/low-stock-level/low-stock-level.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="n#style#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/CustomerLastOrderDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/node_modules/typescript/lib/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4857" column="4" selection-start-line="4857" selection-start-column="4" selection-end-line="4857" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="97" column="115" lean-forward="true" selection-start-line="97" selection-start-column="115" selection-end-line="97" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1371">
+          <caret line="94" column="56" selection-start-line="94" selection-start-column="56" selection-end-line="94" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/customerOrder.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CustomerRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#27#1" expanded="true" />
+            <element signature="e#0#29#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/CustomerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="37" column="45" selection-start-line="37" selection-start-column="45" selection-end-line="37" selection-end-column="45" />
+          <folding>
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/model/Customer.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/customer.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="41" column="57" lean-forward="true" selection-start-line="41" selection-start-column="57" selection-end-line="41" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order/customer-order.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="224" column="87" lean-forward="true" selection-start-line="224" selection-start-column="87" selection-end-line="224" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/CustomerOrderServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        <state relative-caret-position="117">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#2578#2579#0" expanded="true" />
             <element signature="e#2645#2646#0" expanded="true" />
@@ -954,17 +961,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order/customer-order.component.html">
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/CustomerOrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1415">
-          <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
+        <state relative-caret-position="117">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order/customer-order.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="220" column="49" selection-start-line="220" selection-start-column="49" selection-end-line="220" selection-end-column="49" />
+        <state relative-caret-position="2805">
+          <caret line="165" column="49" selection-start-line="165" selection-start-column="49" selection-end-line="165" selection-end-column="49" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>

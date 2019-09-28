@@ -37,7 +37,8 @@ export class CustomerOrderComponent implements OnInit {
   totalPrice : number = 0;
   itemPrice:number = 0;
   curDate=new Date();
-  customerId : number = 1;
+  customerPhoneNo : String = '1';
+  customerId : number;
   itemQtyOnHand : number = 0;
   updateItemQty : number = 0;
   birthday : number;
@@ -49,6 +50,7 @@ export class CustomerOrderComponent implements OnInit {
 
   Cusdetail :Customer = new Customer();
   searchCustomerDetails :Customer = new Customer();
+  searchCustomerDetails1 :Customer = new Customer();
   searchCustomerValueIf = true;
 
   addCusOrder :CustomerOrder = new CustomerOrder();
@@ -104,12 +106,31 @@ export class CustomerOrderComponent implements OnInit {
     this.addCusOrder.discount = this.discount;
     this.addCusOrder.totalPrice = this.totalPrice;
 
+  ///////////////////////////////////////////
+    this.customerService.searchCustomerPoints(this.customerPhoneNo).subscribe((result)=>{
+
+      if(result==null) {
+        this.searchCustomerValueIf = true;
+      }else{
+        this.searchCustomerValueIf = false;
+        this.searchCustomerDetails1 = result;
+
+        this.customerId = this.searchCustomerDetails1.cusID
+        console.log('eeeeeeeeeeeesssssssssssss'+this.customerId)
+        // this.Cusdetail = new Customer();
+        // this.Cusdetail.cusID = 4;
+
+
+    //////////////////////////////////////
+    //console.log('eeeeeeeeeeeeekkkkkkkkkkkk'+this.customerId);
     this.Cusdetail = new Customer();
     this.Cusdetail.cusID = this.customerId;
 
+
+
     this.addCusOrder.customer = this.Cusdetail;
     this.addCusOrder.customerOrderDetailSet = this.orderList;
-    this.addCusOrder.customerOrderDetailSet[0];
+    //this.addCusOrder.customerOrderDetailSet[0];
 
     if (this.addCusOrder.customerOrderDetailSet!=null && this.addCusOrder.totalPrice!=0) {
       this.customerOrderService.addCustomerOrder(this.addCusOrder).subscribe((result) => {
@@ -125,7 +146,9 @@ export class CustomerOrderComponent implements OnInit {
     }else{
       alert('Order is NULL')
     }
+      }
 
+    });
 
     //loyalty points generating
     if(this.lastAmount > 50000){
@@ -138,18 +161,20 @@ export class CustomerOrderComponent implements OnInit {
       this.points = 1;
     }
 
-    this.Cusdetail = new Customer();
-    this.Cusdetail = this.searchCustomerDetails;
-    this.Cusdetail.phone = this.points.toString();
-    this.customerService.updateLoyaltyPoints(this.Cusdetail).subscribe((result) => {
+    if(this.customerPhoneNo != '1') {
+      this.Cusdetail = new Customer();
+      this.Cusdetail = this.searchCustomerDetails;
+      this.Cusdetail.address = this.points.toString();
+      this.customerService.updateLoyaltyPoints(this.Cusdetail).subscribe((result) => {
 
-      if (result != null) {
-        this.Cusdetail = new Customer();
-        console.log(this.Cusdetail);
-      }
-    });
-
+        if (result != null) {
+          this.Cusdetail = new Customer();
+          console.log(this.Cusdetail);
+        }
+      });
+    }
   }
+
 
 
   searchItemByNameOrId(event: any){
@@ -190,7 +215,7 @@ export class CustomerOrderComponent implements OnInit {
   removeCustomer(){
     this.totalPrice = this.lastAmount;
     if(this.totalPrice == this.lastAmount) {
-      this.customerId = null;
+      this.customerPhoneNo = null;
       this.discount = null;
       this.lastAmount = null;
       console.log('qqqqqqqqqqqqq');
@@ -233,10 +258,10 @@ export class CustomerOrderComponent implements OnInit {
 
 
   addDiscount(){
-    if(this.customerId != 1){
+    if(this.customerPhoneNo != '1'){
       this.lastAmount = this.totalPrice;
 
-      this.customerService.searchCustomerPoints(this.customerId).subscribe((result)=>{
+      this.customerService.searchCustomerPoints(this.customerPhoneNo).subscribe((result)=>{
 
         if(result==null) {
           this.searchCustomerValueIf = true;
