@@ -75,7 +75,8 @@
 
                     <div class="form-group">
                       <label class="bmd-label-floating">Search By Order ID</label>
-                      <input type="text" class="form-control" style="width: 200px" (keyup)="searchOrderByOrderId($event)"[(ngModel)]="searchOrderById" >
+                      <input type="text" class="form-control" style="width: 200px" (keyup)="searchOrderByOrderId($event)" [(ngModel)]="searchOrderById" >
+
                     </div>
                   </div>
                   <!--<div class="col-md-4" style="margin-left: 200px ;margin-top: -55px">-->
@@ -94,13 +95,13 @@
                 <div class="timeline-panel" >
                   <tr>
                   <div class="timeline-heading">
-                    <span class="badge badge-info">{{searchOrder.supplierName}}</span>
+                    <span class="badge badge-info">{{this.searchOrder.supplierName}}</span>
                   </div>
                   </tr>
                   <div class="timeline-body">
                     <!--<tr><h6>Supplier Name : {{searchOrder.supplierName}}</h6></tr>-->
-                    <tr><h6>Company Name : {{searchOrder.companyName}}</h6></tr>
-                    <tr><h6>Ordered date : {{searchOrder.date}}</h6></tr>
+                    <tr><h6>Company Name : {{this.searchOrder.companyName}}</h6></tr>
+                    <tr><h6>Ordered date : {{this.searchOrder.date}}</h6></tr>
                   </div>
                   <div class="timeline-footer">
                     <tr>
@@ -252,5 +253,84 @@
     </div>
 
   </div>
-</div></div>
+</div>
+
+
+  <div>
+    <div class="card">
+      <div class="card-header card-header-icon card-header-info">
+        <div class="card-icon">
+          <i class="fas fa-file-alt"></i>
+        </div>
+        <h4 class="card-title">Delete Not Received Orders</h4>
+      </div>
+
+      <nav class="navbar navbar-expand-lg " style="background-color: #b8ecf3">
+        <!-- Navbar content -->
+        <form class="form-inline ml-auto" >
+          <div class="form-group no-border">
+            <input type="text" class="form-control" placeholder="Search" name="soId" [(ngModel)]="supOrderId">
+          </div>
+          <button type="submit" class="btn btn-just-icon btn-round btn-info" (click)="searchDeleteOrders1()">
+            <i class="now-ui-icons ui-1_zoom-bold" class="fas fa-search"></i>
+          </button>
+        </form>
+      </nav>
+
+      <div class="card-body table-responsive">
+        <table class="table table-shopping">
+          <thead class="text">
+          <th >Supplier Id</th>
+          <th >Company Name</th>
+          <th >Supplier Name</th>
+          <th >Ordered Date</th>
+          <th >Total</th>
+          <th >Status</th>
+          <th > </th>
+          </thead>
+          <tbody>
+          <tr *ngIf="searchDeleteValueIf;else eLseBLock">
+            <td colspan="16" class="alert alert-danger" style="text-align: center">
+              Orders Details Not Found
+            </td>
+          </tr>
+          <ng-template #eLseBLock>
+            <tr>
+              <td>
+                {{searchDeleteOrders.status}}
+              </td>
+              <td>
+                {{searchDeleteOrders.supplierOrderId}}
+              </td>
+              <td>
+                {{searchDeleteOrders.supplierName}}
+              </td>
+              <td>
+                {{searchDeleteOrders.companyName}}
+              </td>
+              <td>
+                {{searchDeleteOrders.total}}
+              </td>
+              <td>
+                {{searchDeleteOrders.date}}
+              </td>
+
+
+
+              <td>
+                <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteSupplierOrder()">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </td>
+            </tr>
+          </ng-template>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
 

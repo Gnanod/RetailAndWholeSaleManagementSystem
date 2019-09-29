@@ -6,47 +6,48 @@
         <div class="card-icon">
           <i class="fas fa-users"></i>
         </div>
-        <h4 class="card-title">Low Stock Level</h4>
+        <h4 class="card-title">Supplier Order Report</h4>
       </div>
       <div class="card-body">
-        <div class="row" >
 
-        </div>
 
         <div class="table-responsive">
           <table class="table">
             <thead>
             <tr>
-
-              <th class="text-center">Item Name</th>
-              <th class="text-center">Barcode</th>
-              <th class="text-center">brand Name</th>
-              <th class="text-center">Quantity On Hand</th>
-              <th class="text-center">Company</th>
-              <th class="text-center">SupplierName</th>
+              <th class="text-center">Order Id</th>
+              <th class="text-center">Supplier Id</th>
+              <th class="text-center">Company Name</th>
+              <th class="text-center">Supplier Name</th>
+              <th class="text-center">Ordered Date</th>
+              <th class="text-center">Total</th>
+              <th class="text-center">Status</th>
 
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let lowStock of LowStockLevel">
+            <tr *ngFor="let receiveOrders of monthreceivedorders">
 
               <td class="text-center">
-                {{lowStock.itemName}}
+                {{receiveOrders.supplierOrderId}}
               </td>
               <td class="text-center">
-                {{lowStock.barcode}}
+                {{receiveOrders.supplierId}}
               </td>
               <td class="text-center">
-                {{lowStock.brandName}}
+                {{receiveOrders.companyName}}
+              </td>
+              <td class="text-center">
+                {{receiveOrders.supplierName}}
               </td >
               <td style="color: red; font-size: 25px ;font-style: inherit" class="text-center">
-                {{lowStock.qtyOnHand}}
+                {{receiveOrders.date}}
               </td>
               <td class="text-center">
-                {{lowStock.company}}
+                {{receiveOrders.total}}
               </td >
               <td class="text-center">
-                {{lowStock.supplierName}}
+                {{receiveOrders.status}}
               </td >
             </tr>
 
@@ -60,7 +61,7 @@
 
           </div>
           <div class="col-2">
-            <button type="submit" class="btn btn-info pull-right" (click)="printReport()" >Print </button>
+            <button type="submit" class="btn btn-info pull-right" (click)="printReport()">Print </button>
 
           </div>
 

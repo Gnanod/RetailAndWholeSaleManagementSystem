@@ -1,20 +1,15 @@
 package lk.whsars.entity;
-import org.springframework.format.datetime.standard.DateTimeContext;
 
 import javax.persistence.*;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.Set;
 
 @Entity
 public class CustomerOrder {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerOrderId;
 
-   // private string date;
     private double totalPrice;
     private double discount;
 
@@ -22,11 +17,11 @@ public class CustomerOrder {
     @JoinColumn(nullable = false)
     private Customer customer;
 
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "customerOrder")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "customerOrder")
     private Set<CustomerOrderDetail> customerOrderDetailSet;
 
 
-    @OneToMany(cascade = CascadeType.ALL,mappedBy = "customerOrder")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "customerOrder")
     private Set<ReturnItem> returnItemSet;
 
 
@@ -37,14 +32,6 @@ public class CustomerOrder {
     public void setCustomerOrderId(int customerOrderId) {
         this.customerOrderId = customerOrderId;
     }
-
-//    public LocalDateTime getDate() {
-//        return date;
-//    }
-//
-//    public void setDate(LocalDateTime date) {
-//        this.date = date;
-//    }
 
     public double getTotalPrice() {
         return totalPrice;
@@ -77,8 +64,7 @@ public class CustomerOrder {
     }
 
     public void setCustomerOrderDetailSet(Set<CustomerOrderDetail> customerOrderDetailSet) {
-        for (CustomerOrderDetail c :customerOrderDetailSet
-             ) {
+        for (CustomerOrderDetail c : customerOrderDetailSet) {
 
             c.setCustomerOrder(this);
 

@@ -31,7 +31,7 @@ export class CustomerService {
     return this.http.delete<number>(environment.backend_url + URL + '/deleteCustomer/' + cusID);
   }
 
-  searchCustomerPoints(searchCustomerID: number) {
+  searchCustomerPoints(searchCustomerID: String) {
 
     return this.http.get<Customer>(environment.backend_url +  URL + '/searchByCustomerID/' + searchCustomerID);
   }

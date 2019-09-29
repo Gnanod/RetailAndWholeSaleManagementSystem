@@ -3,11 +3,11 @@
   <div class="container-fluid" style="width: 100%;">
 
 
-    <span style="font-size:30px; margin-right: 10px; cursor:pointer" onclick="openNav()">&#9776; Counter 01 </span>
+    <span onclick="openNav()" style="font-size:30px; margin-right: 10px; cursor:pointer">&#9776; Counter 01 </span>
 
 
     <li class="nav-item" style="margin-left: 5px;">
-      <button class="btn btn-primary btn-raised btn-fab btn-round" (click)="lastOrderUndo()">
+      <button (click)="lastOrderUndo()" class="btn btn-primary btn-raised btn-fab btn-round">
         <i class="fa fa-history"></i>
       </button>
     </li>
@@ -33,7 +33,7 @@
           <div class="modal-footer">
 
             <!-- this button is hidden, used to close from typescript -->
-            <button type="button" id="close-modal" data-dismiss="modal" style="display: none">Close</button>
+            <button data-dismiss="modal" id="close-modal" style="display: none" type="button">Close</button>
           </div>
         </div>
       </div>
@@ -52,28 +52,27 @@
         </li>&nbsp;
 
         <li class="nav-item" style="margin-left: 5px;">
-          <a href="#pablo" class="btn btn-rose btn-raised btn-fab btn-round" data-toggle="dropdown">
+          <a class="btn btn-rose btn-raised btn-fab btn-round" data-toggle="dropdown" href="#pablo">
             <i class="fa fa-envelope"></i>
           </a>
         </li>
         <li class="dropdown nav-item" style="margin-right: -5px">
-          <a href="#pablo" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
+          <a class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown" href="#pablo">
             <div class="profile-photo-small">
-              <img src="assets/img/faces/avatar.jpg" alt="Circle Image" class="rounded-circle img-fluid">
+              <img alt="Circle Image" class="rounded-circle img-fluid" src="assets/img/faces/avatar.jpg">
             </div>
           </a>
           <div class="dropdown-menu dropdown-menu-right">
             <h6 class="dropdown-header">Dropdown header</h6>
-            <a href="#pablo" class="dropdown-item">Me</a>
-            <a href="#pablo" class="dropdown-item">Settings and other stuff</a>
-            <a href="#pablo" class="dropdown-item">Sign out</a>
+            <a class="dropdown-item" href="#pablo">Me</a>
+            <a class="dropdown-item" href="#pablo">Settings and other stuff</a>
+            <a class="dropdown-item" href="#pablo">Sign out</a>
           </div>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
 
 
 <!--Search Items-->
@@ -90,16 +89,17 @@
           <h4 class="card-title">Search Item</h4>
         </div>
         <div class="card-body">
-          <div class="row" >
+          <div class="row">
 
             <div style="margin-left: 35%; width: 50%">
               <div class="form-group">
                 <label class="bmd-label-floating">Search By Name & Tag ID</label>
-                <input type="text" class="form-control" (keyup)="searchItemByNameOrId($event)" [(ngModel)]="searchitembynameOrId">
+                <input (keyup)="searchItemByNameOrId($event)" [(ngModel)]="searchitembynameOrId" class="form-control"
+                       type="text">
               </div>
             </div>
-            <div  style="margin-left: 90%; margin-top: -5%">
-              <button type="submit" class="btn btn-rose pull-right"  >
+            <div style="margin-left: 90%; margin-top: -5%">
+              <button class="btn btn-rose pull-right" type="submit">
                 <i class="fas fa-search"></i></button>
             </div>
 
@@ -117,12 +117,12 @@
               <th class="text-center">Brand</th>
               <th class="text-center">Item Price</th>
               <th class="text-center">Qty</th>
-              <th ></th>
+              <th></th>
             </tr>
             </thead>
             <tbody>
             <tr *ngIf="searchItemValuesIf;else elseBlock">
-              <td colspan="8" class="alert alert-danger" style="text-align: center">
+              <td class="alert alert-danger" colspan="8" style="text-align: center">
                 Item Not Found
               </td>
             </tr>
@@ -134,9 +134,11 @@
                 <td class="text-center">{{item.itemName}}</td>
                 <td class="text-center">{{item.brand.brandName}}</td>
                 <td class="text-center">{{item.retailPrice}}</td>
-                <td class="text-center" id="quantity"><input type="text" class="form-control text-center" required [(ngModel)]="qty" /></td >
+                <td class="text-center" id="quantity"><input [(ngModel)]="qty" class="form-control text-center" required
+                                                             type="text"/></td>
                 <td style=" ">
-                  <button href="#pablo" class="btn btn-primary btn-round" style="float:right; margin-right:15px" (click)="cusOrderDetail()">
+                  <button (click)="cusOrderDetail()" class="btn btn-primary btn-round" href="#pablo"
+                          style="float:right; margin-right:15px">
                     <i class="fas fa-add"></i>
                     Add
                   </button>
@@ -154,8 +156,6 @@
       <!--Search Result-->
 
 
-
-
       <!--Cart-->
 
       <div class="card">
@@ -166,7 +166,7 @@
           <h4 class="card-title">Cart</h4>
         </div>
         <div class="card-body">
-          <div class="row" >
+          <div class="row">
 
             <div class="table-responsive">
               <table class="table">
@@ -183,7 +183,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr *ngFor="let orderDetail of orderList " let i = index;>
+                <tr *ngFor="let orderDetail of orderList " i=index; let>
                   <td class="text-center">{{orderDetail.itemCount}}</td>
                   <td class="text-center">{{orderDetail.item.barCode}}</td>
                   <td class="text-center">{{orderDetail.item.itemName}}</td>
@@ -191,11 +191,13 @@
                   <td class="text-center">{{orderDetail.item.retailPrice}}</td>
                   <td class="text-center">{{orderDetail.qty}}</td>
                   <td class="text-center">{{orderDetail.price}}</td>
-                  <input type="hidden" ng-model="record.usersId" value="{{orderDetail.item.itemQtyOnHand}}" [(ngModel)]="itemQtyOnHand"/>
+                  <input [(ngModel)]="itemQtyOnHand" ng-model="record.usersId" type="hidden"
+                         value="{{orderDetail.item.itemQtyOnHand}}"/>
                   <td class="td-actions ">
-                    <button type="button" rel="tooltip" class="btn btn-danger" id="itemRemove"(click)="deleteRow(orderDetail.item.barCode)">
+                    <button (click)="deleteRow(orderDetail.item.barCode)" class="btn btn-danger" id="itemRemove" rel="tooltip"
+                            type="button">
                       <i class="fas fa-close"></i>
-                      <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                      <span aria-hidden="true" class="glyphicon glyphicon-trash"></span>
                     </button>
                   </td>
                 </tr>
@@ -219,26 +221,27 @@
           <div class="card-body ">
             <h6 class="card-category text-success">Total Amount</h6>
             <h1 class="card-title">
-              <small>LKR</small>{{totalPrice}}</h1>
+              <small>LKR</small>
+              {{totalPrice}}</h1>
             <ul>
               <div class="form-group bmd-form-group">
-                <label for="CustomerID" class="bmd-label-floating">Loyalty card</label>
-                <input type="num" class="form-control" id="CustomerID" [(ngModel)]="customerId">
+                <label class="bmd-label-floating" for="CustomerID">Loyalty card</label>
+                <input [(ngModel)]="customerPhoneNo" class="form-control" id="CustomerID" type="num">
                 <tr>
-                  <button class="btn btn-primary btn-sm" (click)="addDiscount()">Add</button>
-                  <button class="btn btn-primary btn-sm" (click)="removeCustomer()">Remove</button>
+                  <button (click)="addDiscount()" class="btn btn-primary btn-sm">Add</button>
+                  <button (click)="removeCustomer()" class="btn btn-primary btn-sm">Remove</button>
                 </tr>
               </div>
               <div class="form-group bmd-form-group">
-                <label for="lastAmount" class="bmd-label">Discount</label>
-                <input type="text" class="form-control" id="discount" [(ngModel)]="discount">
+                <label class="bmd-label" for="lastAmount">Discount</label>
+                <input [(ngModel)]="discount" class="form-control" id="discount" type="text">
               </div>
               <div class="form-group bmd-form-group">
-                <label for="lastAmount" class="bmd-label">Last Amount</label>
-                <input type="text" class="form-control" id="lastAmount"  [(ngModel)]="lastAmount">
+                <label class="bmd-label" for="lastAmount">Last Amount</label>
+                <input [(ngModel)]="lastAmount" class="form-control" id="lastAmount" type="text">
               </div>
             </ul>
-            <button class="btn btn-primary btn-round" (click)="addCustomerOrder()">
+            <button (click)="addCustomerOrder()" class="btn btn-primary btn-round">
               Conform
             </button>
           </div>
@@ -246,6 +249,8 @@
         </div>
 
       </div>
-    </div></div></div>
+    </div>
+  </div>
+</div>
 
 

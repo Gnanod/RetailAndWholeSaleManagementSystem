@@ -6,10 +6,10 @@
         <div class="card-icon">
           <i class="fas fa-users"></i>
         </div>
-        <h4 class="card-title">Low Stock Level</h4>
+        <h4 class="card-title">Customer Order Report</h4>
       </div>
       <div class="card-body">
-        <div class="row" >
+        <div class="row">
 
         </div>
 
@@ -18,36 +18,32 @@
             <thead>
             <tr>
 
-              <th class="text-center">Item Name</th>
-              <th class="text-center">Barcode</th>
-              <th class="text-center">brand Name</th>
-              <th class="text-center">Quantity On Hand</th>
-              <th class="text-center">Company</th>
-              <th class="text-center">SupplierName</th>
+              <th class="text-center">CusOrderID</th>
+              <th class="text-center">TotalPrice</th>
+              <th class="text-center">TotalDiscount</th>
+              <th class="text-center">customerId</th>
+              <th class="text-center">ContactNo</th>
 
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let lowStock of LowStockLevel">
+            <tr *ngFor="let CusORders of CustomerOrders">
 
               <td class="text-center">
-                {{lowStock.itemName}}
+                {{CusORders.customerOrderId}}
               </td>
               <td class="text-center">
-                {{lowStock.barcode}}
+                {{CusORders.totalPrice}}
               </td>
               <td class="text-center">
-                {{lowStock.brandName}}
-              </td >
-              <td style="color: red; font-size: 25px ;font-style: inherit" class="text-center">
-                {{lowStock.qtyOnHand}}
+                {{CusORders.discount}}
               </td>
               <td class="text-center">
-                {{lowStock.company}}
-              </td >
+                {{CusORders.customerId}}
+              </td>
               <td class="text-center">
-                {{lowStock.supplierName}}
-              </td >
+                {{CusORders.phone}}
+              </td>
             </tr>
 
             </tbody>
@@ -60,7 +56,7 @@
 
           </div>
           <div class="col-2">
-            <button type="submit" class="btn btn-info pull-right" (click)="printReport()" >Print </button>
+            <button (click)="printReport()" class="btn btn-info pull-right" type="submit">Print</button>
 
           </div>
 
