@@ -4,6 +4,8 @@ import {environment} from "../../environments/environment";
 import {Employee} from "../model/Employee";
 import {Attendance} from "../model/Attendance";
 import {Salary} from "../model/Salary";
+import {SalarySheetDTO} from "../DTO/SalarySheetDTO";
+import {LowStockLevelDTO} from "../DTO/LowStockLevelDTO";
 
 
 
@@ -32,5 +34,14 @@ export class SalaryService {
 
   salarySum(){
     return this.http.get(environment.backend_url+URL+'/salSum');
+  }
+  getSalaryDetails(){
+    return this.http.get<Array<SalarySheetDTO>>(environment.backend_url+URL+'/salarysheet');
+  }
+
+  printReports( salarysheet: Array<SalarySheetDTO>) {
+
+    return this.http.post<String>(environment.backend_url + URL + '/Printsalary/',salarysheet);
+
   }
 }

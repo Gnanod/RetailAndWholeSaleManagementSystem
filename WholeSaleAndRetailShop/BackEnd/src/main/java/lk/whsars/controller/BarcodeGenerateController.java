@@ -32,17 +32,12 @@ public class BarcodeGenerateController {
 
 
         BarCode barcode1 = new BarCode();
-//        List barcodeList = barcodeServiceGenerater.getBarcodeNumbers(barcode);
 
-//        barcode1.generateBarcodePdf(barcodeList);
-        System.out.println("oooooooooo"+barcode);
-        System.out.println("oooooooooo"+quantity);
         Item barcodeList = barcodeServiceGenerater.getBarcodeNumbers(barcode);
 
         int itemQty = Integer.parseInt(quantity);
 
         barcode1.generateBarcodePdf(barcodeList,itemQty);
-        System.out.println("ItemListName"+barcodeList.getItemName());
 
         return "9";
     }

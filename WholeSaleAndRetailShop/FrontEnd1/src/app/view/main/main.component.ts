@@ -52,8 +52,6 @@ export class MainComponent implements OnInit {
         }else if(this.router.url == '/main/Company'){
           this.headerText="Company";
         }
-
-
     }
 
     changeRoute(button) {
@@ -86,6 +84,12 @@ export class MainComponent implements OnInit {
 
         this.router.navigate(['/main/Company'])
 
+      }else if(button == 'LowStockLevel'){
+
+        this.router.navigate(['/main/LowStockLevel'])
+
+      }else if(button == 'SalarySheetReport'){
+        this.router.navigate(['/main/SalarySheetReport'])
       }
     }
         

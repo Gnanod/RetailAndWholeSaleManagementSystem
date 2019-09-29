@@ -75,13 +75,37 @@
                   <p #salary>Salary</p>
                 </a>
               </li>
-                
-                <li class="nav-item ">
-                    <a class="nav-link" href="job">
-                      <i class="fas fa-receipt"></i>
-                        <p> Report </p>
-                    </a>
-                </li>
+
+              <li class="nav-item ">
+
+
+                <a class="nav-link" href="#formsExamples1" data-toggle="collapse">
+                  <i class="fas fa-clipboard-list"></i>
+                  <p> Report
+                    <b class="caret"></b>
+                  </p>
+                </a>
+
+                <div class="collapse" id="formsExamples1">
+                  <ul class="nav">
+
+                    <li class="nav-item " [ngClass]="{'active': headerText=='LowStockLevel'}" (click)="changeRoute(LowStockLevel.innerHTML)">
+                      <a class="nav-link" >
+                        <span class="sidebar-mini"> LSL </span>
+                        <span class="sidebar-normal" #LowStockLevel>LowStockLevel</span>
+                      </a>
+                    </li>
+
+                    <li class="nav-item " [ngClass]="{'active': headerText=='SalarySheetReport'}" (click)="changeRoute(SalarySheetReport.innerHTML)">
+                      <a class="nav-link" >
+                        <span class="sidebar-mini"> LSL </span>
+                        <span class="sidebar-normal" #SalarySheetReport>SalarySheetReport</span>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+              </li>
              
             </ul>
         </div>

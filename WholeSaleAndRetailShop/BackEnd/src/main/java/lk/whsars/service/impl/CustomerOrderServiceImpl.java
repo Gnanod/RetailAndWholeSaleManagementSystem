@@ -1,9 +1,7 @@
 package lk.whsars.service.impl;
 
-import lk.whsars.entity.CustomerOrder;
-import lk.whsars.entity.CustomerOrderDetail;
-import lk.whsars.entity.Item;
-import lk.whsars.entity.StockItemDetails;
+import lk.whsars.DTO.CustomerLastOrderDto;
+import lk.whsars.entity.*;
 import lk.whsars.repository.CustomerOrderRepository;
 import lk.whsars.repository.ItemRepository;
 import lk.whsars.service.CustomerOrderService;
@@ -34,9 +32,8 @@ public class CustomerOrderServiceImpl implements CustomerOrderService {
             Set<CustomerOrderDetail> stockItemDetails = customerOrder.getCustomerOrderDetailSet();
             for (CustomerOrderDetail s2: stockItemDetails)
             {
-
-                 Item i = s2.getItem();
-               i.getItemQtyOnHand();
+                Item i = s2.getItem();
+                i.getItemQtyOnHand();
                 itemRepository.save(i);
             }
             return "99";
@@ -77,15 +74,32 @@ public class CustomerOrderServiceImpl implements CustomerOrderService {
 
     }
 
+    @Override
+    public CustomerLastOrderDto getCustomerLastOrder() {
 
-//    @Override
-//    public List<Item> getAllItems(String name) {
-//        List<Item> item= customerOrderRepository.findAllItemsByName(name);
-//        if(item.size()!=0){
-//            return item;
-//        }else{
-//            return null;
-//        }
-//    }
+        List<Object []> lastOrder = customerOrderRepository.getLastOrder();
+
+        CustomerLastOrderDto CLO = new CustomerLastOrderDto();
+        for (Object sup[]: lastOrder) {
+
+            CLO.setCustomerOrderId(Integer.parseInt(sup[0].toString()));
+            CLO.setDiscount(Double.parseDouble(sup[1].toString()));
+            CLO.setTotalPrice(Double.parseDouble(sup[2].toString()));
+
+            CLO.setDate(null);
+            CLO.setCustomerOrderDetailSet(null);
+            CLO.setCustomer(null);
+        }
+
+        return CLO;
+
+    }
+
+    @Override
+    public void lastOrderUndo(int customerOrderId) {
+        customerOrderRepository.deleteById(customerOrderId);
+    }
+
+
 
 }

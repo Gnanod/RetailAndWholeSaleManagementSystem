@@ -1,5 +1,7 @@
 package lk.whsars.controller;
 
+import lk.whsars.DTO.CustomerLastOrderDto;
+import lk.whsars.entity.Customer;
 import lk.whsars.entity.CustomerOrder;
 import lk.whsars.entity.CustomerOrderDetail;
 import lk.whsars.entity.Item;
@@ -62,5 +64,26 @@ public class CustomerOrderController {
             return  null;
         }
     }
+
+
+
+    @GetMapping(value = "/searchLastOrder")
+    public CustomerLastOrderDto getLastOrder(){
+        return customerOrderService.getCustomerLastOrder();
+    }
+
+
+
+    @DeleteMapping("/deleteCustomerOrder/{lastOrderId}")
+    void lastOrderUndo(@PathVariable int lastOrderId) {
+        System.out.println("Last order id  "+lastOrderId);
+        customerOrderService.lastOrderUndo(lastOrderId);
+    }
+
+//    @PostMapping(value = "/updateLoyaltyPoints")
+//    public Customer updateLoyaltyPoints(@RequestBody Customer customer){
+//        return customerOrderService.updateCustomer(customer);
+//    }
+
 
 }

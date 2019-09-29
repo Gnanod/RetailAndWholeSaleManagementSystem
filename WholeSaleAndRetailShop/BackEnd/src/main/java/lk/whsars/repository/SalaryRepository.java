@@ -17,4 +17,7 @@ public interface SalaryRepository extends JpaRepository<Salary,Integer> {
 
     @Query(value = "select sum(salary) from salary",nativeQuery = true)
     Object salarySum();
+
+    @Query(value = "select e.employee_id,e.basicsal,e.role,e.fname,s.salary,s.pay_date from employee e,salary s where e.employee_id=s.employee_employee_id and month(s.pay_date) = month(current_date)",nativeQuery = true)
+    List<Object[]> getSalarydetails();
 }

@@ -11,4 +11,8 @@ public interface CustomerService {
     Customer updateCustomer(Customer customer);
 
     Customer searchByCustomerNIC(String nic);
+
+    Customer searchByCustomerID(int cID);
+
+    Customer updateLoyaltyPoints(Customer customer);
 }

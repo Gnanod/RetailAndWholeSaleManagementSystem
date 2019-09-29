@@ -1,0 +1,72 @@
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-info card-header-icon">
+        <div class="card-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4 class="card-title">SalarySheetReport</h4>
+      </div>
+      <div class="card-body">
+        <div class="row" >
+
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+
+              <th class="text-center">EmployeeName</th>
+              <th class="text-center">EmployeeId</th>
+              <th class="text-center">Position</th>
+              <th class="text-center">BasicSalary</th>
+              <th class="text-center">NetSalary</th>
+              <th class="text-center">Date</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let sala of sal">
+
+              <td class="text-center">
+                {{sala.employeeId}}
+              </td>
+              <td class="text-center">
+                {{sala.empName}}
+              </td>
+              <td class="text-center">
+                {{sala.role}}
+              </td >
+              <td class="text-center">
+                {{sala.basicSal}}
+              </td>
+              <td  style="color: red; font-size: 25px ;font-style: inherit" class="text-center">
+                {{sala.netSal}}
+              </td >
+              <td class="text-center">
+                {{sala.date}}
+              </td >
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row">
+
+          <div class="col-10">
+
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-info pull-right" (click)="printSalaryReport()"  >Print </button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

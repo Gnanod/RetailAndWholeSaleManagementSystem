@@ -7,11 +7,11 @@
   <div class="col-lg-6 cards">
     <div class="card card-pricing card-raised">
       <div class="card-body">
-        <h6 class="card-category">Salary Amount</h6>
+        <h6 class="card-category">Total Salary Amount</h6>
         <div class="card-icon icon-info">
           <i class="fas fa-home"></i>
         </div>
-        <h3 class="card-title">{{this.sum}}</h3>
+        <h3 class="card-title">LKR{{this.sum}}</h3>
       </div>
     </div>
   </div>
@@ -98,7 +98,7 @@
             <th>Net Salary</th>
             <th>Work Days</th>
             <th class="text-center">Date</th>
-            <th class="text-center">View</th>
+<!--            <th class="text-center">View</th>-->
           </tr>
           </thead>
           <tbody>
@@ -108,11 +108,11 @@
             <td>{{employ.salary}}</td>
             <td>{{employ.workHours}}</td>
             <td>{{employ.payDate}}</td>
-            <td class="text-right">
-              <button type="button" rel="tooltip" class="btn btn-info" (click)="goToPage()">
-              <i class="material-icons">person</i>
-            </button>
-            </td>
+<!--            <td class="text-right">-->
+<!--              <button type="button" rel="tooltip" class="btn btn-info" >-->
+<!--              <i class="material-icons">person</i>-->
+<!--            </button>-->
+<!--            </td>-->
           </tbody>
         </table>
       </div>

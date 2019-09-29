@@ -1,11 +1,14 @@
 package lk.whsars.controller;
 
+import lk.whsars.Common.SalarySheet;
+import lk.whsars.DTO.SalarySheetDTO;
 import lk.whsars.entity.Employee;
 import lk.whsars.entity.Salary;
 import lk.whsars.service.SalaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -35,7 +38,19 @@ public class SalaryController {
     }
     @GetMapping(value = "/salSum")
     public String salarySum(){
-        System.out.println("aaahfhfhfhfhfhfhf");
+        System.out.println("aaahaa");
         return  salaryService.salarySum();
     }
+    @GetMapping(value = "salarysheet")
+    public List<SalarySheetDTO> getSalaryDetails(){
+        return salaryService.getSalaryDetails();
+    }
+
+    @PostMapping(value = "Printsalary")
+    public String printSalary(@RequestBody ArrayList<SalarySheetDTO> salary){
+        SalarySheet sal = new SalarySheet();
+        sal.generateSalarySheetPdf(salary);
+         return null;
+    }
+
 }

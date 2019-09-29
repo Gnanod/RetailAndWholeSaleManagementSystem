@@ -29,6 +29,8 @@ export class StockHandlingComponent implements OnInit {
 
   form1 = new FormGroup({
     itemname:new FormControl('',Validators.required),
+    stockLevel:new FormControl('',Validators.required),
+
   });
   // form1 = new FormGroup({
   //   ItemName :new FormControl('',Validators.required),

@@ -1,5 +1,6 @@
 package lk.whsars.service;
 
+import lk.whsars.DTO.SalarySheetDTO;
 import lk.whsars.entity.Employee;
 import lk.whsars.entity.Salary;
 
@@ -14,4 +15,6 @@ public interface SalaryService {
     Salary addSalary(Salary salary);
 
     String salarySum();
+
+    List<SalarySheetDTO> getSalaryDetails();
 }

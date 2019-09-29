@@ -5,6 +5,7 @@ import {CustomerOrder} from "../../model/CustomerOrder";
 import {CustomerOrderDetail} from "../../model/CustomerOrderDetail";
 import {CustomerOrderService} from "../../service/customerOrder.service";
 import {ItemService} from "../../service/item.service";
+import {CustomerService} from "../../service/customer.service";
 
 @Component({
   selector: 'app-customer-order',
@@ -13,7 +14,7 @@ import {ItemService} from "../../service/item.service";
 })
 export class CustomerOrderComponent implements OnInit {
 
-  constructor(private customerOrderService :CustomerOrderService,
+  constructor(private customerOrderService :CustomerOrderService, private customerService:CustomerService,
               private itemService :ItemService) {
 
   }
@@ -32,21 +33,31 @@ export class CustomerOrderComponent implements OnInit {
   qty:number;
   itemCount : number = 1;
   discount : number;
+  lastAmount : number;
   totalPrice : number = 0;
-  itemPrice:number =0;
+  itemPrice:number = 0;
   curDate=new Date();
   customerId : number = 1;
   itemQtyOnHand : number = 0;
   updateItemQty : number = 0;
+  birthday : number;
+  points : number = 0;
 
   searchItemValuesIf = true;
   searchItemDetails:Array<Item> = new Array<Item>();
   searchitembynameOrId:string;
 
   Cusdetail :Customer = new Customer();
+  searchCustomerDetails :Customer = new Customer();
+  searchCustomerValueIf = true;
 
   addCusOrder :CustomerOrder = new CustomerOrder();
   CusOrder :Array<CustomerOrder> = new Array<CustomerOrder>();
+  //searchLastOrder:Array<CustomerOrder> = new Array<CustomerOrder>();
+  searchLastOrder:CustomerOrder = new CustomerOrder();
+  getLastOrderId : number;
+  getLastOrdertotal : number;
+  getLastOrderdisdount : number=0;
 
   orderList:Array<CustomerOrderDetail> = new Array<CustomerOrderDetail>();
 
@@ -63,14 +74,6 @@ export class CustomerOrderComponent implements OnInit {
       orderItemDetail.itemQtyOnHand = value.itemQtyOnHand;
     })
 
-      // orderItemDetail.barCode = this.searchItemDetails.barCode;
-      // orderItemDetail.itemName = this.searchItemDetails.itemName;
-      // orderItemDetail.brand = this.searchItemDetails.brand;
-      // orderItemDetail.retailPrice = this.searchItemDetails.retailPrice;
-
-    // orderItemDetail.barCode = "000000001";
-    // orderItemDetail.itemName ="MarieBiscuit";
-    // orderItemDetail.retailPrice =200;
 
     this.itemPrice = orderItemDetail.retailPrice;
     orderListDetail.qty = this.qty;
@@ -78,9 +81,6 @@ export class CustomerOrderComponent implements OnInit {
 
     orderListDetail.item = orderItemDetail;
 
-    // console.log("HHFHDHD"+orderListDetail.item.itemQtyOnHand);
-    // console.log("KKKKKKSDSDS"+this.qty);
-    //
     this.updateItemQty =  orderListDetail.item.itemQtyOnHand - this.qty;
     orderListDetail.item.itemQtyOnHand = this.updateItemQty;
 
@@ -101,7 +101,7 @@ export class CustomerOrderComponent implements OnInit {
     this.addCusOrder = new CustomerOrder();
 
     this.addCusOrder.date = this.curDate;
-    this.addCusOrder.discount = this.discount=10;
+    this.addCusOrder.discount = this.discount;
     this.addCusOrder.totalPrice = this.totalPrice;
 
     this.Cusdetail = new Customer();
@@ -126,6 +126,29 @@ export class CustomerOrderComponent implements OnInit {
       alert('Order is NULL')
     }
 
+
+    //loyalty points generating
+    if(this.lastAmount > 50000){
+      this.points = 15;
+    }else if(this.lastAmount > 10000){
+      this.points = 10;
+    }else if(this.lastAmount > 5000){
+      this.points = 5;
+    }else if(this.lastAmount > 1000){
+      this.points = 1;
+    }
+
+    this.Cusdetail = new Customer();
+    this.Cusdetail = this.searchCustomerDetails;
+    this.Cusdetail.phone = this.points.toString();
+    this.customerService.updateLoyaltyPoints(this.Cusdetail).subscribe((result) => {
+
+      if (result != null) {
+        this.Cusdetail = new Customer();
+        console.log(this.Cusdetail);
+      }
+    });
+
   }
 
 
@@ -142,13 +165,9 @@ export class CustomerOrderComponent implements OnInit {
         }else{
 
           this.searchItemValuesIf=false;
-
-
           this.searchItemDetails=result;
           //this.searchItemDetails.push(result);
           console.log(this.searchItemDetails);
-
-
         }
       });
     }else{
@@ -169,8 +188,84 @@ export class CustomerOrderComponent implements OnInit {
 
 
   removeCustomer(){
+    this.totalPrice = this.lastAmount;
+    if(this.totalPrice == this.lastAmount) {
       this.customerId = null;
+      this.discount = null;
+      this.lastAmount = null;
+      console.log('qqqqqqqqqqqqq');
+    }
+
   }
 
+
+  lastOrderUndo() {
+
+    this.getLastOrderId=11;
+    this.customerOrderService.lastOrderUndo(this.getLastOrderId);
+
+    this.customerOrderService.searchLastOrder().subscribe((result)=>{
+      //console.log(result);
+      if(result==null){
+        //console.log('Result'+result);
+      }else{
+        console.log(result);
+
+        //CustomerOrder c1 = new CustomerOrder();
+        //this.getLastOrderId = result;
+        //this.getLastOrderId =this.searchLastOrder.customerOrderId;
+        //this.searchLastOrder = result;
+        //console.log(this.searchLastOrder);
+        //this.searchLastOrder.forEach((value)=> {
+        //console.log(value);
+        //this.getLastOrderId = value.customerOrderId;
+
+        //})
+        this.getLastOrderId=3;
+        console.log(result)
+        if(this.getLastOrderId != null){
+          this.customerOrderService.lastOrderUndo(this.getLastOrderId).subscribe();
+          alert('Last Order Delete SuccessFully')
+        }
+      }
+    });
+  }
+
+
+  addDiscount(){
+    if(this.customerId != 1){
+      this.lastAmount = this.totalPrice;
+
+      this.customerService.searchCustomerPoints(this.customerId).subscribe((result)=>{
+
+        if(result==null) {
+          this.searchCustomerValueIf = true;
+        }else{
+          this.searchCustomerValueIf = false;
+          this.searchCustomerDetails = result;
+
+          this.birthday = parseInt(this.searchCustomerDetails.birthday.toString());
+          console.log('nnnnnnnnnnnnnnnnnnnnnn'+this.birthday);
+
+          if(this.birthday >= 1000){
+            this.discount = this.totalPrice * 0.10;
+            this.totalPrice = this.totalPrice - this.discount;
+          }else if(this.birthday >= 500) {
+            this.discount = this.totalPrice * 0.05;
+            this.totalPrice = this.totalPrice - this.discount;
+          }else if(this.birthday >= 100) {
+            this.discount = this.totalPrice * 0.01;
+            this.totalPrice = this.totalPrice - this.discount;
+          }else if(this.birthday < 100) {
+            this.discount = this.totalPrice * 0.005;
+            this.totalPrice = this.totalPrice - this.discount;
+          }
+
+        }
+
+      });
+
+    }
+  }
 
 }

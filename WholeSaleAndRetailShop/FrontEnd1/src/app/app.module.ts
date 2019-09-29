@@ -12,7 +12,7 @@ import { SupplierOrderAgentItemComponent } from './view/supplier-order-agent-ite
 import { SalaryComponent } from './view/salary/salary.component';
 
 import { AttendanceComponent } from './view/attendance/attendance.component';
-import { SalarysheetComponent } from './view/salarysheet/salarysheet.component';
+
 import {StockItemDetails} from "./model/StockItemDetails";
 import {CustomerComponent} from "./view/customer/customer.component";
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
@@ -26,6 +26,9 @@ import { ReturnItemsComponent } from './view/retitems/retitems.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
+import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
+import { SalarySheetReportComponent } from './view/salary-sheet-report/salary-sheet-report.component';
+
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -38,13 +41,16 @@ import { CompanyComponent } from './view/company/company.component';
     SupplierOrderAgentItemComponent,
     SalaryComponent,
     AttendanceComponent,
-    SalarysheetComponent,
+
       CustomerComponent,
       StockHandlingComponent,
       CustomerOrderComponent,
       SupplierComponent,
       CompanyComponent,
-      ReturnItemsComponent
+      ReturnItemsComponent,
+      LowStockLevelComponent,
+      SalarySheetReportComponent,
+
   ],
   imports: [
       BrowserModule,

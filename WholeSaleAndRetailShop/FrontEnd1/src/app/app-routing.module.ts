@@ -7,7 +7,7 @@ import {SupplierOrderComponent} from "./view/supplier-order/supplier-order.compo
 import {SalaryComponent} from "./view/salary/salary.component";
 
 import {AttendanceComponent} from "./view/attendance/attendance.component";
-import {SalarysheetComponent} from "./view/salarysheet/salarysheet.component";
+
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
 import {CustomerComponent} from "./view/customer/customer.component";
 import {SupplierOrderAgentItemComponent} from "./view/supplier-order-agent-item/supplier-order-agent-item.component";
@@ -15,6 +15,8 @@ import {CustomerOrderComponent} from "./view/customer-order/customer-order.compo
 import {SupplierComponent} from "./view/supplier/supplier.component";
 import {CompanyComponent} from "./view/company/company.component";
 import {ReturnItemsComponent} from "./view/retitems/retitems.component";
+import {LowStockLevelComponent} from "./view/low-stock-level/low-stock-level.component";
+import {SalarySheetReportComponent} from "./view/salary-sheet-report/salary-sheet-report.component";
 
 
 const routes: Routes = [
@@ -55,14 +57,6 @@ const routes: Routes = [
         component: AttendanceComponent
       },
       {
-        path: 'salarysheet',
-        component: SalarysheetComponent
-      }, {
-        path: 'salary/salarysheet',
-        component: SalarysheetComponent
-      },
-
-      {
         path: 'Company',
         component: CompanyComponent
 
@@ -74,6 +68,16 @@ const routes: Routes = [
       {
         path: 'SupplierOrderAgent',
         component: SupplierOrderAgentItemComponent
+      },
+      {
+        path:'LowStockLevel',
+        component:LowStockLevelComponent
+
+      },
+      {
+        path:'SalarySheetReport',
+        component:SalarySheetReportComponent
+
       }
 
     ]

@@ -25,11 +25,12 @@ export class SalaryComponent implements OnInit {
 
   ngOnInit() {
     this.getEmpDetails();
+    this.salarySum();
   }
 
-  goToPage() {
-    this.router.navigate(['/main/salarysheet']);
-  }
+  // goToPage() {
+  //   this.router.navigate(['/main/salarysheet']);
+  // }
 
   getEmpDetails(){
     this.salaryservice.getEmpDetails().subscribe((result)=>{
@@ -59,10 +60,10 @@ export class SalaryComponent implements OnInit {
   addSalary(){
     let sal : Salary = new Salary();
 
-    this.salary = (parseInt(this.emplo.basicsal) + parseInt("1000") + parseInt("8 * 100")).toString();
+    this.salary = (parseInt(this.emplo.basicsal) + parseInt("1000") + parseInt("10 * 100")).toString();
 
     sal.payDate = this.datepipe.transform(new Date(),'yyyy-MM-dd');
-    sal.workHours = "08";
+    sal.workHours = "10";
     sal.salary = this.salary;
     sal.employee = this.emplo;
 

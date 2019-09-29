@@ -1,5 +1,6 @@
 package lk.whsars.service.impl;
 
+import lk.whsars.DTO.LowStockLevelDto;
 import lk.whsars.entity.Item;
 import lk.whsars.entity.Stock;
 import lk.whsars.entity.StockItemDetails;
@@ -10,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -39,5 +42,32 @@ public class StockServiceImpl implements StockService {
             return null;
         }
 
+    }
+
+    @Override
+    public List<LowStockLevelDto> getLowStockLevelReport() {
+
+
+        List<Object[]> lowStock = stockRepository.getLowStockLevelReport();
+
+        List<LowStockLevelDto> d = new ArrayList<LowStockLevelDto>();
+        for ( Object ob []: lowStock
+        ) {
+
+            LowStockLevelDto d1 = new LowStockLevelDto();
+
+            d1.setBarcode(ob[0].toString());
+            d1.setItemName(ob[1].toString());
+            d1.setQtyOnHand(Double.parseDouble(ob[2].toString()));
+            d1.setBrandName(ob[3].toString());
+            d1.setSupplierName(ob[4].toString());
+            d1.setCompany(ob[5].toString());
+
+            d.add(d1);
+
+        }
+
+
+        return d;
     }
 }
