@@ -11,7 +11,8 @@ import java.util.Set;
 public class Supplier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-     int supplierId;
+
+    int supplierId;
     String company;
     String supplierNic;
     String supplierName;

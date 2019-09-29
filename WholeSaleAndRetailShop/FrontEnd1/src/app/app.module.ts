@@ -26,6 +26,7 @@ import { ReturnItemsComponent } from './view/retitems/retitems.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
+import { SupplierOrderReportComponent } from './view/supplier-order-report/supplier-order-report.component';
 import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
 
@@ -42,6 +43,13 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
     SalaryComponent,
     AttendanceComponent,
     SalarysheetComponent,
+      CustomerComponent,
+      StockHandlingComponent,
+      CustomerOrderComponent,
+      SupplierComponent,
+      CompanyComponent,
+      ReturnItemsComponent,
+      SupplierOrderReportComponent,
     CustomerComponent,
     StockHandlingComponent,
     CustomerOrderComponent,
