@@ -42,9 +42,6 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
     SalaryComponent,
     AttendanceComponent,
     SalarysheetComponent,
-<<<<<<< HEAD
-=======
->>>>>>> 1efb3a09f1feeccd23fe0d95dfe5f41b82c92a70
     CustomerComponent,
     StockHandlingComponent,
     CustomerOrderComponent,
