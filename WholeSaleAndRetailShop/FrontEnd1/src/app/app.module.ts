@@ -26,6 +26,7 @@ import { ReturnItemsComponent } from './view/retitems/retitems.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
+import { SupplierOrderReportComponent } from './view/supplier-order-report/supplier-order-report.component';
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -44,7 +45,8 @@ import { CompanyComponent } from './view/company/company.component';
       CustomerOrderComponent,
       SupplierComponent,
       CompanyComponent,
-      ReturnItemsComponent
+      ReturnItemsComponent,
+      SupplierOrderReportComponent
   ],
   imports: [
       BrowserModule,

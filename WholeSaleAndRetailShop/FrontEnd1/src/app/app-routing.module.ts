@@ -15,6 +15,7 @@ import {CustomerOrderComponent} from "./view/customer-order/customer-order.compo
 import {SupplierComponent} from "./view/supplier/supplier.component";
 import {CompanyComponent} from "./view/company/company.component";
 import {ReturnItemsComponent} from "./view/retitems/retitems.component";
+import {SupplierOrderReportComponent} from "./view/supplier-order-report/supplier-order-report.component";
 
 
 const routes: Routes = [
@@ -74,6 +75,10 @@ const routes: Routes = [
       {
         path: 'SupplierOrderAgent',
         component: SupplierOrderAgentItemComponent
+      },
+      {
+        path: 'SupplierOrderReport',
+        component: SupplierOrderReportComponent
       }
 
     ]

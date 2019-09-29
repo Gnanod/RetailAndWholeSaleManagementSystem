@@ -8,4 +8,6 @@ export class SupplierOrderSearchDto{
   companyName:string;
   total:number;
   supplierNIC:string;
+  supplierId:number;
+
 }

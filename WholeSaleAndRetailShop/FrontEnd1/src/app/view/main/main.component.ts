@@ -86,6 +86,10 @@ export class MainComponent implements OnInit {
 
         this.router.navigate(['/main/Company'])
 
+      }else if(button == "Received Orders"){
+
+        this.router.navigate(['/main/SupplierOrderReport'])
+
       }
     }
         
