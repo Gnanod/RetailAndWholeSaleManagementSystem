@@ -1,5 +1,6 @@
 package lk.whsars.service;
 
+import lk.whsars.DTO.CustomerLastOrderDto;
 import lk.whsars.entity.CustomerOrder;
 import lk.whsars.entity.Item;
 
@@ -13,7 +14,8 @@ public interface CustomerOrderService {
 
     List<Item> getAllItems(String searchName);
 
+    CustomerLastOrderDto getCustomerLastOrder();
 
-//  List<Item> getAllItems(String name);
+    void lastOrderUndo(int customerOrderId);
 
 }

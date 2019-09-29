@@ -3,45 +3,31 @@ import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {CustomerOrder} from "../model/CustomerOrder";
 import {Item} from "../model/Item";
-import {Brand} from "../model/Brand";
-import {CustomerOrderDetail} from "../model/CustomerOrderDetail";
 
-const URL ='/CustomerOrderController'
+const URL = '/CustomerOrderController';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerOrderService {
 
-  constructor(private http:HttpClient) { }
-
-  addCustomerOrder(custorder: CustomerOrder) {
-    console.log(custorder);
-    return this.http.post<string>(environment.backend_url + URL + '/addCustomerOrder',custorder);
-
+  constructor(private http: HttpClient) {
   }
 
-  // searchItemDetailsByNameOrId(searchItemNameOrId: string){
-  //
-  //   return this.http.get<Array<Item>>(environment.backend_url+URL+'/searchItemDetailsByNameOrId/'+searchItemNameOrId);
-  // }
-
-  // addCustomerOrderDetail(custorderDetail: CustomerOrderDetail) {
-  //   console.log(custorderDetail);
-  //   return this.http.post<CustomerOrderDetail>(environment.backend_url + URL + '/addCustomerOrderDetail',custorderDetail);
-  //
-  // }
-
-  // searchItemDetailsByName(searchitembyname: string) {
-  //
-  //   return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByName/'+searchitembyname);
-  //
-  // }
+  addCustomerOrder(custorder: CustomerOrder) {
+    return this.http.post<string>(environment.backend_url + URL + '/addCustomerOrder', custorder);
+  }
 
   searchItemDetailsByBarcode(searchitembyname: string) {
+    return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByBarcode/' + searchitembyname);
+  }
 
-    return this.http.get<Array<Item>>(environment.backend_url + URL + '/searchItemDetailsByBarcode/'+searchitembyname);
+  searchLastOrder() {
+    return this.http.get <String>(environment.backend_url + URL + '/searchLastOrder');
+  }
 
+  lastOrderUndo(lastOrderId: number) {
+    return this.http.delete<number>(environment.backend_url + URL + '/deleteCustomerOrder/' + lastOrderId);
   }
 
 }

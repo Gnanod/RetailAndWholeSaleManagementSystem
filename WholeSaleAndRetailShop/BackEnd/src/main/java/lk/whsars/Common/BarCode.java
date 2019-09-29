@@ -56,11 +56,6 @@ public class BarCode {
         System.out.println("kkkkk"+itemQty);
 
 
-//        for (Item item : itemList) {
-//            System.out.println("item " + item.getBarCode() );
-//            System.out.println("item " + item.getRetailPrice() );
-//        }
-
         String fileName = "BAR_" + getCurrentDate() + "_" + getCurrentTime() + ".pdf";
         String filePath = "C:/Users/" + System.getProperty("user.name") + "/Documents/" + fileName;
 

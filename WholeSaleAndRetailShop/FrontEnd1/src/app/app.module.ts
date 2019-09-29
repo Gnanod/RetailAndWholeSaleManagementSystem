@@ -27,6 +27,9 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
 import { SupplierOrderReportComponent } from './view/supplier-order-report/supplier-order-report.component';
+import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
+import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
+
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -47,14 +50,22 @@ import { SupplierOrderReportComponent } from './view/supplier-order-report/suppl
       CompanyComponent,
       ReturnItemsComponent,
       SupplierOrderReportComponent
+    CustomerComponent,
+    StockHandlingComponent,
+    CustomerOrderComponent,
+    SupplierComponent,
+    CompanyComponent,
+    ReturnItemsComponent,
+    LowStockLevelComponent,
+    CustomerOrderReportComponent
   ],
   imports: [
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule,
-      AppRoutingModule,
-      FormsModule,FontAwesomeModule,
-      HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    FormsModule,FontAwesomeModule,
+    HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [
     DatePipe

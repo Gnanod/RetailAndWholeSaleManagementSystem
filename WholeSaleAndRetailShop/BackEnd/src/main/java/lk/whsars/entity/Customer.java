@@ -25,6 +25,9 @@ public class Customer {
     String birthday;
     String type;
     String aboutCus;
+    int loyaltyPoint;
+
+
     @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "customer")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
@@ -126,4 +129,8 @@ public class Customer {
     public void setOrdersList(Set<CustomerOrder> ordersList) {
         this.ordersList = ordersList;
     }
+
+    public int getLoyaltyPoint() { return loyaltyPoint; }
+
+    public void setLoyaltyPoint(int loyaltyPoint) { this.loyaltyPoint = loyaltyPoint; }
 }

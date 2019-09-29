@@ -8,4 +8,7 @@ public interface CustomerRepository extends JpaRepository<Customer,Integer> {
 
     @Query(value = "from Customer  where nic=?1")
     Customer searchByCustomerDetailsByNIC(String nic);
+
+    @Query(value = "from Customer  where phone=?1")
+    Customer searchByCustomerDetailsByID(String phone);
 }

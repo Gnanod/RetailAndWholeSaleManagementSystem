@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import java.util.List;
 
-public interface CustomerOrderRepository extends JpaRepository<CustomerOrder,String> {
+public interface CustomerOrderRepository extends JpaRepository<CustomerOrder,Integer> {
 
     @Query(value = "from Item  where itemName=?1 or barCode=?1")
     List<Item> findAllItemsByNameOrId(String nameOrId);
@@ -15,8 +15,8 @@ public interface CustomerOrderRepository extends JpaRepository<CustomerOrder,Str
     @Query(value = "from Item  where barCode = ?1")
     List<Item> getAllItems(String searchName);
 
+    @Query(value = "SELECT * FROM customer_order ORDER BY customer_order_id DESC LIMIT 1",nativeQuery = true)
+    List<Object[]> getLastOrder();
 
-//    @Query(value = "SELECT * FROM CustomerOrder")
-//    List<CustomerOrder>
 
 }

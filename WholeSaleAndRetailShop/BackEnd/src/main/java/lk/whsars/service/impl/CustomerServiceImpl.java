@@ -34,7 +34,11 @@ public class CustomerServiceImpl implements CustomerService {
         return customerRepository.searchByCustomerDetailsByNIC(nic);
     }
 
+    @Override
+    public Customer searchByCustomerID(String phone) { return customerRepository.searchByCustomerDetailsByID(phone); }
 
+    @Override
+    public Customer updateLoyaltyPoints(Customer customer) { return customerRepository.save(customer); }
 
 
 }

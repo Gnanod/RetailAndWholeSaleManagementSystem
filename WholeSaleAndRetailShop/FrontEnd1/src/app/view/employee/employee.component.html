@@ -12,59 +12,74 @@
           <h4 class="card-title">Add Employee Details</h4>
         </div>
         <div class="card-body">
-          <form>
-            <!--<div class="row">-->
-              <!--<div class="col-md-6">-->
-                <!--<div class="form-group">-->
-                  <!--<label class="bmd-label-floating">Employee ID</label>-->
-                  <!--<input type="text" class="form-control" name="employee_id" [(ngModel)]="emp.employee_id">-->
-                <!--</div>-->
-              <!--</div>-->
+          <form [formGroup]="form" name="form" >
 
-            <!--</div>-->
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label class="bmd-label-floating">First Name</label>
-                  <input type="text" class="form-control" name="fname" [(ngModel)]="emp.fname">
+                  <label class="bmd-label-floating" >First Name</label>
+                  <input type="text" class="form-control" name="fname" [(ngModel)]="emp.fname" formControlName="fname"
+                         [ngClass]="{'is-invalid':form.get('fname').touched && form.get('fname').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('fname').touched  && form.get('fname').invalid">
+                    First name is required
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Last Name</label>
-                  <input type="text" class="form-control" name="lname" [(ngModel)]="emp.lname">
+                  <input type="text" class="form-control" name="lname" [(ngModel)]="emp.lname" formControlName="lname"
+                         [ngClass]="{'is-invalid':form.get('lname').touched && form.get('lname').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('lname').touched  && form.get('lname').invalid">
+                    Last name is required
+                  </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label class="bmd-label-floating">Email Address</label>
-                  <input type="email" class="form-control" name="email" [(ngModel)]="emp.email">
+                  <label class="bmd-label-floating" >Email</label>
+                  <input type="text" class="form-control" name="email" [(ngModel)]="emp.email" formControlName="email"
+                         [ngClass]="{'is-invalid':form.get('email').touched && form.get('email').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('email').touched  && form.get('email').invalid">
+                    <div *ngIf="form.get('email').errors.required"> Email is required </div>
+                    <div *ngIf="form.get('email').errors.email"> Email must be a valid email address</div>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label class="bmd-label-floating" >NIC</label>
-                  <input type="text" class="form-control" name="nic" [(ngModel)]="emp.nic">
+                  <label class="bmd-label-floating">NIC</label>
+                  <input type="text" class="form-control" name="nic" [(ngModel)]="emp.nic" formControlName="nic"
+                         [ngClass]="{'is-invalid':form.get('nic').touched && form.get('nic').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('nic').touched  && form.get('nic').invalid">
+                    NIC is required
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
                   <label class="bmd-label-floating">Address</label>
-                  <input type="text" class="form-control" name="address" [(ngModel)]="emp.address">
+                  <input type="text" class="form-control" name="address" [(ngModel)]="emp.address" formControlName="address"
+                         [ngClass]="{'is-invalid':form.get('address').touched && form.get('address').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('address').touched  && form.get('address').invalid">
+                    Address is required
+                  </div>
                 </div>
               </div>
-            </div>
+
 
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Birthday</label><br>
-                  <input type="date" class="form-control" name="birthday" [(ngModel)]="emp.birthday" >
+                  <input type="text" class="form-control" name="birthday" [(ngModel)]="emp.birthday" formControlName="birthday"
+                         [ngClass]="{'is-invalid':form.get('birthday').touched && form.get('birthday').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('birthday').touched  && form.get('birthday').invalid">
+                    Birthday is required
+                  </div>
                 </div>
               </div>
 
@@ -72,7 +87,11 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Contact Number</label>
-                  <input type="text" class="form-control" name="phone" [(ngModel)]="emp.phone">
+                  <input type="text" class="form-control" name="phone" [(ngModel)]="emp.phone" formControlName="phone"
+                         [ngClass]="{'is-invalid':form.get('phone').touched && form.get('phone').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('phone').touched  && form.get('phone').invalid">
+                    Contact Number is required
+                  </div>
                 </div>
               </div>
             </div>
@@ -80,14 +99,22 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Date of Joining</label><br>
-                  <input type="date" class="form-control" name="datejoin" [(ngModel)]="emp.datejoin">
+                  <input type="text" class="form-control" name="datejoin" [(ngModel)]="emp.datejoin" formControlName="datejoin"
+                         [ngClass]="{'is-invalid':form.get('datejoin').touched && form.get('datejoin').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('datejoin').touched  && form.get('datejoin').invalid">
+                    Date of join is required
+                  </div>
                 </div>
               </div>
 
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Basic Salary</label><br>
-                  <input type="text" class="form-control" name="basicSal" [(ngModel)]="emp.basicsal">
+                  <input type="text" class="form-control" name="basicSal" [(ngModel)]="emp.basicSal" formControlName="basicSal"
+                         [ngClass]="{'is-invalid':form.get('basicSal').touched && form.get('basicSal').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('basicSal').touched  && form.get('basicSal').invalid">
+                    Basic Salary is required
+                  </div>
                 </div>
               </div>
             </div>
@@ -98,7 +125,7 @@
                   <label class="bmd-label-floating">Gender</label>
                   <div class="form-check form-check-radio">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="exampleRadios" value="option1" [(ngModel)]="emp.gender" checked>
+                      <input class="form-check-input" type="radio" name="exampleRadios" value="Male" [(ngModel)]="emp.gender" checked>
                       Male
                       <span class="circle">
                                             <span class="check"></span>
@@ -107,7 +134,7 @@
                   </div>
                   <div class="form-check form-check-radio">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="exampleRadios" value="option2" [(ngModel)]="emp.gender">
+                      <input class="form-check-input" type="radio" name="exampleRadios" value="Female" [(ngModel)]="emp.gender">
                       Female
                       <span class="circle">
                                               <span class="check"></span>
@@ -127,7 +154,7 @@
                   <br>
                   <div class="form-check form-check-radio form-check-inline">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" [(ngModel)]="emp.role" checked> Manager
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Manager" [(ngModel)]="emp.role" checked> Manager
                       <span class="circle">
         <span class="check"></span>
     </span>
@@ -136,7 +163,7 @@
 
                   <div class="form-check form-check-radio form-check-inline">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option2" [(ngModel)]="emp.role"> Administrator
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Administrator" [(ngModel)]="emp.role"> Administrator
                       <span class="circle">
         <span class="check"></span>
     </span>
@@ -145,7 +172,7 @@
 
                   <div class="form-check form-check-radio form-check-inline">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option3" [(ngModel)]="emp.role"> Cashier
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Cashier" [(ngModel)]="emp.role"> Cashier
                       <span class="circle">
         <span class="check"></span>
     </span>
@@ -154,7 +181,7 @@
 
                   <div class="form-check form-check-radio form-check-inline">
                     <label class="form-check-label">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="option4" [(ngModel)]="emp.role"> Other Staff
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" value="Other" [(ngModel)]="emp.role"> Other Staff
                       <span class="circle">
         <span class="check"></span>
     </span>
