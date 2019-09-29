@@ -95,8 +95,12 @@
                         <span class="sidebar-normal" #LowStockLevel>LowStockLevel</span>
                       </a>
                     </li>
-
-
+                    <li class="nav-item " [ngClass]="{'active': headerText=='CustomerOrderReport'}" (click)="changeRoute(LowStockLevel.innerHTML)">
+                      <a class="nav-link" >
+                        <span class="sidebar-mini"> LSL </span>
+                        <span class="sidebar-normal" #LowStockLevel>Customer Orders</span>
+                      </a>
+                    </li>
 
 
                   </ul>

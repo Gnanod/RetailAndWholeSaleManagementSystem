@@ -90,7 +90,12 @@ export class MainComponent implements OnInit {
 
         this.router.navigate(['/main/LowStockLevel'])
 
+      }else if(button == 'CustomerOrderReport'){
+
+        this.router.navigate(['/main/CustomerOrderReport'])
+
       }
+
     }
         
 

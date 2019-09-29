@@ -18,8 +18,4 @@ public interface CustomerOrderService {
 
     void lastOrderUndo(int customerOrderId);
 
-
-
-//  List<Item> getAllItems(String name);
-
 }

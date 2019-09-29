@@ -19,7 +19,4 @@ public interface CustomerOrderRepository extends JpaRepository<CustomerOrder,Int
     List<Object[]> getLastOrder();
 
 
-//    @Query(value = "SELECT * FROM CustomerOrder")
-//    List<CustomerOrder>
-
 }

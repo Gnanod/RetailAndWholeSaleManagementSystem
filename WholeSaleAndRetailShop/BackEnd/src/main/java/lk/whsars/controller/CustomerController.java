@@ -36,10 +36,10 @@ public class CustomerController {
     }
 
 
-    @GetMapping(value = "/searchByCustomerID/{cID}")
-    public Customer searchByCustomerID(@PathVariable int cID ){
-        System.out.println("cusID"+cID);
-        return customerService.searchByCustomerID(cID);
+    @GetMapping(value = "/searchByCustomerID/{phone}")
+    public Customer searchByCustomerID(@PathVariable String phone ){
+        System.out.println("cusID"+phone);
+        return customerService.searchByCustomerID(phone);
     }
 
     @PostMapping(value = "/updateLoyaltyPoints")
