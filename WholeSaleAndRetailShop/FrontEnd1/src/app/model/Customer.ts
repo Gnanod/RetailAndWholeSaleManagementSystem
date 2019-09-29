@@ -12,5 +12,6 @@ export class Customer{
   birthday:String;
   type:String;
   aboutCus:String;
+
   ordersList :CustomerOrder;
 }

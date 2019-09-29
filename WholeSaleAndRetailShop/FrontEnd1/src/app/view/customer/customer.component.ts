@@ -89,7 +89,7 @@ export class CustomerComponent implements OnInit {
           this.searchCustomerValueIf = true;
         }else{
           this.searchCustomerValueIf = false;
-          
+
           this.searchCustomerDetails=result;
           this.cusID = this.searchCustomerDetails.cusID
           this.firstName1 = this.searchCustomerDetails.firstName;
