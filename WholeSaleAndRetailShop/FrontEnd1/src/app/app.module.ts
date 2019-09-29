@@ -49,7 +49,7 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
       SupplierComponent,
       CompanyComponent,
       ReturnItemsComponent,
-      SupplierOrderReportComponent
+      SupplierOrderReportComponent,
     CustomerComponent,
     StockHandlingComponent,
     CustomerOrderComponent,

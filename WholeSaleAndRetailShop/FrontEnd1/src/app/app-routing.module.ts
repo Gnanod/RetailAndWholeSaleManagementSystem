@@ -80,7 +80,8 @@ const routes: Routes = [
       },
       {
         path: 'SupplierOrderReport',
-        component: SupplierOrderReportComponent
+        component: SupplierOrderReportComponent,
+      },{
         path:'LowStockLevel',
         component:LowStockLevelComponent
       },
