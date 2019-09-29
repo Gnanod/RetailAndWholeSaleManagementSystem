@@ -1,1 +1,68 @@
-<p>customer-order-report works!</p>
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-info card-header-icon">
+        <div class="card-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4 class="card-title">Customer Order Report</h4>
+      </div>
+      <div class="card-body">
+        <div class="row">
+
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+
+              <th class="text-center">CusOrderID</th>
+              <th class="text-center">TotalPrice</th>
+              <th class="text-center">TotalDiscount</th>
+              <th class="text-center">customerId</th>
+              <th class="text-center">ContactNo</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let CusORders of CustomerOrders">
+
+              <td class="text-center">
+                {{CusORders.customerOrderId}}
+              </td>
+              <td class="text-center">
+                {{CusORders.totalPrice}}
+              </td>
+              <td class="text-center">
+                {{CusORders.discount}}
+              </td>
+              <td class="text-center">
+                {{CusORders.customerId}}
+              </td>
+              <td class="text-center">
+                {{CusORders.phone}}
+              </td>
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row">
+
+          <div class="col-10">
+
+          </div>
+          <div class="col-2">
+            <button (click)="printReport()" class="btn btn-info pull-right" type="submit">Print</button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

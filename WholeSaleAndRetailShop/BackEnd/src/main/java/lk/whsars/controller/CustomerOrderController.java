@@ -1,6 +1,8 @@
 package lk.whsars.controller;
 
+import lk.whsars.Common.CustomerOrderReport;
 import lk.whsars.DTO.CustomerLastOrderDto;
+import lk.whsars.DTO.CustomerOrderReportDTO;
 import lk.whsars.entity.CustomerOrder;
 import lk.whsars.entity.Item;
 import lk.whsars.service.CustomerOrderService;
@@ -8,6 +10,7 @@ import lk.whsars.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin
@@ -69,5 +72,17 @@ public class CustomerOrderController {
         customerOrderService.lastOrderUndo(lastOrderId);
     }
 
+
+    @GetMapping(value = "/getCustomerOrderReport")
+    public List<CustomerOrderReportDTO> getCustomerOrderReport(){
+        return customerOrderService.getCustomerOrderReport();
+    }
+
+    @PostMapping(value = "/printReport")
+    public String printReport(@RequestBody ArrayList<CustomerOrderReportDTO> lowStockLevelDto){
+        CustomerOrderReport l1 = new CustomerOrderReport();
+        l1.generateLowStockLevelPdf(lowStockLevelDto);
+        return "9";
+    }
 
 }
