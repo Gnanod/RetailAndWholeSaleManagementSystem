@@ -19,6 +19,6 @@ public interface CustomerRepository extends JpaRepository<Customer,Integer> {
     @Query(value = "from Customer  where phone=?1")
     Customer searchByCustomerDetailsByID(String phone);
 
-    @Query(value = "select userName,nic,email,type,loyaltyPoint from Customer")
+    @Query(value = "select userName,nic,email,type,loyaltyPoints from Customer")
     List<Object[]> getCusRDetails();
 }

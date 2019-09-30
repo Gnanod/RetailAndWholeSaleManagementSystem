@@ -139,7 +139,7 @@ export class CustomerOrderComponent implements OnInit {
     if (this.customerPhoneNo != 'DemoNumber') {
       this.Cusdetail = new Customer();
       this.Cusdetail = this.searchCustomerDetails;
-      this.Cusdetail.loyaltyPoint = this.currentPoints + +this.points;
+      this.Cusdetail.loyaltyPoints = this.currentPoints + +this.points;
       this.customerService.updateLoyaltyPoints(this.Cusdetail).subscribe((result) => {
 
         if (result != null) {
@@ -216,7 +216,7 @@ export class CustomerOrderComponent implements OnInit {
         } else {
           this.searchCustomerValueIf = false;
           this.searchCustomerDetails = result;
-          this.currentPoints = this.searchCustomerDetails.loyaltyPoint;
+          this.currentPoints = this.searchCustomerDetails.loyaltyPoints;
 
           if (this.currentPoints >= 1000) {
             this.discount = this.totalPrice * 0.10;

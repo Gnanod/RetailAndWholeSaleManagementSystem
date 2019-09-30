@@ -14,7 +14,7 @@ export class Customer {
   birthday: String;
   type: String;
   aboutCus: String;
-  loyaltyPoint: number;
+  loyaltyPoints: number;
   ordersList: CustomerOrder;
 
 }

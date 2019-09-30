@@ -29,62 +29,63 @@ export class MainComponent implements OnInit {
       this.headerText = "Customer Vehicle Details";
     } else if (this.router.url == '/main/employee') {
       this.headerText = "Employees";
-    } else if(this.router.url == '/main/searchVehicle'){
+    } else if (this.router.url == '/main/searchVehicle') {
       this.headerText = "SearchVehicle";
-    } else if(this.router.url == '/main/customerVehicle'){
+    } else if (this.router.url == '/main/customerVehicle') {
       this.headerText = "AddVehicle";
-    } else if(this.router.url== '/main/supplier'){
-      this.headerText="Supplier";
-    }  else if(this.router.url== "/main/supplierorder"){
-      this.headerText="SupplierOrder";
-    } else if(this.router.url== '/main/supplier') {
+    } else if (this.router.url == '/main/supplier') {
       this.headerText = "Supplier";
-    }else if(this.router.url== '/main/salary'){
-      this.headerText="Salary";
-    }else if(this.router.url== '/main/attendance'){
-      this.headerText="Attendance";
-    }else if (this.router.url=='/main/StockHandling'){
-      this.headerText="StockHandling";
-    }else if (this.router.url=='/main/customer'){
-      this.headerText="Customers";
-    }else if(this.router.url== '/main/supplier') {
+    } else if (this.router.url == "/main/supplierorder") {
+      this.headerText = "SupplierOrder";
+    } else if (this.router.url == '/main/supplier') {
       this.headerText = "Supplier";
-    }else if(this.router.url == '/main/Company'){
-      this.headerText="Company";
-    setHeaderTextAndButtons() {
+    } else if (this.router.url == '/main/salary') {
+      this.headerText = "Salary";
+    } else if (this.router.url == '/main/attendance') {
+      this.headerText = "Attendance";
+    } else if (this.router.url == '/main/StockHandling') {
+      this.headerText = "StockHandling";
+    } else if (this.router.url == '/main/customer') {
+      this.headerText = "Customers";
+    } else if (this.router.url == '/main/supplier') {
+      this.headerText = "Supplier";
+    } else if (this.router.url == '/main/Company') {
+      this.headerText = "Company";
+      // setHeaderTextAndButtons() {
+      //
+      //     if (this.router.url == '/main/dashboard') {
+      //         this.headerText = "Dashboard";
+      //     } else if (this.router.url == '/main/customer_vehicle') {
+      //         this.headerText = "Customer Vehicle Details";
+      //     } else if (this.router.url == '/main/employee') {
+      //         this.headerText = "Employees";
+      //     } else if(this.router.url == '/main/searchVehicle'){
+      //         this.headerText = "SearchVehicle";
+      //     } else if(this.router.url == '/main/customerVehicle'){
+      //         this.headerText = "AddVehicle";
+      //     } else if(this.router.url== '/main/supplier'){
+      //         this.headerText="Supplier";
+      //     }  else if(this.router.url== "/main/supplierorder"){
+      //       this.headerText="SupplierOrder";
+      //     } else if(this.router.url== '/main/supplier') {
+      //       this.headerText = "Supplier";
+      //     }else if(this.router.url== '/main/salary'){
+      //       this.headerText="Salary";
+      //     }else if(this.router.url== '/main/attendance'){
+      //       this.headerText="Attendance";
+      //     }else if (this.router.url=='/main/StockHandling'){
+      //         this.headerText="StockHandling";
+      //     }else if (this.router.url=='/main/customer'){
+      //         this.headerText="Customers";
+      //     }else if(this.router.url== '/main/supplier') {
+      //       this.headerText = "Supplier";
+      //     }else if(this.router.url == '/main/Company'){
+      //       this.headerText="Company";
+      //     }
+      // }
 
-        if (this.router.url == '/main/dashboard') {
-            this.headerText = "Dashboard";
-        } else if (this.router.url == '/main/customer_vehicle') {
-            this.headerText = "Customer Vehicle Details";
-        } else if (this.router.url == '/main/employee') {
-            this.headerText = "Employees";
-        } else if(this.router.url == '/main/searchVehicle'){
-            this.headerText = "SearchVehicle";
-        } else if(this.router.url == '/main/customerVehicle'){
-            this.headerText = "AddVehicle";
-        } else if(this.router.url== '/main/supplier'){
-            this.headerText="Supplier";
-        }  else if(this.router.url== "/main/supplierorder"){
-          this.headerText="SupplierOrder";
-        } else if(this.router.url== '/main/supplier') {
-          this.headerText = "Supplier";
-        }else if(this.router.url== '/main/salary'){
-          this.headerText="Salary";
-        }else if(this.router.url== '/main/attendance'){
-          this.headerText="Attendance";
-        }else if (this.router.url=='/main/StockHandling'){
-            this.headerText="StockHandling";
-        }else if (this.router.url=='/main/customer'){
-            this.headerText="Customers";
-        }else if(this.router.url== '/main/supplier') {
-          this.headerText = "Supplier";
-        }else if(this.router.url == '/main/Company'){
-          this.headerText="Company";
-        }
+
     }
-
-
   }
 
   changeRoute(button) {
@@ -142,12 +143,13 @@ export class MainComponent implements OnInit {
 
         this.router.navigate(['/main/CustomerReport'])
 
-    }}
+    }
+  }
         
 
-    }
 
-  }
+
+
 
 
 }

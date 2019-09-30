@@ -91,8 +91,10 @@ const routes: Routes = [
         component:CustomerOrderReportComponent
       },
       {
-        path:'EmployeeAttendance',
-        component:EmployeeAttendanceComponent
+        path: 'EmployeeAttendance',
+        component: EmployeeAttendanceComponent
+      },
+      {
         path:'CustomerReport',
         component:CustomerReportComponent,
       }

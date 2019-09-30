@@ -102,7 +102,7 @@ export class CustomerComponent implements OnInit {
           this.email1 = this.searchCustomerDetails.email;
           this.birthday1 = this.searchCustomerDetails.birthday;
           this.type1 = this.searchCustomerDetails.type;
-          this.loyaltyPoints1 = this.searchCustomerDetails.loyaltyPoint;
+          this.loyaltyPoints1 = this.searchCustomerDetails.loyaltyPoints;
           this.aboutCus1 = this.searchCustomerDetails.aboutCus;
 
         }

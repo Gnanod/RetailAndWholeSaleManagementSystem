@@ -45,8 +45,6 @@ import { CustomerReportComponent } from './view/customer-report/customer-report.
     SupplierOrderAgentItemComponent,
     SalaryComponent,
     AttendanceComponent,
-    SalarysheetComponent,
-
       CustomerComponent,
       StockHandlingComponent,
       CustomerOrderComponent,
@@ -65,7 +63,7 @@ import { CustomerReportComponent } from './view/customer-report/customer-report.
     ReturnItemsComponent,
     LowStockLevelComponent,
     CustomerOrderReportComponent,
-    EmployeeAttendanceComponent
+    EmployeeAttendanceComponent,
     CustomerReportComponent
   ],
   imports: [
