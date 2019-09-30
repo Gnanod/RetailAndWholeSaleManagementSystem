@@ -29,7 +29,7 @@ export class LowStockLevelComponent implements OnInit {
   }
 
   printReport() {
-    this.stockService.printReports(this.LowStockLevel ).subscribe((result)=>{
+    this.stockService.printReports(this.LowStockLevel).subscribe((result)=>{
 
       if(result !=null){
 

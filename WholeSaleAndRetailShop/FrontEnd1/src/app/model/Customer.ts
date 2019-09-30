@@ -1,5 +1,7 @@
 import {CustomerOrder} from "./CustomerOrder";
 
+
+
 export class Customer {
   cusID: number;
   firstName: String;
@@ -12,6 +14,7 @@ export class Customer {
   birthday: String;
   type: String;
   aboutCus: String;
-  loyaltyPoint: number;
+  loyaltyPoints: number;
   ordersList: CustomerOrder;
+
 }

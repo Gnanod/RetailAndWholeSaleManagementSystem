@@ -43,7 +43,7 @@ public class StockContoller {
     public String printReport(@RequestBody ArrayList<LowStockLevelDto> lowStockLevelDto){
 
         LowStockLevelReport l1 = new LowStockLevelReport();
-       l1.generateLowStockLevelPdf(lowStockLevelDto);
+        l1.generateLowStockLevelPdf(lowStockLevelDto);
         return "9";
 
     }

@@ -1,0 +1,70 @@
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-info card-header-icon">
+        <div class="card-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4 class="card-title">Customer Report</h4>
+      </div>
+      <div class="card-body">
+        <div class="row" >
+
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+
+
+              <th class="text-center">User Name</th>
+              <th class="text-center">NIC</th>
+              <th class="text-center">Email</th>
+              <th class="text-center">Type</th>
+              <th class="text-center">Loyalty Points</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let CusR of CustomerReport">
+
+              <td class="text-center">
+                {{CusR.userName}}
+              </td>
+              <td class="text-center">
+                {{CusR.nic}}
+              </td>
+              <td  class="text-center">
+                {{CusR.email}}
+              </td>
+              <td class="text-center">
+                {{CusR.type}}
+              </td >
+              <td style="color: red; font-size: 25px ;font-style: inherit" class="text-center">
+                {{CusR.loyaltyPoints}}
+              </td >
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row">
+
+          <div class="col-10">
+
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-info pull-right" (click)="printReport()" >Print </button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+

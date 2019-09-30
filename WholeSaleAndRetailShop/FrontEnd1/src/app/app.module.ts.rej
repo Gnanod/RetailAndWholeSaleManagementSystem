@@ -1,0 +1,9 @@
+diff a/WholeSaleAndRetailShop/FrontEnd1/src/app/app.module.ts b/WholeSaleAndRetailShop/FrontEnd1/src/app/app.module.ts	(rejected hunks)
+@@ -70,6 +70,7 @@
+     CustomerOrderReportComponent,
+ <<<<<<< HEAD
+     EmployeeAttendanceComponent
++=======
+     CustomerReportComponent
+ >>>>>>> f6877a9e9af798d66284af13acee851aa32fdd49
+   ],
