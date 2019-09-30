@@ -52,6 +52,8 @@ public class LowStockLevelReport {
     public void generateReport(){
 
     }
+
+
     public void generateLowStockLevelPdf(List<LowStockLevelDto> lowStockLevelDto){
 
 
@@ -133,7 +135,7 @@ public class LowStockLevelReport {
             table.addCell(s.getItemName());
             table.addCell(s.getBarcode());
             table.addCell(s.getBrandName());
-            table.addCell(s.getQtyOnHand().toString());
+            table.addCell(""+s.getQtyOnHand().toString());
             table.addCell(s.getCompany());
             table.addCell(s.getSupplierName());
         }
