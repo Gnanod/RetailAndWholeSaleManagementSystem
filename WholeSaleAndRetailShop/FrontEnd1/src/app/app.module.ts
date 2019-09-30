@@ -17,7 +17,7 @@ import {StockItemDetails} from "./model/StockItemDetails";
 import {CustomerComponent} from "./view/customer/customer.component";
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
 import {DatePipe} from "@angular/common";
 import { CustomerOrderComponent } from './view/customer-order/customer-order.component';
@@ -28,6 +28,7 @@ import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
 import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
+import { EmployeeAttendanceComponent } from './view/employee-attendance/employee-attendance.component';
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -42,9 +43,6 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
     SalaryComponent,
     AttendanceComponent,
     SalarysheetComponent,
-<<<<<<< HEAD
-=======
->>>>>>> 1efb3a09f1feeccd23fe0d95dfe5f41b82c92a70
     CustomerComponent,
     StockHandlingComponent,
     CustomerOrderComponent,
@@ -52,7 +50,8 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
     CompanyComponent,
     ReturnItemsComponent,
     LowStockLevelComponent,
-    CustomerOrderReportComponent
+    CustomerOrderReportComponent,
+    EmployeeAttendanceComponent
   ],
   imports: [
     BrowserModule,
@@ -60,7 +59,8 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,FontAwesomeModule,
-    HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
+    HttpClientModule,
+    ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [
     DatePipe

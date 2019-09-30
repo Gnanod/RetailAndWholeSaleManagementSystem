@@ -43,7 +43,10 @@ export class EmployeeComponent implements OnInit {
     birthday : new FormControl('',Validators.required),
     phone : new FormControl('',Validators.required),
     datejoin : new FormControl('',Validators.required),
-    basicSal : new FormControl('',Validators.required)
+    basicsal : new FormControl('',Validators.required),
+    gender : new FormControl('',Validators.required),
+    role : new FormControl('',Validators.required)
+
 
   })
 
