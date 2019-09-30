@@ -93,8 +93,8 @@ export class MainComponent implements OnInit {
 
       }else if(button == 'SalarySheetReport'){
         this.router.navigate(['/main/SalarySheetReport'])
-      }
-    }
+
+
       }else if(button == 'CustomerOrderReport'){
 
         this.router.navigate(['/main/CustomerOrderReport'])
