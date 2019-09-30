@@ -18,5 +18,7 @@ public interface CustomerOrderRepository extends JpaRepository<CustomerOrder,Int
     @Query(value = "SELECT * FROM customer_order ORDER BY customer_order_id DESC LIMIT 1",nativeQuery = true)
     List<Object[]> getLastOrder();
 
+    @Query(value ="select a.customer_order_id,sum(a.total_price) as total_price, sum(a.discount) as discount,a.customer_cusid,c.phone from customer_order a,customer c where c.cusid = a.customer_cusid group by a.customer_cusid",nativeQuery = true)
+    List<Object[]> getCustomerOrderReport();
 
 }

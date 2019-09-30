@@ -3,6 +3,8 @@ import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {CustomerOrder} from "../model/CustomerOrder";
 import {Item} from "../model/Item";
+import {LowStockLevelDTO} from "../DTO/LowStockLevelDTO";
+import {CustomerOrderReportDTO} from "../DTO/CustomerOrderReportDTO";
 
 const URL = '/CustomerOrderController';
 
@@ -28,6 +30,14 @@ export class CustomerOrderService {
 
   lastOrderUndo(lastOrderId: number) {
     return this.http.delete<number>(environment.backend_url + URL + '/deleteCustomerOrder/' + lastOrderId);
+  }
+
+  printReports(CustomerOrderReport: Array<CustomerOrderReportDTO>) {
+    return this.http.post<String>(environment.backend_url + URL + '/printReport/',CustomerOrderReport);
+  }
+
+  getCustomerOrders() {
+    return this.http.get<Array<CustomerOrderReportDTO>>(environment.backend_url + URL + '/getCustomerOrderReport/');
   }
 
 }

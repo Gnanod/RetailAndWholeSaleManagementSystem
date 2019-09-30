@@ -76,6 +76,13 @@
                 </a>
               </li>
 
+                <!--<li class="nav-item ">-->
+                    <!--<a class="nav-link" href="job">-->
+                      <!--<i class="fas fa-receipt"></i>-->
+                        <!--<p> Report </p>-->
+                    <!--</a>-->
+                <!--</li>-->
+
               <li class="nav-item ">
 
 
@@ -89,13 +96,21 @@
                 <div class="collapse" id="formsExamples1">
                   <ul class="nav">
 
+                    <li class="nav-item " [ngClass]="{'active': headerText=='receivedOrders'}" (click)="changeRoute(receivedOrders.innerHTML)">
+                      <a class="nav-link" >
+                        <span class="sidebar-mini"> ro </span>
+                        <span class="sidebar-normal" #receivedOrders>Received Orders</span>
+                      </a>
+                    </li>
+
+
                     <li class="nav-item " [ngClass]="{'active': headerText=='LowStockLevel'}" (click)="changeRoute(LowStockLevel.innerHTML)">
                       <a class="nav-link" >
                         <span class="sidebar-mini"> LSL </span>
                         <span class="sidebar-normal" #LowStockLevel>LowStockLevel</span>
                       </a>
                     </li>
-                    <li class="nav-item " [ngClass]="{'active': headerText=='CustomerOrderReport'}" (click)="changeRoute(LowStockLevel.innerHTML)">
+                    <li class="nav-item " [ngClass]="{'active': headerText=='CustomerOrderReport'}" (click)="changeRoute(CustomerOrderReport.innerHTML)">
                       <a class="nav-link" >
                         <span class="sidebar-mini"> COR </span>
                         <span class="sidebar-normal" #CustomerOrders>Customer Orders</span>
@@ -105,12 +120,16 @@
                       <a class="nav-link" >
                         <span class="sidebar-mini"> CR </span>
                         <span class="sidebar-normal" #CustomerReport>CustomerReport</span>
+                        <span class="sidebar-mini"> LSL </span>
+                        <span class="sidebar-normal" #CustomerOrderReport>CustomerOrderReport</span>
                       </a>
                     </li>
 
                   </ul>
                 </div>
               </li>
+
+
              
             </ul>
         </div>

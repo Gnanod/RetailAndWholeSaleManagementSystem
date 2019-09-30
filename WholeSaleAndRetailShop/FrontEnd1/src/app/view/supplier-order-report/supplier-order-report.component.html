@@ -1,0 +1,73 @@
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-info card-header-icon">
+        <div class="card-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4 class="card-title">Supplier Order Report</h4>
+      </div>
+      <div class="card-body">
+
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th class="text-center">Order Id</th>
+              <th class="text-center">Supplier Id</th>
+              <th class="text-center">Company Name</th>
+              <th class="text-center">Supplier Name</th>
+              <th class="text-center">Ordered Date</th>
+              <th class="text-center">Total</th>
+              <th class="text-center">Status</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let receiveOrders of monthreceivedorders">
+
+              <td class="text-center">
+                {{receiveOrders.supplierOrderId}}
+              </td>
+              <td class="text-center">
+                {{receiveOrders.supplierId}}
+              </td>
+              <td class="text-center">
+                {{receiveOrders.companyName}}
+              </td>
+              <td class="text-center">
+                {{receiveOrders.supplierName}}
+              </td >
+              <td style="color: red; font-size: 25px ;font-style: inherit" class="text-center">
+                {{receiveOrders.date}}
+              </td>
+              <td class="text-center">
+                {{receiveOrders.total}}
+              </td >
+              <td class="text-center">
+                {{receiveOrders.status}}
+              </td >
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row">
+
+          <div class="col-10">
+
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-info pull-right" (click)="printReport()">Print </button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
