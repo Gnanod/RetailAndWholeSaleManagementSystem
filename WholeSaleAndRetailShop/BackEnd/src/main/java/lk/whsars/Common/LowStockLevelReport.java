@@ -130,8 +130,7 @@ public class LowStockLevelReport {
 
         table.setHeaderRows(1);
 
-        for (LowStockLevelDto s:lowStockLevelDto
-             ) {
+        for (LowStockLevelDto s:lowStockLevelDto) {
             table.addCell(s.getItemName());
             table.addCell(s.getBarcode());
             table.addCell(s.getBrandName());

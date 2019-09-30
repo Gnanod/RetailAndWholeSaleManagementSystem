@@ -31,7 +31,7 @@ public class StockContoller {
     }
 
     @GetMapping(value = "/getLowStockLevelReport")
-    public List<LowStockLevelDto> getItems(){
+    public List<LowStockLevelDto> getCustomerOrder(){
 
         return stockService.getLowStockLevelReport();
 

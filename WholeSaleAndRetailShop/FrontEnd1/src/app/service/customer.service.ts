@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Customer} from "../model/Customer";
 import {environment} from "../../environments/environment";
+import {LowStockLevelDTO} from "../DTO/LowStockLevelDTO";
+import {CustomerReportDTO} from "../DTO/CustomerReportDTO";
 
 const URL ='/CustomerController'
 
@@ -16,6 +18,13 @@ export class CustomerService {
     return this.http.post<Customer>(environment.backend_url + URL + '/addCustomer',cust);
 
   }
+
+  CusReport() {
+
+    return this.http.get<Array<CustomerReportDTO>>(environment.backend_url + URL + '/getCusDetail');
+
+  }
+
 
   searchCustomerDtails(searchCustomerNIC: String) {
 
@@ -38,6 +47,11 @@ export class CustomerService {
 
   updateLoyaltyPoints(updateLoyaltyPoints: Customer) {
     return this.http.post<Customer>(environment.backend_url + URL + '/updateLoyaltyPoints',updateLoyaltyPoints);
+  }
+
+  printCustomerReport(CustomerReport: Array<CustomerReportDTO>) {
+    return this.http.post<String>(environment.backend_url + URL + '/printCustomerReport/',CustomerReport);
+
   }
 }
 

@@ -19,4 +19,6 @@ public interface AttendanceService {
     int counter();
 
     String deleteAttendance(int attId);
+
+   String checkEmployee(String empid);
 }

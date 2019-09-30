@@ -72,4 +72,9 @@ public class AttendanceController {
         return  attendanceService.deleteAttendance(attId);
 
     }
+
+    @GetMapping(value = "/checkemp/{empid}")
+    public String checkEmployee(@PathVariable String empid){
+        return attendanceService.checkEmployee(empid);
+    }
 }

@@ -1,10 +1,17 @@
 package lk.whsars.controller;
 
 
+import lk.whsars.Common.CustomerReport;
+import lk.whsars.Common.LowStockLevelReport;
+import lk.whsars.DTO.CustomerRDto;
+import lk.whsars.DTO.LowStockLevelDto;
 import lk.whsars.entity.Customer;
 import lk.whsars.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @CrossOrigin
 @RestController
@@ -45,5 +52,21 @@ public class CustomerController {
     @PostMapping(value = "/updateLoyaltyPoints")
     public Customer updateLoyaltyPoints(@RequestBody Customer customer){
         return customerService.updateLoyaltyPoints(customer);
+    }
+
+    @GetMapping(value = "/getCusDetail")
+    public List<CustomerRDto> getItems(){
+
+        return customerService.getCusDetail();
+
+    }
+
+    @PostMapping(value = "/printCustomerReport")
+    public String printCustomerReport(@RequestBody ArrayList<CustomerRDto> CustomerRDto){
+
+        CustomerReport l1 = new CustomerReport();
+        l1.generateCustomerReportPdf(CustomerRDto);
+        return "9";
+
     }
 }

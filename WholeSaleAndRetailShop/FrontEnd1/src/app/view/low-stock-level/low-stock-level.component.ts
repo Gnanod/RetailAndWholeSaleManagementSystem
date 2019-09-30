@@ -26,8 +26,6 @@ export class LowStockLevelComponent implements OnInit {
         this.LowStockLevel=result;
       }
     });
-
-
   }
 
   printReport() {

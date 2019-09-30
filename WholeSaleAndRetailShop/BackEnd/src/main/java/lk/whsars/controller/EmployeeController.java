@@ -1,10 +1,15 @@
 package lk.whsars.controller;
 
+import lk.whsars.Common.EmployeeAttendanceReport;
+import lk.whsars.Common.LowStockLevelReport;
+import lk.whsars.DTO.EmployeeAttendanceDto;
+import lk.whsars.DTO.LowStockLevelDto;
 import lk.whsars.entity.Employee;
 import lk.whsars.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin
@@ -50,6 +55,23 @@ class EmployeeController {
     public Employee searchByEmployeeName(@PathVariable String fname){
 
         return employeeService.searchByEmployeeName(fname);
+
+    }
+
+    @GetMapping(value = "/getEmployeeAttendance")
+    public List<EmployeeAttendanceDto> getItems(){
+
+        return employeeService.getEmployeeAttendance();
+
+    }
+
+    @PostMapping(value = "/printReport")
+    public String printReport(@RequestBody ArrayList<EmployeeAttendanceDto> employeeAttendanceDto){
+
+        EmployeeAttendanceReport e1 = new EmployeeAttendanceReport();
+        e1.generateEmployeeAttendancePdf(employeeAttendanceDto);
+
+        return "1";
 
     }
 
