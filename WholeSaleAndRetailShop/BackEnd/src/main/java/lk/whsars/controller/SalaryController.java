@@ -53,4 +53,9 @@ public class SalaryController {
          return null;
     }
 
+    @GetMapping(value = "/workday")
+    public String workdays(@PathVariable int id){
+        return salaryService.workdays(id);
+    }
+
 }

@@ -20,6 +20,8 @@ export class SalaryComponent implements OnInit {
   emplo : Employee = new Employee();
   salary : string;
   sum : number;
+  id:number;
+  work :string;
 
   constructor(private router:Router,private salaryservice:SalaryService,private datepipe:DatePipe) { }
 
@@ -57,11 +59,23 @@ export class SalaryComponent implements OnInit {
   }
   }
 
+  workdays(idnt){
+
+    this.id = parseInt(idnt)
+    this.salaryservice.workdays(this.id).subscribe((result)=>{
+      if (result != null){
+        // this.work = parseInt(result.toString());
+        this.work = result.toString();
+        console.log("work...."+this.work);
+      }
+    })
+  }
+
   addSalary(){
     let sal : Salary = new Salary();
-
+    // sal.workHours = this.work ;
     this.salary = (parseInt(this.emplo.basicsal) + parseInt("1000") + parseInt("10 * 100")).toString();
-
+   // this.salary = (parseInt(this.emplo.basicsal)+ this.work * 300 ).toString();
     sal.payDate = this.datepipe.transform(new Date(),'yyyy-MM-dd');
     sal.workHours = "10";
     sal.salary = this.salary;

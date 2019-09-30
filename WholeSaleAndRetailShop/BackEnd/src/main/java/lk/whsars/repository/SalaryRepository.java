@@ -20,4 +20,7 @@ public interface SalaryRepository extends JpaRepository<Salary,Integer> {
 
     @Query(value = "select e.employee_id,e.basicsal,e.role,e.fname,s.salary,s.pay_date from employee e,salary s where e.employee_id=s.employee_employee_id and month(s.pay_date) = month(current_date)",nativeQuery = true)
     List<Object[]> getSalarydetails();
+
+    @Query(value = "select count(day) from attendance where employee_employee_id = id and month(day) = month(current_date)",nativeQuery = true)
+    Object workdays(int id);
 }

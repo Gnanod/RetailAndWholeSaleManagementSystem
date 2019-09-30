@@ -7,6 +7,8 @@ import lk.whsars.repository.SalaryRepository;
 import lk.whsars.service.SalaryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.io.Console;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +28,13 @@ public class SalaryServiceImpl implements SalaryService {
 
         Employee s1 = salaryRepository.searchById (Integer.parseInt(empId));
         return salaryRepository.searchById (Integer.parseInt(empId));
+    }
+    public String workdays(int id){
+        Object ob = salaryRepository.workdays(id);
+        String a = ob.toString();
+//        int a1 =Integer.parseInt(a);
+        System.out.println("workdays...."+ a);
+        return a;
     }
 
     @Override

@@ -17,4 +17,7 @@ public interface SalaryService {
     String salarySum();
 
     List<SalarySheetDTO> getSalaryDetails();
+
+    String workdays(int id);
+
 }

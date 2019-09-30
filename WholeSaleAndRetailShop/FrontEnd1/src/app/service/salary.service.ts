@@ -44,4 +44,8 @@ export class SalaryService {
     return this.http.post<String>(environment.backend_url + URL + '/Printsalary/',salarysheet);
 
   }
+
+  workdays(id :number){
+    return this.http.get(environment.backend_url+URL+'/workday/'+id);
+  }
 }
