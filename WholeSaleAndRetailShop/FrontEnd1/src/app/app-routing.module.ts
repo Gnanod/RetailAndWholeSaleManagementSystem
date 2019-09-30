@@ -59,14 +59,6 @@ const routes: Routes = [
         path: 'attendance',
         component: AttendanceComponent
       },
-      {
-        path: 'salarysheet',
-        component: SalarysheetComponent
-      },
-      {
-        path: 'salary/salarysheet',
-        component: SalarysheetComponent
-      },
 
       {
         path: 'Company',

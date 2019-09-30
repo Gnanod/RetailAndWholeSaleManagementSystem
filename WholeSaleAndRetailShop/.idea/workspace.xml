@@ -27,7 +27,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/salary.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state relative-caret-position="680">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
@@ -54,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="1785">
+              <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
               <folding>
                 <element signature="e#0#50#0" expanded="true" />
               </folding>
@@ -67,39 +67,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/AttendanceServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
+            <state relative-caret-position="187">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
               <folding>
-                <element signature="e#887#888#0" expanded="true" />
-                <element signature="e#947#948#0" expanded="true" />
-                <element signature="e#1128#1129#0" expanded="true" />
-                <element signature="e#1189#1190#0" expanded="true" />
+                <element signature="e#0#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SalaryService.java">
+        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+            <state relative-caret-position="663">
+              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary-sheet-report/salary-sheet-report.component.ts">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
+            <state relative-caret-position="329">
+              <caret line="280" column="10" selection-start-line="280" selection-start-column="10" selection-end-line="280" selection-end-column="10" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#9899#9924#0" expanded="true" />
+                <element signature="e#9934#9940#0" expanded="true" />
+                <element signature="e#9940#9946#0" expanded="true" />
+                <element signature="e#9947#9953#0" expanded="true" />
+                <element signature="e#9953#9959#0" expanded="true" />
+                <element signature="e#9960#9966#0" expanded="true" />
+                <element signature="e#9966#9972#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,7 +120,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SalaryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
+            <state relative-caret-position="799">
               <caret line="59" column="65" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -129,7 +132,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Common/SalarySheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
+            <state relative-caret-position="2040">
               <caret line="132" column="29" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -197,11 +200,9 @@
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.ts" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance-report/attendance-report.component.html" />
-        <option value="$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/SalarySheetDTO.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SalaryService.java" />
-        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SalaryServiceImpl.java" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/DTO/SalarySheetDTO.ts" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.ts" />
@@ -215,6 +216,8 @@
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/salary-sheet-report/salary-sheet-report.component.ts" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" />
       </list>
     </option>
   </component>
@@ -240,8 +243,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -578,12 +581,13 @@
       <workItem from="1569409633867" duration="15907000" />
       <workItem from="1569594805443" duration="30067000" />
       <workItem from="1569722023401" duration="25722000" />
-      <workItem from="1569866092629" duration="532000" />
+      <workItem from="1569866092629" duration="3116000" />
+      <workItem from="1569871726123" duration="251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381425000" />
+    <option name="totallyTimeSpent" value="384260000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,10 +600,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.7650376" visible="true" weight="0.27382752" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.7650376" visible="true" weight="0.27836612" />
       <window_info id="Structure" order="2" sideWeight="0.2340824" side_tool="true" weight="0.27978885" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -609,7 +612,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="0" weight="0.32977098" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32850242" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.7568438" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.36553946" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.25764894" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -619,7 +622,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.30595812" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.70121026" visible="true" weight="0.29146537" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.70121026" visible="true" weight="0.14653784" />
       <window_info anchor="bottom" id="TypeScript" order="14" weight="0.32977098" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -762,26 +765,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/attendance-report/attendance-report.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/DTO/LowStockLevelDTO.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -806,13 +789,6 @@
           <folding>
             <element signature="e#0#282#1" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
@@ -1016,36 +992,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary-sheet-report/salary-sheet-report.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SalaryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="59" column="65" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Common/SalarySheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="132" column="29" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/salary.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state relative-caret-position="680">
           <caret line="47" selection-start-line="47" selection-end-line="47" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
@@ -1069,10 +1018,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="1785">
+          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary-sheet-report/salary-sheet-report.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SalaryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="59" column="65" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Common/SalarySheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="132" column="29" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="280" column="10" selection-start-line="280" selection-start-column="10" selection-end-line="280" selection-end-column="10" />
+          <folding>
+            <element signature="e#9899#9924#0" expanded="true" />
+            <element signature="e#9934#9940#0" expanded="true" />
+            <element signature="e#9940#9946#0" expanded="true" />
+            <element signature="e#9947#9953#0" expanded="true" />
+            <element signature="e#9953#9959#0" expanded="true" />
+            <element signature="e#9960#9966#0" expanded="true" />
+            <element signature="e#9966#9972#0" expanded="true" />
           </folding>
         </state>
       </provider>
