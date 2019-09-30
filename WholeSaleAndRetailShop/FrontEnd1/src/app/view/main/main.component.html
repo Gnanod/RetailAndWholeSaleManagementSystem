@@ -97,11 +97,16 @@
                     </li>
                     <li class="nav-item " [ngClass]="{'active': headerText=='CustomerOrderReport'}" (click)="changeRoute(LowStockLevel.innerHTML)">
                       <a class="nav-link" >
-                        <span class="sidebar-mini"> LSL </span>
-                        <span class="sidebar-normal" #LowStockLevel>Customer Orders</span>
+                        <span class="sidebar-mini"> COR </span>
+                        <span class="sidebar-normal" #CustomerOrders>Customer Orders</span>
                       </a>
                     </li>
-
+                    <li class="nav-item " [ngClass]="{'active': headerText=='CustomerReport'}" (click)="changeRoute(CustomerReport.innerHTML)">
+                      <a class="nav-link" >
+                        <span class="sidebar-mini"> CR </span>
+                        <span class="sidebar-normal" #CustomerReport>CustomerReport</span>
+                      </a>
+                    </li>
 
                   </ul>
                 </div>

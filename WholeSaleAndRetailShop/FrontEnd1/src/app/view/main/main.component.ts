@@ -94,9 +94,11 @@ export class MainComponent implements OnInit {
 
         this.router.navigate(['/main/CustomerOrderReport'])
 
-      }
+      }else if(button == 'CustomerReport'){
 
-    }
+        this.router.navigate(['/main/CustomerReport'])
+
+    }}
         
 
     }

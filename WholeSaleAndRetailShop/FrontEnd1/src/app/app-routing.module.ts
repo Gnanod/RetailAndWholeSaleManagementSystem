@@ -17,6 +17,7 @@ import {CompanyComponent} from "./view/company/company.component";
 import {ReturnItemsComponent} from "./view/retitems/retitems.component";
 import {LowStockLevelComponent} from "./view/low-stock-level/low-stock-level.component";
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
+import {CustomerReportComponent} from "./view/customer-report/customer-report.component";
 
 
 const routes: Routes = [
@@ -84,6 +85,10 @@ const routes: Routes = [
       {
         path:'CustomerOrderReport',
         component:CustomerOrderReportComponent
+      },
+      {
+        path:'CustomerReport',
+        component:CustomerReportComponent,
       }
 
     ]

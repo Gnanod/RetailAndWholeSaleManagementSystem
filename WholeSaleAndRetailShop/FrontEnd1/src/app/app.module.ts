@@ -28,6 +28,7 @@ import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
 import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
+import { CustomerReportComponent } from './view/customer-report/customer-report.component';
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -49,7 +50,8 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
     CompanyComponent,
     ReturnItemsComponent,
     LowStockLevelComponent,
-    CustomerOrderReportComponent
+    CustomerOrderReportComponent,
+    CustomerReportComponent
   ],
   imports: [
     BrowserModule,
