@@ -79,6 +79,7 @@ export class CustomerComponent implements OnInit {
   birthday1 : String;
   type1 : String;
   aboutCus1 : String;
+  loyaltyPoints1 : number;
 
   searchCustomerDetailsByNIC(event: any){
 
@@ -89,7 +90,7 @@ export class CustomerComponent implements OnInit {
           this.searchCustomerValueIf = true;
         }else{
           this.searchCustomerValueIf = false;
-          
+
           this.searchCustomerDetails=result;
           this.cusID = this.searchCustomerDetails.cusID
           this.firstName1 = this.searchCustomerDetails.firstName;
@@ -99,8 +100,9 @@ export class CustomerComponent implements OnInit {
           this.nic1 = this.searchCustomerDetails.nic;
           this.phone1 = this.searchCustomerDetails.phone;
           this.email1 = this.searchCustomerDetails.email;
-          this.birthday1 = this.searchCustomerDetails.birthday
-          this.type1 = this.searchCustomerDetails.type
+          this.birthday1 = this.searchCustomerDetails.birthday;
+          this.type1 = this.searchCustomerDetails.type;
+          this.loyaltyPoints1 = this.searchCustomerDetails.loyaltyPoint;
           this.aboutCus1 = this.searchCustomerDetails.aboutCus;
 
         }

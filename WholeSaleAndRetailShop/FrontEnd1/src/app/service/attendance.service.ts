@@ -48,4 +48,8 @@ export class AttendanceService {
     return this.http.delete<string>(environment.backend_url+URL+'/AttendanceDelete/'+attendanceId);
 
   }
+
+  checkEmployee(empid : string){
+    return this.http.get<String>(environment.backend_url+ URL+'/checkemp/'+empid)
+  }
 }

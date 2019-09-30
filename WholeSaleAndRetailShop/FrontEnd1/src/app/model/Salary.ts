@@ -6,7 +6,8 @@ export class Salary{
   salaryId :number;
   salary :string;
   workHours :string;
-  month: string;
-  employeeId :Employee;
+  payDate: string;
+  employee :Employee;
   attendanceId : Attendance;
+  // empId : Employee;
 }

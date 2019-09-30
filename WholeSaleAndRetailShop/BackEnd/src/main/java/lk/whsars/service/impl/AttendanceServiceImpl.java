@@ -44,7 +44,11 @@ public class AttendanceServiceImpl implements AttendanceService {
     public int counter(){
 
        Object o= attendanceRepository.counter();
+
+        System.out.println("GGGG"+o);
+
        String a = o.toString();
+
        int a1 =Integer.parseInt(a);
         System.out.println("DDDD"+a);
         return a1;
@@ -55,5 +59,19 @@ public class AttendanceServiceImpl implements AttendanceService {
     public String deleteAttendance(int attId) {
         attendanceRepository.deleteById(attId);
         return "9";
+    }
+
+    @Override
+    public String checkEmployee(String empid) {
+
+        Object ob = attendanceRepository.checkEmployee(empid);
+
+        System.out.println("OBBBBBBBBBBBBBBBBBBBBB"+ob);
+        if(ob !=null){
+            return "9";
+        }else{
+            return null;
+        }
+
     }
 }

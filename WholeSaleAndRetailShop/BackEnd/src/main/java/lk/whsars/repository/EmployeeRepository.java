@@ -14,7 +14,7 @@ public interface EmployeeRepository extends JpaRepository<Employee,Integer> {
     List<Object[]> getEmployeeAttendance();
 
 
-    @Query(value = "from Employee where fname = ?1")
+    @Query(value = "from Employee where fname =?1")
     Employee searchByEmployeeName(String fname);
 
 

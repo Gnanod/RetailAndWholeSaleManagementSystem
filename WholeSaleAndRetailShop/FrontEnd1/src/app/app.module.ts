@@ -12,7 +12,7 @@ import { SupplierOrderAgentItemComponent } from './view/supplier-order-agent-ite
 import { SalaryComponent } from './view/salary/salary.component';
 
 import { AttendanceComponent } from './view/attendance/attendance.component';
-import { SalarysheetComponent } from './view/salarysheet/salarysheet.component';
+
 import {StockItemDetails} from "./model/StockItemDetails";
 import {CustomerComponent} from "./view/customer/customer.component";
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
@@ -26,9 +26,12 @@ import { ReturnItemsComponent } from './view/retitems/retitems.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
+import { SupplierOrderReportComponent } from './view/supplier-order-report/supplier-order-report.component';
 import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
+import { SalarySheetReportComponent } from './view/salary-sheet-report/salary-sheet-report.component';
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
 import { EmployeeAttendanceComponent } from './view/employee-attendance/employee-attendance.component';
+import { CustomerReportComponent } from './view/customer-report/customer-report.component';
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -43,6 +46,17 @@ import { EmployeeAttendanceComponent } from './view/employee-attendance/employee
     SalaryComponent,
     AttendanceComponent,
     SalarysheetComponent,
+
+      CustomerComponent,
+      StockHandlingComponent,
+      CustomerOrderComponent,
+      SupplierComponent,
+      CompanyComponent,
+      ReturnItemsComponent,
+      LowStockLevelComponent,
+      SalarySheetReportComponent,
+
+      SupplierOrderReportComponent,
     CustomerComponent,
     StockHandlingComponent,
     CustomerOrderComponent,
@@ -52,6 +66,7 @@ import { EmployeeAttendanceComponent } from './view/employee-attendance/employee
     LowStockLevelComponent,
     CustomerOrderReportComponent,
     EmployeeAttendanceComponent
+    CustomerReportComponent
   ],
   imports: [
     BrowserModule,

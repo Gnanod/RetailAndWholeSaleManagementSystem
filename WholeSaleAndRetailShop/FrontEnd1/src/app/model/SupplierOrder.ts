@@ -4,7 +4,7 @@ import {SupplierOrderDetail} from "./SupplierOrderDetail";
 export class SupplierOrder {
 
 
-  supplierOrderId: number;
+  supplierOrderId: String;
   companyName: string;
   total: number;
   status: string;

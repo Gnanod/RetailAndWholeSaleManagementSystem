@@ -51,6 +51,37 @@ export class MainComponent implements OnInit {
       this.headerText = "Supplier";
     }else if(this.router.url == '/main/Company'){
       this.headerText="Company";
+    setHeaderTextAndButtons() {
+
+        if (this.router.url == '/main/dashboard') {
+            this.headerText = "Dashboard";
+        } else if (this.router.url == '/main/customer_vehicle') {
+            this.headerText = "Customer Vehicle Details";
+        } else if (this.router.url == '/main/employee') {
+            this.headerText = "Employees";
+        } else if(this.router.url == '/main/searchVehicle'){
+            this.headerText = "SearchVehicle";
+        } else if(this.router.url == '/main/customerVehicle'){
+            this.headerText = "AddVehicle";
+        } else if(this.router.url== '/main/supplier'){
+            this.headerText="Supplier";
+        }  else if(this.router.url== "/main/supplierorder"){
+          this.headerText="SupplierOrder";
+        } else if(this.router.url== '/main/supplier') {
+          this.headerText = "Supplier";
+        }else if(this.router.url== '/main/salary'){
+          this.headerText="Salary";
+        }else if(this.router.url== '/main/attendance'){
+          this.headerText="Attendance";
+        }else if (this.router.url=='/main/StockHandling'){
+            this.headerText="StockHandling";
+        }else if (this.router.url=='/main/customer'){
+            this.headerText="Customers";
+        }else if(this.router.url== '/main/supplier') {
+          this.headerText = "Supplier";
+        }else if(this.router.url == '/main/Company'){
+          this.headerText="Company";
+        }
     }
 
 
@@ -85,10 +116,19 @@ export class MainComponent implements OnInit {
     }else if(button == "Company"){
 
       this.router.navigate(['/main/Company'])
+      }else if(button == "Received Orders"){
+
+        this.router.navigate(['/main/SupplierOrderReport'])
+      }else if(button == 'LowStockLevel'){
 
     }else if(button == 'LowStockLevel'){
 
       this.router.navigate(['/main/LowStockLevel'])
+      }else if(button == 'SalarySheetReport'){
+        this.router.navigate(['/main/SalarySheetReport'])
+
+
+      }else if(button == 'CustomerOrderReport'){
 
     }else if(button == 'Customer Orders'){
 
@@ -98,6 +138,12 @@ export class MainComponent implements OnInit {
     else if(button == 'Employee Attendance'){
 
       this.router.navigate(['/main/EmployeeAttendance'])
+      }else if(button == 'CustomerReport'){
+
+        this.router.navigate(['/main/CustomerReport'])
+
+    }}
+        
 
     }
 
