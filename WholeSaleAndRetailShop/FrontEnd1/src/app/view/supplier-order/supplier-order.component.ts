@@ -8,6 +8,7 @@ import {Item} from "../../model/Item";
 import {SupplierOrder} from "../../model/SupplierOrder";
 import {DatePipe} from "@angular/common";
 import {SupplierOrderSearchDto} from "../../model/SupplierOrderSearchDto";
+import {environment} from "../../../environments/environment.prod";
 
 @Component({
   selector: 'app-supplier-order',
@@ -16,18 +17,24 @@ import {SupplierOrderSearchDto} from "../../model/SupplierOrderSearchDto";
 })
 export class SupplierOrderComponent implements OnInit {
 
+  //delete order
+  deletesuporder: SupplierOrder = new SupplierOrder();
+  supOrderId:string;
+  searchDeleteValueIf=true;
+  searchDeleteOrders: SupplierOrderSearchDto = new SupplierOrderSearchDto();
+
+
   constructor(
     private make_company : SupplierOrderService,private supplierService:SupplierOrderService,
     private make_agent:SupplierOrderService,
     private productService:ItemService,
     private datePipe: DatePipe,
     private supplierorderservice: SupplierOrderService
+
   ) { }
 
   ngOnInit() {
     this.getAllCompanies();
-
-
   }
 
   //////////////Search order /////////////
@@ -150,7 +157,7 @@ export class SupplierOrderComponent implements OnInit {
   AddItemsToTable(barCode: string, itemName: string, supplierItemQuantity: number,retailPrice :number) {
 
     if( supplierItemQuantity == 0){
-      alert("Please Enter Details!!!");
+      alert("Please Enter Quantity!!!");
     }else {
       let supplierOrderDetail: SupplierOrderDetail = new SupplierOrderDetail();
 
@@ -199,15 +206,16 @@ export class SupplierOrderComponent implements OnInit {
       if (this.supplierOrderDetailsArray[i].item.barCode === id) {
 
         var price :number = this.supplierOrderDetailsArray[i].price;
-        console.log("JJJJ"+price);
+        console.log("price ="+price);
 
         var quantity :number =this.supplierOrderDetailsArray[i].quantity;
-        console.log("JJJJ"+quantity);
+        console.log("quantity ="+quantity);
 
-        let tot:number=price*quantity;
-        console.log("tot"+this.totalAmount);
-        console.log("Totallllllllllllllllllllll"+tot);
-        this.totalAmount = this.totalAmount-tot;
+        let tot:number=price/quantity;
+        console.log("Total"+tot);
+        console.log("tot amount =  ="+this.totalAmount);
+        this.totalAmount = this.totalAmount-price;
+        console.log("tot amount =  ="+this.totalAmount);
         this.supplierOrderDetailsArray.splice(i,1);
 
 
@@ -216,7 +224,9 @@ export class SupplierOrderComponent implements OnInit {
   }
 
   searchOrderByOrderId(event:string){
-    this.supplierorderservice.searchOrder(this.searchOrderById).subscribe((result)=>{
+
+    if(this.searchOrderById.length!=0){
+      this.supplierorderservice.searchOrder(this.searchOrderById).subscribe((result)=>{
 
         if(result==null){
           this.searchOrderValuesIf = true ;
@@ -227,6 +237,8 @@ export class SupplierOrderComponent implements OnInit {
           this.searchOrderValuesIf = false;
           this.searchOrder = result;
 
+          console.log('LKsadasdasdsadasdsadasdsadKKK'+ this.searchOrder.supplierNIC);
+
           let supplierorder :SupplierOrder = new SupplierOrder();
 
           supplierorder.date=this.searchOrder.date;
@@ -235,6 +247,10 @@ export class SupplierOrderComponent implements OnInit {
           let supplier = new Supplier();
 
           supplier.supplierNic = this.searchOrder.supplierNIC;
+          supplier.supplierId=this.searchOrder.supplierId;
+
+          console.log("YYYYYYYYYY"+this.searchOrder.supplierId)
+
           console.log('LKKKK'+ supplier.supplierNic);
           supplier.supplierName=this.searchOrder.supplierName;
           supplierorder.supplier=supplier;
@@ -246,24 +262,71 @@ export class SupplierOrderComponent implements OnInit {
           // this.updateStatus.supplierOrderId=parseInt(this.searchOrderById);
           // this.updateStatus.total
           this.updateStatus= supplierorder;
-        //  this.updatestatus = this.searchOrder.status;
+          this.updateStatus.supplierOrderId=this.searchOrderById;
+
+          //  this.updatestatus = this.searchOrder.status;
+
+          console.log('PRINT UPDATE ' + this.searchOrder.supplierOrderId)
         }
-    })
+      })
+    }
+
   }
 
   updateSupplierOrder(){
+
+    let SupplierOrderlet = new SupplierOrder()
+
+
     this.supplierorderservice.updateSupplierOrder(this.updateStatus).subscribe((result)=>{
 
       if(result!=null){
         alert('Updated SuccessFully');
       }
     });
+  }
+
+  searchDeleteOrders1(event:string){
+    this.supplierorderservice.searchOrderDelete(this.supOrderId).subscribe((result)=> {
+
+      if (result == null) {
+        this.searchDeleteValueIf = true;
+      }
+      else {
+        this.searchDeleteValueIf =false;
+        this.searchDeleteOrders = result;
+
+        let supDelOrder:SupplierOrder = new SupplierOrder();
+
+        supDelOrder.supplierOrderId = this.searchDeleteOrders.supplierOrderId;
+        supDelOrder.companyName = this.searchDeleteOrders.companyName;
+
+        let supname :Supplier = new Supplier();
+        supname.supplierName = this.searchDeleteOrders.supplierName;
+
+        supDelOrder.date= this.searchDeleteOrders.date;
+        supDelOrder.total= this.searchDeleteOrders.total;
+        supDelOrder.status = this.searchDeleteOrders.status;
+      }
 
 
+    })
+  }
 
+  deleteSupplierOrder(){
+    this.supplierorderservice.deleteSupplierOrder(this.supOrderId).subscribe((result)=>{
+      if(result != null){
+        alert('Deleted Successfully');
+
+      }else{
+        alert('failed');
+      }
+    })
   }
 
 
 }
+
+
 
 

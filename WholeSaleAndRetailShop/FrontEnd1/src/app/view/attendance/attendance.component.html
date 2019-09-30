@@ -111,9 +111,6 @@
         </thead>
         <tbody>
         <tr *ngIf="searchAttIf;else eLseBLock">
-          <td>
-            <i class="material-icons" data-notify="icon"></i>
-            Not Found
           <td colspan="16" class="alert alert-danger" style="text-align: center">
             Attendance Details Not Found
           </td>
@@ -135,7 +132,7 @@
             </td>
             <td>
               <button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteAttendance()">
-                <i class="material-icons">close</i>
+                <i class="fas fa-trash-alt"></i>
               </button>
             </td>
           </tr>

@@ -84,6 +84,9 @@ export class MainComponent implements OnInit {
 
         this.router.navigate(['/main/Company'])
 
+      }else if(button == "Received Orders"){
+
+        this.router.navigate(['/main/SupplierOrderReport'])
       }else if(button == 'LowStockLevel'){
 
         this.router.navigate(['/main/LowStockLevel'])
@@ -92,6 +95,15 @@ export class MainComponent implements OnInit {
         this.router.navigate(['/main/SalarySheetReport'])
       }
     }
+      }else if(button == 'CustomerOrderReport'){
+
+        this.router.navigate(['/main/CustomerOrderReport'])
+
+      }else if(button == 'CustomerReport'){
+
+        this.router.navigate(['/main/CustomerReport'])
+
+    }}
         
 
     }

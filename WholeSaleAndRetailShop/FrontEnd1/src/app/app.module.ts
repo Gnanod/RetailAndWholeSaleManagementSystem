@@ -26,8 +26,11 @@ import { ReturnItemsComponent } from './view/retitems/retitems.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
+import { SupplierOrderReportComponent } from './view/supplier-order-report/supplier-order-report.component';
 import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
 import { SalarySheetReportComponent } from './view/salary-sheet-report/salary-sheet-report.component';
+import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
+import { CustomerReportComponent } from './view/customer-report/customer-report.component';
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -51,14 +54,24 @@ import { SalarySheetReportComponent } from './view/salary-sheet-report/salary-sh
       LowStockLevelComponent,
       SalarySheetReportComponent,
 
+      SupplierOrderReportComponent,
+    CustomerComponent,
+    StockHandlingComponent,
+    CustomerOrderComponent,
+    SupplierComponent,
+    CompanyComponent,
+    ReturnItemsComponent,
+    LowStockLevelComponent,
+    CustomerOrderReportComponent,
+    CustomerReportComponent
   ],
   imports: [
-      BrowserModule,
-      AppRoutingModule,
-      BrowserAnimationsModule,
-      AppRoutingModule,
-      FormsModule,FontAwesomeModule,
-      HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    FormsModule,FontAwesomeModule,
+    HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [
     DatePipe

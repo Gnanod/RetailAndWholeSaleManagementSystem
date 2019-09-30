@@ -1,6 +1,7 @@
 package lk.whsars.controller;
 
 
+import lk.whsars.Common.ReceivedOrderReport;
 import lk.whsars.DTO.SupplierOrderSearchDto;
 import lk.whsars.entity.*;
 import lk.whsars.service.SupplierOrderService;
@@ -8,6 +9,7 @@ import lk.whsars.service.SupplierServiceH;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin
@@ -60,6 +62,8 @@ public class SupplierOrderController {
         return s1;
     }
 
+
+
     @GetMapping(value ="/getItemDetails/{nic}")
     public List<Item> getAllItemsToCart(@PathVariable String nic){
 
@@ -86,6 +90,32 @@ public class SupplierOrderController {
         return supplierOrderService.searchByOrderId(orderId);
     }
 
+    @GetMapping(value = "/searchsuporddelete/{orderId}")
+    public SupplierOrderSearchDto searchById(@PathVariable int orderId){
+        return supplierOrderService.searchOrderById(orderId);
 
+    }
+
+    @DeleteMapping(value = "/SupplierOrderDelete/{orderId}")
+    public String deleteSupplierOrders(@PathVariable int orderId){
+        return  supplierOrderService.deleteSupplierOrder(orderId);
+
+    }
+
+    @GetMapping(value = "/getMonthReceivedOrd")
+    public List<SupplierOrderSearchDto> getAllOrders(){
+
+        System.out.println("CONTROLLER MONTHE RECEIVED ORDER");
+        return supplierOrderService.getAllOrders();
+    }
+
+    @PostMapping(value = "/SupOrdReportPrint")
+    public String SupOrdReportPrint(@RequestBody ArrayList<SupplierOrderSearchDto> OrdPrint){
+
+        ReceivedOrderReport l1 = new ReceivedOrderReport();
+        l1.generateSupplierReceivedOrderPdf(OrdPrint);
+        return "9";
+
+    }
 
 }

@@ -8,6 +8,7 @@ import {Supplier} from "../model/Supplier";
 import {Item} from "../model/Item";
 import {SupplierOrder} from "../model/SupplierOrder";
 import {SupplierOrderSearchDto} from "../model/SupplierOrderSearchDto";
+import {Observable} from "rxjs";
 
 
 
@@ -74,6 +75,27 @@ export class SupplierOrderService {
 
     return this.http.post<SupplierOrder>(environment.backend_url+URL+'/updateSupplierOrder/',updateStatus);
 
+  }
+
+  searchOrderDelete(searchDeleteOrderId: string){
+
+    return this.http.get<SupplierOrderSearchDto>(environment.backend_url+URL+'/searchsuporddelete/'+searchDeleteOrderId);
+
+  }
+
+  deleteSupplierOrder(orderId: String) {
+
+    return this.http.delete<string>(environment.backend_url+URL+'/SupplierOrderDelete/'+orderId);
+
+  }
+
+
+  receivedOrders() {
+    return this.http.get<Array<SupplierOrderSearchDto>>(environment.backend_url + URL + '/getMonthReceivedOrd/');
+  }
+
+  printReportSupplierOrd(monthreceivedorders: Array<SupplierOrderSearchDto>) {
+    return this.http.post<String>(environment.backend_url + URL + '/SupOrdReportPrint/',monthreceivedorders);
   }
 }
 

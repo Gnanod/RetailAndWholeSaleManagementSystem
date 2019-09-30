@@ -9,7 +9,16 @@ public class SupplierOrderSearchDto {
     String companyName;
     double total;
     String supplierNIC;
+    int supplierId;
 
+
+    public int getSupplierId() {
+        return supplierId;
+    }
+
+    public void setSupplierId(int supplierId) {
+        this.supplierId = supplierId;
+    }
 
     public double getTotal() {
         return total;
