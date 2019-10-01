@@ -101,7 +101,7 @@ public class EmployeeAttendanceReport {
     }
 
     private static void createTable(Document subCatPart, List<EmployeeAttendanceDto> employeeAttendanceDto) throws BadElementException {
-        PdfPTable table = new PdfPTable(6);
+        PdfPTable table = new PdfPTable(7);
 
         PdfPCell c1 = new PdfPCell(new Phrase("Employee ID"));
         c1.setHorizontalAlignment(Element.ALIGN_CENTER);

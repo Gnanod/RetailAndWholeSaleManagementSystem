@@ -18,7 +18,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating" >First Name</label>
-                  <input type="text" class="form-control" name="fname" [(ngModel)]="emp.fname" formControlName="fname"
+                  <input type="text" class="form-control" name="fname" minlength="2" maxlength="10" [(ngModel)]="emp.fname" formControlName="fname"
                          [ngClass]="{'is-invalid':form.get('fname').touched && form.get('fname').invalid }">
                   <div class="invalid-feedback"  *ngIf="form.get('fname').touched  && form.get('fname').invalid">
                     First name is required
@@ -28,7 +28,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Last Name</label>
-                  <input type="text" class="form-control" name="lname" [(ngModel)]="emp.lname" formControlName="lname"
+                  <input type="text" class="form-control" name="lname" minlength="2" maxlength="10" [(ngModel)]="emp.lname" formControlName="lname"
                          [ngClass]="{'is-invalid':form.get('lname').touched && form.get('lname').invalid }">
                   <div class="invalid-feedback"  *ngIf="form.get('lname').touched  && form.get('lname').invalid">
                     Last name is required
@@ -51,7 +51,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">NIC</label>
-                  <input type="text" class="form-control" name="nic" [(ngModel)]="emp.nic" formControlName="nic"
+                  <input type="text" class="form-control" name="nic" minlength="10" maxlength="10" [(ngModel)]="emp.nic" formControlName="nic"
                          [ngClass]="{'is-invalid':form.get('nic').touched && form.get('nic').invalid }">
                   <div class="invalid-feedback"  *ngIf="form.get('nic').touched  && form.get('nic').invalid">
                     NIC is required
@@ -89,7 +89,7 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Contact Number</label>
-                  <input type="text" class="form-control" name="phone" [(ngModel)]="emp.phone" formControlName="phone"
+                  <input type="text" class="form-control" name="phone" minlength="10" maxlength="10" pattern="[0-9]{10,10}" [(ngModel)]="emp.phone" formControlName="phone"
                          [ngClass]="{'is-invalid':form.get('phone').touched && form.get('phone').invalid }">
                   <div class="invalid-feedback"  *ngIf="form.get('phone').touched  && form.get('phone').invalid">
                     Contact Number is required
