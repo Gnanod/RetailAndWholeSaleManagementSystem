@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
@@ -10,7 +10,7 @@ export class MainComponent implements OnInit {
 
   headerText: string;
 
-  constructor(private router:Router) {
+  constructor(private router: Router) {
 
     router.events.subscribe((val) => {
       this.setHeaderTextAndButtons();
@@ -102,54 +102,53 @@ export class MainComponent implements OnInit {
       this.router.navigate(['/main/supplier'])
     } else if (button == "SupplierOrder") {
       this.router.navigate(['/main/supplierorder'])
-    }else if(button == "Salary"){
+    } else if (button == "Salary") {
       this.router.navigate(['/main/salary'])
-    }else if(button == "Attendance"){
+    } else if (button == "Attendance") {
       this.router.navigate(['/main/attendance'])
-    }else if(button == "StockHandling"){
+    } else if (button == "StockHandling") {
       this.router.navigate(['/main/StockHandling'])
-    }else if(button=="Customer"){
+    } else if (button == "Customer") {
       this.router.navigate(['/main/customer'])
-    }else if (button == "Supplier") {
+    } else if (button == "Supplier") {
 
       this.router.navigate(['/main/supplier'])
 
-    }else if(button == "Company"){
+    } else if (button == "Company") {
 
       this.router.navigate(['/main/Company'])
-      }else if(button == "Received Orders"){
+    } else if (button == "Received Orders") {
 
-        this.router.navigate(['/main/SupplierOrderReport'])
-      }else if(button == 'LowStockLevel'){
+      this.router.navigate(['/main/SupplierOrderReport'])
 
-    }else if(button == 'LowStockLevel'){
+
+    } else if (button == 'LowStockLevel') {
 
       this.router.navigate(['/main/LowStockLevel'])
-      }else if(button == 'SalarySheetReport'){
-        this.router.navigate(['/main/SalarySheetReport'])
+    } else if (button == 'Salary Sheet Report') {
+      this.router.navigate(['/main/SalarySheetReport'])
 
 
-      }else if(button == 'CustomerOrderReport'){
+    } else if (button == 'CustomerOrderReport') {
 
-    }else if(button == 'Customer Orders'){
+    } else if (button == 'Customer Orders') {
 
       this.router.navigate(['/main/CustomerOrderReport'])
 
     }
-    else if(button == 'Employee Attendance'){
+    else if (button == 'Employee Attendance') {
 
       this.router.navigate(['/main/EmployeeAttendance'])
-      }else if(button == 'CustomerReport'){
+    } else if (button == 'CustomerReport') {
 
-        this.router.navigate(['/main/CustomerReport'])
+      this.router.navigate(['/main/CustomerReport'])
 
+    } else if (button == 'SupplierDetails') {
+      this.router.navigate(['/main/SupplierDetails'])
     }
+
+
   }
-        
-
-
-
-
 
 
 }

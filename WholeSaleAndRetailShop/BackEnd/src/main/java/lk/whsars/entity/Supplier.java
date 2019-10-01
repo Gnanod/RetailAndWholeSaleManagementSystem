@@ -11,15 +11,16 @@ import java.util.Set;
 public class Supplier {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     int supplierId;
-    String company;
+    String companyName;
+    String date;
     String supplierNic;
     String supplierName;
     String address;
     String email;
     String phone;
     String fax;
+
 
     @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "supplier")
     @OnDelete(action = OnDeleteAction.CASCADE)
@@ -30,13 +31,6 @@ public class Supplier {
     @JsonIgnore
     private Set<Stock> stock;
 
-    public String getCompany() {
-        return company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
-    }
 
     public int getSupplierId() {
         return supplierId;
@@ -108,5 +102,21 @@ public class Supplier {
 
     public void setFax(String fax) {
         this.fax = fax;
+    }
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }

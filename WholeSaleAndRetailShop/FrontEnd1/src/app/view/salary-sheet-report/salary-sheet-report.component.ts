@@ -19,6 +19,8 @@ export class SalarySheetReportComponent implements OnInit {
 
 
   getSalaryDetails(){
+
+    console.log("GGGGG");
     this.salaryservice.getSalaryDetails().subscribe((result)=>{
       if(result!=null){
         this.sal = result;

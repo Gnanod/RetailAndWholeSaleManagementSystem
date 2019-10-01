@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Supplier} from "../../model/Supplier";
 import {SupplierService} from "../../service/supplier.service";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-supplier',
@@ -9,13 +10,33 @@ import {SupplierService} from "../../service/supplier.service";
 })
 export class SupplierComponent implements OnInit {
 
+  form = new FormGroup({
+    date : new FormControl('',Validators.required),
+    supplierName : new FormControl('',Validators.required),
+    supplierNic : new FormControl('',Validators.required),
+    supplierAddress : new FormControl('',Validators.required),
+    email : new FormControl('',[Validators.required,Validators.email]),
+    phone : new FormControl('',Validators.required),
+    fax : new FormControl('',Validators.required),
+    cName :new FormControl('',Validators.required)
+    //company : new FormControl('',Validators.required)
+  })
+
+
+
+  supp : Array<Supplier> = new Array<Supplier>();
 
   sup: Supplier = new Supplier();
+  cName:string;
+
+
+
 
   constructor(private supplierService: SupplierService) {
   }
 
   ngOnInit() {
+    this.getAllCompany();
   }
 
 
@@ -31,6 +52,10 @@ export class SupplierComponent implements OnInit {
   supplierNic: string;
   supplierId:number;
   companyName :string;
+  date:string;
+
+
+
 
 
   searchSupplierDetailsByNic(event: any) {
@@ -82,9 +107,15 @@ export class SupplierComponent implements OnInit {
   addSupplier() {
 
     let sup: Supplier;
-    this.supplierService.addSupplier(this.sup).subscribe((result) => {
+
+    console.log("this.sup"+this.cName)
+    console.log("this.sup"+this.sup.date)
+    sup = this.sup;
+    sup.companyName=this.cName;
 
 
+    this.supplierService.addSupplier(sup).subscribe((result) => {
+      
       if (result != null) {
         alert("Supplier Added Successfully");
       }
@@ -107,5 +138,31 @@ export class SupplierComponent implements OnInit {
 
 
   }
+
+
+  /////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+  getAllCompany(){
+    this.supplierService.getAllCompany().subscribe((result)=>{
+      this.supp = result;
+      this.supp[0]=result[0];
+
+    });
+  }
+
+
+
+
+
+
+
+
+
+
 }
+
+
 
