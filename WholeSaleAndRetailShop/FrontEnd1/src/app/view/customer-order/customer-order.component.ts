@@ -31,6 +31,7 @@ export class CustomerOrderComponent implements OnInit {
   points: number = 0;
   currentPoints: number;
   getLastOrderId: number;
+  whoisTheCustomer: number;
   searchItemValuesIf = true;
   searchItemDetails: Array<Item> = new Array<Item>();
   searchitembynameOrId: string;
