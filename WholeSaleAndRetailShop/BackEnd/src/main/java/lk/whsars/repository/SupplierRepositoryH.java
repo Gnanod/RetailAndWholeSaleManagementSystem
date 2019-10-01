@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface SupplierRepositoryH extends JpaRepository<Supplier,Integer> {
 
-    @Query(value="select supplierName,supplierNic,supplierId from Supplier where company = :companyName")
+    @Query(value="select supplierName,supplierNic,supplierId from Supplier where companyName = :companyName")
     List<Object[]> getAllAgentsformCompany(@Param("companyName")String companyName);
 
     @Query(value="select distinct i.barCode,i.itemName,i.retailPrice from Stock s,StockItemDetails si,Item i where i.barCode = si.item.barCode and si.stock.stockId = s.stockId and s.supplier.supplierNic IN (  SELECT supplierNic  FROM Supplier WHERE supplierNic=:nic)")
