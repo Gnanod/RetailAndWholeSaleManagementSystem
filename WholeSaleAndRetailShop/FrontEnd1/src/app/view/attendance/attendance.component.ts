@@ -43,9 +43,11 @@ export class AttendanceComponent implements OnInit {
     if (this.attendanceId == null){
       alert("Please Enter Id")
     } else {
+
       this.attendanceService.searchById(this.attendanceId).subscribe((result) => {
 
         console.log(result);
+
         if (result == null) {
           this.searchAttIf = true;
         } else {
@@ -111,6 +113,8 @@ export class AttendanceComponent implements OnInit {
 
         if (result != null) {
           alert("Out Time Updated")
+          this.getallattendance();
+
         }
       })
 
@@ -134,6 +138,21 @@ export class AttendanceComponent implements OnInit {
     this.attendanceService.deletAttendace(this.deleteatt.attendanceId).subscribe((result)=>{
       if(result != null){
         alert('Deleted Successfully');
+        this.getallattendance();
+        this.attendanceService.searchById(this.attendanceId).subscribe((result) => {
+
+          console.log(result);
+
+          if (result == null) {
+            this.searchAttIf = true;
+          } else {
+            this.searchAttIf = false;
+            this.searchatt = result;
+            this.deleteatt.attendanceId = result.attendanceId;
+          }
+        });
+
+
 
       }else{
         alert('failed');
