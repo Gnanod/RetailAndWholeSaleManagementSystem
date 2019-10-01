@@ -22,6 +22,7 @@ export class LowStockLevelComponent implements OnInit {
 
     this.stockService.lowStock().subscribe((result)=>{
 
+      console.log("GGGGGG"+result)
       if(result !=null){
         this.LowStockLevel=result;
       }

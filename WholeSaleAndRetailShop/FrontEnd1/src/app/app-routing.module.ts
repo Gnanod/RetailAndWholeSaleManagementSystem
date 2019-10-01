@@ -21,6 +21,7 @@ import {SalarySheetReportComponent} from "./view/salary-sheet-report/salary-shee
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
 import {EmployeeAttendanceComponent} from "./view/employee-attendance/employee-attendance.component";
 import {CustomerReportComponent} from "./view/customer-report/customer-report.component";
+import {SupplierReportComponent} from "./view/supplier-report/supplier-report.component";
 
 
 const routes: Routes = [
@@ -96,7 +97,11 @@ const routes: Routes = [
       },
       {
         path:'CustomerReport',
-        component:CustomerReportComponent,
+        component:CustomerReportComponent
+      },
+      {
+        path:'SupplierDetails',
+        component:SupplierReportComponent
       }
 
     ]

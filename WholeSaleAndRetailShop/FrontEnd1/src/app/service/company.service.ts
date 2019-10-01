@@ -22,4 +22,5 @@ export class CompanyService {
     return this.http.get<Company>(environment.backend_url + URL + '/searchByCompanyName/'+searchCompanyName);
   }
 
+
 }
