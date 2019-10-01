@@ -120,6 +120,8 @@ export class CustomerComponent implements OnInit {
 
       if(result!=null){
         alert('Customer Added Successfully');
+        this.cust = new Customer();
+        this.form.reset();
 
       }
 
@@ -149,6 +151,18 @@ export class CustomerComponent implements OnInit {
 
       if(result != null){
         alert("Customer Details Updated Successfully");
+        this.cusID=null;
+        this.firstName1=null;
+        this.lastName1=null;
+        this.userName1 = null;
+        this.address1=null;
+        this.nic1 = null;
+        this.phone1=null;
+        this.email1=null;
+        this.birthday1=null;
+        this.type1=null;
+        this.aboutCus1=null;
+
       }
     });
   }

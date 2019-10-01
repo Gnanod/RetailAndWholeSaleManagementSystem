@@ -60,6 +60,8 @@ public class SupplierOrderServiceImpl implements SupplierOrderService {
 
        SupplierOrderSearchDto d1 = new SupplierOrderSearchDto();
 
+
+
         for (Object sup[]: s1
              ) {
             d1.setCompanyName(sup[0].toString());
@@ -90,6 +92,8 @@ public class SupplierOrderServiceImpl implements SupplierOrderService {
 
         List<Object []> s2 = supplierOrderRepository.searchSupOrderDelete(orderId);
         SupplierOrderSearchDto d1 = new SupplierOrderSearchDto();
+
+        System.out.println("GGGGGGGGGGGGGGGGGGGGGGGG"+s2);
 
         for (Object supOrd[]:s2){
             d1.setSupplierOrderId(supOrd[0].toString());

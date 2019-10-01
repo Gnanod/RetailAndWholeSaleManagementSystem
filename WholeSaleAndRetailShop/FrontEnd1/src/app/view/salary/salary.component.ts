@@ -87,6 +87,9 @@ export class SalaryComponent implements OnInit {
 
       if (result != null) {
         alert('Salary is Calculated');
+
+
+
       }
 
     })
