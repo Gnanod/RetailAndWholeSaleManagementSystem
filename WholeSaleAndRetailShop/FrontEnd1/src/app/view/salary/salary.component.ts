@@ -23,7 +23,7 @@ export class SalaryComponent implements OnInit {
   id:number;
   work :string;
 
-  constructor(private router:Router,private salaryservice:SalaryService,private datepipe:DatePipe) { }
+  constructor(private router:Router,private salaryservice:SalaryService ,private datepipe:DatePipe) { }
 
   ngOnInit() {
     this.getEmpDetails();

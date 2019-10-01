@@ -10,7 +10,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-<<<<<<< HEAD
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
@@ -40,7 +39,6 @@
             <state relative-caret-position="94">
               <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
               <folding>
-=======
   <component name="FUSProjectUsageTrigger">
     <session id="1998637383">
       <usages-collector id="statistics.lifecycle.project">
@@ -2867,26 +2865,19 @@
             <element signature="e#24995#25001#0" expanded="true" />
             <element signature="e#25002#25008#0" expanded="true" />
             <element signature="e#25008#25014#0" expanded="true" />
-=======
         <state relative-caret-position="255">
           <caret line="117" column="6" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
-=======
-<<<<<<< HEAD
         <state relative-caret-position="94">
           <caret line="53" column="13" lean-forward="true" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-=======
         <state relative-caret-position="175">
           <caret line="220" column="43" selection-start-line="220" selection-start-column="43" selection-end-line="220" selection-end-column="43" />
->>>>>>> e28ff1703ca1be60c19f2162e82dd5c7d2130f41
->>>>>>> 4610dcf7e137efcf427db1807d8b418e2200a534
+
           <folding>
             <element signature="e#0#50#0" expanded="true" />
->>>>>>> eb1992bd6d84a9c86c6c8d035041129bd2682615
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -2954,11 +2945,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
-=======
-<<<<<<< HEAD
+
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/model/Supplier.ts">
-=======
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order/customer-order.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">

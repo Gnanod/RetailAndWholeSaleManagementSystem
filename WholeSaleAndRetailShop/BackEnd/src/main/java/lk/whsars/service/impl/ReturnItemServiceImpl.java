@@ -1,9 +1,7 @@
 package lk.whsars.service.impl;
 
 import lk.whsars.Common.ReturnItemListDTO;
-import lk.whsars.entity.Item;
-import lk.whsars.entity.ReturnItem;
-import lk.whsars.entity.Supplier;
+import lk.whsars.entity.*;
 import lk.whsars.repository.ReturnItemRepository;
 import lk.whsars.service.ReturnItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +15,6 @@ import java.util.List;
 public class ReturnItemServiceImpl implements ReturnItemService {
     @Override
     public List<Item> getAllItems(int orderId) {
-
 
         return null;
 
@@ -60,11 +57,11 @@ public class ReturnItemServiceImpl implements ReturnItemService {
 
     @Override
     public List<ReturnItem> getAllReturnItems() {
-       List <Object[]> s1 = returnItemRepository.getAllDetsails();
+        List <Object[]> s1 = returnItemRepository.getAllDetails();
 
-       List<ReturnItem> r = new ArrayList<>();
+        List<ReturnItem> r = new ArrayList<>();
         for (Object o[]:s1
-             ) {
+        ) {
             ReturnItem r1 = new ReturnItem();
 
             r1.setRetItemId(Integer.parseInt(o[0].toString()));
@@ -83,11 +80,13 @@ public class ReturnItemServiceImpl implements ReturnItemService {
 
     @Override
     public ReturnItem UpdateReturnItem(ReturnItem returnItem) {
+        System.out.println("updateweda");
         return returnItemRepository.save(returnItem);
     }
 
     @Override
     public void deleteReturnEntry(String retItemId) {
+
         returnItemRepository.deleteById(Integer.parseInt(retItemId));
     }
 

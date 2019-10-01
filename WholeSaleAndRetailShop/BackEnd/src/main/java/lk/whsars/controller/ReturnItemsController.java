@@ -1,12 +1,14 @@
 package lk.whsars.controller;
 
 import lk.whsars.Common.ReturnItemListDTO;
+import lk.whsars.Common.ReturnItemReport;
 import lk.whsars.entity.*;
 import lk.whsars.service.CustomerOrderDetailService;
 import lk.whsars.service.ReturnItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -58,6 +60,17 @@ public class ReturnItemsController {
     @DeleteMapping("/deleteReturnEntry/{retItemId}")
     void deleteEmployee(@PathVariable String retItemId) {
         returnItemService.deleteReturnEntry(retItemId);
+    }
+
+    //////////////////////////////////////REPORTS////////////////
+
+    @PostMapping(value = "/printFullReport")
+    public String printReport(@RequestBody ArrayList<ReturnItem> printAllReport){
+
+        ReturnItemReport l1 = new ReturnItemReport();
+        l1.generateLowStockLevelPdf(printAllReport);
+        return "9";
+
     }
 
 }
