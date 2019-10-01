@@ -28,8 +28,6 @@ public class Customer {
     int loyaltyPoints;
 
 
-
-
     @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "customer")
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore

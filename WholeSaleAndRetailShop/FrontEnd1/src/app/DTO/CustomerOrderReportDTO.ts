@@ -5,6 +5,7 @@ export class CustomerOrderReportDTO {
   totalPrice: Number;
   discount: number;
   customerId:number;
-  phone:number
+  phone:number;
+  cusName:string;
 }
 
