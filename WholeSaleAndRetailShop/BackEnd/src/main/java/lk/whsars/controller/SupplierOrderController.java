@@ -102,12 +102,14 @@ public class SupplierOrderController {
 
     }
 
-    @GetMapping(value = "/getMonthReceivedOrd")
+    @GetMapping(value = "/getMonthOrder")
     public List<SupplierOrderSearchDto> getAllOrders(){
 
         System.out.println("CONTROLLER MONTHE RECEIVED ORDER");
         return supplierOrderService.getAllOrders();
     }
+
+
 
     @PostMapping(value = "/SupOrdReportPrint")
     public String SupOrdReportPrint(@RequestBody ArrayList<SupplierOrderSearchDto> OrdPrint){

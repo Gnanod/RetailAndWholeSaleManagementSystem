@@ -553,16 +553,43 @@
               </li>
               <li class="nav-item " [ngClass]="{'active': headerText=='CustomerOrderReport'}" (click)="changeRoute(CustomerOrderReport.innerHTML)">
                 <a class="nav-link" >
-                  <span class="sidebar-mini"> LSL </span>
+                  <span class="sidebar-mini"> CO </span>
                   <span class="sidebar-normal" #CustomerOrderReport>Customer Orders</span>
                 </a>
               </li>
               <li class="nav-item " [ngClass]="{'active': headerText=='EmployeeAttendance'}" (click)="changeRoute(EmployeeAttendance.innerHTML)">
                 <a class="nav-link" >
-                  <span class="sidebar-mini"> LSL </span>
+                  <span class="sidebar-mini"> EA </span>
                   <span class="sidebar-normal" #EmployeeAttendance>Employee Attendance</span>
                 </a>
               </li>
+              <li class="nav-item " [ngClass]="{'active': headerText=='SalarySheetReport'}" (click)="changeRoute(SalarySheetReport.innerHTML)">
+                <a class="nav-link" >
+                  <span class="sidebar-mini"> SSR </span>
+                  <span class="sidebar-normal" #SalarySheetReport>Salary Sheet Report</span>
+                </a>
+              </li>
+              <li class="nav-item " [ngClass]="{'active': headerText=='CustomerReport'}" (click)="changeRoute(CustomerReport.innerHTML)">
+                <a class="nav-link" >
+                  <span class="sidebar-mini"> CR </span>
+                  <span class="sidebar-normal" #CustomerReport>CustomerReport</span>
+                </a>
+              </li>
+              <li class="nav-item " [ngClass]="{'active': headerText=='Received Orders'}" (click)="changeRoute(ReceivedOrders.innerHTML)">
+                <a class="nav-link" >
+                  <span class="sidebar-mini"> CR </span>
+                  <span class="sidebar-normal" #ReceivedOrders>Received Orders</span>
+                </a>
+              </li>
+
+              <li class="nav-item " [ngClass]="{'active': headerText=='SupplierDetails'}" (click)="changeRoute(SupplierDetails.innerHTML)">
+                <a class="nav-link" >
+                  <span class="sidebar-mini"> LSL </span>
+                  <span class="sidebar-normal" #SupplierDetails>SupplierDetails</span>
+                </a>
+              </li>
+
+
 
 
             </ul>

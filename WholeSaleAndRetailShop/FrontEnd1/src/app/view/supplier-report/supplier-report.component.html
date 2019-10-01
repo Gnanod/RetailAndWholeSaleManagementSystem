@@ -6,10 +6,13 @@
         <div class="card-icon">
           <i class="fas fa-users"></i>
         </div>
-        <h4 class="card-title">Employee Attendance of the day</h4>
+        <h4 class="card-title">Supplier Details</h4>
       </div>
       <div class="card-body">
         <div class="row" >
+
+
+
 
         </div>
 
@@ -18,42 +21,42 @@
             <thead>
             <tr>
 
-              <th class="text-center">EmployeeID</th>
-              <th class="text-center">In Time</th>
-              <th class="text-center">Out Time</th>
+              <th class="text-center">Supplier Name</th>
+              <th class="text-center">Supplier NIC</th>
+              <th class="text-center">Supplier Address</th>
+              <th class="text-center">Email</th>
+              <th class="text-center">Phone</th>
               <th class="text-center">Date</th>
-              <th class="text-center">First Name</th>
-              <th class="text-center">Last Name</th>
-              <th class="text-center">Role</th>
-
+              <!--              <th class="text-center">Company</th>-->
 
             </tr>
             </thead>
             <tbody>
-            <tr *ngFor="let employeeAttendance of EmployeeAttendance">
+            <tr *ngFor="let sup of SupplierReport ">
 
               <td class="text-center">
-                {{employeeAttendance.attendanceId}}
+                {{sup.supplierName}}
               </td>
               <td class="text-center">
-                {{employeeAttendance.inTime}}
-              </td >
-              <td class="text-center">
-                {{employeeAttendance.outTime}}
-              </td >
-              <td style="color: red; font-size: 25px ;font-style: inherit" class="text-center">
-                {{employeeAttendance.day}}
+                {{sup.supplierNic}}
               </td>
               <td class="text-center">
-                {{employeeAttendance.fname}}
+                {{sup.address}}
+              </td >
+              <td  class="text-center">
+                {{sup.email}}
               </td>
               <td class="text-center">
-                {{employeeAttendance.lname}}
+                {{sup.phone}}
               </td >
-              <td class="text-center">
-                {{employeeAttendance.role}}
+              <td style="color: red; font-size: 15px ;font-style: inherit" class="text-center">
+                {{sup.date}}
               </td >
+              <!--              <td class="text-center">-->
+              <!--                {{sup.company}}-->
+              <!--              </td >-->
             </tr>
+
             </tbody>
           </table>
         </div>

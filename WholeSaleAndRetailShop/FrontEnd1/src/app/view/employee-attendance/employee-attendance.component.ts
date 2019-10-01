@@ -34,7 +34,7 @@ export class EmployeeAttendanceComponent implements OnInit {
 
       if(result !=null){
 
-        alert('Report Print SuccessFully');
+        alert('Report Printed Successfully');
 
       }
     });

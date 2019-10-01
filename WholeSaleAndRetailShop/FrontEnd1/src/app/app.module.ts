@@ -32,6 +32,7 @@ import { SalarySheetReportComponent } from './view/salary-sheet-report/salary-sh
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
 import { EmployeeAttendanceComponent } from './view/employee-attendance/employee-attendance.component';
 import { CustomerReportComponent } from './view/customer-report/customer-report.component';
+import { SupplierReportComponent } from './view/supplier-report/supplier-report.component';
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -64,7 +65,8 @@ import { CustomerReportComponent } from './view/customer-report/customer-report.
     LowStockLevelComponent,
     CustomerOrderReportComponent,
     EmployeeAttendanceComponent,
-    CustomerReportComponent
+    CustomerReportComponent,
+    SupplierReportComponent
   ],
   imports: [
     BrowserModule,

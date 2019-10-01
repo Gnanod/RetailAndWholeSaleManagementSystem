@@ -91,7 +91,7 @@ export class SupplierOrderService {
 
 
   receivedOrders() {
-    return this.http.get<Array<SupplierOrderSearchDto>>(environment.backend_url + URL + '/getMonthReceivedOrd/');
+    return this.http.get<Array<SupplierOrderSearchDto>>(environment.backend_url + URL + '/getMonthOrder');
   }
 
   printReportSupplierOrd(monthreceivedorders: Array<SupplierOrderSearchDto>) {

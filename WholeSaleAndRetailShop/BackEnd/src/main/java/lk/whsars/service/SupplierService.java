@@ -1,5 +1,7 @@
 package lk.whsars.service;
 
+import lk.whsars.DTO.SupplierDetailsDto;
+import lk.whsars.entity.Company;
 import lk.whsars.entity.Supplier;
 
 import java.util.List;
@@ -23,6 +25,14 @@ public interface SupplierService {
     String deleteSuppliers(String supplierNic);
 
     String deleteSup(int supplierNic);
+
+    ////////////////////////////////////////
+
+
+    List<Company> getAllCompany();
+
+    List<SupplierDetailsDto> getSuppliersReport();
+
 
 
 }

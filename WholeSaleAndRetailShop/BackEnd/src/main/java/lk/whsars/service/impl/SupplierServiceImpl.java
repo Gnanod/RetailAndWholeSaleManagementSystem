@@ -1,11 +1,15 @@
 package lk.whsars.service.impl;
 
+import lk.whsars.DTO.SupplierDetailsDto;
+import lk.whsars.entity.Company;
 import lk.whsars.entity.Supplier;
+import lk.whsars.repository.CompanyRepository;
 import lk.whsars.repository.SupplierRepository;
 import lk.whsars.service.SupplierService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -13,6 +17,8 @@ public class SupplierServiceImpl implements SupplierService {
 
     @Autowired
     private SupplierRepository supplierRepository;
+    @Autowired
+    private CompanyRepository companyRepository;
 
 
     @Override
@@ -72,4 +78,36 @@ public class SupplierServiceImpl implements SupplierService {
         supplierRepository.deleteById(supplierNic);
         return "9";
     }
+
+    @Override
+    public List<Company> getAllCompany() {
+        return companyRepository.findAll();
+
+    }
+
+
+    @Override
+    public List<SupplierDetailsDto> getSuppliersReport() {
+        List<Object[]> suppl = supplierRepository.getSupplierDetailsReport();
+
+        List<SupplierDetailsDto> s = new ArrayList<SupplierDetailsDto>();
+        for (Object ob [] : suppl ){
+
+            SupplierDetailsDto s1 = new SupplierDetailsDto();
+
+            s1.setSupplierName(ob[0].toString());
+            s1.setSupplierNic(ob[1].toString());
+            s1.setAddress(ob[2].toString());
+            s1.setEmail(ob[3].toString());
+            s1.setPhone(ob[4].toString());
+            s1.setDate(ob[5].toString());
+            // s1.setCompany(ob[6].toString());
+            //s1.setCompany(ob[6].toString());
+
+            s.add(s1);
+
+        }
+        return s;
+    }
+
 }
