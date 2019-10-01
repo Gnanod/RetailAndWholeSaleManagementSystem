@@ -30,6 +30,7 @@ import { SupplierOrderReportComponent } from './view/supplier-order-report/suppl
 import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
 import { SalarySheetReportComponent } from './view/salary-sheet-report/salary-sheet-report.component';
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
+import { ReturnsReportComponent } from './view/returns-report/returns-report.component';
 import { EmployeeAttendanceComponent } from './view/employee-attendance/employee-attendance.component';
 import { CustomerReportComponent } from './view/customer-report/customer-report.component';
 import { SupplierReportComponent } from './view/supplier-report/supplier-report.component';
@@ -64,6 +65,7 @@ import { SupplierReportComponent } from './view/supplier-report/supplier-report.
     ReturnItemsComponent,
     LowStockLevelComponent,
     CustomerOrderReportComponent,
+    ReturnsReportComponent,
     EmployeeAttendanceComponent,
     CustomerReportComponent,
     SupplierReportComponent

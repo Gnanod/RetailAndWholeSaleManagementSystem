@@ -1,6 +1,7 @@
 package lk.whsars.entity;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.Set;
 
 @Entity
@@ -9,7 +10,7 @@ public class CustomerOrder {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerOrderId;
-
+    private Date date;
     private double totalPrice;
     private double discount;
 
@@ -48,6 +49,10 @@ public class CustomerOrder {
     public void setDiscount(double discount) {
         this.discount = discount;
     }
+
+    public Date getDate() { return date; }
+
+    public void setDate(Date date) { this.date = date; }
 
     public Customer getCustomer() {
         return customer;

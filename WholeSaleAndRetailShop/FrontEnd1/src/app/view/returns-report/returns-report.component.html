@@ -1,0 +1,72 @@
+<div class="row">
+
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header card-header-info card-header-icon">
+        <div class="card-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h4 class="card-title">Return Items Report</h4>
+      </div>
+      <div class="card-body">
+        <div class="row" >
+
+        </div>
+
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+
+              <th class="text-center">Item ID</th>
+              <th class="text-center">Item Name</th>
+              <th class="text-center">Returned Date</th>
+              <th class="text-center">Returned Quantity</th>
+              <th class="text-center">Resaleable quantity</th>
+              <th class="text-center">Not-Resaleable quantity</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let lowStock of listRetItems">
+
+              <td class="text-center">
+                {{lowStock.retItemId}}
+              </td>
+              <td class="text-center">
+                {{lowStock.retItemName}}
+              </td>
+              <td class="text-center">
+                {{lowStock.retDate}}
+              </td >
+              <td style="color: red; font-size: 25px ;font-style: inherit" class="text-center">
+                {{lowStock.retQuant}}
+              </td>
+              <td class="text-center">
+                {{lowStock.resellableQuant}}
+              </td >
+              <td class="text-center">
+                {{lowStock.notresellableQuant}}
+              </td >
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+        <div class="row">
+
+          <div class="col-10">
+
+          </div>
+          <div class="col-2">
+            <button type="submit" class="btn btn-info pull-right" (click)="printAllTimeReport()" >Print </button>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
