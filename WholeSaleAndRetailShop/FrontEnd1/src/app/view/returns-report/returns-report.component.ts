@@ -12,6 +12,7 @@ export class ReturnsReportComponent implements OnInit {
   constructor(private retItemService: RetitemsService) { }
 
   ngOnInit() {
+    this.getAllReturnItems();
   }
   ///////////////////////////////////////////////////////////////FOR ALL THE RETURN ITEMS //////////////////////////////////////////////
   listRetItems : Array<ReturnItem> = new Array<ReturnItem>();

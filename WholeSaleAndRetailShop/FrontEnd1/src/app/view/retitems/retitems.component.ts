@@ -7,10 +7,7 @@ import {RetitemsService} from "../../service/retitems.service";
 import {ReturnItemDTO} from "../../model/ReturnItemDTO";
 import {StockItemDetails} from "../../model/StockItemDetails";
 import {ReturnItem} from "../../model/ReturnItem";
-import {Brand} from "../../model/Brand";
-import {Customer} from "../../model/Customer";
-import {FormControl, FormGroup} from "@angular/forms";
-import {Employee} from "../../model/Employee";
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import {DatePipe} from "@angular/common";
 
 @Component({
@@ -35,6 +32,7 @@ export class ReturnItemsComponent implements OnInit {
   }
 
 
+
   returnedItems: Array<ReturnItem> = new Array<ReturnItem>(); //to pass to the all returns table
   retWithRetQuant: ReturnItem = new ReturnItem(); //After getting the returned quantity
 
@@ -48,7 +46,7 @@ export class ReturnItemsComponent implements OnInit {
   finalReturn: ReturnItem = new ReturnItem();
   listRetItems: Array<ReturnItem> = new Array<ReturnItem>();
 
-  itemname: string;
+  itemname : string;
   searchitembyitemid: string;
 
   addCusOrder: CustomerOrder = new CustomerOrder();
@@ -56,6 +54,9 @@ export class ReturnItemsComponent implements OnInit {
   returnItem: ReturnItemDTO = new ReturnItemDTO();
 
   retitemsTables: Array<ReturnItemDTO> = new Array<ReturnItemDTO>();
+
+
+
 
 
   searchOrderById(event: any) {
@@ -74,7 +75,7 @@ export class ReturnItemsComponent implements OnInit {
 
   addReturnedItemsFromOrder(itembarcode: string, itemname: string, retQuantity: number, check: number, initunits: number) {
 
-    if (initunits >= retQuantity) {
+    if(initunits >= retQuantity) {
       this.retWithRetQuant.retItemBarcode = itembarcode;
       this.retWithRetQuant.retItemName = itemname;
       this.retWithRetQuant.retQuant = retQuantity;
@@ -105,10 +106,10 @@ export class ReturnItemsComponent implements OnInit {
   }
 
 
-  itemquant: number;
 
-  searchItemByBarcode() {
-    this.itemService.searchItemDetailsByBarcode(this.searchitembyitemid).subscribe((result) => {
+  itemquant: number;
+  searchItemByBarcode(){
+    this.itemService.searchItemDetailsByBarcode(this.searchitembyitemid).subscribe((result)=>{
 
       if (result == null) {
         console.log("KKKFDFDF")
@@ -124,27 +125,30 @@ export class ReturnItemsComponent implements OnInit {
   }
 
 
-  getAllReturnItems() {
-    this.retItemService.getAllReturnItems().subscribe((result) => {
 
-      this.listRetItems = result;
+  getAllReturnItems(){
+    this.retItemService.getAllReturnItems().subscribe((result)=>{
+
+      this.listRetItems=result;
       //console.log("DATA"+this.listRetItems);
-      console.log("DATA" + this.listRetItems.length);
+      console.log("DATA"+this.listRetItems.length);
     });
 
   }
 
 
-  updateResaleablity(finRet: ReturnItem) {
+
+
+  updateResaleablity(finRet: ReturnItem){
 
     let Ret: ReturnItem = new ReturnItem();
     Ret.retItemId = finRet.retItemId;
     Ret.retItemBarcode = finRet.retItemBarcode;
     Ret.retQuant = finRet.retQuant;
     Ret.resellableQuant = finRet.resellableQuant;
-    console.log("UPDATAEADSAKLJDA" + finRet.retItemBarcode);
-    console.log("UPDATAEADSAKLJDA" + this.finalReturn.retQuant);
-    Ret.retDate = finRet.retDate;
+    console.log("UPDATAEADSAKLJDA"+finRet.retItemBarcode);
+    console.log("UPDATAEADSAKLJDA"+this.finalReturn.retQuant);
+    Ret.retDate= finRet.retDate;
     Ret.notresellableQuant = finRet.notresellableQuant;
     Ret.retItemName = finRet.retItemName;
     // Ret.customerOrder.customerOrderId = finRet.customerOrder.customerOrderId;
@@ -152,9 +156,9 @@ export class ReturnItemsComponent implements OnInit {
     // console.log("update frontend wada"+this.finalReturn.customerOrder.customerOrderId);
 
 
-    this.retItemService.UpdateRetDetails(Ret).subscribe((result) => {
+    this.retItemService.UpdateRetDetails(Ret).subscribe((result)=>{
 
-      if (result != null) {
+      if(result!=null){
 
         alert("Ret details Updated SuccessFully");
 
@@ -163,4 +167,57 @@ export class ReturnItemsComponent implements OnInit {
 
     });
   }
+
+  deleteEntry(retItemId: number) {
+    this.retItemService.deleteReturnEntry(retItemId).subscribe((result)=>{
+
+      if(result==null){
+
+        alert('Employee Deleted SuccessFully');
+
+      }else{
+
+        alert('Employee Delete Fail');
+
+      }
+      this.getAllReturnItems();
+    });
+
+
+  }
+
+
+  // getCustomerObject(custOID: number){
+  //
+  //
+  // }
+
+  // updateCustomerOrder(searchorderbyid: number, itemBar: string) {
+  //
+  //   //get relevant customer Order object
+  //
+  //    this.getCustomerObject(searchorderbyid);
+  //
+  //   //get relevant customer order details object
+  //
+  //   //get relevant items object????
+  //
+  //   //update customer price
+  //
+  //   //update customer order
+  //
+  //
+  //   this.retItemService.UpdateCustOrderDetails(searchorderbyid,itemBar).subscribe((result)=>{
+  //     if(result==null){
+  //
+  //       alert('Order Updated SuccessFully');
+  //
+  //     }else{
+  //
+  //       alert('Order Update Fail');
+  //
+  //     }
+  //   });
+  //
+  // }
 }
