@@ -9,8 +9,10 @@ export class Supplier {
   email:string;
   phone:string;
   fax:string;
-  company:string;
   supplierOrders:Array<SupplierOrder>
   stock : Array<Stock>
   supplierId: number;
+  companyName:string;
+  date:string;
+
 }

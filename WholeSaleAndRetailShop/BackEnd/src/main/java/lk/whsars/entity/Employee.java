@@ -28,17 +28,6 @@ public class Employee {
 
 
 
-
-//    @OneToMany(cascade = CascadeType.PERSIST, mappedBy = "employee")
-//    @OnDelete(action = OnDeleteAction.CASCADE)
-//    @JsonIgnore
-//    private Set<Attendance> attendances;
-
-//    @OneToOne(cascade = CascadeType.PERSIST, mappedBy = "employee")
-//    @OnDelete(action = OnDeleteAction.CASCADE)
-//    @JsonIgnore
-//    private Salary salary;
-
     public int getEmployee_id() {
         return employee_id;
     }
@@ -135,19 +124,6 @@ public class Employee {
         this.basicsal = basicsal;
     }
 
-//    public Set<Attendance> getAttendances() {
-//        return attendances;
-//    }
-//
-//    public void setAttendances(Set<Attendance> attendances) {
-//        this.attendances = attendances;
-//    }
 
-//    public Salary getSalary() {
-//        return salary;
-//    }
-//
-//    public void setSalary(Salary salary) {
-//        this.salary = salary;
-//    }
+
 }

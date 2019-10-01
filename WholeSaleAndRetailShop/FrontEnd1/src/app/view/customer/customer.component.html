@@ -20,13 +20,16 @@
                 <div class="form-group">
                   <label class="bmd-label-floating" >First Name</label>
 
-                  <input type="text" class="form-control" name="firstName" [(ngModel)]="cust.firstName" formControlName="firstName" [ngClass]="{'is-invalid':form.get('firstName').touched && form.get('firstName').invalid }">
+                  <input type="text" class="form-control" name="firstName" [(ngModel)]="cust.firstName" minlength="2" maxlength="10" formControlName="firstName" [ngClass]="{'is-invalid':form.get('firstName').touched && form.get('firstName').invalid}  ">
 
 
                   <!--<input type="text" class="form-control" name="agentName" [(ngModel)]="supplier.agentName" formControlName="agentName" [ngClass]="{'is-invalid':form.get('agentName').touched && form.get('agentName').invalid }">-->
                   <div class="invalid-feedback"  *ngIf="form.get('firstName').touched  && form.get('firstName').invalid">
-                    First name is required
+                    Required a valid first name!
                   </div>
+                  <!--<div class="invalid-feedback"  *ngIf="form.get('firstName').errors.patttern">-->
+                    <!--Please enter a valid Name-->
+                  <!--</div>-->
                 </div>
               </div>
 
@@ -34,12 +37,12 @@
                 <div class="form-group">
                   <label class="bmd-label-floating" >Last Name</label>
 
-                  <input type="text" class="form-control" name="lastName" [(ngModel)]="cust.lastName" formControlName="lastName" [ngClass]="{'is-invalid':form.get('lastName').touched && form.get('lastName').invalid }">
+                  <input type="text" class="form-control" name="lastName" [(ngModel)]="cust.lastName" minlength="2" maxlength="10"  formControlName="lastName" [ngClass]="{'is-invalid':form.get('lastName').touched && form.get('lastName').invalid }">
 
 
                   <!--<input type="text" class="form-control" name="agentName" [(ngModel)]="supplier.agentName" formControlName="agentName" [ngClass]="{'is-invalid':form.get('agentName').touched && form.get('agentName').invalid }">-->
                   <div class="invalid-feedback"  *ngIf="form.get('lastName').touched  && form.get('lastName').invalid">
-                    Last name is required
+                    Required a valid last name!
                   </div>
                 </div>
               </div>
@@ -48,12 +51,12 @@
                 <div class="form-group">
                   <label class="bmd-label-floating" >User Name</label>
 
-                  <input type="text" class="form-control" name="userName" [(ngModel)]="cust.userName" formControlName="userName" [ngClass]="{'is-invalid':form.get('userName').touched && form.get('userName').invalid }">
+                  <input type="text" class="form-control" name="userName" [(ngModel)]="cust.userName" minlength="2" maxlength="10" formControlName="userName" [ngClass]="{'is-invalid':form.get('userName').touched && form.get('userName').invalid }">
 
 
                   <!--<input type="text" class="form-control" name="agentName" [(ngModel)]="supplier.agentName" formControlName="agentName" [ngClass]="{'is-invalid':form.get('agentName').touched && form.get('agentName').invalid }">-->
                   <div class="invalid-feedback"  *ngIf="form.get('userName').touched  && form.get('userName').invalid">
-                    User name is required
+                    Required a valid user name!
                   </div>
                 </div>
               </div>
@@ -62,12 +65,12 @@
                 <div class="form-group">
                   <label class="bmd-label-floating" >Address</label>
 
-                  <input type="text" class="form-control" name="address" [(ngModel)]="cust.address" formControlName="address" [ngClass]="{'is-invalid':form.get('address').touched && form.get('address').invalid }">
+                  <input type="text" class="form-control" name="address" [(ngModel)]="cust.address"  formControlName="address" [ngClass]="{'is-invalid':form.get('address').touched && form.get('address').invalid }">
 
 
                   <!--<input type="text" class="form-control" name="agentName" [(ngModel)]="supplier.agentName" formControlName="agentName" [ngClass]="{'is-invalid':form.get('agentName').touched && form.get('agentName').invalid }">-->
                   <div class="invalid-feedback"  *ngIf="form.get('address').touched  && form.get('address').invalid">
-                    Address is required
+                    Required a valid Address!
                   </div>
                 </div>
               </div>
@@ -76,12 +79,12 @@
                 <div class="form-group">
                   <label class="bmd-label-floating" >NIC</label>
 
-                  <input type="text" class="form-control" name="nic" [(ngModel)]="cust.nic" formControlName="nic" [ngClass]="{'is-invalid':form.get('nic').touched && form.get('nic').invalid }">
+                  <input type="text" class="form-control" name="nic" [(ngModel)]="cust.nic" minlength="10" maxlength="10" formControlName="nic" [ngClass]="{'is-invalid':form.get('nic').touched && form.get('nic').invalid }">
 
 
                   <!--<input type="text" class="form-control" name="agentName" [(ngModel)]="supplier.agentName" formControlName="agentName" [ngClass]="{'is-invalid':form.get('agentName').touched && form.get('agentName').invalid }">-->
                   <div class="invalid-feedback"  *ngIf="form.get('nic').touched  && form.get('nic').invalid">
-                    NIC is required
+                    Required a valid NIC!
                   </div>
                 </div>
               </div>
@@ -90,12 +93,12 @@
                 <div class="form-group">
                   <label class="bmd-label-floating" >Phone</label>
 
-                  <input type="text" class="form-control" name="phone" [(ngModel)]="cust.phone" formControlName="phone" [ngClass]="{'is-invalid':form.get('phone').touched && form.get('phone').invalid }">
+                  <input type="text" class="form-control" name="phone" [(ngModel)]="cust.phone" pattern="[0-9]{10,10}" formControlName="phone" [ngClass]="{'is-invalid':form.get('phone').touched && form.get('phone').invalid }">
 
 
                   <!--<input type="text" class="form-control" name="agentName" [(ngModel)]="supplier.agentName" formControlName="agentName" [ngClass]="{'is-invalid':form.get('agentName').touched && form.get('agentName').invalid }">-->
                   <div class="invalid-feedback"  *ngIf="form.get('phone').touched  && form.get('phone').invalid">
-                   Phone is required
+                    Required a valid phone number!
                   </div>
                 </div>
               </div>
@@ -134,7 +137,7 @@
 
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="type" value="option1" formControlName="type" [(ngModel)]="cust.type" checked required> A Retail Customer
+                    <input class="form-check-input" type="radio" name="type" value="A Retail Customer" formControlName="type" [(ngModel)]="cust.type" checked required> A Retail Customer
                     <span class="circle">
                       <span class="check"></span>
                     </span>
@@ -143,11 +146,10 @@
 
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="type" value="option2" formControlName="type" [(ngModel)]="cust.type" required> A wholesale Customer
+                    <input class="form-check-input" type="radio" name="type" value="A wholesale Customer" formControlName="type" [(ngModel)]="cust.type" required> A wholesale Customer
                     <span class="circle">
                         <span class="check"></span>
                     </span>
-
                   </label>
                 </div>
 
@@ -232,6 +234,7 @@
                 <th>Email</th>
                 <th>Birthday</th>
                 <th>Type</th>
+                <th>Loyalty Points</th>
                 <th>AboutCus</th>
 
                 <th class="text-right">Actions</th>
@@ -274,6 +277,9 @@
                 </td>
                 <td class="text-center">
                   {{searchCustomerDetails.type}}
+                </td>
+                <td class="text-center">
+                  {{searchCustomerDetails.loyaltyPoint}}
                 </td>
                 <td class="text-center">
                   {{searchCustomerDetails.aboutCus}}
@@ -396,7 +402,7 @@
               <div class="col-md-4">
                 <div class="form-group">
                   <label >Birthday</label><br>
-                  <input type="date" class="form-control" [ngModelOptions]="{standalone: true}" [(ngModel)]="birthday1"  >
+                  <input type="date" class="form-control"  [ngModelOptions]="{standalone: true}" [(ngModel)]="birthday1"  >
                   <div class="invalid-feedback">
                     <div>Birthday is required</div>
                   </div>
@@ -407,7 +413,7 @@
                 <label >Customer Type</label><br>
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" value="option2" [ngModelOptions]="{standalone: true}" [(ngModel)]="type1" > A Retail Customer
+                    <input class="form-check-input" type="radio" name="exampleRadios" value="A Retail Customer" [ngModelOptions]="{standalone: true}" [(ngModel)]="type1" > A Retail Customer
                     <span class="circle">
                                                      <span class="check"></span>
                                                     </span>
@@ -415,7 +421,7 @@
                 </div>
                 <div class="form-check">
                   <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios" value="option1" [ngModelOptions]="{standalone: true}" [(ngModel)]="type1" > A wholesale Customer
+                    <input class="form-check-input" type="radio" name="exampleRadios" value="A wholesale Customer" [ngModelOptions]="{standalone: true}" [(ngModel)]="type1" > A wholesale Customer
                     <span class="circle">
                                                         <span class="check"></span>
                                                      </span>
@@ -629,3 +635,7 @@
     <!--</div>-->
   <!--</div>-->
 <!--</div>-->
+      </div>
+    </div>
+  </div>
+</div>

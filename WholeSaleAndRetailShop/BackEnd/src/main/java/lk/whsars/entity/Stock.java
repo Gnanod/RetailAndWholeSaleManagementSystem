@@ -26,8 +26,6 @@ public class Stock {
     }
 
     public void setStockId(int stockId) {
-
-        System.out.println("YYYYYYYYYYYYYYYYYYYYYY");
         this.stockId = stockId;
     }
 

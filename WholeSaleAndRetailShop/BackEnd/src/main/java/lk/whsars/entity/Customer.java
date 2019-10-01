@@ -25,7 +25,9 @@ public class Customer {
     String birthday;
     String type;
     String aboutCus;
-    int loyaltyPoint;
+    int loyaltyPoints;
+
+
 
 
     @OneToMany(cascade = CascadeType.PERSIST,mappedBy = "customer")
@@ -130,7 +132,13 @@ public class Customer {
         this.ordersList = ordersList;
     }
 
-    public int getLoyaltyPoint() { return loyaltyPoint; }
+    public int getLoyaltyPoints() {
+        return loyaltyPoints;
+    }
 
-    public void setLoyaltyPoint(int loyaltyPoint) { this.loyaltyPoint = loyaltyPoint; }
+    public void setLoyaltyPoints(int loyaltyPoints) {
+        this.loyaltyPoints = loyaltyPoints;
+    }
+
+
 }

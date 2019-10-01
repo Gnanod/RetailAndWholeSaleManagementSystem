@@ -13,33 +13,6 @@
     </li>
 
 
-    <!-- The Modal -->
-    <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Modal Heading</h4>
-
-          </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            pasindu sandaruwan bandarigoda
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-
-            <!-- this button is hidden, used to close from typescript -->
-            <button data-dismiss="modal" id="close-modal" style="display: none" type="button">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
     <!-- Modal -->
 
     <div class="collapse navbar-collapse">
@@ -62,10 +35,10 @@
               <img alt="Circle Image" class="rounded-circle img-fluid" src="assets/img/faces/avatar.jpg">
             </div>
           </a>
-          <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-menu dropdown-menu-right" id="WhoisCustomer">
             <h6 class="dropdown-header">Dropdown header</h6>
-            <a class="dropdown-item" href="#pablo">Me</a>
-            <a class="dropdown-item" href="#pablo">Settings and other stuff</a>
+            <option class="dropdown-item" value="1">Retail Customer</option>
+            <option class="dropdown-item" value="2">wholesale Customer</option>
             <a class="dropdown-item" href="#pablo">Sign out</a>
           </div>
         </li>
@@ -88,7 +61,11 @@
           </div>
           <h4 class="card-title">Search Item</h4>
         </div>
+
+
         <div class="card-body">
+
+
           <div class="row">
 
             <div style="margin-left: 35%; width: 50%">
@@ -194,7 +171,8 @@
                   <input [(ngModel)]="itemQtyOnHand" ng-model="record.usersId" type="hidden"
                          value="{{orderDetail.item.itemQtyOnHand}}"/>
                   <td class="td-actions ">
-                    <button (click)="deleteRow(orderDetail.item.barCode)" class="btn btn-danger" id="itemRemove" rel="tooltip"
+                    <button (click)="deleteRow(orderDetail.item.barCode)" class="btn btn-danger" id="itemRemove"
+                            rel="tooltip"
                             type="button">
                       <i class="fas fa-close"></i>
                       <span aria-hidden="true" class="glyphicon glyphicon-trash"></span>

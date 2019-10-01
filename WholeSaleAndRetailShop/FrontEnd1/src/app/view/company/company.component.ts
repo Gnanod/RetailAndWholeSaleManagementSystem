@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Company} from "../../model/Company";
 import {CompanyService} from "../../service/company.service";
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-company',
@@ -15,10 +16,27 @@ export class CompanyComponent implements OnInit {
   ngOnInit() {
   }
 
-  searchCompanyValueIf = true;
-  searchCompanyDetails : Company = new Company();
 
-  searchCompanyName : String;
+
+
+
+
+  form = new FormGroup({
+    companyName : new FormControl('',Validators.required),
+    companyAddress : new FormControl('',Validators.required),
+    email : new FormControl('',[Validators.required,Validators.email]),
+    telephone : new  FormControl('',Validators.required),
+    fax : new FormControl('',Validators.required),
+    website : new FormControl('',Validators.required)
+
+
+  });
+
+
+  searchCompanyValueIf = true;
+  searchCompanyDetails: Company = new Company();
+
+  searchCompanyName1 : String;
   companyName : String;
   companyAddress : String;
   emailAddress:String;
@@ -27,10 +45,11 @@ export class CompanyComponent implements OnInit {
   website:String;
 
   searchCompanyDetailsByName(event:any){
-    this.companyService.searchCompanyDetails(this.searchCompanyName).subscribe((result)=>{
+    this.companyService.searchCompanyDetails(this.searchCompanyName1).subscribe((result)=>{
 
       if(result==null){
         this.searchCompanyValueIf = true;
+
       }else{
         this.searchCompanyValueIf=false;
         this.searchCompanyDetails = result;
@@ -61,6 +80,7 @@ export class CompanyComponent implements OnInit {
 
 
   }
+
 
 
 

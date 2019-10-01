@@ -12,12 +12,12 @@ import { SupplierOrderAgentItemComponent } from './view/supplier-order-agent-ite
 import { SalaryComponent } from './view/salary/salary.component';
 
 import { AttendanceComponent } from './view/attendance/attendance.component';
-import { SalarysheetComponent } from './view/salarysheet/salarysheet.component';
+
 import {StockItemDetails} from "./model/StockItemDetails";
 import {CustomerComponent} from "./view/customer/customer.component";
 import {StockHandlingComponent} from "./view/stock-handling/stock-handling.component";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from "@angular/common/http";
 import {DatePipe} from "@angular/common";
 import { CustomerOrderComponent } from './view/customer-order/customer-order.component';
@@ -28,8 +28,15 @@ import { SupplierComponent } from './view/supplier/supplier.component';
 import { CompanyComponent } from './view/company/company.component';
 import { SupplierOrderReportComponent } from './view/supplier-order-report/supplier-order-report.component';
 import { LowStockLevelComponent } from './view/low-stock-level/low-stock-level.component';
+import { SalarySheetReportComponent } from './view/salary-sheet-report/salary-sheet-report.component';
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
+<<<<<<< HEAD
 import { ReturnsReportComponent } from './view/returns-report/returns-report.component';
+=======
+import { EmployeeAttendanceComponent } from './view/employee-attendance/employee-attendance.component';
+import { CustomerReportComponent } from './view/customer-report/customer-report.component';
+import { SupplierReportComponent } from './view/supplier-report/supplier-report.component';
+>>>>>>> 4940f1d4b715539533cc29f6797ab1e5e50d0291
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -43,13 +50,15 @@ import { ReturnsReportComponent } from './view/returns-report/returns-report.com
     SupplierOrderAgentItemComponent,
     SalaryComponent,
     AttendanceComponent,
-    SalarysheetComponent,
       CustomerComponent,
       StockHandlingComponent,
       CustomerOrderComponent,
       SupplierComponent,
       CompanyComponent,
       ReturnItemsComponent,
+      LowStockLevelComponent,
+      SalarySheetReportComponent,
+
       SupplierOrderReportComponent,
     CustomerComponent,
     StockHandlingComponent,
@@ -59,7 +68,13 @@ import { ReturnsReportComponent } from './view/returns-report/returns-report.com
     ReturnItemsComponent,
     LowStockLevelComponent,
     CustomerOrderReportComponent,
+<<<<<<< HEAD
     ReturnsReportComponent
+=======
+    EmployeeAttendanceComponent,
+    CustomerReportComponent,
+    SupplierReportComponent
+>>>>>>> 4940f1d4b715539533cc29f6797ab1e5e50d0291
   ],
   imports: [
     BrowserModule,
@@ -67,7 +82,8 @@ import { ReturnsReportComponent } from './view/returns-report/returns-report.com
     BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,FontAwesomeModule,
-    HttpClientModule,ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
+    HttpClientModule,
+    ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'})
   ],
   providers: [
     DatePipe

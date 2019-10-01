@@ -3,6 +3,8 @@ import {HttpClient} from "@angular/common/http";
 import {Employee} from "../model/Employee";
 import {environment} from "../../environments/environment";
 import {Observable} from "rxjs";
+import {LowStockLevelDTO} from "../DTO/LowStockLevelDTO";
+import {EmployeeAttendanceDTO} from "../DTO/EmployeeAttendanceDTO";
 
 
 const URL ='/EmployeeController'
@@ -41,6 +43,19 @@ export class EmployeeService {
 
   searchEmployeeName(sEmp : string) {
     return this.http.get<Employee>(environment.backend_url + URL + '/searchByEmployeeName/'+sEmp);
+
+  }
+
+  employeeAttendance() {
+
+    return this.http.get<Array<EmployeeAttendanceDTO>>(environment.backend_url + URL + '/getEmployeeAttendance');
+
+  }
+
+  printReports(EmployeeAttendance: Array<EmployeeAttendanceDTO>) {
+
+    return this.http.post<string>(environment.backend_url + URL + '/printReport/',EmployeeAttendance);
+
 
   }
 

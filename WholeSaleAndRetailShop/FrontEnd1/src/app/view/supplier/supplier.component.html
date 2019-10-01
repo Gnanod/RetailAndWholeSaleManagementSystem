@@ -1,3 +1,347 @@
+<!--<div class="container-fluid" >-->
+  <!--<div class="row">-->
+    <!--<div class="col-md-11">-->
+      <!--<div class="card">-->
+        <!--<div class="card-header card-header-icon card-header-info">-->
+          <!--<div class="card-icon">-->
+            <!--<i class="fas fa-user-tie"></i>-->
+          <!--</div>-->
+          <!--<h4 class="card-title">Add Supplier Details-->
+
+          <!--</h4>-->
+        <!--</div>-->
+        <!--<div class="card-body">-->
+          <!--&lt;!&ndash;<form>&ndash;&gt;-->
+
+            <!--<div class="row">-->
+
+
+            <!--</div>-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="form-group">-->
+
+                  <!--<label class="bmd-label-floating">Supplier Name</label>-->
+                  <!--<input type="text" class="form-control"  name="supplierName" [(ngModel)]="sup.supplierName">-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="col-md-5">-->
+                <!--<div class="form-group">-->
+                  <!--<label class="bmd-label-floating">Supplier Nic</label>-->
+                  <!--<input type="text" class="form-control" name="supplierNic" [(ngModel)]="sup.supplierNic">-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="form-group">-->
+                  <!--<label class="bmd-label-floating">Supplier address</label>-->
+                  <!--<input type="email" class="form-control" name="address" [(ngModel)]="sup.address">-->
+                <!--</div>-->
+              <!--</div>-->
+              <!--<div class="col-md-5">-->
+                <!--<div class="form-group">-->
+                  <!--<label class="bmd-label-floating" >Email</label>-->
+                  <!--<input type="text" class="form-control" name="email" [(ngModel)]="sup.email">-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="form-group">-->
+                  <!--<label class="bmd-label-floating">Phone</label>-->
+                  <!--<input type="text" class="form-control" name="phone" [(ngModel)]="sup.phone">-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<div class="form-group">-->
+                  <!--<label class="bmd-label-floating">Fax</label>-->
+                  <!--<input type="text" class="form-control" name="fax" [(ngModel)]="sup.fax" [ngModelOptions]="{standalone: true}">-->
+                <!--</div>-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="row">-->
+              <!--<div class="col-md-6">-->
+                <!--<label >Select Company</label>-->
+                <!--<div class="form-group">-->
+
+                  <!--<select class="form-control "  data-style="select-with-transition" [(ngModel)]="sup.company" >-->
+
+                    <!--<option>Maliban</option>-->
+                    <!--<option>Munchi</option>-->
+                    <!--<option>Uniliver</option>-->
+
+                  <!--</select>-->
+
+                <!--</div>-->
+
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<button type="submit" class="btn btn-info pull-right" (click)="addSupplier()">Save Details</button>-->
+            <!--<div class="clearfix"></div>-->
+          <!--&lt;!&ndash;</form>&ndash;&gt;-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
+
+<!--</div>-->
+<!--<div class="row">-->
+
+  <!--<div class="col-md-12">-->
+    <!--<div class="card">-->
+      <!--<div class="card-header card-header-info card-header-icon">-->
+        <!--<div class="card-icon">-->
+          <!--<i class="fas fa-search"></i>-->
+        <!--</div>-->
+        <!--<h4 class="card-title">Search Supplier</h4>-->
+      <!--</div>-->
+      <!--<div class="card-body">-->
+        <!--<div class="row" >-->
+
+          <!--<div class="col-md-4" style="margin-left: 370px">-->
+            <!--<div class="form-group">-->
+              <!--<label class="bmd-label-floating">Search By Nic</label>-->
+              <!--<input type="text" class="form-control" style="width: 450px" (keyup)="searchSupplierDetailsByNic($event)" [(ngModel)]="SearchSupplierNic1">-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--<div class="col-md-4" style="margin-left: -200px ;margin-top: 0px">-->
+            <!--<button type="submit" class="btn btn-info pull-right" >   <i class="fas fa-search"></i></button>-->
+          <!--</div>-->
+
+        <!--</div>-->
+
+        <!--<div class="table-responsive">-->
+          <!--<table class="table">-->
+            <!--<thead>-->
+            <!--<tr>-->
+              <!--<th class="text-center"></th>-->
+              <!--<th>Supplier Id</th>-->
+              <!--<th>Supplier Nic</th>-->
+              <!--<th>Supplier Name</th>-->
+              <!--<th >Address</th>-->
+              <!--<th >Email Address</th>-->
+              <!--<th >Phone Number</th>-->
+              <!--<th >Fax</th>-->
+              <!--<th>Action</th>-->
+
+              <!--<th ></th>-->
+            <!--</tr>-->
+            <!--</thead>-->
+            <!--<tbody>-->
+            <!--<tr *ngIf="searchSupplierValueIf;else elseBlock">-->
+              <!--<td colspan="10" class="alert alert-danger text-center" style="...">-->
+                <!--Supplier Not Found-->
+              <!--</td>-->
+            <!--</tr>-->
+            <!--<ng-template #elseBlock>-->
+              <!--<tr>-->
+                <!--<td class="text-center">-->
+                  <!--{{searchSupplierDetails.supplierId}}-->
+                <!--</td>-->
+                <!--<td class="text-center">-->
+                  <!--{{searchSupplierDetails.supplierNic}}-->
+                <!--</td>-->
+                <!--<td class="text-center">-->
+                  <!--{{searchSupplierDetails.supplierName}}-->
+                <!--</td>-->
+                <!--<td class="text-center">-->
+                  <!--{{searchSupplierDetails.address}}-->
+                <!--</td>-->
+                <!--<td class="text-center">-->
+                  <!--{{searchSupplierDetails.email}}-->
+                <!--</td>-->
+                <!--<td class="text-center">-->
+                  <!--{{searchSupplierDetails.phone}}-->
+                <!--</td>-->
+                <!--<td class="text-center">-->
+                  <!--{{searchSupplierDetails.fax}}-->
+                <!--</td>-->
+
+                <!--<td class="td-actions text-right">-->
+
+                  <!--<button type="button" rel="tooltip" class="btn btn-danger" (click)="deleteSupplier()">-->
+                    <!--<i class="material-icons">close</i>-->
+                  <!--</button>-->
+                <!--</td>-->
+              <!--</tr>-->
+
+            <!--</ng-template>-->
+
+
+            <!--</tbody>-->
+          <!--</table>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+
+<!--</div>-->
+
+<!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;  <div class="col-md-8">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="card">&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="card-header card-header-icon card-header-rose">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="card-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;          <i class="material-icons">perm_identity</i>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <h4 class="card-title">Update Supplier Details&ndash;&gt;-->
+
+<!--&lt;!&ndash;        </h4>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="card-body">&ndash;&gt;-->
+<!--&lt;!&ndash;        <form>&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="row">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;                      <div class="col-md-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                          <label class="bmd-label-floating">Supplier Id</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                          <input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[ngModel]="supplierId">&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="row">&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;            <div class="col-md-6">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                <label class="bmd-label-floating">Supplier Nic</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[(ngModel)]=" supplierNic">&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-md-6">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                <label class="bmd-label-floating">Supplier Name</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierName1">&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;          <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="col-md-4">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                <label class="bmd-label-floating">Supplier address</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                <input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierAddress">&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="col-md-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <label class="bmd-label-floating">Email address</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="emailAddress">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="col-md-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <label class="bmd-label-floating" >Phone</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="phoneNumber">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <div class="row">&ndash;&gt;-->
+<!--&lt;!&ndash;              <div class="col-md-12">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="form-group">&ndash;&gt;-->
+<!--&lt;!&ndash;                  <label class="bmd-label-floating">Fax</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="faxNumber">&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;              </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <button type="submit" class="btn btn-rose pull-right" (click)="updateSupplier()">Update Details</button>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="clearfix"></div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </form>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;  </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<div class="container-fluid">-->
+  <!--<div class="row">-->
+    <!--<div class="col-md-7">-->
+      <!--<div class="card">-->
+        <!--<div class="card-header card-header-icon card-header-info">-->
+          <!--<div class="card-icon">-->
+            <!--<i class="fas fa-address-book"></i>-->
+          <!--</div>-->
+          <!--<h4 class="card-title"><b><b>Update Supplier Details</b></b>-->
+
+          <!--</h4>-->
+        <!--</div>-->
+        <!--<div class="card-body">-->
+          <!--<form>-->
+            <!--<div class="col-md-6">-->
+              <!--<div class="form-group">-->
+                <!--<label class="bmd-label-floating">Supplier Id</label>-->
+                <!--<input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[ngModel]="supplierId">-->
+              <!--</div>-->
+            <!--</div>-->
+
+
+            <!--<div class="col-md-6">-->
+              <!--<div class="form-group">-->
+                <!--<label class="bmd-label-floating">Supplier Nic</label>-->
+                <!--<input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[(ngModel)]=" supplierNic">-->
+              <!--</div>-->
+            <!--</div>-->
+
+
+            <!--<div class="col-md-6">-->
+              <!--<div class="form-group">-->
+                <!--<label class="bmd-label-floating">Supplier Name</label>-->
+                <!--<input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierName1">-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="col-md-6">-->
+              <!--<div class="form-group">-->
+                <!--<label class="bmd-label-floating">Supplier address</label>-->
+                <!--<input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierAddress">-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-6">-->
+              <!--<div class="form-group">-->
+                <!--<label class="bmd-label-floating">Email address</label>-->
+                <!--<input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="emailAddress">-->
+              <!--</div>-->
+
+            <!--</div>-->
+            <!--<div class="col-md-6">-->
+              <!--<div class="form-group">-->
+                <!--<label class="bmd-label-floating" >Phone</label>-->
+                <!--<input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="phoneNumber">-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-6">-->
+              <!--<div class="form-group">-->
+                <!--<label class="bmd-label-floating">Fax</label>-->
+                <!--<input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="faxNumber">-->
+              <!--</div>-->
+            <!--</div>-->
+
+            <!--<button type="submit" class="btn btn-info pull-right"  (click)="updateSupplier()">Update Details</button>-->
+            <!--<div class="clearfix"></div>-->
+
+
+          <!--</form>-->
+
+
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</div>-->
+<!--</div>-->
+
 <div class="container-fluid" >
   <div class="row">
     <div class="col-md-11">
@@ -11,7 +355,8 @@
           </h4>
         </div>
         <div class="card-body">
-          <!--<form>-->
+          <form  name="form" [formGroup]="form" >
+
 
             <div class="row">
 
@@ -20,15 +365,52 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
+                  <label class="bmd-label-floating">Date</label>
+                  <!--<input type="text" class="form-control"  name="date" [(ngModel)]="sup.date"  minlength="2" maxlength="10" formControlName="date" [ngClass]="{'is-invalid':form.get('date').touched && form.get('date').invalid}" >-->
+                  <!--<div class="invalid-feedback" *ngIf="form.get('date').touched  && form.get('date').invalid">-->
+                    <!--<div>Date is required</div>-->
+                  <!--</div>-->
+
+                  <input type="date" class="form-control" name="date" [(ngModel)]="sup.date" minlength="2" maxlength="10" formControlName="date" [ngClass]="{'is-invalid':form.get('date').touched && form.get('date').invalid}">
+                  <div class="invalid-feedback"  *ngIf="form.get('date').touched  && form.get('date').invalid">
+                    Date is required
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
 
                   <label class="bmd-label-floating">Supplier Name</label>
-                  <input type="text" class="form-control"  name="supplierName" [(ngModel)]="sup.supplierName">
+                  <!--<input type="text" class="form-control"  name="supplierName" [(ngModel)]="sup.supplierName" minlength="2" maxlength="10" formControlName="supplierName" [ngClass]="{'is-invalid':form.get('supplierName').touched && form.get('supplierName').invalid}">-->
+                  <!--<div class="invalid-feedback" *ngIf="form.get('supplierName').touched  && form.get('supplierName').invalid">-->
+                    <!--<div>Supplier Name is required</div>-->
+                  <!--</div>-->
+
+                  <input type="text" class="form-control" name="supplierName" [(ngModel)]="sup.supplierName" minlength="2" maxlength="10" formControlName="supplierName" [ngClass]="{'is-invalid':form.get('supplierName').touched && form.get('supplierName').invalid}">
+                  <div class="invalid-feedback"  *ngIf="form.get('supplierName').touched  && form.get('supplierName').invalid">
+                    Supplier Name is required
+                  </div>
+
+
                 </div>
               </div>
               <div class="col-md-5">
                 <div class="form-group">
                   <label class="bmd-label-floating">Supplier Nic</label>
-                  <input type="text" class="form-control" name="supplierNic" [(ngModel)]="sup.supplierNic">
+                  <!--<input type="text" class="form-control" name="supplierNic" [(ngModel)]="sup.supplierNic" minlength="10" maxlength="10" formControlName="supplierNic" [ngClass]="{'is-invalid':form.get('supplierNic').touched && form.get('supplierNic').invalid}">-->
+                  <!--<div class="invalid-feedback" *ngIf="form.get('supplierNic').touched  && form.get('supplierNic').invalid">-->
+                    <!--<div>Supplier Nic must be a valid Nic Number</div>-->
+                  <!--</div>-->
+
+                  <input type="text" class="form-control" name="supplierNic" [(ngModel)]="sup.supplierNic" minlength="10" maxlength="10"  formControlName="supplierNic" [ngClass]="{'is-invalid':form.get('supplierNic').touched && form.get('supplierNic').invalid}">
+                  <div class="invalid-feedback"  *ngIf="form.get('supplierNic').touched  && form.get('supplierNic').invalid">
+                    Supplier Nic must be a valid Nic Number
+                  </div>
+
+
                 </div>
               </div>
             </div>
@@ -36,13 +418,36 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Supplier address</label>
-                  <input type="email" class="form-control" name="address" [(ngModel)]="sup.address">
+                  <!--<input type="email" class="form-control" name="address" [(ngModel)]="sup.address" formControlName="supplierAddress" [ngClass]="{'is-invalid':form.get('supplierAddress').touched && form.get('supplierAddress').invalid}">-->
+                  <!--<div class="invalid-feedback" *ngIf="form.get('supplierAddress').touched  && form.get('supplierAddress').invalid">-->
+                    <!--<div>Address is required</div>-->
+                  <!--</div>-->
+
+                  <input type="email" class="form-control" name="address" [(ngModel)]="sup.address"  formControlName="supplierAddress" [ngClass]="{'is-invalid':form.get('supplierAddress').touched && form.get('supplierAddress').invalid}">
+                  <div class="invalid-feedback"  *ngIf="form.get('supplierAddress').touched  && form.get('supplierAddress').invalid">
+                    Address is required
+                  </div>
+
+
                 </div>
               </div>
               <div class="col-md-5">
                 <div class="form-group">
                   <label class="bmd-label-floating" >Email</label>
-                  <input type="text" class="form-control" name="email" [(ngModel)]="sup.email">
+                  <!--<input type="text" class="form-control" name="email" [(ngModel)]="sup.email" formControlName="email"-->
+                         <!--[ngClass]="{'is-invalid':form.get('email').touched && form.get('email').invalid }">-->
+                  <!--<div class="invalid-feedback"  *ngIf="form.get('email').touched  && form.get('email').invalid">-->
+                    <!--<div *ngIf="form.get('email').errors.required"> Email is required </div>-->
+                    <!--<div *ngIf="form.get('email').errors.email"> Email must be a valid email address</div>-->
+                  <!--</div>-->
+
+                  <input type="email" class="form-control" name="email" [(ngModel)]="sup.email"  formControlName="email" [ngClass]="{'is-invalid':form.get('email').touched && form.get('email').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('email').touched  && form.get('email').invalid">
+                    <div *ngIf="form.get('email').errors.required"> Email is required </div>
+                    <div *ngIf="form.get('email').errors.email"> Email must be a valid email address</div>
+                  </div>
+
+
                 </div>
               </div>
             </div>
@@ -51,7 +456,19 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Phone</label>
-                  <input type="text" class="form-control" name="phone" [(ngModel)]="sup.phone">
+                  <!--<input type="text" class="form-control" name="phone" [(ngModel)]="sup.phone"  minlength="10" maxlength="10" pattern="[0-9]{10,10}" formControlName="phone"-->
+                         <!--[ngClass]="{'is-invalid':form.get('phone').touched && form.get('phone').invalid }">-->
+                  <!--<div class="invalid-feedback" *ngIf="form.get('phone').touched  && form.get('phone').invalid">-->
+                    <!--<div>Phone Number is required</div>-->
+
+                  <!--</div>-->
+
+                  <input type="text" class="form-control" name="phone" [(ngModel)]="sup.phone"  minlength="10" maxlength="10" pattern="[0-9]{10,10}"   formControlName="phone" [ngClass]="{'is-invalid':form.get('phone').touched && form.get('phone').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('phone').touched  && form.get('phone').invalid">
+                    Phone Number is required
+                  </div>
+
+
                 </div>
               </div>
             </div>
@@ -59,7 +476,17 @@
               <div class="col-md-6">
                 <div class="form-group">
                   <label class="bmd-label-floating">Fax</label>
-                  <input type="text" class="form-control" name="fax" [(ngModel)]="sup.fax" [ngModelOptions]="{standalone: true}">
+                  <!--<input type="text" class="form-control" name="fax" [(ngModel)]="sup.fax"  minlength="5"  formControlName="fax" [ngClass]="{'is-invalid':form.get('fax').touched && form.get('fax').invalid}">-->
+                  <!--<div class="invalid-feedback" *ngIf="form.get('fax').touched  && form.get('fax').invalid">-->
+                    <!--<div>Fax Number is required</div>-->
+                  <!--</div>-->
+
+                  <input type="text" class="form-control" name="fax" [(ngModel)]="sup.fax"  minlength="5"    formControlName="fax" [ngClass]="{'is-invalid':form.get('fax').touched && form.get('fax').invalid }">
+                  <div class="invalid-feedback"  *ngIf="form.get('fax').touched  && form.get('fax').invalid">
+                    Phone Number is required
+                  </div>
+
+
                 </div>
               </div>
             </div>
@@ -69,29 +496,40 @@
                 <label >Select Company</label>
                 <div class="form-group">
 
-                  <select class="form-control "  data-style="select-with-transition" [(ngModel)]="sup.company" >
 
-                    <option>Maliban</option>
-                    <option>Munchi</option>
-                    <option>Uniliver</option>
+
+                  <select class="form-control "  data-style="select-with-transition" [(ngModel)]="cName" formControlName="cName">
+
+                    <option *ngFor="let sup of supp" [value]="sup.companyName">{{sup.companyName}}</option>
+
 
                   </select>
+
 
                 </div>
 
               </div>
             </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-info pull-right" (click)="addSupplier()">Save Details</button>
+              <div class="clearfix"></div>
+            </div>
 
-            <button type="submit" class="btn btn-info pull-right" (click)="addSupplier()">Save Details</button>
-            <div class="clearfix"></div>
-          <!--</form>-->
+          </form>
+
         </div>
+
+
+
       </div>
+
     </div>
 
   </div>
-
 </div>
+
+
+
 <div class="row">
 
   <div class="col-md-12">
@@ -108,7 +546,7 @@
           <div class="col-md-4" style="margin-left: 370px">
             <div class="form-group">
               <label class="bmd-label-floating">Search By Nic</label>
-              <input type="text" class="form-control" style="width: 450px" (keyup)="searchSupplierDetailsByNic($event)" [(ngModel)]="SearchSupplierNic1">
+              <input type="text" class="form-control" style="width: 450px" [ngModelOptions]="{standalone:true}" (keyup)="searchSupplierDetailsByNic($event)" [(ngModel)]="SearchSupplierNic1">
             </div>
           </div>
           <div class="col-md-4" style="margin-left: -200px ;margin-top: 0px">
@@ -129,14 +567,15 @@
               <th >Email Address</th>
               <th >Phone Number</th>
               <th >Fax</th>
-              <th>Action</th>
+              <th>Date</th>
+              <th class="text-right">Action</th>
 
               <th ></th>
             </tr>
             </thead>
             <tbody>
             <tr *ngIf="searchSupplierValueIf;else elseBlock">
-              <td colspan="10" class="alert alert-danger text-center" style="...">
+              <td colspan="16" class="alert alert-danger text-center" style="...">
                 Supplier Not Found
               </td>
             </tr>
@@ -162,6 +601,9 @@
                 </td>
                 <td class="text-center">
                   {{searchSupplierDetails.fax}}
+                </td>
+                <td class="text-center">
+                  {{searchSupplierDetails.date}}
                 </td>
 
                 <td class="td-actions text-right">
@@ -281,50 +723,58 @@
           <form>
             <div class="col-md-6">
               <div class="form-group">
-                <label class="bmd-label-floating">Supplier Id</label>
-                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[ngModel]="supplierId">
+                <label>Supplier Id</label>
+                <input type="text" class="form-control" name="supplierId" [ngModelOptions]="{standalone: true}" [ngModel]="supplierId">
               </div>
             </div>
 
 
             <div class="col-md-6">
               <div class="form-group">
-                <label class="bmd-label-floating">Supplier Nic</label>
-                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}"[(ngModel)]=" supplierNic">
-              </div>
-            </div>
-
-
-            <div class="col-md-6">
-              <div class="form-group">
-                <label class="bmd-label-floating">Supplier Name</label>
-                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierName1">
+                <label >Supplier Nic</label>
+                <input type="text" class="form-control" name="supplierNic" [ngModelOptions]="{standalone: true}" [(ngModel)]=" supplierNic">
               </div>
             </div>
 
             <div class="col-md-6">
               <div class="form-group">
-                <label class="bmd-label-floating">Supplier address</label>
-                <input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="supplierAddress">
+                <label >Date</label>
+                <input type="date" class="form-control" name="date" [ngModelOptions]="{standalone: true}" [(ngModel)]=" date">
+              </div>
+            </div>
+
+
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Supplier Name</label>
+                <input type="text" class="form-control" name="supplierName1" [ngModelOptions]="{standalone: true}" [(ngModel)]="supplierName1">
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label >Supplier address</label>
+                <input type="email" class="form-control" name="supplierAddress" [ngModelOptions]="{standalone: true}" [(ngModel)]="supplierAddress">
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label class="bmd-label-floating">Email address</label>
-                <input type="email" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="emailAddress">
+                <label >Email address</label>
+                <input type="email" class="form-control" name="emailAddress" [ngModelOptions]="{standalone: true}" [(ngModel)]="emailAddress">
               </div>
 
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label class="bmd-label-floating" >Phone</label>
-                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="phoneNumber">
+                <label  >Phone</label>
+                <input type="text" class="form-control" name="phoneNumber" [ngModelOptions]="{standalone: true}" [(ngModel)]="phoneNumber">
               </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <label class="bmd-label-floating">Fax</label>
-                <input type="text" class="form-control" [ngModelOptions]="{standalone:true}" [(ngModel)]="faxNumber">
+                <label >Fax</label>
+                <input type="text" class="form-control" name="faxNumber" [ngModelOptions]="{standalone: true}" [(ngModel)]="faxNumber">
               </div>
             </div>
 
@@ -341,5 +791,6 @@
 
   </div>
 </div>
+
 
 

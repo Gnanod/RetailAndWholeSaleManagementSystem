@@ -1,5 +1,6 @@
 package lk.whsars.service;
 
+import lk.whsars.DTO.EmployeeAttendanceDto;
 import lk.whsars.entity.Employee;
 
 import java.util.List;
@@ -15,7 +16,8 @@ public interface EmployeeService {
 
     Employee searchByEmployeeName(String fname);
 
-    ///////////////////////////////////
+    List<EmployeeAttendanceDto> getEmployeeAttendance();
+
 
 
 }

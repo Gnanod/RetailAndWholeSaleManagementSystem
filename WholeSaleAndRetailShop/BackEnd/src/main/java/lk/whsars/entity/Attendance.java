@@ -2,8 +2,11 @@ package lk.whsars.entity;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
+import java.util.Set;
 
 
 @Entity
@@ -15,6 +18,9 @@ public class Attendance {
     String day;
     String inTime;
     String outTime;
+
+
+
     @ManyToOne
 //    @JsonIgnore
 //    @JoinColumn(nullable = false)
