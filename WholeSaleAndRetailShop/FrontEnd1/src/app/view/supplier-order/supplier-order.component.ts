@@ -128,7 +128,7 @@ export class SupplierOrderComponent implements OnInit {
       if(result!=null){
 
         this.itemsArray=result;
-
+        this.itemsArray[0]=result[0];
        // this.searchMakesByCompany=result;
       //  console.log("ggdsda"+result[0].supplierNic);
       //  this.selectedAgentNic=this.searchMakesByCompany[0];

@@ -7,6 +7,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e147aff-134b-47b2-b67e-badeec700322" name="Default Changelist" comment="">
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/employee/employee.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/employee/employee.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.html" afterDir="false" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
       <change beforePath="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/BackEnd/target/" />
@@ -16,13 +25,233 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
+=======
+  <component name="FUSProjectUsageTrigger">
+    <session id="1998637383">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.62" value="1" />
+          <entry key="project.open.time.95" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="aj" value="1" />
+          <entry key="class" value="1" />
+          <entry key="css" value="2" />
+          <entry key="html" value="17" />
+          <entry key="java" value="232" />
+          <entry key="properties" value="4" />
+          <entry key="ts" value="40" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="AspectJ" value="1" />
+          <entry key="CLASS" value="1" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="17" />
+          <entry key="JAVA" value="232" />
+          <entry key="Properties" value="4" />
+          <entry key="TypeScript" value="40" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="aj" value="199" />
+          <entry key="css" value="1" />
+          <entry key="html" value="744" />
+          <entry key="java" value="3003" />
+          <entry key="properties" value="36" />
+          <entry key="ts" value="1625" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="AspectJ" value="199" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="744" />
+          <entry key="JAVA" value="3003" />
+          <entry key="Properties" value="36" />
+          <entry key="TypeScript" value="1625" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="6" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1832181062">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="html" value="9" />
+          <entry key="java" value="28" />
+          <entry key="properties" value="1" />
+          <entry key="ts" value="19" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="HTML" value="9" />
+          <entry key="JAVA" value="28" />
+          <entry key="Properties" value="1" />
+          <entry key="TypeScript" value="19" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="163" />
+          <entry key="java" value="727" />
+          <entry key="properties" value="125" />
+          <entry key="ts" value="568" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="163" />
+          <entry key="JAVA" value="727" />
+          <entry key="Properties" value="125" />
+          <entry key="TypeScript" value="568" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-278087177">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="css" value="3" />
+          <entry key="html" value="46" />
+          <entry key="java" value="268" />
+          <entry key="properties" value="4" />
+          <entry key="ts" value="132" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="CSS" value="3" />
+          <entry key="HTML" value="46" />
+          <entry key="JAVA" value="268" />
+          <entry key="Properties" value="4" />
+          <entry key="TypeScript" value="132" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="972" />
+          <entry key="java" value="3851" />
+          <entry key="properties" value="37" />
+          <entry key="ts" value="4628" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="972" />
+          <entry key="JAVA" value="3851" />
+          <entry key="Properties" value="37" />
+          <entry key="TypeScript" value="4628" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-602779196">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="html" value="12" />
+          <entry key="java" value="18" />
+          <entry key="ts" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="12" />
+          <entry key="JAVA" value="18" />
+          <entry key="TypeScript" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="html" value="7" />
+          <entry key="java" value="80" />
+          <entry key="ts" value="338" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="7" />
+          <entry key="JAVA" value="80" />
+          <entry key="TypeScript" value="338" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
   </component>
   <component name="FavoritesManager">
     <favorites_list name="WholeSaleAndRetailShop" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order-report/customer-order-report.component.ts">
@@ -32,11 +261,38 @@
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
+=======
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier/supplier.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="100" column="2" selection-start-line="100" selection-start-column="2" selection-end-line="104" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/StockDetailRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SalaryRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/CustomerOrderReportDTO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
@@ -44,6 +300,21 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+=======
+        <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/StockRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" column="394" selection-start-line="11" selection-start-column="394" selection-end-line="11" selection-end-column="394" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier/supplier.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="780" column="83" lean-forward="true" selection-start-line="780" selection-start-column="83" selection-end-line="780" selection-end-column="83" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
             </state>
           </provider>
         </entry>
@@ -66,9 +337,12 @@
       <find>getMakeCompanyDetails</find>
       <find>make_agent</find>
       <find>companies</find>
+<<<<<<< HEAD
       <find>customerId</find>
       <find>list</find>
       <find>searchOrderDetails</find>
+=======
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,6 +351,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/StockService.java" />
@@ -128,6 +403,59 @@
         <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/customer-order-report/customer-order-report.component.html" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Common/CustomerOrderReport.java" />
         <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/CustomerOrderReportDTO.java" />
+=======
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/service/supplierOrderService.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/service/gg.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/environments/environment.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/model/Company.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CompanyRepoH.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierService.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Company.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/ItemRepository.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/SupplierController.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierRepository.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierServiceImpl.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Supplier.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/service/item.service.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/ItemController.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/ItemServiceImpl.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/ItemService.java" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/model/Supplier.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/SupplierOrderDetail.java" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/model/Item.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrderDetail.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrder.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierServiceH.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierServiceImplH.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/SupplierOrder.java" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrderSearchDto.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierOrderService.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/SupplierOrderSearchDto.java" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/service/supplier-order.service.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/SupplierOrderController.java" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/employee/employee.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.html" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierRepositoryH.java" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierOrderRepository.java" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierOrderServiceImpl.java" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/salary-sheet-report/salary-sheet-report.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/salary-sheet-report/salary-sheet-report.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd1/src/app/view/supplier/supplier.component.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/StockRepository.java" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
       </list>
     </option>
   </component>
@@ -138,10 +466,1125 @@
       </MavenImportingSettings>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="width" value="1380" />
     <option name="height" value="735" />
+=======
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/FrontEnd1/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular-devkit/architect/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular-devkit/build-angular/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular-devkit/build-optimizer/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular-devkit/build-optimizer/node_modules/typescript/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular-devkit/build-optimizer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular-devkit/build-optimizer/webpack-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular-devkit/build-webpack/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular-devkit/core/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular-devkit/schematics/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/animations/browser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/animations/browser/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/animations/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/cli/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/cli/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/cli/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/common/http/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/common/http/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/common/locales/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/common/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/common/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/common/upgrade/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler-cli/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler-cli/node_modules/get-caller-file/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler-cli/node_modules/require-main-filename/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler-cli/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler-cli/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler-cli/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler-cli/node_modules/yargs-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler-cli/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler-cli/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/compiler/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/core/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/core/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/forms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/language-service/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/platform-browser-dynamic/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/platform-browser-dynamic/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/platform-browser/animations/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/platform-browser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/platform-browser/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/router/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/router/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@angular/router/upgrade/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/code-frame/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/generator/node_modules/jsesc/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/generator/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/generator/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/helper-function-name/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/helper-get-function-arity/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/helper-split-export-declaration/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/highlight/node_modules/js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/highlight/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/template/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/traverse/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/traverse/node_modules/globals/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/traverse/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/traverse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/types/node_modules/to-fast-properties/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@babel/types/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@ngtools/webpack/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@schematics/angular/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@schematics/update/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/events/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/glob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/jasmine/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/jasminewd2/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/node/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/q/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/selenium-webdriver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/source-list-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/webpack-sources/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@types/webpack-sources/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/ast/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/floating-point-hex-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/helper-api-error/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/helper-buffer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/helper-code-frame/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/helper-fsm/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/helper-module-context/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/helper-wasm-bytecode/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/helper-wasm-section/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/ieee754/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/leb128/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/utf8/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/wasm-edit/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/wasm-gen/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/wasm-opt/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/wasm-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/wast-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@webassemblyjs/wast-printer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@xtuc/ieee754/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@xtuc/long/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/@yarnpkg/lockfile/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/JSONStream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/acorn-dynamic-import/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/adm-zip/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/after/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/agent-base/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/agentkeepalive/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ajv-errors/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ajv-keywords/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/amdefine/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ansi-colors/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ansi-escapes/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ansi-html/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/anymatch/node_modules/normalize-path/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/anymatch/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/app-root-path/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/append-transform/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/aproba/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/argparse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/aria-query/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/arr-diff/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/arr-flatten/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/arr-union/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/array-union/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/array-uniq/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/array-unique/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/arraybuffer.slice/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/arrify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/asap/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/asn1.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/asn1/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/assert-plus/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/assert/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/assert/node_modules/util/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/assert/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/assign-symbols/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ast-types-flow/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/async-each/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/async-limiter/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/async/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/asynckit/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/atob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/autoprefixer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/aws-sign2/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/aws4/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/axobject-query/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-code-frame/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-code-frame/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-code-frame/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-code-frame/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-generator/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-generator/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-messages/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-runtime/node_modules/core-js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-runtime/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-template/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-traverse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babel-types/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/babylon/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/backo2/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/balanced-match/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/base/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/base/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/base/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/base/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/base/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/base64-arraybuffer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/base64-js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/base64id/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/batch/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/bcrypt-pbkdf/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/better-assert/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/big.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/binary-extensions/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/blob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/blocking-proxy/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/bluebird/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/bn.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/body-parser/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/body-parser/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/bonjour/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/brace-expansion/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/braces/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/braces/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/brorand/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/browserify-aes/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/browserify-cipher/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/browserify-des/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/browserify-rsa/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/browserify-sign/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/browserify-zlib/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/browserslist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/browserstack/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/buffer-alloc-unsafe/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/buffer-alloc/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/buffer-fill/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/buffer-from/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/buffer-indexof/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/buffer-xor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/buffer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/builtin-modules/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/builtin-status-codes/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/builtins/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cacache/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cacache/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cache-base/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/caller-callsite/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/caller-path/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/callsite/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/callsites/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/caniuse-lite/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/canonical-path/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/caseless/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/chalk/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/chardet/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/chokidar/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/chownr/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/chrome-trace-event/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cipher-base/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/circular-dependency-plugin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/class-utils/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/class-utils/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/clean-css/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/clean-css/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cli-cursor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cli-width/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cliui/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cliui/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cliui/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/clone-deep/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/clone/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/co/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/code-point-at/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/codelyzer/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/codelyzer/node_modules/sprintf-js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/codelyzer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/collection-visit/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/color-convert/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/color-name/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/colors/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/combined-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/commondir/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/compare-versions/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/component-bind/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/component-emitter/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/component-inherit/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/compressible/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/compression/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/concat-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/concat-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/connect-history-api-fallback/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/connect/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/console-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/constants-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/convert-source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/copy-concurrently/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/copy-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/copy-webpack-plugin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/core-js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/core-util-is/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cosmiconfig/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/create-ecdh/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/create-hash/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/create-hmac/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cross-spawn/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cross-spawn/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/crypto-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/css-parse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/css-selector-tokenizer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cssauron/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cssesc/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/custom-event/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/cyclist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/damerau-levenshtein/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/dashdash/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/date-format/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/date-now/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/debuglog/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/decamelize/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/decode-uri-component/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/default-gateway/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/default-require-extensions/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/define-properties/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/define-property/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/define-property/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/define-property/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/del/node_modules/globby/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/del/node_modules/globby/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/del/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/delayed-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/dependency-graph/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/des.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/detect-indent/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/detect-node/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/dezalgo/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/di/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/diff/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/diffie-hellman/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/dir-glob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/dns-equal/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/dns-packet/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/dns-txt/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/dom-serialize/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/domain-browser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/duplexify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ecc-jsbn/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/electron-to-chromium/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/elliptic/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/emoji-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/emojis-list/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/encoding/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/end-of-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/engine.io-client/node_modules/component-emitter/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/engine.io-client/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/engine.io-client/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/engine.io-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/engine.io/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/engine.io/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/engine.io/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/enhanced-resolve/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ent/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/err-code/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/errno/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/error-ex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/es6-promise/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/es6-promisify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/escape-string-regexp/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/eslint-scope/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/esprima/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/esrecurse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/estraverse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/esutils/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/eventemitter3/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/events/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/eventsource/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/evp_bytestokey/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/execa/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/exit/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/expand-brackets/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/expand-brackets/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/expand-brackets/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/express/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/express/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extend-shallow/node_modules/is-extendable/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extend/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/external-editor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extglob/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extglob/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extglob/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extglob/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extglob/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extglob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/extsprintf/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fast-deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fast-json-stable-stringify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fastparse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/faye-websocket/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/figgy-pudding/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/figures/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/file-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fileset/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fill-range/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fill-range/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/find-cache-dir/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/find-up/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/flatted/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/flush-write-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/follow-redirects/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/follow-redirects/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/follow-redirects/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/for-in/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/for-own/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/forever-agent/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/form-data/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fragment-cache/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/from2/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fs-access/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fs-extra/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fs-minipass/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fs-write-stream-atomic/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/fs.realpath/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/function-bind/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/genfun/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/get-caller-file/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/get-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/get-value/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/getpass/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/glob-parent/node_modules/is-glob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/glob-parent/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/globals/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/globby/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/globby/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/graceful-fs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/handle-thing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/handlebars/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/handlebars/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/har-schema/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/har-validator/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/has-ansi/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/has-binary2/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/has-binary2/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/has-cors/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/has-flag/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/has-value/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/has-values/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/has-values/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/has/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/hash-base/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/hash.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/hmac-drbg/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/hosted-git-info/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/hpack.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/html-entities/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-cache-semantics/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-deceiver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-errors/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-parser-js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-proxy-middleware/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-proxy/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/http-signature/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/https-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/https-proxy-agent/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/https-proxy-agent/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/https-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/humanize-ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ieee754/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/iferr/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ignore-walk/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ignore/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/image-size/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/immediate/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/import-cwd/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/import-fresh/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/import-from/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/import-local/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/imurmurhash/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/indexof/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/inflight/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ini/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/inquirer/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/inquirer/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/inquirer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/internal-ip/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/interpret/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/invariant/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/invert-kv/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ip-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ip/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-accessor-descriptor/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-arguments/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-arrayish/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-binary-path/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-buffer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-data-descriptor/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-date-object/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-descriptor/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-directory/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-extendable/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-extglob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-finite/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-glob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-number/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-number/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-path-cwd/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-path-in-cwd/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-path-inside/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-plain-obj/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-plain-object/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-promise/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-typedarray/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-windows/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/is-wsl/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/isbinaryfile/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/isexe/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/isobject/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/isstream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-api/node_modules/istanbul-lib-coverage/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-api/node_modules/istanbul-lib-instrument/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-api/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-instrumenter-loader/node_modules/ajv/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-instrumenter-loader/node_modules/fast-deep-equal/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-instrumenter-loader/node_modules/json-schema-traverse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-instrumenter-loader/node_modules/schema-utils/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-instrumenter-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-coverage/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-hook/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-instrument/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-instrument/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-report/node_modules/istanbul-lib-coverage/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-report/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-source-maps/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-source-maps/node_modules/istanbul-lib-coverage/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-source-maps/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-source-maps/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-lib-source-maps/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/istanbul-reports/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jasmine-core/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jasmine-spec-reporter/examples/node/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jasmine-spec-reporter/examples/protractor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jasmine-spec-reporter/examples/typescript/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jasmine-spec-reporter/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jasmine/node_modules/jasmine-core/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jasmine/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jasminewd2/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/js-yaml/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jsbn/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jsesc/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/json-parse-better-errors/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/json-schema-traverse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/json-schema/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/json-stringify-safe/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/json3/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/json5/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jsonfile/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jsonparse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jsprim/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/jszip/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/karma-chrome-launcher/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/karma-coverage-istanbul-reporter/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/karma-jasmine-html-reporter/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/karma-jasmine/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/karma-source-map-support/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/karma/node_modules/core-js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/karma/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/karma/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/karma/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/killable/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/lcid/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/less-loader/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/less-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/less/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/less/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/less/test/import-module/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/license-webpack-plugin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/lie/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/loader-runner/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/loader-utils/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/locate-path/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/lodash.clonedeep/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/lodash.tail/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/lodash/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/log4js/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/log4js/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/log4js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/loglevel/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/loose-envify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/magic-string/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/make-dir/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/make-dir/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/make-error/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/make-fetch-happen/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/make-fetch-happen/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/make-fetch-happen/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mamacro/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/map-age-cleaner/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/map-cache/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/map-visit/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/md5.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mem/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/memory-fs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/micromatch/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/miller-rabin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mimic-fn/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mini-css-extract-plugin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/minimalistic-assert/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/minimalistic-crypto-utils/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/minimatch/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/minipass/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/minizlib/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mississippi/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mixin-deep/node_modules/is-extendable/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mixin-deep/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mixin-object/node_modules/for-in/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mixin-object/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mkdirp/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/move-concurrently/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/multicast-dns-service-types/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/multicast-dns/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/mute-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/nanomatch/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/neo-async/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/nice-try/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/node-fetch-npm/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/node-forge/flash/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/node-forge/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/node-libs-browser/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/node-libs-browser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/node-releases/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/node-releases/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/normalize-package-data/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/normalize-package-data/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/normalize-path/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/normalize-range/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/normalize-url/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-bundled/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-package-arg/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-package-arg/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-packlist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-pick-manifest/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-pick-manifest/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-registry-fetch/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-registry-fetch/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-registry-fetch/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/npm-run-path/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/null-check/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/num2fraction/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/number-is-nan/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/oauth-sign/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/object-component/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/object-copy/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/object-copy/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/object-copy/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/object-is/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/object-keys/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/object-visit/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/object.pick/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/obuf/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/on-headers/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/once/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/onetime/node_modules/mimic-fn/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/onetime/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/open/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/opn/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/optimist/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/optimist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/original/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/os-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/os-homedir/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/os-locale/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/os-tmpdir/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/osenv/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/p-defer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/p-finally/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/p-is-promise/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/p-limit/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/p-locate/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/p-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/p-try/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pacote/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pacote/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pako/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/parallel-transform/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/parse-asn1/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/parse-json/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/parse5/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/parseqs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/parseuri/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pascalcase/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-dirname/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-exists/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-is-absolute/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-is-inside/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-key/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-parse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-type/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/path-type/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pbkdf2/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/performance-now/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pinkie-promise/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pinkie/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pkg-dir/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/portfinder/node_modules/async/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/portfinder/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/posix-character-classes/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/postcss-import/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/postcss-load-config/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/postcss-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/postcss-value-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/postcss/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/postcss/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/prepend-http/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/process-nextick-args/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/process/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/promise-inflight/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/promise-retry/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/promise/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protoduck/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/exampleTypescript/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/ansi-styles/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/chalk/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/del/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/globby/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/is-path-cwd/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/is-path-in-cwd/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/is-path-inside/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/source-map-support/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/webdriver-manager/built/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/node_modules/webdriver-manager/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/protractor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/prr/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pseudomap/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/psl/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/public-encrypt/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pump/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pumpify/node_modules/pump/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/pumpify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/q/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/qjobs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/query-string/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/querystring-es3/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/querystring/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/querystringify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/randombytes/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/randomfill/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/raw-body/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/raw-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/read-cache/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/read-cache/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/read-package-json/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/read-package-tree/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/readdir-scoped-modules/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/readdirp/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rechoir/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/reflect-metadata/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/regenerate/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/regenerator-runtime/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/regex-not/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/regexp.prototype.flags/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/regexpu-core/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/regjsgen/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/regjsparser/node_modules/jsesc/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/regjsparser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/remove-trailing-separator/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/repeat-element/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/repeat-string/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/repeating/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/request/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/require-directory/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/require-main-filename/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/requires-port/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve-cwd/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve-from/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve-url/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/module_dir/zmodules/bbb/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/resolver/baz/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/resolver/browser_field/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/resolver/dot_main/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/resolver/dot_slash_main/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/resolver/incorrect_main/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/resolver/invalid_main/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/resolver/multirepo/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/resolver/multirepo/packages/package-a/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/resolve/test/resolver/multirepo/packages/package-b/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/restore-cursor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ret/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/retry/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rfdc/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rimraf/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ripemd160/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/run-async/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/run-queue/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/ajax/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/operators/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/src/ajax/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/src/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/src/operators/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/src/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/src/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/testing/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/rxjs/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/safe-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sass-loader/node_modules/pify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sass-loader/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sass-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sass/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/saucelabs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/schema-utils/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/select-hose/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/selenium-webdriver/node_modules/tmp/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/selenium-webdriver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/selfsigned/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/semver-dsl/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/semver-dsl/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/semver-intersect/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/semver-intersect/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/send/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/serialize-javascript/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/serve-index/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/serve-index/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/serve-index/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/serve-index/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/set-blocking/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/set-immediate-shim/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/set-value/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/set-value/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/setimmediate/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sha.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/shallow-clone/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/shallow-clone/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/shebang-command/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/shebang-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/shelljs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/signal-exit/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/slash/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/smart-buffer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon-node/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon-node/node_modules/is-accessor-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon-node/node_modules/is-data-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon-node/node_modules/is-descriptor/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon-node/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon-util/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon-util/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon/node_modules/extend-shallow/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/snapdragon/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io-adapter/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io-client/node_modules/component-emitter/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io-client/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io-client/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io-parser/node_modules/component-emitter/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io-parser/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io-parser/node_modules/isarray/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socket.io/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs-client/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs-client/node_modules/faye-websocket/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs-client/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs-client/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs/examples/echo/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs/examples/express-3.x/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs/examples/express/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs/examples/hapi/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs/examples/koa/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs/examples/multiplex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sockjs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socks-proxy-agent/node_modules/agent-base/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socks-proxy-agent/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/socks/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sort-keys/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/source-list-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/source-map-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/source-map-resolve/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/source-map-support/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/source-map-support/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/source-map-url/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sourcemap-codec/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdx-correct/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdx-exceptions/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdx-expression-parse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdx-license-ids/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdy-transport/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdy-transport/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdy-transport/node_modules/readable-stream/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdy-transport/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdy/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdy/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/spdy/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/speed-measure-webpack-plugin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/split-string/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sprintf-js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/sshpk/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ssri/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/static-extend/node_modules/define-property/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/static-extend/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stats-webpack-plugin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stream-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stream-each/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stream-http/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stream-http/test/browser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stream-shift/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/streamroller/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/streamroller/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/streamroller/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/strict-uri-encode/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/string-width/node_modules/ansi-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/string-width/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/string_decoder/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/strip-ansi/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/strip-bom/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/strip-eof/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/style-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stylus-loader/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stylus/node_modules/glob/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stylus/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/stylus/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/supports-color/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/symbol-observable/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tapable/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tar/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/terser-webpack-plugin/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/terser-webpack-plugin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/terser/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/terser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/through/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/through2/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/thunky/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/timers-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tmp/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/to-array/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/to-arraybuffer/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/to-fast-properties/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/to-object-path/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/to-object-path/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/to-regex-range/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/to-regex/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/toidentifier/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tough-cookie/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tough-cookie/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tree-kill/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/trim-right/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ts-node/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tslib/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tslint/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tslint/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tsutils/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tty-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tunnel-agent/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/tweetnacl/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/typedarray/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/typescript/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/uglify-js/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/uglify-js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ultron/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/union-value/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/unique-filename/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/unique-slug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/universal-analytics/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/universal-analytics/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/universal-analytics/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/universalify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/unset-value/node_modules/has-value/node_modules/isobject/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/unset-value/node_modules/has-value/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/unset-value/node_modules/has-values/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/unset-value/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/upath/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/uri-js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/urix/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/url-parse/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/url/node_modules/punycode/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/url/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/use/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/useragent/node_modules/lru-cache/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/useragent/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/useragent/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/util-deprecate/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/util/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/util/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/uuid/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/validate-npm-package-license/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/validate-npm-package-name/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/verror/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/vm-browserify/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/void-elements/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/watchpack/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/wbuf/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webdriver-js-extender/built/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webdriver-js-extender/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-core/node_modules/source-list-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-core/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-core/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-dev-middleware/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-dev-middleware/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-dev-server/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-dev-server/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-dev-server/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-log/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-merge/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-sources/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-sources/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack-subresource-integrity/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/webpack/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/websocket-driver/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/websocket-extensions/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/when/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/which-module/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/which/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/wordwrap/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/worker-farm/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/worker-plugin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/wrap-ansi/node_modules/is-fullwidth-code-point/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/wrap-ansi/node_modules/string-width/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/wrap-ansi/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/wrappy/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/ws/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/xml2js/node_modules/sax/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/xml2js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/xmlbuilder/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/xmlhttprequest-ssl/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/xtend/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/y18n/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/yallist/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/yargs-parser/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/yargs/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/yeast/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/yn/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/node_modules/zone.js/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd1/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/common/http/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/common/http/testing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/common/locales/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/common/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/common/testing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/common/upgrade/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/core/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/core/testing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/platform-browser/animations/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/platform-browser/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@angular/platform-browser/testing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@fortawesome/angular-fontawesome/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@fortawesome/fontawesome-common-types/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/@fortawesome/fontawesome-svg-core/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/ajax/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/operators/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/src/ajax/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/src/fetch/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/src/internal-compatibility/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/src/operators/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/src/testing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/src/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/testing/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/rxjs/webSocket/package.json" />
+      <path value="$PROJECT_DIR$/node_modules/tslib/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1378" />
+    <option name="height" value="733" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -203,6 +1646,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="whsars" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="Common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -214,26 +1658,9 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="whsars" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="whsars" type="462c0819:PsiDirectoryNode" />
-              <item name="DTO" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="whsars" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
@@ -263,19 +1690,40 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="whsars" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
               <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="whsars" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
               <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
               <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="whsars" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
@@ -283,14 +1731,6 @@
               <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="DTO" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
@@ -306,7 +1746,45 @@
               <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="DTO" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="attendance" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="customer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="service" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="employee-attendance" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
@@ -315,33 +1793,10 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="customer-order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="customer-order-report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
               <item name="low-stock-level" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
             </path>
             <path>
               <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
@@ -350,7 +1805,83 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="customer-order" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="returns-report" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="salary" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="customer-order-report" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="salary-sheet-report" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="low-stock-level" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="stock-handling" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="main" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="supplier" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="supplier-order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WholeSaleAndRetailShop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WholeSaleAndRetailShop" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd1" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
             </path>
           </expand>
           <select />
@@ -360,6 +1891,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/SLIIT/2nd year/2nd semester/ITP/project/NewItp/WholeSaleAndRetailShop/FrontEnd1/src/app/view/stock-handling/stock-handling.component.ts" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -378,14 +1910,28 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Users\bhselk\Desktop\ITP Original\WholeSaleAndRetailShop\FrontEnd1\node_modules\typescript\lib" />
+=======
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/SLIIT/2nd year/2nd semester/ITP/project/NewItp/WholeSaleAndRetailShop/FrontEnd1/src/app/view/stock-handling/stock-handling.component.ts" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569960216852" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="ts.external.directory.path" value="D:\Git Hub Clone Projects\New Project ITp\WholeSaleAndRetailShop\FrontEnd1\node_modules\typescript\lib" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="lk.whsars.service" />
     </key>
+<<<<<<< HEAD
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\bhselk\Desktop\ITP Original\WholeSaleAndRetailShop\BackEnd\src\main\java\lk\whsars\DTO" />
     </key>
+=======
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\SLIIT\2nd year\2nd semester\ITP\project\NewItp\WholeSaleAndRetailShop\FrontEnd1\src\app\service" />
       <recent name="C:\Users\Tinali Gunasekara\Desktop\ITProject3\WholeSaleAndRetailShop\BackEnd\src\main\java\lk\whsars\service\impl" />
@@ -428,8 +1974,13 @@
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="Application.Application" />
       <item itemvalue="Spring Boot.Application" />
+=======
+      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Application.Application" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
     </list>
     <recent_temporary>
       <list>
@@ -466,6 +2017,7 @@
       <workItem from="1567421282531" duration="44000" />
       <workItem from="1567421964897" duration="9479000" />
       <workItem from="1567480499997" duration="4406000" />
+<<<<<<< HEAD
       <workItem from="1567576050665" duration="3006000" />
       <workItem from="1569084539198" duration="729000" />
       <workItem from="1569085428115" duration="73000" />
@@ -474,10 +2026,15 @@
       <workItem from="1569649183673" duration="23820000" />
       <workItem from="1569689832249" duration="25517000" />
       <workItem from="1569954944019" duration="15131000" />
+=======
+      <workItem from="1569928151214" duration="5344000" />
+      <workItem from="1569951340430" duration="5933000" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="378060000" />
   </component>
   <component name="TodoView">
@@ -495,12 +2052,23 @@
     <layout>
       <window_info id="Web" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.7650376" visible="true" weight="0.22834007" />
+=======
+    <option name="totallyTimeSpent" value="287013000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="2" width="1378" height="733" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Web" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.7650376" visible="true" weight="0.29514417" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
       <window_info id="Structure" order="2" sideWeight="0.2340824" side_tool="true" weight="0.27978885" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Capture Tool" order="7" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="1" weight="0.32977098" />
       <window_info anchor="bottom" id="Message" order="2" />
@@ -528,11 +2096,44 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Bean Validation" order="10" />
+=======
+      <window_info anchor="bottom" id="Java Enterprise" order="0" weight="0.32977098" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.39398998" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.27633587" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.20141844" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.327212" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32519084" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49932885" weight="0.2821369" />
+      <window_info anchor="bottom" id="TypeScript" order="14" weight="0.32977098" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -541,10 +2142,20 @@
           <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+<<<<<<< HEAD
+=======
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierServiceImplH.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/CustomerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -552,10 +2163,67 @@
           <folding>
             <element signature="e#859#860#0" expanded="true" />
             <element signature="e#934#935#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/SupplierOrderDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="75" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrderSearchDto.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/model/SupplierOrder.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/SupplierOrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/controller/SupplierOrderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/supplier-order.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="74" column="90" selection-start-line="74" selection-start-column="71" selection-end-line="74" selection-end-column="90" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/model/Customer.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -584,11 +2252,52 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+=======
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierServiceImplH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/DTO/SupplierOrderSearchDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="166" column="17" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order-agent-item/supplier-order-agent-item.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order-agent-item/supplier-order-agent-item.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="1143" column="10" selection-start-line="1143" selection-start-column="10" selection-end-line="1143" selection-end-column="10" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.ts">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="219">
           <caret line="94" column="56" selection-start-line="94" selection-start-column="37" selection-end-line="94" selection-end-column="56" />
         </state>
@@ -626,11 +2335,58 @@
             <element signature="imports" expanded="true" />
             <element signature="e#0#282#1" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Customer.java">
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.component.ts">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1138">
+          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/employee/employee.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/dashboard/dashboard.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="66" lean-forward="true" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/main/main.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="102">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="13" />
         </state>
@@ -647,12 +2403,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="57" selection-start-line="57" selection-end-line="57" />
+=======
+        <state relative-caret-position="1547">
+          <caret line="91" column="55" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/low-stock-level/low-stock-level.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/stock-handling/stock-handling.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/StockDetailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierRepositoryH.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="92" selection-start-line="11" selection-start-column="92" selection-end-line="11" selection-end-column="92" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
           <folding>
             <element signature="e#1390#1408#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.8.RELEASE/spring-beans-5.1.8.RELEASE.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -698,12 +2483,45 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+=======
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/CustomerOrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/ReturnItemRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="43" column="155" lean-forward="true" selection-start-line="43" selection-start-column="155" selection-end-line="43" selection-end-column="155" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier-order/supplier-order.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="130" column="37" selection-start-line="130" selection-start-column="37" selection-end-line="130" selection-end-column="37" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/service/stock.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -786,6 +2604,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/SupplierOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="76" column="57" lean-forward="true" selection-start-line="76" selection-start-column="57" selection-end-line="76" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/impl/SupplierOrderServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="92" column="62" selection-start-line="92" selection-start-column="62" selection-end-line="92" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SupplierOrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="139" column="77" selection-start-line="139" selection-start-column="77" selection-end-line="139" selection-end-column="98" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/customer/customer.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="123" column="26" selection-start-line="123" selection-start-column="26" selection-end-line="123" selection-end-column="26" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
           <folding>
             <element signature="e#868#869#0" expanded="true" />
             <element signature="e#906#907#0" expanded="true" />
@@ -803,6 +2666,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/Common/CustomerOrderBill.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-952">
@@ -843,10 +2707,85 @@
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#0#55#1" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary-sheet-report/salary-sheet-report.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/employee-attendance/employee-attendance.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/employee-attendance/employee-attendance.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="66" column="83" selection-start-line="66" selection-start-column="83" selection-end-line="66" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="180" column="57" lean-forward="true" selection-start-line="180" selection-start-column="57" selection-end-line="180" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/attendance/attendance.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="57" column="27" lean-forward="true" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="25" column="85" lean-forward="true" selection-start-line="25" selection-start-column="85" selection-end-line="25" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary/salary.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/entity/Supplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary-sheet-report/salary-sheet-report.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/salary-sheet-report/salary-sheet-report.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/service/CustomerOrderDetailService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -960,6 +2899,40 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier/supplier.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="780" column="83" lean-forward="true" selection-start-line="780" selection-start-column="83" selection-end-line="780" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd1/src/app/view/supplier/supplier.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="100" column="2" selection-start-line="100" selection-start-column="2" selection-end-line="104" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/StockDetailRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/SalaryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/src/main/java/lk/whsars/repository/StockRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="394" selection-start-line="11" selection-start-column="394" selection-end-line="11" selection-end-column="394" />
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
         </state>
       </provider>
     </entry>

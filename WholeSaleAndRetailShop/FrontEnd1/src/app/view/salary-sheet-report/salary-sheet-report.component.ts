@@ -32,9 +32,10 @@ export class SalarySheetReportComponent implements OnInit {
   printSalaryReport() {
     this.salaryservice.printReports(this.sal).subscribe((result)=>{
 
-      if(result !=null){
-        alert('Report Print SuccessFully');
-      }
+      alert('Report Print SuccessFully');
+      // if(result !=null){
+      //   alert('Report Print SuccessFully');
+      // }
     });
   }
 }

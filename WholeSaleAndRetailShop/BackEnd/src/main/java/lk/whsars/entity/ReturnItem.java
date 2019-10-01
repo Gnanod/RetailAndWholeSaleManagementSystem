@@ -19,10 +19,10 @@ public class ReturnItem {
     private int resellableQuant;
     private int notresellableQuant;
 
-    @ManyToOne
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @JoinColumn(nullable = false)
-    private CustomerOrder customerOrder;
+//    @ManyToOne
+//    @OnDelete(action = OnDeleteAction.CASCADE)
+//    @JoinColumn(nullable = false)
+//    private CustomerOrder customerOrder;
 
     public String getRetDate() {
         return retDate;
@@ -31,14 +31,14 @@ public class ReturnItem {
     public void setRetDate(String retDate) {
         this.retDate = retDate;
     }
-
-    public CustomerOrder getCustomerOrder() {
-        return customerOrder;
-    }
-
-    public void setCustomerOrder(CustomerOrder customerOrder) {
-        this.customerOrder = customerOrder;
-    }
+//
+//    public CustomerOrder getCustomerOrder() {
+//        return customerOrder;
+//    }
+//
+//    public void setCustomerOrder(CustomerOrder customerOrder) {
+//        this.customerOrder = customerOrder;
+//    }
 
     public int getRetItemId() {
         return retItemId;

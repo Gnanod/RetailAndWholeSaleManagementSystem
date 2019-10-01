@@ -28,9 +28,16 @@ import {SupplierOrderReportComponent} from './view/supplier-order-report/supplie
 import {LowStockLevelComponent} from './view/low-stock-level/low-stock-level.component';
 import {SalarySheetReportComponent} from './view/salary-sheet-report/salary-sheet-report.component';
 import {CustomerOrderReportComponent} from "./view/customer-order-report/customer-order-report.component";
+<<<<<<< HEAD
 import {EmployeeAttendanceComponent} from './view/employee-attendance/employee-attendance.component';
 import {CustomerReportComponent} from './view/customer-report/customer-report.component';
 import {SupplierReportComponent} from './view/supplier-report/supplier-report.component';
+=======
+import { ReturnsReportComponent } from './view/returns-report/returns-report.component';
+import { EmployeeAttendanceComponent } from './view/employee-attendance/employee-attendance.component';
+import { CustomerReportComponent } from './view/customer-report/customer-report.component';
+import { SupplierReportComponent } from './view/supplier-report/supplier-report.component';
+>>>>>>> 85d0f677d5fe10aa017998e75c59af1ac52e08f5
 
 // import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -62,6 +69,7 @@ import {SupplierReportComponent} from './view/supplier-report/supplier-report.co
     ReturnItemsComponent,
     LowStockLevelComponent,
     CustomerOrderReportComponent,
+    ReturnsReportComponent,
     EmployeeAttendanceComponent,
     CustomerReportComponent,
     SupplierReportComponent

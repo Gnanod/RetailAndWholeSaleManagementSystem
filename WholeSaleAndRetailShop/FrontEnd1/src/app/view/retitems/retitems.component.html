@@ -5,16 +5,27 @@
 <div  class="col-md-12">
   <div  class="card">
     <div  class="card-header card-header-icon card-header-info">
-      <div  class="card-icon"><i  class="fas fa-exchange-alt"></i></div>
+      <div  class="card-icon"><i  class="material-icons">assignment</i></div>
       <h4  class="card-title">ReturnItem From Customers </h4></div>
     <div  class="card-body">
       <div  class="row"></div>
+
+
+      <!--<div  class="row">-->
+      <!--<div class="col-md-6"><div class="form-group" [class.has-error]="searchbyid.invalid && searchbyid.touched" ><label  class="bmd-label-floating" class="control-lable">Order ID</label>-->
+      <!--<input class="form-control" id="searchbyid" (keyup)="searchOrderById($event)" [(ngModel)]="searchorderbyid" type="text" required #searchbyid="ngModel">-->
+      <!--<span class="help-block" *ngIf = "searchbyid.invalid && searchbyid.touched">Order ID is required</span>-->
+      <!--</div></div>-->
+      <!--</div>-->
 
 
       <div  class="row">
         <div class="col-md-6"><div class="form-group bmd-form-group" ><label  class="bmd-label-floating">Order ID</label>
           <input class="form-control" (keyup)="searchOrderById($event)" [(ngModel)]="searchorderbyid" type="text" ></div></div>
       </div>
+
+
+
 
       <div  class="clearfix"></div>
       <div  class="row">
@@ -24,10 +35,9 @@
             <thead  class=" text-primary">
             <th> Item ID</th>
             <th> Item Name</th>
-            <th> Init. Sold Quantity</th>
-            <th> Cur. Sold Quantity</th>
+            <th> Sold Quantity</th>
+            <th> Ret. Sold Quantity</th>
 
-            <th > Select Quantity</th>
             <th > </th>
             </thead>
             <tbody >
@@ -36,9 +46,9 @@
               <td class="text-center">{{returnItem.itemname}}</td>
               <td class="text-center">{{returnItem.quantity}}</td>
               <td>
-               <input  class="form-text" id="retQuantityCustOrder" name="retQuantity" type="text" [(ngModel)] = "returnItem.retQuantity" [ngModelOptions]="{standalone: true}">
+                <input  class="form-text" id="retQuantityCustOrder" name="retQuantity" type="text" [(ngModel)] = "returnItem.retQuantity" [ngModelOptions]="{standalone: true}">
               </td>
-              <td><button  class="btn btn-success" rel="tooltip" type="button" data-original-title="" (click)="addReturnedItemsFromOrder(returnItem.itembarcode,returnItem.itemname,returnItem.retQuantity,1)" title="">Add to returned list <i  class="material-icons">add</i></button></td>
+              <td><button  class="btn btn-success" rel="tooltip" type="button" data-original-title="" (click)="addReturnedItemsFromOrder(returnItem.itembarcode,returnItem.itemname,returnItem.retQuantity,1,returnItem.quantity)" title="">Add to returned list <i  class="material-icons">add</i></button></td>
             </tr>
             </tbody>
           </table>
@@ -49,42 +59,45 @@
   </div>
 </div>
 
-<div  class="col-md-6">
+<div  class="col-md-12">
   <div  class="card">
-    <div  class="card-header card-header-icon card-header-info">
-      <div  class="card-icon"><i  class="fas fa-external-link-square-alt"></i></div>
-      <h4  class="card-title">ReturnItem from stocks</h4></div>
-    <div  class="card-body">
+    <div  class="card-header card-header-rose card-header-icon">
+      <div  class="card-icon"><i class="fas fa-box-open"></i>
+      </div>
+      <h4  class="card-title">ReturnItem from stocks</h4>
+      <div  class="card-body">
 
-      <div  class="row">
-        <div  class="col-md-6">
-          <div  class="form-group bmd-form-group">
-            <label  class="bmd-label-floating">Item Barcode</label>
-            <input type="text" class="form-control"(keyup)="searchItemByBarcode($event)" [(ngModel)]="searchitembyitemid" >
+        <div  class="row">
+          <div  class="col-md-6">
+            <div  class="form-group bmd-form-group">
+              <label  class="bmd-label-floating">Item Barcode</label>
+              <input type="text" class="form-control"(keyup)="searchItemByBarcode($event)" [(ngModel)]="searchitembyitemid" >
+            </div>
           </div>
         </div>
+        <!--[(ngModel)]="this.ItemDetailsSingle.itemName"-->
+        <div  class="row">
+          <div  class="col-md-6"><div  class="form-group bmd-form-group"><input type="text" class="form-control" [(ngModel)]="itemname"></div></div>
+          <div  class="col-md-6"><div  class="form-group bmd-form-group"><input type="text" class="form-control" [(ngModel)]="itemquant"></div></div>
+        </div>
+        <br/>
+
+
+
+        Quantity: <input  class="form-text" id="retQuantityShop" name="retQuantity" type="text" [(ngModel)]="itemretq">
+
+        <button  class="btn btn-behance pull-right" type="submit" (click)="addReturnedItemsFromOrder(this.searchitembyitemid,this.itemname,this.itemretq,0,this.itemquant)">Add to ReturnItem</button>
+
       </div>
-      <!--[(ngModel)]="this.ItemDetailsSingle.itemName"-->
-      <div  class="row">
-        <div  class="col-md-6"><div  class="form-group bmd-form-group"><input type="text" class="form-control" [(ngModel)]="itemname"></div></div>
-      </div>
-      <br/>
-
-
-
-      Quantity: <input  class="form-text" id="retQuantityShop" name="retQuantity" type="text" [(ngModel)]="itemretq">
-
-      <button  class="btn btn-info pull-right " type="submit" (click)="addReturnedItemsFromOrder(this.searchitembyitemid,this.itemname,this.itemretq,0)">Add to ReturnItem</button>
-
     </div>
-  </div>
 
+  </div>
 </div>
+
 
 <div  class="col-md-12">
   <div  class="card">
-    <div  class="card-header card-header-rose card-header-icon"><h4  class="card-title"><b
-      >Items To Return</b></h4></div>
+    <div  class="card-header card-header-rose card-header-icon"><h4  class="card-title"><b>Items To Return</b></h4></div>
     <div  class="card-body">
       <div  class="row"></div>
       <div  class="table-responsive">
@@ -112,17 +125,19 @@
             <td >
               <input class="form-text" id="retQuantityCustOrderFinalFinal" name="retresaleQuantity" type="text" [(ngModel)]="finalReturn.resellableQuant">
             </td>
+
             <td >
               <input class="form-text" id="retQuantityCustOrderFinalFinal2" name="retnotresaleQuantity" type="text" [(ngModel)]="finalReturn.notresellableQuant">
             </td>
+
             <td  class="td-actions ">
-              <button  class="btn btn-info" rel="tooltip" type="button"
-                      data-original-title="" title="" (click)="updateResaleablity(finalReturn.resellableQuant,finalReturn.notresellableQuant)"><i  class="material-icons">update</i>
+              <button  class="btn btn-info" rel="tooltip" type="button" data-original-title="" title="" name="update" (click)="updateResaleablity(finalReturn)" ><i  class="material-icons">update</i>
               </button>
             </td>
+
             <td  class="td-actions ">
               <button  class="btn btn-danger" rel="tooltip" type="button"
-                       data-original-title="" title="" (click)="deleteEntry(finalReturn.retItemId)"><i  class="material-icons">close</i>
+                       data-original-title="" title="" name="delete" (click)="deleteEntry(finalReturn.retItemId)"><i  class="material-icons">close</i>
               </button>
             </td>
           </tr>

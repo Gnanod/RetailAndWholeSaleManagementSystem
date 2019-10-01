@@ -22,8 +22,8 @@ public class CustomerOrder {
     private Set<CustomerOrderDetail> customerOrderDetailSet;
 
 
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "customerOrder")
-    private Set<ReturnItem> returnItemSet;
+//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "customerOrder")
+//    private Set<ReturnItem> returnItemSet;
 
 
     public int getCustomerOrderId() {

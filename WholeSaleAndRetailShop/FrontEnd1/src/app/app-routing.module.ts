@@ -22,6 +22,7 @@ import {CustomerOrderReportComponent} from "./view/customer-order-report/custome
 import {EmployeeAttendanceComponent} from "./view/employee-attendance/employee-attendance.component";
 import {CustomerReportComponent} from "./view/customer-report/customer-report.component";
 import {SupplierReportComponent} from "./view/supplier-report/supplier-report.component";
+import {ReturnsReportComponent} from "./view/returns-report/returns-report.component";
 
 
 const routes: Routes = [
@@ -102,6 +103,10 @@ const routes: Routes = [
       {
         path:'SupplierDetails',
         component:SupplierReportComponent
+      },
+      {
+        path:'ReturnReport',
+        component:ReturnsReportComponent
       }
 
     ]
