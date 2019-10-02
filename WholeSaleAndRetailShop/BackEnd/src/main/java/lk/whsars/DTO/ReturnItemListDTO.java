@@ -1,4 +1,4 @@
-package lk.whsars.Common;
+package lk.whsars.DTO;
 
 public class ReturnItemListDTO {
 

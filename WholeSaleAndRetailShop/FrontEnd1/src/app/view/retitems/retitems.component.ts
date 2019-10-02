@@ -140,32 +140,37 @@ export class ReturnItemsComponent implements OnInit {
 
 
   updateResaleablity(finRet: ReturnItem){
+    let totret : number;
+    totret = + finRet.notresellableQuant + + finRet.resellableQuant;
+    if( totret == finRet.retQuant) {
+      let Ret: ReturnItem = new ReturnItem();
+      Ret.retItemId = finRet.retItemId;
+      Ret.retItemBarcode = finRet.retItemBarcode;
+      Ret.retQuant = finRet.retQuant;
+      Ret.resellableQuant = finRet.resellableQuant;
+      console.log("UPDATAEADSAKLJDA" + finRet.retItemBarcode);
+      console.log("UPDATAEADSAKLJDA" + this.finalReturn.retQuant);
+      Ret.retDate = finRet.retDate;
+      Ret.notresellableQuant = finRet.notresellableQuant;
+      Ret.retItemName = finRet.retItemName;
+      // Ret.customerOrder.customerOrderId = finRet.customerOrder.customerOrderId;
+      //
+      // console.log("update frontend wada"+this.finalReturn.customerOrder.customerOrderId);
 
-    let Ret: ReturnItem = new ReturnItem();
-    Ret.retItemId = finRet.retItemId;
-    Ret.retItemBarcode = finRet.retItemBarcode;
-    Ret.retQuant = finRet.retQuant;
-    Ret.resellableQuant = finRet.resellableQuant;
-    console.log("UPDATAEADSAKLJDA"+finRet.retItemBarcode);
-    console.log("UPDATAEADSAKLJDA"+this.finalReturn.retQuant);
-    Ret.retDate= finRet.retDate;
-    Ret.notresellableQuant = finRet.notresellableQuant;
-    Ret.retItemName = finRet.retItemName;
-    // Ret.customerOrder.customerOrderId = finRet.customerOrder.customerOrderId;
-    //
-    // console.log("update frontend wada"+this.finalReturn.customerOrder.customerOrderId);
 
+      this.retItemService.UpdateRetDetails(Ret).subscribe((result) => {
 
-    this.retItemService.UpdateRetDetails(Ret).subscribe((result)=>{
+        if (result != null) {
 
-      if(result!=null){
+          alert("Ret details Updated SuccessFully");
 
-        alert("Ret details Updated SuccessFully");
+        }
+        this.getAllReturnItems();
 
-      }
-      this.getAllReturnItems();
-
-    });
+      });
+    }else{
+      alert("Addition of Resalable Quant And nonResalable Quant should be equal to RetQuant")
+    }
   }
 
   deleteEntry(retItemId: number) {

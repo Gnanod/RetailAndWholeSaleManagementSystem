@@ -2,11 +2,13 @@
 
 
 
+<h6 align="center"> SEARCH THE CUSTOMER ORDER BY CUSTOMER ORDER ID, ENTER THE QUANTITY TO RETURN THEN <br> CLICK THE ADD TO RETURNS LIST BUTTON TO ADD TO THE RETURNED ITEMS LIST </h6>
+
 <div  class="col-md-12">
   <div  class="card">
     <div  class="card-header card-header-icon card-header-info">
-      <div  class="card-icon"><i  class="material-icons">assignment</i></div>
-      <h4  class="card-title">ReturnItem From Customers </h4></div>
+      <div  class="card-icon"><i class="fas fa-file-invoice"></i></div>
+      <h4  class="card-title">Return Item From Customers Orders</h4></div>
     <div  class="card-body">
       <div  class="row"></div>
 
@@ -48,7 +50,7 @@
               <td>
                 <input  class="form-text" id="retQuantityCustOrder" name="retQuantity" type="text" [(ngModel)] = "returnItem.retQuantity" [ngModelOptions]="{standalone: true}">
               </td>
-              <td><button  class="btn btn-success" rel="tooltip" type="button" data-original-title="" (click)="addReturnedItemsFromOrder(returnItem.itembarcode,returnItem.itemname,returnItem.retQuantity,1,returnItem.quantity)" title="">Add to returned list <i  class="material-icons">add</i></button></td>
+              <td><button  class="btn btn-success" rel="tooltip" type="button" data-original-title="" (click)="addReturnedItemsFromOrder(returnItem.itembarcode,returnItem.itemname,returnItem.retQuantity,1,returnItem.quantity)" title="">Add to returned list <i class="fas fa-plus-circle"></i></button></td>
             </tr>
             </tbody>
           </table>
@@ -59,12 +61,15 @@
   </div>
 </div>
 
+<h6 align="center"> SEARCH THE ITEM FROM THE STOCK BY IT'S BARCODE, ENTER THE QUANTITY TO RETURN THEN <br> CLICK THE ADD TO RETURNS LIST BUTTON TO ADD TO THE RETURNED ITEMS LIST </h6>
+
+
 <div  class="col-md-12">
   <div  class="card">
     <div  class="card-header card-header-rose card-header-icon">
       <div  class="card-icon"><i class="fas fa-box-open"></i>
       </div>
-      <h4  class="card-title">ReturnItem from stocks</h4>
+      <h4  class="card-title">Return Item from Stocks</h4>
       <div  class="card-body">
 
         <div  class="row">
@@ -86,7 +91,7 @@
 
         Quantity: <input  class="form-text" id="retQuantityShop" name="retQuantity" type="text" [(ngModel)]="itemretq">
 
-        <button  class="btn btn-behance pull-right" type="submit" (click)="addReturnedItemsFromOrder(this.searchitembyitemid,this.itemname,this.itemretq,0,this.itemquant)">Add to ReturnItem</button>
+        <button  class="btn btn-behance pull-right" type="submit" (click)="addReturnedItemsFromOrder(this.searchitembyitemid,this.itemname,this.itemretq,0,this.itemquant)">Add To Return list<i class="fas fa-plus-circle"></i></button>
 
       </div>
     </div>
@@ -94,6 +99,15 @@
   </div>
 </div>
 
+<h6 align="center">
+  BELOW SHOWN IS THE LIST OF RETURNED ITEMS WITH THEIR RESPECTIVE DETAILS
+
+  ENTER THE QUANTITY OF ITEMS THAT<br> CAN BE RESOLD UNDER <b>"RESALABLE QUANTITY"</b>
+
+  AND THE QUANTITY CANNOT BE RESOLD<br> UNDER <b>"NOT-RESALABLE QUANTITY"</b>
+THEN PRESS UPDATE TO <b>UPDATE</b> THE DETAILS OR <b>DELETE</b> TO DELETE
+
+</h6>
 
 <div  class="col-md-12">
   <div  class="card">

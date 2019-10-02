@@ -1,6 +1,6 @@
 package lk.whsars.service;
 
-import lk.whsars.Common.ReturnItemListDTO;
+import lk.whsars.DTO.ReturnItemListDTO;
 import lk.whsars.entity.Item;
 import lk.whsars.entity.ReturnItem;
 
@@ -21,4 +21,6 @@ public interface ReturnItemService {
     ReturnItem UpdateReturnItem(ReturnItem returnItem);
 
     void deleteReturnEntry(String retItemId);
+
+    List<ReturnItem> getAllReturnItemsByMonth(String month);
 }

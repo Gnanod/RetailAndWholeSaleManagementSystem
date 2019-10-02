@@ -51,6 +51,7 @@ export class MainComponent implements OnInit {
       this.headerText = "Supplier";
     } else if (this.router.url == '/main/Company') {
       this.headerText = "Company";
+
       // setHeaderTextAndButtons() {
       //
       //     if (this.router.url == '/main/dashboard') {
@@ -127,6 +128,9 @@ export class MainComponent implements OnInit {
       this.router.navigate(['/main/LowStockLevel'])
     } else if (button == 'Salary Sheet Report') {
       this.router.navigate(['/main/SalarySheetReport'])
+    } else if (button == 'Returns Report') {
+      this.router.navigate(['/main/ReturnReport'])
+
 
 
     } else if (button == 'CustomerOrderReport') {
@@ -145,6 +149,8 @@ export class MainComponent implements OnInit {
 
     } else if (button == 'SupplierDetails') {
       this.router.navigate(['/main/SupplierDetails'])
+    } else if (button == 'ReturnItems') {
+      this.router.navigate(['/main/retitems'])
     }
 
 

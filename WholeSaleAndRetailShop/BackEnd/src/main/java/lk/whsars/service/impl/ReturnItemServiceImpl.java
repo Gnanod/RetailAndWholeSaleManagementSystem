@@ -1,13 +1,12 @@
 package lk.whsars.service.impl;
 
-import lk.whsars.Common.ReturnItemListDTO;
+import lk.whsars.DTO.ReturnItemListDTO;
 import lk.whsars.entity.*;
 import lk.whsars.repository.ReturnItemRepository;
 import lk.whsars.service.ReturnItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.persistence.criteria.CriteriaBuilder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -88,6 +87,31 @@ public class ReturnItemServiceImpl implements ReturnItemService {
     public void deleteReturnEntry(String retItemId) {
 
         returnItemRepository.deleteById(Integer.parseInt(retItemId));
+    }
+
+    @Override
+    public List<ReturnItem> getAllReturnItemsByMonth(String month) {
+        List<Object[]> ob = returnItemRepository.getAllReturnItemByMonth(month);
+
+        List<ReturnItem> r = new ArrayList<>();
+        for (Object o[]:ob
+        ) {
+            ReturnItem r1 = new ReturnItem();
+
+            r1.setRetItemId(Integer.parseInt(o[0].toString()));
+            r1.setRetItemBarcode(o[1].toString());
+            r1.setRetDate(o[2].toString());
+            r1.setRetItemName(o[3].toString());
+            r1.setRetQuant(Integer.parseInt(o[4].toString()));
+            r1.setResellableQuant(Integer.parseInt(o[5].toString()));
+            r1.setNotresellableQuant(Integer.parseInt(o[6].toString()));
+
+            r.add(r1);
+
+            System.out.println("OBJECT "+r1.getRetItemName());
+        }
+
+        return r;
     }
 
 
