@@ -2,7 +2,7 @@ import {CustomerOrder} from "./CustomerOrder";
 
 export class ReturnItemDTO {
 
-  itemname:string ;
+  itemname: string;
   itembarcode:string ; //item id
   quantity: number;
   retQuantity: number;

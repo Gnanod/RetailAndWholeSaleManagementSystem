@@ -58,4 +58,7 @@ export class RetitemsService {
   }
 
 
+  getAllReturnItemsByMonth(month: string) {
+    return this.http.get<Array<ReturnItem>>(environment.backend_url + URL + '/getAllReturnItemByMonth/'+month);
+  }
 }

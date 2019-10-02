@@ -24,4 +24,7 @@ public interface ReturnItemRepository extends JpaRepository<ReturnItem,Integer>{
 
     @Query(value = "select  retItemId, retItemBarcode,retDate,retItemName,retQuant,resellableQuant,notresellableQuant from ReturnItem ")
     List<Object[]> getAllDetails();
+
+    @Query(value= "select  retItemId, retItemBarcode,retDate,retItemName,retQuant,resellableQuant,notresellableQuant from ReturnItem where retDate like concat('%-',:month,'-%')")
+    List<Object[]> getAllReturnItemByMonth(@Param("month") String month);
 }

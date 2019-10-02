@@ -1,9 +1,8 @@
 package lk.whsars.controller;
 
-import lk.whsars.Common.ReturnItemListDTO;
+import lk.whsars.DTO.ReturnItemListDTO;
 import lk.whsars.Common.ReturnItemReport;
 import lk.whsars.entity.*;
-import lk.whsars.service.CustomerOrderDetailService;
 import lk.whsars.service.ReturnItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -46,6 +45,13 @@ public class ReturnItemsController {
     public List<ReturnItem> getAllReturnItems(){
 
         return  returnItemService.getAllReturnItems();
+
+    }
+
+    @GetMapping(value = "/getAllReturnItemByMonth/{month}")
+    public List<ReturnItem> getAllReturnItems1(@PathVariable String month){
+        System.out.println("SADDSA"+ month);
+        return returnItemService.getAllReturnItemsByMonth(month);
 
     }
 

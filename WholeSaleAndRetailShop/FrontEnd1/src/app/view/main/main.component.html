@@ -517,6 +517,14 @@
             <p #stockManagement>StockHandling</p>
           </a>
         </li>
+
+        <li class="nav-item" [ngClass]="{'active': headerText=='ReturnItems'}" (click)="changeRoute(returnItems.innerHTML)">
+          <a class="nav-link">
+            <i class="fas fa-undo"></i>
+            <p #returnItems>ReturnItems</p>
+          </a>
+        </li>
+
         <li class="nav-item" [ngClass]="{'active': headerText=='Attendance'}" (click)="changeRoute(attendance.innerHTML)">
           <a class="nav-link">
             <i class="fas fa-fingerprint"></i>
@@ -586,6 +594,13 @@
                 <a class="nav-link" >
                   <span class="sidebar-mini"> LSL </span>
                   <span class="sidebar-normal" #SupplierDetails>SupplierDetails</span>
+                </a>
+              </li>
+
+              <li class="nav-item " [ngClass]="{'active': headerText=='Returns Report'}" (click)="changeRoute(ReturnsReport.innerHTML)">
+                <a class="nav-link">
+                  <span class="sidebar-mini"> RR </span>
+                  <span class="sidebar-normal" #ReturnsReport>Returns Report</span>
                 </a>
               </li>
 
