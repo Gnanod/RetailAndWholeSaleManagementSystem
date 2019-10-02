@@ -75,7 +75,8 @@ export class SupplierComponent implements OnInit {
         this.phoneNumber = this.searchSupplierDetails.phone;
         this.faxNumber = this.searchSupplierDetails.fax;
         this.supplierNic = this.searchSupplierDetails.supplierNic;
-
+        this.companyName= this.searchSupplierDetails.companyName;
+        this.date = this.searchSupplierDetails.date;
 
       }
 
@@ -95,7 +96,8 @@ export class SupplierComponent implements OnInit {
     sup.email = this.emailAddress;
     sup.phone = this.phoneNumber;
     sup.fax = this.faxNumber;
-
+    sup.companyName= this.companyName;
+    sup.date = this.date;
     this.supplierService.updateSupplierDetails(sup).subscribe(result => {
       if (result != null) {
         alert("Supplier Details Updated Successfully");

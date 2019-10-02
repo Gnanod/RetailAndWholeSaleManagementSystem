@@ -1,12 +1,14 @@
 package lk.whsars.controller;
 
+import lk.whsars.Common.CustomerOrderBill;
 import lk.whsars.Common.CustomerOrderReport;
 import lk.whsars.DTO.CustomerLastOrderDto;
+import lk.whsars.DTO.CustomerOrderBillDto;
 import lk.whsars.DTO.CustomerOrderReportDTO;
 import lk.whsars.entity.CustomerOrder;
+import lk.whsars.entity.CustomerOrderDetail;
 import lk.whsars.entity.Item;
 import lk.whsars.service.CustomerOrderService;
-import lk.whsars.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,9 +22,6 @@ public class CustomerOrderController {
 
     @Autowired
     private CustomerOrderService customerOrderService;
-
-    @Autowired
-    private ItemService itemService;
 
 
     @PostMapping(value = "/addCustomerOrder")
@@ -60,6 +59,17 @@ public class CustomerOrderController {
     }
 
 
+    @GetMapping(value = "/searchOrderDetails/{searchOrder}")
+    public List<CustomerOrderDetail> searchOrderDetails(@PathVariable int searchOrder) {
+        System.out.println("PathVarialble" + searchOrder);
+        if (searchOrder != 0) {
+            return customerOrderService.getAllOrderItems(searchOrder);
+        } else {
+            return null;
+        }
+    }
+
+
     @GetMapping(value = "/searchLastOrder")
     public CustomerLastOrderDto getLastOrder() {
         return customerOrderService.getCustomerLastOrder();
@@ -82,6 +92,14 @@ public class CustomerOrderController {
     public String printReport(@RequestBody ArrayList<CustomerOrderReportDTO> lowStockLevelDto){
         CustomerOrderReport l1 = new CustomerOrderReport();
         l1.generateLowStockLevelPdf(lowStockLevelDto);
+        return "9";
+    }
+
+    @PostMapping(value = "/printBill")
+    public String printBill(@RequestBody List<CustomerOrderBillDto> CusOrderBill){
+        CustomerOrderBill l1 = new CustomerOrderBill();
+        l1.generateLowStockLevelPdf(CusOrderBill);
+        System.out.println("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkk"+CusOrderBill);
         return "9";
     }
 

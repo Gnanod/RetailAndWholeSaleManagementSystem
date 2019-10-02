@@ -3,8 +3,9 @@ import {HttpClient} from "@angular/common/http";
 import {environment} from "../../environments/environment";
 import {CustomerOrder} from "../model/CustomerOrder";
 import {Item} from "../model/Item";
-import {LowStockLevelDTO} from "../DTO/LowStockLevelDTO";
 import {CustomerOrderReportDTO} from "../DTO/CustomerOrderReportDTO";
+import {CustomerOrderBillDTO} from "../DTO/CustomerOrderBillDTO";
+import {CustomerOrderDetail} from "../model/CustomerOrderDetail";
 
 const URL = '/CustomerOrderController';
 
@@ -33,7 +34,15 @@ export class CustomerOrderService {
   }
 
   printReports(CustomerOrderReport: Array<CustomerOrderReportDTO>) {
-    return this.http.post<String>(environment.backend_url + URL + '/printReport/',CustomerOrderReport);
+    return this.http.post<String>(environment.backend_url + URL + '/printReport/', CustomerOrderReport);
+  }
+
+  printBill(CustomerOrderBill: CustomerOrder) {
+    return this.http.post<Array<CustomerOrderBillDTO>>(environment.backend_url + URL + '/printBill/', CustomerOrderBill);
+  }
+
+  searchOrderDetails(searchOrderDetails: number) {
+    return this.http.get<Array<CustomerOrderDetail>>(environment.backend_url + URL + '/searchOrderDetails/' + searchOrderDetails);
   }
 
   getCustomerOrders() {

@@ -6,6 +6,7 @@ import {CustomerOrderDetail} from "../../model/CustomerOrderDetail";
 import {CustomerOrderService} from "../../service/customerOrder.service";
 import {ItemService} from "../../service/item.service";
 import {CustomerService} from "../../service/customer.service";
+import {CustomerOrderBillDTO} from "../../DTO/CustomerOrderBillDTO";
 
 @Component({
   selector: 'app-customer-order',
@@ -40,6 +41,7 @@ export class CustomerOrderComponent implements OnInit {
   searchCustomerDetails1: Customer = new Customer();
   searchCustomerValueIf = true;
   addCusOrder: CustomerOrder = new CustomerOrder();
+  cusorderBill: CustomerOrderBillDTO = new CustomerOrderBillDTO();
   CusOrder: Array<CustomerOrder> = new Array<CustomerOrder>();
   orderList: Array<CustomerOrderDetail> = new Array<CustomerOrderDetail>();
 
@@ -48,11 +50,13 @@ export class CustomerOrderComponent implements OnInit {
 
   }
 
+
   ngOnInit() {
     setInterval(() => {
       this.time = new Date();
     }, 1000);
   }
+
 
   //ADD ITEMS TO THE CART TABLE
   cusOrderDetail() {
@@ -64,6 +68,7 @@ export class CustomerOrderComponent implements OnInit {
       orderItemDetail.brand = value.brand;
       orderItemDetail.retailPrice = value.retailPrice;
       orderItemDetail.itemQtyOnHand = value.itemQtyOnHand;
+      orderItemDetail.stockLevel = value.stockLevel;
     });
 
     this.itemPrice = orderItemDetail.retailPrice;
@@ -126,6 +131,21 @@ export class CustomerOrderComponent implements OnInit {
 
     });
 
+    //CustomerOrderDetailsSearch
+    this.customerOrderService.searchOrderDetails(17).subscribe((result) => {
+      console.log("mmmmmmmmm" + this.whoisTheCustomer);
+      if (result != null) {
+        console.log("ssssssssssssssssssss" + result);
+      }
+    });
+
+    //CustomerOrderBillPrint
+    this.customerOrderService.printBill(this.addCusOrder).subscribe((result) => {
+      if (result != null) {
+        console.log("pppppppppppppppppppppp" + result);
+      }
+    });
+
     //loyalty points generating
     if (this.lastAmount > 50000) {
       this.points = 15;
@@ -151,6 +171,7 @@ export class CustomerOrderComponent implements OnInit {
     }
   }
 
+
   //SEARCH ITEM DETAILS
   searchItemByNameOrId(event: any) {
     if (this.searchitembynameOrId.length != 0) {
@@ -166,6 +187,7 @@ export class CustomerOrderComponent implements OnInit {
       this.searchItemValuesIf = true;
     }
   }
+
 
   //REMOVE ITEM FROM CART TABLE
   deleteRow(id) {
@@ -187,6 +209,7 @@ export class CustomerOrderComponent implements OnInit {
     }
   }
 
+
   //LAST ORDER UNDO
   lastOrderUndo() {
     this.getLastOrderId = 11;
@@ -204,6 +227,7 @@ export class CustomerOrderComponent implements OnInit {
       }
     });
   }
+
 
   //ADD DISCOUNT ACCORDING TO THE CUSTOMER'S LOYALTY POINTS
   addDiscount() {

@@ -13,4 +13,7 @@ public interface CustomerOrderDetailRepository extends JpaRepository<CustomerOrd
     static List<CustomerOrderDetail> findAllCustomerOrderDetails(String name){
         return Collections.emptyList();
     }
+
+    @Query(value ="select * from customer_order_detail where customer_order_customer_order_id = ?1;",nativeQuery = true)
+    List<CustomerOrderDetail> getAllOrderItems(int searchOrder);
 }

@@ -5,6 +5,7 @@ import lk.whsars.DTO.CustomerOrderReportDTO;
 import lk.whsars.entity.CustomerOrder;
 import lk.whsars.entity.CustomerOrderDetail;
 import lk.whsars.entity.Item;
+import lk.whsars.repository.CustomerOrderDetailRepository;
 import lk.whsars.repository.CustomerOrderRepository;
 import lk.whsars.repository.ItemRepository;
 import lk.whsars.service.CustomerOrderService;
@@ -23,6 +24,8 @@ public class CustomerOrderServiceImpl implements CustomerOrderService {
     private CustomerOrderRepository customerOrderRepository;
     @Autowired
     private ItemRepository itemRepository;
+    @Autowired
+    private CustomerOrderDetailRepository customerOrderDetailRepository;
 
     @Override
     @Transactional
@@ -66,6 +69,17 @@ public class CustomerOrderServiceImpl implements CustomerOrderService {
         }
     }
 
+
+    @Override
+    public List<CustomerOrderDetail> getAllOrderItems(int searchOrder) {
+        List<CustomerOrderDetail> order = customerOrderDetailRepository.getAllOrderItems(searchOrder);
+        System.out.println(order);
+        if (order.size() != 0) {
+            return order;
+        } else {
+            return null;
+        }
+    }
 
     @Override
     public CustomerLastOrderDto getCustomerLastOrder() {
